@@ -13,7 +13,6 @@ venv/
 
 # Data
 data/
-model/
 
 # Node
 node_modules/
