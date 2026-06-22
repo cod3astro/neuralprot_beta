@@ -1,0 +1,7127 @@
+{
+  "positive_regulation_of_DNA-templated_transcription_GO_0045893": {
+    "group_name": "positive_regulation_of_DNA-templated_transcription_GO_0045893",
+    "n_go_terms": 16,
+    "n_val_proteins": 480,
+    "trained_val_f1": 0.521535,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.670239,
+      "precision": 0.534941,
+      "recall": 0.978447
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.828227,
+      "precision": 0.864603,
+      "recall": 0.841703
+    },
+    "f1_gain": 0.157988
+  },
+  "regulation_of_mRNA_stability_GO_0043488": {
+    "group_name": "regulation_of_mRNA_stability_GO_0043488",
+    "n_go_terms": 16,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.664658,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.772863,
+      "precision": 0.756458,
+      "recall": 0.802083
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.788933,
+      "precision": 0.804002,
+      "recall": 0.777344
+    },
+    "f1_gain": 0.01607
+  },
+  "heterochromatin_formation_GO_0031507": {
+    "group_name": "heterochromatin_formation_GO_0031507",
+    "n_go_terms": 16,
+    "n_val_proteins": 61,
+    "trained_val_f1": 0.667623,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.718259,
+      "precision": 0.676329,
+      "recall": 0.791193
+    },
+    "optimal_threshold": {
+      "threshold": 0.6591,
+      "f1": 0.749201,
+      "precision": 0.726549,
+      "recall": 0.791193
+    },
+    "f1_gain": 0.030942
+  },
+  "pattern_recognition_receptor_signaling_pathway_GO_0002221": {
+    "group_name": "pattern_recognition_receptor_signaling_pathway_GO_0002221",
+    "n_go_terms": 16,
+    "n_val_proteins": 31,
+    "trained_val_f1": 0.558881,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.728217,
+      "precision": 0.688165,
+      "recall": 0.792361
+    },
+    "optimal_threshold": {
+      "threshold": 0.6682,
+      "f1": 0.786583,
+      "precision": 0.787202,
+      "recall": 0.792361
+    },
+    "f1_gain": 0.058366
+  },
+  "regulation_of_protein_kinase_activity_GO_0045859": {
+    "group_name": "regulation_of_protein_kinase_activity_GO_0045859",
+    "n_go_terms": 18,
+    "n_val_proteins": 43,
+    "trained_val_f1": 0.67696,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.734981,
+      "precision": 0.732777,
+      "recall": 0.746032
+    },
+    "optimal_threshold": {
+      "threshold": 0.6045,
+      "f1": 0.748674,
+      "precision": 0.75824,
+      "recall": 0.7422
+    },
+    "f1_gain": 0.013693
+  },
+  "positive_regulation_of_lymphocyte_differentiation_GO_0045621": {
+    "group_name": "positive_regulation_of_lymphocyte_differentiation_GO_0045621",
+    "n_go_terms": 15,
+    "n_val_proteins": 28,
+    "trained_val_f1": 0.560759,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.743654,
+      "precision": 0.695705,
+      "recall": 0.828571
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.837898,
+      "precision": 0.866667,
+      "recall": 0.821032
+    },
+    "f1_gain": 0.094244
+  },
+  "ribonucleoside_monophosphate_biosynthetic_process_GO_0009156": {
+    "group_name": "ribonucleoside_monophosphate_biosynthetic_process_GO_0009156",
+    "n_go_terms": 16,
+    "n_val_proteins": 49,
+    "trained_val_f1": 0.674395,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.8797,
+      "precision": 0.839717,
+      "recall": 0.9375
+    },
+    "optimal_threshold": {
+      "threshold": 0.5318,
+      "f1": 0.916523,
+      "precision": 0.90352,
+      "recall": 0.931818
+    },
+    "f1_gain": 0.036823
+  },
+  "fatty_acid_biosynthetic_process_GO_0006633": {
+    "group_name": "fatty_acid_biosynthetic_process_GO_0006633",
+    "n_go_terms": 15,
+    "n_val_proteins": 115,
+    "trained_val_f1": 0.746561,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.874061,
+      "precision": 0.833077,
+      "recall": 0.930159
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.905517,
+      "precision": 0.89,
+      "recall": 0.930159
+    },
+    "f1_gain": 0.031456
+  },
+  "tRNA_aminoacylation_for_protein_translation_GO_0006418": {
+    "group_name": "tRNA_aminoacylation_for_protein_translation_GO_0006418",
+    "n_go_terms": 15,
+    "n_val_proteins": 28,
+    "trained_val_f1": 0.705291,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.866667,
+      "precision": 0.866667,
+      "recall": 0.866667
+    },
+    "optimal_threshold": {
+      "threshold": 0.3864,
+      "f1": 0.866667,
+      "precision": 0.866667,
+      "recall": 0.866667
+    },
+    "f1_gain": 0.0
+  },
+  "regulation_of_translation_GO_0006417": {
+    "group_name": "regulation_of_translation_GO_0006417",
+    "n_go_terms": 26,
+    "n_val_proteins": 154,
+    "trained_val_f1": 0.683115,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.674982,
+      "precision": 0.601021,
+      "recall": 0.824084
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.768362,
+      "precision": 0.782647,
+      "recall": 0.784095
+    },
+    "f1_gain": 0.09338
+  },
+  "tRNA_modification_GO_0006400": {
+    "group_name": "tRNA_modification_GO_0006400",
+    "n_go_terms": 19,
+    "n_val_proteins": 54,
+    "trained_val_f1": 0.581189,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.735804,
+      "precision": 0.731579,
+      "recall": 0.758772
+    },
+    "optimal_threshold": {
+      "threshold": 0.5409,
+      "f1": 0.747825,
+      "precision": 0.751703,
+      "recall": 0.758772
+    },
+    "f1_gain": 0.012021
+  },
+  "regulation_of_DNA-templated_transcription_GO_0006355": {
+    "group_name": "regulation_of_DNA-templated_transcription_GO_0006355",
+    "n_go_terms": 21,
+    "n_val_proteins": 708,
+    "trained_val_f1": 0.387598,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.571192,
+      "precision": 0.450132,
+      "recall": 0.933089
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.700007,
+      "precision": 0.699641,
+      "recall": 0.798835
+    },
+    "f1_gain": 0.128815
+  },
+  "purine_nucleotide_biosynthetic_process_GO_0006164": {
+    "group_name": "purine_nucleotide_biosynthetic_process_GO_0006164",
+    "n_go_terms": 15,
+    "n_val_proteins": 96,
+    "trained_val_f1": 0.752007,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.866099,
+      "precision": 0.831709,
+      "recall": 0.920911
+    },
+    "optimal_threshold": {
+      "threshold": 0.7227,
+      "f1": 0.921195,
+      "precision": 0.926667,
+      "recall": 0.916989
+    },
+    "f1_gain": 0.055096
+  },
+  "positive_regulation_of_cytokine_production_GO_0001819": {
+    "group_name": "positive_regulation_of_cytokine_production_GO_0001819",
+    "n_go_terms": 39,
+    "n_val_proteins": 115,
+    "trained_val_f1": 0.60957,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.738625,
+      "precision": 0.653159,
+      "recall": 0.914265
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.818548,
+      "precision": 0.854474,
+      "recall": 0.818071
+    },
+    "f1_gain": 0.079923
+  },
+  "negative_regulation_of_cytokine_production_GO_0001818": {
+    "group_name": "negative_regulation_of_cytokine_production_GO_0001818",
+    "n_go_terms": 25,
+    "n_val_proteins": 67,
+    "trained_val_f1": 0.533275,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.761889,
+      "precision": 0.740326,
+      "recall": 0.812889
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.808236,
+      "precision": 0.84,
+      "recall": 0.782627
+    },
+    "f1_gain": 0.046347
+  },
+  "regulation_of_calcium_ion_transmembrane_transport_GO_1903169": {
+    "group_name": "regulation_of_calcium_ion_transmembrane_transport_GO_1903169",
+    "n_go_terms": 16,
+    "n_val_proteins": 33,
+    "trained_val_f1": 0.620641,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.786878,
+      "precision": 0.751015,
+      "recall": 0.86039
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.830977,
+      "precision": 0.875,
+      "recall": 0.806412
+    },
+    "f1_gain": 0.044099
+  },
+  "regulation_of_actin_filament_organization_GO_0110053": {
+    "group_name": "regulation_of_actin_filament_organization_GO_0110053",
+    "n_go_terms": 19,
+    "n_val_proteins": 79,
+    "trained_val_f1": 0.740223,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.859097,
+      "precision": 0.81608,
+      "recall": 0.939113
+    },
+    "optimal_threshold": {
+      "threshold": 0.6955,
+      "f1": 0.893226,
+      "precision": 0.878697,
+      "recall": 0.922847
+    },
+    "f1_gain": 0.034129
+  },
+  "ligand-gated_monoatomic_cation_channel_activity_GO_0099094": {
+    "group_name": "ligand-gated_monoatomic_cation_channel_activity_GO_0099094",
+    "n_go_terms": 21,
+    "n_val_proteins": 41,
+    "trained_val_f1": 0.826653,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.886835,
+      "precision": 0.874603,
+      "recall": 0.904762
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.895376,
+      "precision": 0.89881,
+      "recall": 0.893773
+    },
+    "f1_gain": 0.008541
+  },
+  "protein_modification_by_small_protein_conjugation_GO_0032446": {
+    "group_name": "protein_modification_by_small_protein_conjugation_GO_0032446",
+    "n_go_terms": 20,
+    "n_val_proteins": 211,
+    "trained_val_f1": 0.607984,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.738701,
+      "precision": 0.661967,
+      "recall": 0.88498
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.795471,
+      "precision": 0.770344,
+      "recall": 0.851878
+    },
+    "f1_gain": 0.05677
+  },
+  "negative_regulation_of_gene_expression_GO_0010629": {
+    "group_name": "negative_regulation_of_gene_expression_GO_0010629",
+    "n_go_terms": 27,
+    "n_val_proteins": 185,
+    "trained_val_f1": 0.504256,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.676985,
+      "precision": 0.580962,
+      "recall": 0.871766
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.823319,
+      "precision": 0.829442,
+      "recall": 0.826747
+    },
+    "f1_gain": 0.146334
+  },
+  "positive_regulation_of_gene_expression_GO_0010628": {
+    "group_name": "positive_regulation_of_gene_expression_GO_0010628",
+    "n_go_terms": 21,
+    "n_val_proteins": 184,
+    "trained_val_f1": 0.42909,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.696019,
+      "precision": 0.605293,
+      "recall": 0.896259
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.847282,
+      "precision": 0.847936,
+      "recall": 0.870181
+    },
+    "f1_gain": 0.151263
+  },
+  "nucleotide_catabolic_process_GO_0009166": {
+    "group_name": "nucleotide_catabolic_process_GO_0009166",
+    "n_go_terms": 21,
+    "n_val_proteins": 73,
+    "trained_val_f1": 0.747331,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.840816,
+      "precision": 0.829365,
+      "recall": 0.857143
+    },
+    "optimal_threshold": {
+      "threshold": 0.65,
+      "f1": 0.84329,
+      "precision": 0.833333,
+      "recall": 0.857143
+    },
+    "f1_gain": 0.002474
+  },
+  "nucleotide_biosynthetic_process_GO_0009165": {
+    "group_name": "nucleotide_biosynthetic_process_GO_0009165",
+    "n_go_terms": 16,
+    "n_val_proteins": 34,
+    "trained_val_f1": 0.764991,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.923904,
+      "precision": 0.914511,
+      "recall": 0.9375
+    },
+    "optimal_threshold": {
+      "threshold": 0.1591,
+      "f1": 0.925877,
+      "precision": 0.879331,
+      "recall": 1.0
+    },
+    "f1_gain": 0.001973
+  },
+  "fatty_acid_metabolic_process_GO_0006631": {
+    "group_name": "fatty_acid_metabolic_process_GO_0006631",
+    "n_go_terms": 30,
+    "n_val_proteins": 117,
+    "trained_val_f1": 0.514392,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.802341,
+      "precision": 0.758294,
+      "recall": 0.896279
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.87249,
+      "precision": 0.914762,
+      "recall": 0.855121
+    },
+    "f1_gain": 0.070149
+  },
+  "rRNA_processing_GO_0006364": {
+    "group_name": "rRNA_processing_GO_0006364",
+    "n_go_terms": 21,
+    "n_val_proteins": 109,
+    "trained_val_f1": 0.465096,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.767429,
+      "precision": 0.682842,
+      "recall": 0.918673
+    },
+    "optimal_threshold": {
+      "threshold": 0.7773,
+      "f1": 0.880609,
+      "precision": 0.888509,
+      "recall": 0.877935
+    },
+    "f1_gain": 0.11318
+  },
+  "purine_nucleotide_metabolic_process_GO_0006163": {
+    "group_name": "purine_nucleotide_metabolic_process_GO_0006163",
+    "n_go_terms": 15,
+    "n_val_proteins": 54,
+    "trained_val_f1": 0.806211,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.858364,
+      "precision": 0.851082,
+      "recall": 0.866667
+    },
+    "optimal_threshold": {
+      "threshold": 0.5682,
+      "f1": 0.860825,
+      "precision": 0.855478,
+      "recall": 0.866667
+    },
+    "f1_gain": 0.002461
+  },
+  "regulation_of_intrinsic_apoptotic_signaling_pathway_GO_2001242": {
+    "group_name": "regulation_of_intrinsic_apoptotic_signaling_pathway_GO_2001242",
+    "n_go_terms": 17,
+    "n_val_proteins": 43,
+    "trained_val_f1": 0.706789,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.793736,
+      "precision": 0.808824,
+      "recall": 0.790657
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.800245,
+      "precision": 0.823529,
+      "recall": 0.787197
+    },
+    "f1_gain": 0.006509
+  },
+  "positive_regulation_of_intracellular_signal_transduction_GO_1902533": {
+    "group_name": "positive_regulation_of_intracellular_signal_transduction_GO_1902533",
+    "n_go_terms": 39,
+    "n_val_proteins": 263,
+    "trained_val_f1": 0.644186,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.692913,
+      "precision": 0.593251,
+      "recall": 0.873769
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.788516,
+      "precision": 0.80147,
+      "recall": 0.819502
+    },
+    "f1_gain": 0.095603
+  },
+  "negative_regulation_of_intracellular_signal_transduction_GO_1902532": {
+    "group_name": "negative_regulation_of_intracellular_signal_transduction_GO_1902532",
+    "n_go_terms": 40,
+    "n_val_proteins": 156,
+    "trained_val_f1": 0.604665,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.664077,
+      "precision": 0.583084,
+      "recall": 0.830184
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.774079,
+      "precision": 0.809458,
+      "recall": 0.762571
+    },
+    "f1_gain": 0.110002
+  },
+  "regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990": {
+    "group_name": "regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990",
+    "n_go_terms": 24,
+    "n_val_proteins": 103,
+    "trained_val_f1": 0.546957,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.776515,
+      "precision": 0.725644,
+      "recall": 0.897662
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.86778,
+      "precision": 0.913995,
+      "recall": 0.854692
+    },
+    "f1_gain": 0.091265
+  },
+  "alpha-amino_acid_metabolic_process_GO_1901605": {
+    "group_name": "alpha-amino_acid_metabolic_process_GO_1901605",
+    "n_go_terms": 69,
+    "n_val_proteins": 176,
+    "trained_val_f1": 0.604717,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.713857,
+      "precision": 0.632165,
+      "recall": 0.864677
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.84824,
+      "precision": 0.847382,
+      "recall": 0.857958
+    },
+    "f1_gain": 0.134383
+  },
+  "secretory_vesicle_GO_0099503": {
+    "group_name": "secretory_vesicle_GO_0099503",
+    "n_go_terms": 17,
+    "n_val_proteins": 146,
+    "trained_val_f1": 0.724141,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.796569,
+      "precision": 0.726843,
+      "recall": 0.907602
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.873968,
+      "precision": 0.879489,
+      "recall": 0.879106
+    },
+    "f1_gain": 0.077399
+  },
+  "regulation_of_RNA_metabolic_process_GO_0051252": {
+    "group_name": "regulation_of_RNA_metabolic_process_GO_0051252",
+    "n_go_terms": 18,
+    "n_val_proteins": 52,
+    "trained_val_f1": 0.723043,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.851201,
+      "precision": 0.822781,
+      "recall": 0.886111
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.860042,
+      "precision": 0.867803,
+      "recall": 0.856878
+    },
+    "f1_gain": 0.008841
+  },
+  "negative_regulation_of_protein_metabolic_process_GO_0051248": {
+    "group_name": "negative_regulation_of_protein_metabolic_process_GO_0051248",
+    "n_go_terms": 26,
+    "n_val_proteins": 83,
+    "trained_val_f1": 0.698375,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.793913,
+      "precision": 0.740048,
+      "recall": 0.879142
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.854522,
+      "precision": 0.869905,
+      "recall": 0.844717
+    },
+    "f1_gain": 0.060609
+  },
+  "positive_regulation_of_protein_metabolic_process_GO_0051247": {
+    "group_name": "positive_regulation_of_protein_metabolic_process_GO_0051247",
+    "n_go_terms": 31,
+    "n_val_proteins": 127,
+    "trained_val_f1": 0.637138,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.740103,
+      "precision": 0.677116,
+      "recall": 0.852673
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.812429,
+      "precision": 0.819379,
+      "recall": 0.815936
+    },
+    "f1_gain": 0.072326
+  },
+  "regulation_of_T_cell_activation_GO_0050863": {
+    "group_name": "regulation_of_T_cell_activation_GO_0050863",
+    "n_go_terms": 26,
+    "n_val_proteins": 86,
+    "trained_val_f1": 0.763255,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.856502,
+      "precision": 0.838274,
+      "recall": 0.878893
+    },
+    "optimal_threshold": {
+      "threshold": 0.6773,
+      "f1": 0.866819,
+      "precision": 0.865787,
+      "recall": 0.869205
+    },
+    "f1_gain": 0.010317
+  },
+  "positive_regulation_of_neurogenesis_GO_0050769": {
+    "group_name": "positive_regulation_of_neurogenesis_GO_0050769",
+    "n_go_terms": 15,
+    "n_val_proteins": 65,
+    "trained_val_f1": 0.751207,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.791135,
+      "precision": 0.744359,
+      "recall": 0.86
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.83799,
+      "precision": 0.855556,
+      "recall": 0.824669
+    },
+    "f1_gain": 0.046855
+  },
+  "regulation_of_lipid_biosynthetic_process_GO_0046890": {
+    "group_name": "regulation_of_lipid_biosynthetic_process_GO_0046890",
+    "n_go_terms": 22,
+    "n_val_proteins": 48,
+    "trained_val_f1": 0.807116,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.718089,
+      "precision": 0.690855,
+      "recall": 0.787949
+    },
+    "optimal_threshold": {
+      "threshold": 0.7864,
+      "f1": 0.773262,
+      "precision": 0.815152,
+      "recall": 0.74198
+    },
+    "f1_gain": 0.055173
+  },
+  "regulation_of_hormone_secretion_GO_0046883": {
+    "group_name": "regulation_of_hormone_secretion_GO_0046883",
+    "n_go_terms": 17,
+    "n_val_proteins": 70,
+    "trained_val_f1": 0.70278,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.952939,
+      "precision": 0.9427,
+      "recall": 0.971115
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.968382,
+      "precision": 0.994969,
+      "recall": 0.945776
+    },
+    "f1_gain": 0.015443
+  },
+  "carboxylic_acid_catabolic_process_GO_0046395": {
+    "group_name": "carboxylic_acid_catabolic_process_GO_0046395",
+    "n_go_terms": 21,
+    "n_val_proteins": 45,
+    "trained_val_f1": 0.623507,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.920635,
+      "precision": 0.904762,
+      "recall": 0.952381
+    },
+    "optimal_threshold": {
+      "threshold": 0.5318,
+      "f1": 0.936508,
+      "precision": 0.928571,
+      "recall": 0.952381
+    },
+    "f1_gain": 0.015873
+  },
+  "regulation_of_myeloid_cell_differentiation_GO_0045637": {
+    "group_name": "regulation_of_myeloid_cell_differentiation_GO_0045637",
+    "n_go_terms": 20,
+    "n_val_proteins": 51,
+    "trained_val_f1": 0.871957,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.887122,
+      "precision": 0.885455,
+      "recall": 0.890598
+    },
+    "optimal_threshold": {
+      "threshold": 0.3591,
+      "f1": 0.887199,
+      "precision": 0.883531,
+      "recall": 0.892521
+    },
+    "f1_gain": 7.7e-05
+  },
+  "T_cell_differentiation_GO_0030217": {
+    "group_name": "T_cell_differentiation_GO_0030217",
+    "n_go_terms": 15,
+    "n_val_proteins": 37,
+    "trained_val_f1": 0.610342,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.908642,
+      "precision": 0.9,
+      "recall": 0.928571
+    },
+    "optimal_threshold": {
+      "threshold": 0.6045,
+      "f1": 0.930864,
+      "precision": 0.933333,
+      "recall": 0.928571
+    },
+    "f1_gain": 0.022222
+  },
+  "regulation_of_exocytosis_GO_0017157": {
+    "group_name": "regulation_of_exocytosis_GO_0017157",
+    "n_go_terms": 15,
+    "n_val_proteins": 49,
+    "trained_val_f1": 0.736566,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.801845,
+      "precision": 0.757409,
+      "recall": 0.863636
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.823822,
+      "precision": 0.816667,
+      "recall": 0.842088
+    },
+    "f1_gain": 0.021977
+  },
+  "protein-lysine_N-methyltransferase_activity_GO_0016279": {
+    "group_name": "protein-lysine_N-methyltransferase_activity_GO_0016279",
+    "n_go_terms": 16,
+    "n_val_proteins": 19,
+    "trained_val_f1": 0.716661,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.788248,
+      "precision": 0.779167,
+      "recall": 0.803571
+    },
+    "optimal_threshold": {
+      "threshold": 0.5318,
+      "f1": 0.800748,
+      "precision": 0.8,
+      "recall": 0.803571
+    },
+    "f1_gain": 0.0125
+  },
+  "regulation_of_macroautophagy_GO_0016241": {
+    "group_name": "regulation_of_macroautophagy_GO_0016241",
+    "n_go_terms": 15,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.749423,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.785937,
+      "precision": 0.759313,
+      "recall": 0.851662
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.836638,
+      "precision": 0.866667,
+      "recall": 0.814774
+    },
+    "f1_gain": 0.050701
+  },
+  "terpenoid_biosynthetic_process_GO_0016114": {
+    "group_name": "terpenoid_biosynthetic_process_GO_0016114",
+    "n_go_terms": 19,
+    "n_val_proteins": 120,
+    "trained_val_f1": 0.556536,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.839035,
+      "precision": 0.804094,
+      "recall": 0.894737
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.866716,
+      "precision": 0.859649,
+      "recall": 0.882018
+    },
+    "f1_gain": 0.027681
+  },
+  "mRNA_metabolic_process_GO_0016071": {
+    "group_name": "mRNA_metabolic_process_GO_0016071",
+    "n_go_terms": 19,
+    "n_val_proteins": 192,
+    "trained_val_f1": 0.41226,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.713838,
+      "precision": 0.648024,
+      "recall": 0.835627
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.781561,
+      "precision": 0.777615,
+      "recall": 0.798393
+    },
+    "f1_gain": 0.067723
+  },
+  "regulation_of_neuron_projection_development_GO_0010975": {
+    "group_name": "regulation_of_neuron_projection_development_GO_0010975",
+    "n_go_terms": 21,
+    "n_val_proteins": 106,
+    "trained_val_f1": 0.488704,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.760328,
+      "precision": 0.664015,
+      "recall": 0.932602
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.869816,
+      "precision": 0.877201,
+      "recall": 0.881306
+    },
+    "f1_gain": 0.109488
+  },
+  "regulation_of_gene_expression_GO_0010468": {
+    "group_name": "regulation_of_gene_expression_GO_0010468",
+    "n_go_terms": 24,
+    "n_val_proteins": 169,
+    "trained_val_f1": 0.563432,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.671661,
+      "precision": 0.605655,
+      "recall": 0.842871
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.772961,
+      "precision": 0.825593,
+      "recall": 0.761197
+    },
+    "f1_gain": 0.1013
+  },
+  "cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169": {
+    "group_name": "cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169",
+    "n_go_terms": 27,
+    "n_val_proteins": 114,
+    "trained_val_f1": 0.675381,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.841494,
+      "precision": 0.832341,
+      "recall": 0.883853
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.879122,
+      "precision": 0.920273,
+      "recall": 0.853878
+    },
+    "f1_gain": 0.037628
+  },
+  "calcium_ion_transport_GO_0006816": {
+    "group_name": "calcium_ion_transport_GO_0006816",
+    "n_go_terms": 16,
+    "n_val_proteins": 69,
+    "trained_val_f1": 0.800489,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.635408,
+      "precision": 0.588363,
+      "recall": 0.73651
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.646611,
+      "precision": 0.671875,
+      "recall": 0.667693
+    },
+    "f1_gain": 0.011203
+  },
+  "RNA_catabolic_process_GO_0006401": {
+    "group_name": "RNA_catabolic_process_GO_0006401",
+    "n_go_terms": 17,
+    "n_val_proteins": 43,
+    "trained_val_f1": 0.591005,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.696122,
+      "precision": 0.656202,
+      "recall": 0.767647
+    },
+    "optimal_threshold": {
+      "threshold": 0.8045,
+      "f1": 0.718695,
+      "precision": 0.698459,
+      "recall": 0.759524
+    },
+    "f1_gain": 0.022573
+  },
+  "DNA_recombination_GO_0006310": {
+    "group_name": "DNA_recombination_GO_0006310",
+    "n_go_terms": 18,
+    "n_val_proteins": 126,
+    "trained_val_f1": 0.479592,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.875787,
+      "precision": 0.80286,
+      "recall": 0.98647
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.896,
+      "precision": 0.903478,
+      "recall": 0.912747
+    },
+    "f1_gain": 0.020213
+  },
+  "DNA_repair_GO_0006281": {
+    "group_name": "DNA_repair_GO_0006281",
+    "n_go_terms": 22,
+    "n_val_proteins": 208,
+    "trained_val_f1": 0.328068,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.495623,
+      "precision": 0.367479,
+      "recall": 0.922671
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.779921,
+      "precision": 0.877922,
+      "recall": 0.774981
+    },
+    "f1_gain": 0.284298
+  },
+  "voltage-gated_monoatomic_ion_channel_activity_GO_0005244": {
+    "group_name": "voltage-gated_monoatomic_ion_channel_activity_GO_0005244",
+    "n_go_terms": 16,
+    "n_val_proteins": 48,
+    "trained_val_f1": 0.847503,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.780633,
+      "precision": 0.761905,
+      "recall": 0.808451
+    },
+    "optimal_threshold": {
+      "threshold": 0.7773,
+      "f1": 0.805,
+      "precision": 0.8125,
+      "recall": 0.798235
+    },
+    "f1_gain": 0.024367
+  },
+  "carboxylic_acid_transmembrane_transport_GO_1905039": {
+    "group_name": "carboxylic_acid_transmembrane_transport_GO_1905039",
+    "n_go_terms": 24,
+    "n_val_proteins": 31,
+    "trained_val_f1": 0.658631,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.757407,
+      "precision": 0.735069,
+      "recall": 0.791667
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.788462,
+      "precision": 0.791667,
+      "recall": 0.785714
+    },
+    "f1_gain": 0.031055
+  },
+  "serine_threonine_protein_kinase_complex_GO_1902554": {
+    "group_name": "serine_threonine_protein_kinase_complex_GO_1902554",
+    "n_go_terms": 18,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.717433,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.814286,
+      "precision": 0.800926,
+      "recall": 0.833333
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.8322,
+      "precision": 0.833333,
+      "recall": 0.831111
+    },
+    "f1_gain": 0.017914
+  },
+  "regulation_of_intracellular_signal_transduction_GO_1902531": {
+    "group_name": "regulation_of_intracellular_signal_transduction_GO_1902531",
+    "n_go_terms": 31,
+    "n_val_proteins": 110,
+    "trained_val_f1": 0.614969,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.768908,
+      "precision": 0.694726,
+      "recall": 0.905176
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.881987,
+      "precision": 0.911728,
+      "recall": 0.861865
+    },
+    "f1_gain": 0.113079
+  },
+  "regulation_of_organelle_assembly_GO_1902115": {
+    "group_name": "regulation_of_organelle_assembly_GO_1902115",
+    "n_go_terms": 19,
+    "n_val_proteins": 49,
+    "trained_val_f1": 0.627516,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.980856,
+      "precision": 0.966667,
+      "recall": 1.0
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.99723,
+      "precision": 0.994737,
+      "recall": 1.0
+    },
+    "f1_gain": 0.016374
+  },
+  "membraneless_organelle_assembly_GO_0140694": {
+    "group_name": "membraneless_organelle_assembly_GO_0140694",
+    "n_go_terms": 21,
+    "n_val_proteins": 90,
+    "trained_val_f1": 0.645024,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.821648,
+      "precision": 0.76245,
+      "recall": 0.958163
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.928151,
+      "precision": 0.941468,
+      "recall": 0.928968
+    },
+    "f1_gain": 0.106503
+  },
+  "trans-synaptic_signaling_GO_0099537": {
+    "group_name": "trans-synaptic_signaling_GO_0099537",
+    "n_go_terms": 15,
+    "n_val_proteins": 87,
+    "trained_val_f1": 0.757608,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.825088,
+      "precision": 0.795477,
+      "recall": 0.862745
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.844603,
+      "precision": 0.848571,
+      "recall": 0.843529
+    },
+    "f1_gain": 0.019515
+  },
+  "monoatomic_cation_transmembrane_transport_GO_0098655": {
+    "group_name": "monoatomic_cation_transmembrane_transport_GO_0098655",
+    "n_go_terms": 23,
+    "n_val_proteins": 128,
+    "trained_val_f1": 0.503979,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.782655,
+      "precision": 0.713816,
+      "recall": 0.894042
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.879198,
+      "precision": 0.905797,
+      "recall": 0.859057
+    },
+    "f1_gain": 0.096543
+  },
+  "positive_regulation_of_cell_cycle_process_GO_0090068": {
+    "group_name": "positive_regulation_of_cell_cycle_process_GO_0090068",
+    "n_go_terms": 22,
+    "n_val_proteins": 45,
+    "trained_val_f1": 0.507401,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.825084,
+      "precision": 0.783117,
+      "recall": 0.909091
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.882974,
+      "precision": 0.886364,
+      "recall": 0.889701
+    },
+    "f1_gain": 0.05789
+  },
+  "symbiont-mediated_perturbation_of_host_immune_response_GO_0052553": {
+    "group_name": "symbiont-mediated_perturbation_of_host_immune_response_GO_0052553",
+    "n_go_terms": 17,
+    "n_val_proteins": 70,
+    "trained_val_f1": 0.761228,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.732736,
+      "precision": 0.662316,
+      "recall": 0.873654
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.823919,
+      "precision": 0.814216,
+      "recall": 0.855088
+    },
+    "f1_gain": 0.091183
+  },
+  "regulation_of_cytoskeleton_organization_GO_0051493": {
+    "group_name": "regulation_of_cytoskeleton_organization_GO_0051493",
+    "n_go_terms": 18,
+    "n_val_proteins": 84,
+    "trained_val_f1": 0.700857,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.853594,
+      "precision": 0.826867,
+      "recall": 0.903035
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.881145,
+      "precision": 0.904042,
+      "recall": 0.870282
+    },
+    "f1_gain": 0.027551
+  },
+  "regulation_of_protein_transport_GO_0051223": {
+    "group_name": "regulation_of_protein_transport_GO_0051223",
+    "n_go_terms": 21,
+    "n_val_proteins": 76,
+    "trained_val_f1": 0.690472,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.791501,
+      "precision": 0.773514,
+      "recall": 0.820168
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.824195,
+      "precision": 0.843973,
+      "recall": 0.810283
+    },
+    "f1_gain": 0.032694
+  },
+  "modulation_of_chemical_synaptic_transmission_GO_0050804": {
+    "group_name": "modulation_of_chemical_synaptic_transmission_GO_0050804",
+    "n_go_terms": 41,
+    "n_val_proteins": 143,
+    "trained_val_f1": 0.473234,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.768928,
+      "precision": 0.687802,
+      "recall": 0.918817
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.85641,
+      "precision": 0.85993,
+      "recall": 0.882882
+    },
+    "f1_gain": 0.087482
+  },
+  "regulation_of_inflammatory_response_GO_0050727": {
+    "group_name": "regulation_of_inflammatory_response_GO_0050727",
+    "n_go_terms": 18,
+    "n_val_proteins": 88,
+    "trained_val_f1": 0.595686,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.723577,
+      "precision": 0.727231,
+      "recall": 0.736103
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.750409,
+      "precision": 0.81746,
+      "recall": 0.715095
+    },
+    "f1_gain": 0.026832
+  },
+  "regulation_of_innate_immune_response_GO_0045088": {
+    "group_name": "regulation_of_innate_immune_response_GO_0045088",
+    "n_go_terms": 25,
+    "n_val_proteins": 71,
+    "trained_val_f1": 0.716999,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.90805,
+      "precision": 0.894885,
+      "recall": 0.939197
+    },
+    "optimal_threshold": {
+      "threshold": 0.6682,
+      "f1": 0.919294,
+      "precision": 0.915714,
+      "recall": 0.934792
+    },
+    "f1_gain": 0.011244
+  },
+  "glycerolipid_biosynthetic_process_GO_0045017": {
+    "group_name": "glycerolipid_biosynthetic_process_GO_0045017",
+    "n_go_terms": 18,
+    "n_val_proteins": 70,
+    "trained_val_f1": 0.639129,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.901777,
+      "precision": 0.909615,
+      "recall": 0.897663
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.913027,
+      "precision": 0.936203,
+      "recall": 0.896705
+    },
+    "f1_gain": 0.01125
+  },
+  "negative_regulation_of_apoptotic_process_GO_0043066": {
+    "group_name": "negative_regulation_of_apoptotic_process_GO_0043066",
+    "n_go_terms": 33,
+    "n_val_proteins": 215,
+    "trained_val_f1": 0.577092,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.674656,
+      "precision": 0.577958,
+      "recall": 0.860403
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.80905,
+      "precision": 0.833023,
+      "recall": 0.818564
+    },
+    "f1_gain": 0.134394
+  },
+  "positive_regulation_of_apoptotic_process_GO_0043065": {
+    "group_name": "positive_regulation_of_apoptotic_process_GO_0043065",
+    "n_go_terms": 22,
+    "n_val_proteins": 127,
+    "trained_val_f1": 0.676113,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.789058,
+      "precision": 0.744841,
+      "recall": 0.855904
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.824708,
+      "precision": 0.809924,
+      "recall": 0.851202
+    },
+    "f1_gain": 0.03565
+  },
+  "regulation_of_chromosome_organization_GO_0033044": {
+    "group_name": "regulation_of_chromosome_organization_GO_0033044",
+    "n_go_terms": 15,
+    "n_val_proteins": 33,
+    "trained_val_f1": 0.751169,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.783957,
+      "precision": 0.77037,
+      "recall": 0.8
+    },
+    "optimal_threshold": {
+      "threshold": 0.45,
+      "f1": 0.783957,
+      "precision": 0.77037,
+      "recall": 0.8
+    },
+    "f1_gain": -0.0
+  },
+  "cytoplasmic_vesicle_GO_0031410": {
+    "group_name": "cytoplasmic_vesicle_GO_0031410",
+    "n_go_terms": 27,
+    "n_val_proteins": 396,
+    "trained_val_f1": 0.508616,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.660017,
+      "precision": 0.538743,
+      "recall": 0.935564
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.786248,
+      "precision": 0.818037,
+      "recall": 0.834082
+    },
+    "f1_gain": 0.126231
+  },
+  "neuron_projection_development_GO_0031175": {
+    "group_name": "neuron_projection_development_GO_0031175",
+    "n_go_terms": 23,
+    "n_val_proteins": 140,
+    "trained_val_f1": 0.529291,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.686741,
+      "precision": 0.59937,
+      "recall": 0.899741
+    },
+    "optimal_threshold": {
+      "threshold": 0.8045,
+      "f1": 0.842086,
+      "precision": 0.834868,
+      "recall": 0.870885
+    },
+    "f1_gain": 0.155345
+  },
+  "negative_regulation_of_cell_migration_GO_0030336": {
+    "group_name": "negative_regulation_of_cell_migration_GO_0030336",
+    "n_go_terms": 18,
+    "n_val_proteins": 63,
+    "trained_val_f1": 0.581786,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.929259,
+      "precision": 0.917215,
+      "recall": 0.944444
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.942943,
+      "precision": 0.94152,
+      "recall": 0.944444
+    },
+    "f1_gain": 0.013684
+  },
+  "positive_regulation_of_cell_migration_GO_0030335": {
+    "group_name": "positive_regulation_of_cell_migration_GO_0030335",
+    "n_go_terms": 30,
+    "n_val_proteins": 135,
+    "trained_val_f1": 0.652966,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.836591,
+      "precision": 0.776187,
+      "recall": 0.931048
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.909077,
+      "precision": 0.9125,
+      "recall": 0.90981
+    },
+    "f1_gain": 0.072486
+  },
+  "regulation_of_endocytosis_GO_0030100": {
+    "group_name": "regulation_of_endocytosis_GO_0030100",
+    "n_go_terms": 24,
+    "n_val_proteins": 94,
+    "trained_val_f1": 0.493338,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.759681,
+      "precision": 0.701162,
+      "recall": 0.896266
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.875794,
+      "precision": 0.908631,
+      "recall": 0.851131
+    },
+    "f1_gain": 0.116113
+  },
+  "metal_ion_transport_GO_0030001": {
+    "group_name": "metal_ion_transport_GO_0030001",
+    "n_go_terms": 19,
+    "n_val_proteins": 112,
+    "trained_val_f1": 0.631319,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.842192,
+      "precision": 0.802496,
+      "recall": 0.910443
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.8913,
+      "precision": 0.945724,
+      "recall": 0.850961
+    },
+    "f1_gain": 0.049108
+  },
+  "protein-RNA_complex_assembly_GO_0022618": {
+    "group_name": "protein-RNA_complex_assembly_GO_0022618",
+    "n_go_terms": 20,
+    "n_val_proteins": 96,
+    "trained_val_f1": 0.62335,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.762114,
+      "precision": 0.711304,
+      "recall": 0.842917
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.829684,
+      "precision": 0.820417,
+      "recall": 0.840833
+    },
+    "f1_gain": 0.06757
+  },
+  "carboxylic_acid_metabolic_process_GO_0019752": {
+    "group_name": "carboxylic_acid_metabolic_process_GO_0019752",
+    "n_go_terms": 66,
+    "n_val_proteins": 185,
+    "trained_val_f1": 0.661697,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.771002,
+      "precision": 0.690475,
+      "recall": 0.92507
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.907544,
+      "precision": 0.906056,
+      "recall": 0.914732
+    },
+    "f1_gain": 0.136542
+  },
+  "cytokine-mediated_signaling_pathway_GO_0019221": {
+    "group_name": "cytokine-mediated_signaling_pathway_GO_0019221",
+    "n_go_terms": 30,
+    "n_val_proteins": 67,
+    "trained_val_f1": 0.478495,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.528324,
+      "precision": 0.49795,
+      "recall": 0.652778
+    },
+    "optimal_threshold": {
+      "threshold": 0.5955,
+      "f1": 0.605231,
+      "precision": 0.613016,
+      "recall": 0.636111
+    },
+    "f1_gain": 0.076907
+  },
+  "regulation_of_lipid_metabolic_process_GO_0019216": {
+    "group_name": "regulation_of_lipid_metabolic_process_GO_0019216",
+    "n_go_terms": 22,
+    "n_val_proteins": 51,
+    "trained_val_f1": 0.621633,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.860924,
+      "precision": 0.838393,
+      "recall": 0.898864
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.89705,
+      "precision": 0.9,
+      "recall": 0.895833
+    },
+    "f1_gain": 0.036126
+  },
+  "RNA_metabolic_process_GO_0016070": {
+    "group_name": "RNA_metabolic_process_GO_0016070",
+    "n_go_terms": 61,
+    "n_val_proteins": 319,
+    "trained_val_f1": 0.286009,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.497492,
+      "precision": 0.359488,
+      "recall": 0.943696
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.765358,
+      "precision": 0.779324,
+      "recall": 0.823086
+    },
+    "f1_gain": 0.267866
+  },
+  "sodium_ion_transmembrane_transporter_activity_GO_0015081": {
+    "group_name": "sodium_ion_transmembrane_transporter_activity_GO_0015081",
+    "n_go_terms": 23,
+    "n_val_proteins": 51,
+    "trained_val_f1": 0.89063,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.898551,
+      "precision": 0.891304,
+      "recall": 0.913043
+    },
+    "optimal_threshold": {
+      "threshold": 0.15,
+      "f1": 0.898551,
+      "precision": 0.891304,
+      "recall": 0.913043
+    },
+    "f1_gain": 0.0
+  },
+  "transport_along_microtubule_GO_0010970": {
+    "group_name": "transport_along_microtubule_GO_0010970",
+    "n_go_terms": 23,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.577914,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.758682,
+      "precision": 0.703166,
+      "recall": 0.900614
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.849298,
+      "precision": 0.884058,
+      "recall": 0.851317
+    },
+    "f1_gain": 0.090616
+  },
+  "negative_regulation_of_signal_transduction_GO_0009968": {
+    "group_name": "negative_regulation_of_signal_transduction_GO_0009968",
+    "n_go_terms": 40,
+    "n_val_proteins": 175,
+    "trained_val_f1": 0.489577,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.646015,
+      "precision": 0.567048,
+      "recall": 0.832979
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.830745,
+      "precision": 0.864248,
+      "recall": 0.807729
+    },
+    "f1_gain": 0.18473
+  },
+  "positive_regulation_of_signal_transduction_GO_0009967": {
+    "group_name": "positive_regulation_of_signal_transduction_GO_0009967",
+    "n_go_terms": 36,
+    "n_val_proteins": 149,
+    "trained_val_f1": 0.542228,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.71019,
+      "precision": 0.621255,
+      "recall": 0.888196
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.849186,
+      "precision": 0.887626,
+      "recall": 0.831532
+    },
+    "f1_gain": 0.138996
+  },
+  "nucleoside_metabolic_process_GO_0009116": {
+    "group_name": "nucleoside_metabolic_process_GO_0009116",
+    "n_go_terms": 15,
+    "n_val_proteins": 25,
+    "trained_val_f1": 0.784834,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.733333,
+      "precision": 0.733333,
+      "recall": 0.733333
+    },
+    "optimal_threshold": {
+      "threshold": 0.2955,
+      "f1": 0.733333,
+      "precision": 0.733333,
+      "recall": 0.733333
+    },
+    "f1_gain": -0.0
+  },
+  "N-acetyltransferase_activity_GO_0008080": {
+    "group_name": "N-acetyltransferase_activity_GO_0008080",
+    "n_go_terms": 18,
+    "n_val_proteins": 26,
+    "trained_val_f1": 0.66195,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.810582,
+      "precision": 0.824074,
+      "recall": 0.819444
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.841693,
+      "precision": 0.888889,
+      "recall": 0.815171
+    },
+    "f1_gain": 0.031111
+  },
+  "regulation_of_heart_contraction_GO_0008016": {
+    "group_name": "regulation_of_heart_contraction_GO_0008016",
+    "n_go_terms": 17,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.904664,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.882504,
+      "precision": 0.844351,
+      "recall": 0.936652
+    },
+    "optimal_threshold": {
+      "threshold": 0.6591,
+      "f1": 0.906637,
+      "precision": 0.882812,
+      "recall": 0.936652
+    },
+    "f1_gain": 0.024133
+  },
+  "nucleocytoplasmic_transport_GO_0006913": {
+    "group_name": "nucleocytoplasmic_transport_GO_0006913",
+    "n_go_terms": 16,
+    "n_val_proteins": 94,
+    "trained_val_f1": 0.668765,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.930684,
+      "precision": 0.891531,
+      "recall": 0.98222
+    },
+    "optimal_threshold": {
+      "threshold": 0.6955,
+      "f1": 0.957583,
+      "precision": 0.963172,
+      "recall": 0.955206
+    },
+    "f1_gain": 0.026899
+  },
+  "exocytosis_GO_0006887": {
+    "group_name": "exocytosis_GO_0006887",
+    "n_go_terms": 15,
+    "n_val_proteins": 70,
+    "trained_val_f1": 0.784482,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.858426,
+      "precision": 0.814872,
+      "recall": 0.933333
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.894269,
+      "precision": 0.875397,
+      "recall": 0.928736
+    },
+    "f1_gain": 0.035843
+  },
+  "nucleoside_phosphate_metabolic_process_GO_0006753": {
+    "group_name": "nucleoside_phosphate_metabolic_process_GO_0006753",
+    "n_go_terms": 36,
+    "n_val_proteins": 99,
+    "trained_val_f1": 0.759658,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.853584,
+      "precision": 0.807481,
+      "recall": 0.949616
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.910994,
+      "precision": 0.918981,
+      "recall": 0.909748
+    },
+    "f1_gain": 0.05741
+  },
+  "glycerophospholipid_metabolic_process_GO_0006650": {
+    "group_name": "glycerophospholipid_metabolic_process_GO_0006650",
+    "n_go_terms": 16,
+    "n_val_proteins": 28,
+    "trained_val_f1": 0.800122,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.791667,
+      "precision": 0.78125,
+      "recall": 0.8125
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.810185,
+      "precision": 0.8125,
+      "recall": 0.808036
+    },
+    "f1_gain": 0.018518
+  },
+  "DNA_metabolic_process_GO_0006259": {
+    "group_name": "DNA_metabolic_process_GO_0006259",
+    "n_go_terms": 66,
+    "n_val_proteins": 252,
+    "trained_val_f1": 0.370334,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.50892,
+      "precision": 0.397469,
+      "recall": 0.871335
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.716825,
+      "precision": 0.748323,
+      "recall": 0.758863
+    },
+    "f1_gain": 0.207905
+  },
+  "regulation_of_carbohydrate_metabolic_process_GO_0006109": {
+    "group_name": "regulation_of_carbohydrate_metabolic_process_GO_0006109",
+    "n_go_terms": 22,
+    "n_val_proteins": 57,
+    "trained_val_f1": 0.523329,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.833217,
+      "precision": 0.806305,
+      "recall": 0.902224
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.90768,
+      "precision": 0.954545,
+      "recall": 0.874505
+    },
+    "f1_gain": 0.074463
+  },
+  "phosphoprotein_phosphatase_activity_GO_0004721": {
+    "group_name": "phosphoprotein_phosphatase_activity_GO_0004721",
+    "n_go_terms": 15,
+    "n_val_proteins": 70,
+    "trained_val_f1": 0.79721,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.908842,
+      "precision": 0.867361,
+      "recall": 0.99596
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.955369,
+      "precision": 0.95,
+      "recall": 0.976599
+    },
+    "f1_gain": 0.046527
+  },
+  "protein_serine_threonine_kinase_activity_GO_0004674": {
+    "group_name": "protein_serine_threonine_kinase_activity_GO_0004674",
+    "n_go_terms": 32,
+    "n_val_proteins": 204,
+    "trained_val_f1": 0.514226,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.685674,
+      "precision": 0.638264,
+      "recall": 0.78125
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.744716,
+      "precision": 0.726438,
+      "recall": 0.78125
+    },
+    "f1_gain": 0.059042
+  },
+  "transcription_cis-regulatory_region_binding_GO_0000976": {
+    "group_name": "transcription_cis-regulatory_region_binding_GO_0000976",
+    "n_go_terms": 15,
+    "n_val_proteins": 377,
+    "trained_val_f1": 0.556785,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.664784,
+      "precision": 0.566868,
+      "recall": 0.85704
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.752279,
+      "precision": 0.717964,
+      "recall": 0.826096
+    },
+    "f1_gain": 0.087495
+  },
+  "microtubule_cytoskeleton_organization_GO_0000226": {
+    "group_name": "microtubule_cytoskeleton_organization_GO_0000226",
+    "n_go_terms": 27,
+    "n_val_proteins": 134,
+    "trained_val_f1": 0.480754,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.718152,
+      "precision": 0.609801,
+      "recall": 0.918829
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.831869,
+      "precision": 0.813451,
+      "recall": 0.866437
+    },
+    "f1_gain": 0.113717
+  },
+  "positive_regulation_of_protein_localization_GO_1903829": {
+    "group_name": "positive_regulation_of_protein_localization_GO_1903829",
+    "n_go_terms": 18,
+    "n_val_proteins": 58,
+    "trained_val_f1": 0.754796,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.763396,
+      "precision": 0.725127,
+      "recall": 0.833333
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.833333,
+      "precision": 0.833333,
+      "recall": 0.833333
+    },
+    "f1_gain": 0.069937
+  },
+  "regulation_of_cell_junction_assembly_GO_1901888": {
+    "group_name": "regulation_of_cell_junction_assembly_GO_1901888",
+    "n_go_terms": 16,
+    "n_val_proteins": 76,
+    "trained_val_f1": 0.786778,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.893355,
+      "precision": 0.907341,
+      "recall": 0.890213
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.902,
+      "precision": 0.921547,
+      "recall": 0.890213
+    },
+    "f1_gain": 0.008645
+  },
+  "defense_response_to_other_organism_GO_0098542": {
+    "group_name": "defense_response_to_other_organism_GO_0098542",
+    "n_go_terms": 24,
+    "n_val_proteins": 247,
+    "trained_val_f1": 0.485462,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.676204,
+      "precision": 0.562994,
+      "recall": 0.90606
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.848096,
+      "precision": 0.875694,
+      "recall": 0.842722
+    },
+    "f1_gain": 0.171892
+  },
+  "regulation_of_cellular_response_to_stress_GO_0080135": {
+    "group_name": "regulation_of_cellular_response_to_stress_GO_0080135",
+    "n_go_terms": 22,
+    "n_val_proteins": 72,
+    "trained_val_f1": 0.7408,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.87351,
+      "precision": 0.847888,
+      "recall": 0.907895
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.883691,
+      "precision": 0.909091,
+      "recall": 0.864058
+    },
+    "f1_gain": 0.010181
+  },
+  "regulation_of_primary_metabolic_process_GO_0080090": {
+    "group_name": "regulation_of_primary_metabolic_process_GO_0080090",
+    "n_go_terms": 38,
+    "n_val_proteins": 109,
+    "trained_val_f1": 0.455611,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.71425,
+      "precision": 0.63695,
+      "recall": 0.886881
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.840932,
+      "precision": 0.877306,
+      "recall": 0.827642
+    },
+    "f1_gain": 0.126682
+  },
+  "cellular_response_to_cytokine_stimulus_GO_0071345": {
+    "group_name": "cellular_response_to_cytokine_stimulus_GO_0071345",
+    "n_go_terms": 15,
+    "n_val_proteins": 111,
+    "trained_val_f1": 0.690667,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.906008,
+      "precision": 0.887822,
+      "recall": 0.927849
+    },
+    "optimal_threshold": {
+      "threshold": 0.6773,
+      "f1": 0.925783,
+      "precision": 0.924038,
+      "recall": 0.927849
+    },
+    "f1_gain": 0.019775
+  },
+  "protein-containing_complex_assembly_GO_0065003": {
+    "group_name": "protein-containing_complex_assembly_GO_0065003",
+    "n_go_terms": 61,
+    "n_val_proteins": 341,
+    "trained_val_f1": 0.409303,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.532809,
+      "precision": 0.416779,
+      "recall": 0.857729
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.800948,
+      "precision": 0.835283,
+      "recall": 0.791223
+    },
+    "f1_gain": 0.268139
+  },
+  "protein_maturation_GO_0051604": {
+    "group_name": "protein_maturation_GO_0051604",
+    "n_go_terms": 19,
+    "n_val_proteins": 92,
+    "trained_val_f1": 0.642412,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.904954,
+      "precision": 0.877635,
+      "recall": 0.945304
+    },
+    "optimal_threshold": {
+      "threshold": 0.8045,
+      "f1": 0.927788,
+      "precision": 0.932331,
+      "recall": 0.928019
+    },
+    "f1_gain": 0.022834
+  },
+  "chromosome_organization_GO_0051276": {
+    "group_name": "chromosome_organization_GO_0051276",
+    "n_go_terms": 23,
+    "n_val_proteins": 110,
+    "trained_val_f1": 0.412078,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.604557,
+      "precision": 0.485069,
+      "recall": 0.9307
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.795455,
+      "precision": 0.777926,
+      "recall": 0.859205
+    },
+    "f1_gain": 0.190898
+  },
+  "regulation_of_muscle_cell_differentiation_GO_0051147": {
+    "group_name": "regulation_of_muscle_cell_differentiation_GO_0051147",
+    "n_go_terms": 16,
+    "n_val_proteins": 31,
+    "trained_val_f1": 0.702707,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.91185,
+      "precision": 0.9,
+      "recall": 0.928819
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.923294,
+      "precision": 0.9375,
+      "recall": 0.911458
+    },
+    "f1_gain": 0.011444
+  },
+  "regulation_of_secretion_GO_0051046": {
+    "group_name": "regulation_of_secretion_GO_0051046",
+    "n_go_terms": 20,
+    "n_val_proteins": 27,
+    "trained_val_f1": 0.741922,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.739524,
+      "precision": 0.716548,
+      "recall": 0.783333
+    },
+    "optimal_threshold": {
+      "threshold": 0.6864,
+      "f1": 0.772038,
+      "precision": 0.7875,
+      "recall": 0.76381
+    },
+    "f1_gain": 0.032514
+  },
+  "positive_regulation_of_immune_response_GO_0050778": {
+    "group_name": "positive_regulation_of_immune_response_GO_0050778",
+    "n_go_terms": 16,
+    "n_val_proteins": 68,
+    "trained_val_f1": 0.892967,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.931162,
+      "precision": 0.909943,
+      "recall": 0.960227
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.955214,
+      "precision": 0.962202,
+      "recall": 0.950081
+    },
+    "f1_gain": 0.024052
+  },
+  "regulation_of_epithelial_cell_proliferation_GO_0050678": {
+    "group_name": "regulation_of_epithelial_cell_proliferation_GO_0050678",
+    "n_go_terms": 22,
+    "n_val_proteins": 89,
+    "trained_val_f1": 0.739966,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.865141,
+      "precision": 0.88969,
+      "recall": 0.855034
+    },
+    "optimal_threshold": {
+      "threshold": 0.4773,
+      "f1": 0.865799,
+      "precision": 0.889758,
+      "recall": 0.856333
+    },
+    "f1_gain": 0.000658
+  },
+  "organelle_fusion_GO_0048284": {
+    "group_name": "organelle_fusion_GO_0048284",
+    "n_go_terms": 19,
+    "n_val_proteins": 48,
+    "trained_val_f1": 0.475024,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.881073,
+      "precision": 0.856636,
+      "recall": 0.944079
+    },
+    "optimal_threshold": {
+      "threshold": 0.7318,
+      "f1": 0.944869,
+      "precision": 0.97076,
+      "recall": 0.9375
+    },
+    "f1_gain": 0.063796
+  },
+  "carboxylic_acid_transport_GO_0046942": {
+    "group_name": "carboxylic_acid_transport_GO_0046942",
+    "n_go_terms": 39,
+    "n_val_proteins": 107,
+    "trained_val_f1": 0.602002,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.664695,
+      "precision": 0.584037,
+      "recall": 0.881876
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.811727,
+      "precision": 0.815385,
+      "recall": 0.836942
+    },
+    "f1_gain": 0.147032
+  },
+  "metal_ion_transmembrane_transporter_activity_GO_0046873": {
+    "group_name": "metal_ion_transmembrane_transporter_activity_GO_0046873",
+    "n_go_terms": 26,
+    "n_val_proteins": 87,
+    "trained_val_f1": 0.731245,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.877987,
+      "precision": 0.820598,
+      "recall": 0.975631
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.955802,
+      "precision": 0.959091,
+      "recall": 0.966102
+    },
+    "f1_gain": 0.077815
+  },
+  "metal_ion_binding_GO_0046872": {
+    "group_name": "metal_ion_binding_GO_0046872",
+    "n_go_terms": 20,
+    "n_val_proteins": 2628,
+    "trained_val_f1": 0.308403,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.362397,
+      "precision": 0.268033,
+      "recall": 0.881836
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.543323,
+      "precision": 0.645554,
+      "recall": 0.655087
+    },
+    "f1_gain": 0.180926
+  },
+  "glucosyltransferase_activity_GO_0046527": {
+    "group_name": "glucosyltransferase_activity_GO_0046527",
+    "n_go_terms": 15,
+    "n_val_proteins": 30,
+    "trained_val_f1": 0.821053,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.865359,
+      "precision": 0.864103,
+      "recall": 0.866667
+    },
+    "optimal_threshold": {
+      "threshold": 0.6864,
+      "f1": 0.866667,
+      "precision": 0.866667,
+      "recall": 0.866667
+    },
+    "f1_gain": 0.001308
+  },
+  "negative_regulation_of_cell_cycle_GO_0045786": {
+    "group_name": "negative_regulation_of_cell_cycle_GO_0045786",
+    "n_go_terms": 15,
+    "n_val_proteins": 54,
+    "trained_val_f1": 0.525455,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.696619,
+      "precision": 0.648841,
+      "recall": 0.77381
+    },
+    "optimal_threshold": {
+      "threshold": 0.6227,
+      "f1": 0.712074,
+      "precision": 0.674094,
+      "recall": 0.770635
+    },
+    "f1_gain": 0.015455
+  },
+  "positive_regulation_of_cell_differentiation_GO_0045597": {
+    "group_name": "positive_regulation_of_cell_differentiation_GO_0045597",
+    "n_go_terms": 27,
+    "n_val_proteins": 110,
+    "trained_val_f1": 0.658914,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.877551,
+      "precision": 0.856655,
+      "recall": 0.908534
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.901376,
+      "precision": 0.909662,
+      "recall": 0.897651
+    },
+    "f1_gain": 0.023825
+  },
+  "negative_regulation_of_cell_differentiation_GO_0045596": {
+    "group_name": "negative_regulation_of_cell_differentiation_GO_0045596",
+    "n_go_terms": 31,
+    "n_val_proteins": 98,
+    "trained_val_f1": 0.649001,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.683139,
+      "precision": 0.61796,
+      "recall": 0.803288
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.720564,
+      "precision": 0.723502,
+      "recall": 0.741322
+    },
+    "f1_gain": 0.037425
+  },
+  "cell-cell_junction_organization_GO_0045216": {
+    "group_name": "cell-cell_junction_organization_GO_0045216",
+    "n_go_terms": 16,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.696829,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.934996,
+      "precision": 0.922917,
+      "recall": 0.960938
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.964919,
+      "precision": 0.995833,
+      "recall": 0.941085
+    },
+    "f1_gain": 0.029923
+  },
+  "regulation_of_monoatomic_ion_transport_GO_0043269": {
+    "group_name": "regulation_of_monoatomic_ion_transport_GO_0043269",
+    "n_go_terms": 31,
+    "n_val_proteins": 73,
+    "trained_val_f1": 0.672289,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.787884,
+      "precision": 0.778436,
+      "recall": 0.804467
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.793895,
+      "precision": 0.800629,
+      "recall": 0.792451
+    },
+    "f1_gain": 0.006011
+  },
+  "ATPase-coupled_transmembrane_transporter_activity_GO_0042626": {
+    "group_name": "ATPase-coupled_transmembrane_transporter_activity_GO_0042626",
+    "n_go_terms": 16,
+    "n_val_proteins": 65,
+    "trained_val_f1": 0.634263,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.584246,
+      "precision": 0.603855,
+      "recall": 0.614583
+    },
+    "optimal_threshold": {
+      "threshold": 0.3955,
+      "f1": 0.634912,
+      "precision": 0.607388,
+      "recall": 0.71875
+    },
+    "f1_gain": 0.050666
+  },
+  "protein_modification_process_GO_0036211": {
+    "group_name": "protein_modification_process_GO_0036211",
+    "n_go_terms": 54,
+    "n_val_proteins": 215,
+    "trained_val_f1": 0.492999,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.688563,
+      "precision": 0.611327,
+      "recall": 0.869283
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.804614,
+      "precision": 0.805042,
+      "recall": 0.819579
+    },
+    "f1_gain": 0.116051
+  },
+  "intracellular_signal_transduction_GO_0035556": {
+    "group_name": "intracellular_signal_transduction_GO_0035556",
+    "n_go_terms": 68,
+    "n_val_proteins": 436,
+    "trained_val_f1": 0.415439,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.530212,
+      "precision": 0.401027,
+      "recall": 0.922501
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.791876,
+      "precision": 0.814574,
+      "recall": 0.818386
+    },
+    "f1_gain": 0.261664
+  },
+  "cation_channel_complex_GO_0034703": {
+    "group_name": "cation_channel_complex_GO_0034703",
+    "n_go_terms": 16,
+    "n_val_proteins": 93,
+    "trained_val_f1": 0.853242,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.864556,
+      "precision": 0.855429,
+      "recall": 0.875
+    },
+    "optimal_threshold": {
+      "threshold": 0.55,
+      "f1": 0.866342,
+      "precision": 0.858902,
+      "recall": 0.875
+    },
+    "f1_gain": 0.001786
+  },
+  "secretion_by_cell_GO_0032940": {
+    "group_name": "secretion_by_cell_GO_0032940",
+    "n_go_terms": 20,
+    "n_val_proteins": 79,
+    "trained_val_f1": 0.74722,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.695396,
+      "precision": 0.691365,
+      "recall": 0.7
+    },
+    "optimal_threshold": {
+      "threshold": 0.5864,
+      "f1": 0.696154,
+      "precision": 0.692857,
+      "recall": 0.7
+    },
+    "f1_gain": 0.000758
+  },
+  "carboxylic_acid_binding_GO_0031406": {
+    "group_name": "carboxylic_acid_binding_GO_0031406",
+    "n_go_terms": 24,
+    "n_val_proteins": 85,
+    "trained_val_f1": 0.763176,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.901546,
+      "precision": 0.899569,
+      "recall": 0.922222
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.928047,
+      "precision": 0.958333,
+      "recall": 0.909722
+    },
+    "f1_gain": 0.026501
+  },
+  "regulation_of_defense_response_GO_0031347": {
+    "group_name": "regulation_of_defense_response_GO_0031347",
+    "n_go_terms": 15,
+    "n_val_proteins": 45,
+    "trained_val_f1": 0.584026,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.928609,
+      "precision": 0.894346,
+      "recall": 0.983069
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.974711,
+      "precision": 1.0,
+      "recall": 0.954497
+    },
+    "f1_gain": 0.046102
+  },
+  "regulation_of_cell_projection_organization_GO_0031344": {
+    "group_name": "regulation_of_cell_projection_organization_GO_0031344",
+    "n_go_terms": 22,
+    "n_val_proteins": 49,
+    "trained_val_f1": 0.75289,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.927275,
+      "precision": 0.912374,
+      "recall": 0.951715
+    },
+    "optimal_threshold": {
+      "threshold": 0.7227,
+      "f1": 0.948502,
+      "precision": 0.954545,
+      "recall": 0.943077
+    },
+    "f1_gain": 0.021227
+  },
+  "cytoplasmic_vesicle_membrane_GO_0030659": {
+    "group_name": "cytoplasmic_vesicle_membrane_GO_0030659",
+    "n_go_terms": 34,
+    "n_val_proteins": 294,
+    "trained_val_f1": 0.372021,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.537652,
+      "precision": 0.422776,
+      "recall": 0.857706
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.715991,
+      "precision": 0.733357,
+      "recall": 0.764328
+    },
+    "f1_gain": 0.178339
+  },
+  "protein_catabolic_process_GO_0030163": {
+    "group_name": "protein_catabolic_process_GO_0030163",
+    "n_go_terms": 29,
+    "n_val_proteins": 242,
+    "trained_val_f1": 0.502873,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.617933,
+      "precision": 0.501213,
+      "recall": 0.942971
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.796915,
+      "precision": 0.815462,
+      "recall": 0.850966
+    },
+    "f1_gain": 0.178982
+  },
+  "cell_projection_assembly_GO_0030031": {
+    "group_name": "cell_projection_assembly_GO_0030031",
+    "n_go_terms": 15,
+    "n_val_proteins": 103,
+    "trained_val_f1": 0.756031,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.946414,
+      "precision": 0.911746,
+      "recall": 1.0
+    },
+    "optimal_threshold": {
+      "threshold": 0.7864,
+      "f1": 0.977778,
+      "precision": 0.966667,
+      "recall": 1.0
+    },
+    "f1_gain": 0.031364
+  },
+  "intracellular_monoatomic_cation_homeostasis_GO_0030003": {
+    "group_name": "intracellular_monoatomic_cation_homeostasis_GO_0030003",
+    "n_go_terms": 23,
+    "n_val_proteins": 153,
+    "trained_val_f1": 0.535702,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.719287,
+      "precision": 0.623877,
+      "recall": 0.971607
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.923592,
+      "precision": 0.956443,
+      "recall": 0.908305
+    },
+    "f1_gain": 0.204305
+  },
+  "regulation_of_cell-cell_adhesion_GO_0022407": {
+    "group_name": "regulation_of_cell-cell_adhesion_GO_0022407",
+    "n_go_terms": 17,
+    "n_val_proteins": 41,
+    "trained_val_f1": 0.676498,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.982387,
+      "precision": 0.970856,
+      "recall": 0.997326
+    },
+    "optimal_threshold": {
+      "threshold": 0.6136,
+      "f1": 0.998632,
+      "precision": 1.0,
+      "recall": 0.997326
+    },
+    "f1_gain": 0.016245
+  },
+  "phosphatase_activity_GO_0016791": {
+    "group_name": "phosphatase_activity_GO_0016791",
+    "n_go_terms": 41,
+    "n_val_proteins": 74,
+    "trained_val_f1": 0.629382,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.799399,
+      "precision": 0.753337,
+      "recall": 0.878049
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.864903,
+      "precision": 0.861789,
+      "recall": 0.870732
+    },
+    "f1_gain": 0.065504
+  },
+  "pyrophosphatase_activity_GO_0016462": {
+    "group_name": "pyrophosphatase_activity_GO_0016462",
+    "n_go_terms": 45,
+    "n_val_proteins": 467,
+    "trained_val_f1": 0.466915,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.512411,
+      "precision": 0.421186,
+      "recall": 0.781516
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.658877,
+      "precision": 0.630247,
+      "recall": 0.753494
+    },
+    "f1_gain": 0.146466
+  },
+  "CoA-ligase_activity_GO_0016405": {
+    "group_name": "CoA-ligase_activity_GO_0016405",
+    "n_go_terms": 16,
+    "n_val_proteins": 23,
+    "trained_val_f1": 0.676831,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.87679,
+      "precision": 0.838988,
+      "recall": 0.9375
+    },
+    "optimal_threshold": {
+      "threshold": 0.7864,
+      "f1": 0.928571,
+      "precision": 0.9375,
+      "recall": 0.921875
+    },
+    "f1_gain": 0.051781
+  },
+  "carbohydrate_catabolic_process_GO_0016052": {
+    "group_name": "carbohydrate_catabolic_process_GO_0016052",
+    "n_go_terms": 28,
+    "n_val_proteins": 137,
+    "trained_val_f1": 0.501019,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.81993,
+      "precision": 0.784253,
+      "recall": 0.901548
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.873528,
+      "precision": 0.896674,
+      "recall": 0.865151
+    },
+    "f1_gain": 0.053598
+  },
+  "carbohydrate_biosynthetic_process_GO_0016051": {
+    "group_name": "carbohydrate_biosynthetic_process_GO_0016051",
+    "n_go_terms": 23,
+    "n_val_proteins": 124,
+    "trained_val_f1": 0.707307,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.894477,
+      "precision": 0.853647,
+      "recall": 0.97656
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.957137,
+      "precision": 0.975543,
+      "recall": 0.950281
+    },
+    "f1_gain": 0.06266
+  },
+  "vesicle_organization_GO_0016050": {
+    "group_name": "vesicle_organization_GO_0016050",
+    "n_go_terms": 19,
+    "n_val_proteins": 58,
+    "trained_val_f1": 0.606914,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.810413,
+      "precision": 0.786281,
+      "recall": 0.842105
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.824144,
+      "precision": 0.828947,
+      "recall": 0.822233
+    },
+    "f1_gain": 0.013731
+  },
+  "lipid_catabolic_process_GO_0016042": {
+    "group_name": "lipid_catabolic_process_GO_0016042",
+    "n_go_terms": 17,
+    "n_val_proteins": 133,
+    "trained_val_f1": 0.676906,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.90234,
+      "precision": 0.840162,
+      "recall": 0.995798
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.976954,
+      "precision": 0.989593,
+      "recall": 0.966904
+    },
+    "f1_gain": 0.074614
+  },
+  "proton_transmembrane_transporter_activity_GO_0015078": {
+    "group_name": "proton_transmembrane_transporter_activity_GO_0015078",
+    "n_go_terms": 15,
+    "n_val_proteins": 104,
+    "trained_val_f1": 0.78258,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.843769,
+      "precision": 0.833831,
+      "recall": 0.855904
+    },
+    "optimal_threshold": {
+      "threshold": 0.45,
+      "f1": 0.843769,
+      "precision": 0.833831,
+      "recall": 0.855904
+    },
+    "f1_gain": 0.0
+  },
+  "regulation_of_cell_cycle_process_GO_0010564": {
+    "group_name": "regulation_of_cell_cycle_process_GO_0010564",
+    "n_go_terms": 18,
+    "n_val_proteins": 54,
+    "trained_val_f1": 0.700656,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.818568,
+      "precision": 0.786045,
+      "recall": 0.88957
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.845137,
+      "precision": 0.860031,
+      "recall": 0.862274
+    },
+    "f1_gain": 0.026569
+  },
+  "regulation_of_signal_transduction_GO_0009966": {
+    "group_name": "regulation_of_signal_transduction_GO_0009966",
+    "n_go_terms": 36,
+    "n_val_proteins": 113,
+    "trained_val_f1": 0.482863,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.739643,
+      "precision": 0.646348,
+      "recall": 0.928241
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.896355,
+      "precision": 0.917328,
+      "recall": 0.890046
+    },
+    "f1_gain": 0.156712
+  },
+  "positive_regulation_of_metabolic_process_GO_0009893": {
+    "group_name": "positive_regulation_of_metabolic_process_GO_0009893",
+    "n_go_terms": 23,
+    "n_val_proteins": 81,
+    "trained_val_f1": 0.691768,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.887961,
+      "precision": 0.857139,
+      "recall": 0.943676
+    },
+    "optimal_threshold": {
+      "threshold": 0.7227,
+      "f1": 0.941661,
+      "precision": 0.941739,
+      "recall": 0.943676
+    },
+    "f1_gain": 0.0537
+  },
+  "glycoprotein_metabolic_process_GO_0009100": {
+    "group_name": "glycoprotein_metabolic_process_GO_0009100",
+    "n_go_terms": 16,
+    "n_val_proteins": 66,
+    "trained_val_f1": 0.716294,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.899791,
+      "precision": 0.883565,
+      "recall": 0.922463
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.914582,
+      "precision": 0.924274,
+      "recall": 0.91003
+    },
+    "f1_gain": 0.014791
+  },
+  "S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757": {
+    "group_name": "S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757",
+    "n_go_terms": 31,
+    "n_val_proteins": 69,
+    "trained_val_f1": 0.659292,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.628231,
+      "precision": 0.594528,
+      "recall": 0.706093
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.700239,
+      "precision": 0.712903,
+      "recall": 0.700717
+    },
+    "f1_gain": 0.072008
+  },
+  "lipid_biosynthetic_process_GO_0008610": {
+    "group_name": "lipid_biosynthetic_process_GO_0008610",
+    "n_go_terms": 39,
+    "n_val_proteins": 177,
+    "trained_val_f1": 0.628033,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.741046,
+      "precision": 0.674546,
+      "recall": 0.864694
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.825498,
+      "precision": 0.877347,
+      "recall": 0.79402
+    },
+    "f1_gain": 0.084452
+  },
+  "O-acyltransferase_activity_GO_0008374": {
+    "group_name": "O-acyltransferase_activity_GO_0008374",
+    "n_go_terms": 15,
+    "n_val_proteins": 33,
+    "trained_val_f1": 0.688734,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.993939,
+      "precision": 0.988889,
+      "recall": 1.0
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "f1_gain": 0.006061
+  },
+  "negative_regulation_of_cell_population_proliferation_GO_0008285": {
+    "group_name": "negative_regulation_of_cell_population_proliferation_GO_0008285",
+    "n_go_terms": 17,
+    "n_val_proteins": 125,
+    "trained_val_f1": 0.762111,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.846227,
+      "precision": 0.831856,
+      "recall": 0.863212
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.869113,
+      "precision": 0.875817,
+      "recall": 0.863212
+    },
+    "f1_gain": 0.022886
+  },
+  "positive_regulation_of_cell_population_proliferation_GO_0008284": {
+    "group_name": "positive_regulation_of_cell_population_proliferation_GO_0008284",
+    "n_go_terms": 25,
+    "n_val_proteins": 173,
+    "trained_val_f1": 0.548279,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.667242,
+      "precision": 0.560953,
+      "recall": 0.894286
+    },
+    "optimal_threshold": {
+      "threshold": 0.8045,
+      "f1": 0.839402,
+      "precision": 0.835337,
+      "recall": 0.860432
+    },
+    "f1_gain": 0.17216
+  },
+  "phosphoric_diester_hydrolase_activity_GO_0008081": {
+    "group_name": "phosphoric_diester_hydrolase_activity_GO_0008081",
+    "n_go_terms": 19,
+    "n_val_proteins": 42,
+    "trained_val_f1": 0.722398,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.934002,
+      "precision": 0.923684,
+      "recall": 0.947368
+    },
+    "optimal_threshold": {
+      "threshold": 0.4591,
+      "f1": 0.934002,
+      "precision": 0.923684,
+      "recall": 0.947368
+    },
+    "f1_gain": 0.0
+  },
+  "G_protein-coupled_receptor_signaling_pathway_GO_0007186": {
+    "group_name": "G_protein-coupled_receptor_signaling_pathway_GO_0007186",
+    "n_go_terms": 36,
+    "n_val_proteins": 294,
+    "trained_val_f1": 0.248106,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.322809,
+      "precision": 0.231521,
+      "recall": 0.896828
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.539756,
+      "precision": 0.569934,
+      "recall": 0.632658
+    },
+    "f1_gain": 0.216947
+  },
+  "cell_surface_receptor_signaling_pathway_GO_0007166": {
+    "group_name": "cell_surface_receptor_signaling_pathway_GO_0007166",
+    "n_go_terms": 43,
+    "n_val_proteins": 323,
+    "trained_val_f1": 0.540893,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.664021,
+      "precision": 0.564016,
+      "recall": 0.874114
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.805478,
+      "precision": 0.83303,
+      "recall": 0.806315
+    },
+    "f1_gain": 0.141457
+  },
+  "vacuolar_transport_GO_0007034": {
+    "group_name": "vacuolar_transport_GO_0007034",
+    "n_go_terms": 15,
+    "n_val_proteins": 61,
+    "trained_val_f1": 0.766125,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.729636,
+      "precision": 0.697909,
+      "recall": 0.779158
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.771243,
+      "precision": 0.791729,
+      "recall": 0.755048
+    },
+    "f1_gain": 0.041607
+  },
+  "actin_filament_organization_GO_0007015": {
+    "group_name": "actin_filament_organization_GO_0007015",
+    "n_go_terms": 15,
+    "n_val_proteins": 92,
+    "trained_val_f1": 0.706462,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.900523,
+      "precision": 0.837449,
+      "recall": 0.994444
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.960471,
+      "precision": 0.93824,
+      "recall": 0.991414
+    },
+    "f1_gain": 0.059948
+  },
+  "cytoskeleton_organization_GO_0007010": {
+    "group_name": "cytoskeleton_organization_GO_0007010",
+    "n_go_terms": 20,
+    "n_val_proteins": 152,
+    "trained_val_f1": 0.674317,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.794573,
+      "precision": 0.745293,
+      "recall": 0.881121
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.867159,
+      "precision": 0.917099,
+      "recall": 0.841403
+    },
+    "f1_gain": 0.072586
+  },
+  "mitochondrion_organization_GO_0007005": {
+    "group_name": "mitochondrion_organization_GO_0007005",
+    "n_go_terms": 16,
+    "n_val_proteins": 76,
+    "trained_val_f1": 0.685635,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.897823,
+      "precision": 0.861725,
+      "recall": 0.973407
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.943623,
+      "precision": 0.9875,
+      "recall": 0.911798
+    },
+    "f1_gain": 0.0458
+  },
+  "endocytosis_GO_0006897": {
+    "group_name": "endocytosis_GO_0006897",
+    "n_go_terms": 20,
+    "n_val_proteins": 176,
+    "trained_val_f1": 0.797074,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.774451,
+      "precision": 0.724551,
+      "recall": 0.888456
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.832633,
+      "precision": 0.862115,
+      "recall": 0.822598
+    },
+    "f1_gain": 0.058182
+  },
+  "monoatomic_ion_channel_activity_GO_0005216": {
+    "group_name": "monoatomic_ion_channel_activity_GO_0005216",
+    "n_go_terms": 19,
+    "n_val_proteins": 60,
+    "trained_val_f1": 0.850891,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.914329,
+      "precision": 0.89685,
+      "recall": 0.943581
+    },
+    "optimal_threshold": {
+      "threshold": 0.6318,
+      "f1": 0.920922,
+      "precision": 0.907994,
+      "recall": 0.943581
+    },
+    "f1_gain": 0.006593
+  },
+  "protein_kinase_activity_GO_0004672": {
+    "group_name": "protein_kinase_activity_GO_0004672",
+    "n_go_terms": 20,
+    "n_val_proteins": 255,
+    "trained_val_f1": 0.720519,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.859518,
+      "precision": 0.792933,
+      "recall": 0.994716
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.925834,
+      "precision": 0.924553,
+      "recall": 0.954543
+    },
+    "f1_gain": 0.066316
+  },
+  "regulation_of_cell_motility_GO_2000145": {
+    "group_name": "regulation_of_cell_motility_GO_2000145",
+    "n_go_terms": 19,
+    "n_val_proteins": 69,
+    "trained_val_f1": 0.66533,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.86958,
+      "precision": 0.852025,
+      "recall": 0.90895
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.88144,
+      "precision": 0.899561,
+      "recall": 0.884689
+    },
+    "f1_gain": 0.01186
+  },
+  "cellular_response_to_oxygen-containing_compound_GO_1901701": {
+    "group_name": "cellular_response_to_oxygen-containing_compound_GO_1901701",
+    "n_go_terms": 62,
+    "n_val_proteins": 245,
+    "trained_val_f1": 0.391476,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.458913,
+      "precision": 0.347963,
+      "recall": 0.791731
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.685467,
+      "precision": 0.73702,
+      "recall": 0.703669
+    },
+    "f1_gain": 0.226554
+  },
+  "DNA-binding_transcription_factor_binding_GO_0140297": {
+    "group_name": "DNA-binding_transcription_factor_binding_GO_0140297",
+    "n_go_terms": 18,
+    "n_val_proteins": 136,
+    "trained_val_f1": 0.650647,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.811284,
+      "precision": 0.761806,
+      "recall": 0.883734
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.843794,
+      "precision": 0.852315,
+      "recall": 0.847882
+    },
+    "f1_gain": 0.03251
+  },
+  "supramolecular_fiber_GO_0099512": {
+    "group_name": "supramolecular_fiber_GO_0099512",
+    "n_go_terms": 28,
+    "n_val_proteins": 235,
+    "trained_val_f1": 0.514906,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.661639,
+      "precision": 0.561237,
+      "recall": 0.905539
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.796689,
+      "precision": 0.815523,
+      "recall": 0.825188
+    },
+    "f1_gain": 0.13505
+  },
+  "establishment_of_protein_localization_to_membrane_GO_0090150": {
+    "group_name": "establishment_of_protein_localization_to_membrane_GO_0090150",
+    "n_go_terms": 16,
+    "n_val_proteins": 57,
+    "trained_val_f1": 0.805395,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.867172,
+      "precision": 0.853526,
+      "recall": 0.907931
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.918822,
+      "precision": 0.9375,
+      "recall": 0.902722
+    },
+    "f1_gain": 0.05165
+  },
+  "protein_localization_to_membrane_GO_0072657": {
+    "group_name": "protein_localization_to_membrane_GO_0072657",
+    "n_go_terms": 16,
+    "n_val_proteins": 77,
+    "trained_val_f1": 0.533729,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.905262,
+      "precision": 0.905429,
+      "recall": 0.91376
+    },
+    "optimal_threshold": {
+      "threshold": 0.6864,
+      "f1": 0.919869,
+      "precision": 0.935976,
+      "recall": 0.90814
+    },
+    "f1_gain": 0.014607
+  },
+  "membrane_organization_GO_0061024": {
+    "group_name": "membrane_organization_GO_0061024",
+    "n_go_terms": 48,
+    "n_val_proteins": 138,
+    "trained_val_f1": 0.59916,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.758197,
+      "precision": 0.668823,
+      "recall": 0.937182
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.903079,
+      "precision": 0.920288,
+      "recall": 0.90635
+    },
+    "f1_gain": 0.144882
+  },
+  "epithelium_development_GO_0060429": {
+    "group_name": "epithelium_development_GO_0060429",
+    "n_go_terms": 18,
+    "n_val_proteins": 54,
+    "trained_val_f1": 0.555445,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.832897,
+      "precision": 0.800673,
+      "recall": 0.881944
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.877329,
+      "precision": 0.877778,
+      "recall": 0.878676
+    },
+    "f1_gain": 0.044432
+  },
+  "regulation_of_cellular_localization_GO_0060341": {
+    "group_name": "regulation_of_cellular_localization_GO_0060341",
+    "n_go_terms": 24,
+    "n_val_proteins": 61,
+    "trained_val_f1": 0.637609,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.849681,
+      "precision": 0.849548,
+      "recall": 0.867277
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.869688,
+      "precision": 0.898947,
+      "recall": 0.852609
+    },
+    "f1_gain": 0.020007
+  },
+  "transmembrane_transport_GO_0055085": {
+    "group_name": "transmembrane_transport_GO_0055085",
+    "n_go_terms": 58,
+    "n_val_proteins": 217,
+    "trained_val_f1": 0.490694,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.569494,
+      "precision": 0.44539,
+      "recall": 0.960649
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.866985,
+      "precision": 0.85611,
+      "recall": 0.916483
+    },
+    "f1_gain": 0.297491
+  },
+  "carboxylic_ester_hydrolase_activity_GO_0052689": {
+    "group_name": "carboxylic_ester_hydrolase_activity_GO_0052689",
+    "n_go_terms": 34,
+    "n_val_proteins": 102,
+    "trained_val_f1": 0.711757,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.71847,
+      "precision": 0.653439,
+      "recall": 0.854167
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.82237,
+      "precision": 0.818592,
+      "recall": 0.842402
+    },
+    "f1_gain": 0.1039
+  },
+  "response_to_other_organism_GO_0051707": {
+    "group_name": "response_to_other_organism_GO_0051707",
+    "n_go_terms": 26,
+    "n_val_proteins": 502,
+    "trained_val_f1": 0.322804,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.339173,
+      "precision": 0.271715,
+      "recall": 0.821449
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.448179,
+      "precision": 0.531939,
+      "recall": 0.63457
+    },
+    "f1_gain": 0.109006
+  },
+  "positive_regulation_of_developmental_process_GO_0051094": {
+    "group_name": "positive_regulation_of_developmental_process_GO_0051094",
+    "n_go_terms": 39,
+    "n_val_proteins": 143,
+    "trained_val_f1": 0.468666,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.733213,
+      "precision": 0.658038,
+      "recall": 0.892652
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.840584,
+      "precision": 0.834633,
+      "recall": 0.866319
+    },
+    "f1_gain": 0.107371
+  },
+  "negative_regulation_of_developmental_process_GO_0051093": {
+    "group_name": "negative_regulation_of_developmental_process_GO_0051093",
+    "n_go_terms": 25,
+    "n_val_proteins": 75,
+    "trained_val_f1": 0.617455,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.741951,
+      "precision": 0.701378,
+      "recall": 0.853333
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.863245,
+      "precision": 0.88,
+      "recall": 0.851852
+    },
+    "f1_gain": 0.121294
+  },
+  "leukocyte_migration_GO_0050900": {
+    "group_name": "leukocyte_migration_GO_0050900",
+    "n_go_terms": 26,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.636597,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.742701,
+      "precision": 0.719322,
+      "recall": 0.799744
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.791888,
+      "precision": 0.80543,
+      "recall": 0.780211
+    },
+    "f1_gain": 0.049187
+  },
+  "cognition_GO_0050890": {
+    "group_name": "cognition_GO_0050890",
+    "n_go_terms": 16,
+    "n_val_proteins": 101,
+    "trained_val_f1": 0.516641,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.810194,
+      "precision": 0.766483,
+      "recall": 0.899042
+    },
+    "optimal_threshold": {
+      "threshold": 0.6773,
+      "f1": 0.865059,
+      "precision": 0.880899,
+      "recall": 0.863681
+    },
+    "f1_gain": 0.054865
+  },
+  "regulation_of_behavior_GO_0050795": {
+    "group_name": "regulation_of_behavior_GO_0050795",
+    "n_go_terms": 17,
+    "n_val_proteins": 27,
+    "trained_val_f1": 0.336891,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.555248,
+      "precision": 0.484314,
+      "recall": 0.741176
+    },
+    "optimal_threshold": {
+      "threshold": 0.7227,
+      "f1": 0.572222,
+      "precision": 0.715686,
+      "recall": 0.538235
+    },
+    "f1_gain": 0.016974
+  },
+  "receptor_ligand_activity_GO_0048018": {
+    "group_name": "receptor_ligand_activity_GO_0048018",
+    "n_go_terms": 17,
+    "n_val_proteins": 239,
+    "trained_val_f1": 0.675681,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.794392,
+      "precision": 0.759832,
+      "recall": 0.862915
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.841672,
+      "precision": 0.850866,
+      "recall": 0.84015
+    },
+    "f1_gain": 0.04728
+  },
+  "intracellular_transport_GO_0046907": {
+    "group_name": "intracellular_transport_GO_0046907",
+    "n_go_terms": 26,
+    "n_val_proteins": 207,
+    "trained_val_f1": 0.592002,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.730872,
+      "precision": 0.652318,
+      "recall": 0.921912
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.848861,
+      "precision": 0.871228,
+      "recall": 0.864605
+    },
+    "f1_gain": 0.117989
+  },
+  "lymphocyte_activation_GO_0046649": {
+    "group_name": "lymphocyte_activation_GO_0046649",
+    "n_go_terms": 27,
+    "n_val_proteins": 79,
+    "trained_val_f1": 0.691244,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.760283,
+      "precision": 0.718191,
+      "recall": 0.837892
+    },
+    "optimal_threshold": {
+      "threshold": 0.6136,
+      "f1": 0.776443,
+      "precision": 0.756276,
+      "recall": 0.819413
+    },
+    "f1_gain": 0.01616
+  },
+  "regulation_of_cell_differentiation_GO_0045595": {
+    "group_name": "regulation_of_cell_differentiation_GO_0045595",
+    "n_go_terms": 25,
+    "n_val_proteins": 73,
+    "trained_val_f1": 0.727857,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.830258,
+      "precision": 0.800102,
+      "recall": 0.872831
+    },
+    "optimal_threshold": {
+      "threshold": 0.8045,
+      "f1": 0.856579,
+      "precision": 0.875556,
+      "recall": 0.844543
+    },
+    "f1_gain": 0.026321
+  },
+  "secondary_metabolite_biosynthetic_process_GO_0044550": {
+    "group_name": "secondary_metabolite_biosynthetic_process_GO_0044550",
+    "n_go_terms": 25,
+    "n_val_proteins": 106,
+    "trained_val_f1": 0.59635,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.664302,
+      "precision": 0.650561,
+      "recall": 0.710204
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.69697,
+      "precision": 0.752364,
+      "recall": 0.67897
+    },
+    "f1_gain": 0.032668
+  },
+  "small_molecule_biosynthetic_process_GO_0044283": {
+    "group_name": "small_molecule_biosynthetic_process_GO_0044283",
+    "n_go_terms": 22,
+    "n_val_proteins": 89,
+    "trained_val_f1": 0.674478,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.832068,
+      "precision": 0.796038,
+      "recall": 0.898377
+    },
+    "optimal_threshold": {
+      "threshold": 0.7773,
+      "f1": 0.875813,
+      "precision": 0.873737,
+      "recall": 0.888636
+    },
+    "f1_gain": 0.043745
+  },
+  "symbiont-mediated_perturbation_of_host_process_GO_0044003": {
+    "group_name": "symbiont-mediated_perturbation_of_host_process_GO_0044003",
+    "n_go_terms": 30,
+    "n_val_proteins": 79,
+    "trained_val_f1": 0.766328,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.851792,
+      "precision": 0.800073,
+      "recall": 0.948953
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.903434,
+      "precision": 0.924352,
+      "recall": 0.898249
+    },
+    "f1_gain": 0.051642
+  },
+  "intracellular_membraneless_organelle_GO_0043232": {
+    "group_name": "intracellular_membraneless_organelle_GO_0043232",
+    "n_go_terms": 74,
+    "n_val_proteins": 1186,
+    "trained_val_f1": 0.20541,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.257687,
+      "precision": 0.16865,
+      "recall": 0.894119
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.481684,
+      "precision": 0.553427,
+      "recall": 0.630989
+    },
+    "f1_gain": 0.223997
+  },
+  "intracellular_membrane-bounded_organelle_GO_0043231": {
+    "group_name": "intracellular_membrane-bounded_organelle_GO_0043231",
+    "n_go_terms": 38,
+    "n_val_proteins": 3236,
+    "trained_val_f1": 0.172301,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.215122,
+      "precision": 0.146755,
+      "recall": 0.915751
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.359469,
+      "precision": 0.421115,
+      "recall": 0.537655
+    },
+    "f1_gain": 0.144347
+  },
+  "neuron_projection_GO_0043005": {
+    "group_name": "neuron_projection_GO_0043005",
+    "n_go_terms": 15,
+    "n_val_proteins": 320,
+    "trained_val_f1": 0.504348,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.652471,
+      "precision": 0.519437,
+      "recall": 0.955207
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.764962,
+      "precision": 0.757067,
+      "recall": 0.797951
+    },
+    "f1_gain": 0.112491
+  },
+  "hormone_metabolic_process_GO_0042445": {
+    "group_name": "hormone_metabolic_process_GO_0042445",
+    "n_go_terms": 16,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.861702,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.87925,
+      "precision": 0.866426,
+      "recall": 0.907692
+    },
+    "optimal_threshold": {
+      "threshold": 0.6136,
+      "f1": 0.911859,
+      "precision": 0.920192,
+      "recall": 0.907692
+    },
+    "f1_gain": 0.032609
+  },
+  "protein_localization_to_organelle_GO_0033365": {
+    "group_name": "protein_localization_to_organelle_GO_0033365",
+    "n_go_terms": 29,
+    "n_val_proteins": 94,
+    "trained_val_f1": 0.678378,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.818109,
+      "precision": 0.77601,
+      "recall": 0.909589
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.874344,
+      "precision": 0.896343,
+      "recall": 0.874168
+    },
+    "f1_gain": 0.056235
+  },
+  "cell_projection_membrane_GO_0031253": {
+    "group_name": "cell_projection_membrane_GO_0031253",
+    "n_go_terms": 15,
+    "n_val_proteins": 99,
+    "trained_val_f1": 0.852484,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.984454,
+      "precision": 0.972769,
+      "recall": 0.997436
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.995184,
+      "precision": 0.993333,
+      "recall": 0.997436
+    },
+    "f1_gain": 0.01073
+  },
+  "epithelial_cell_differentiation_GO_0030855": {
+    "group_name": "epithelial_cell_differentiation_GO_0030855",
+    "n_go_terms": 38,
+    "n_val_proteins": 93,
+    "trained_val_f1": 0.773499,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.892405,
+      "precision": 0.856027,
+      "recall": 0.947368
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.92814,
+      "precision": 0.917112,
+      "recall": 0.94582
+    },
+    "f1_gain": 0.035735
+  },
+  "neuron_differentiation_GO_0030182": {
+    "group_name": "neuron_differentiation_GO_0030182",
+    "n_go_terms": 25,
+    "n_val_proteins": 88,
+    "trained_val_f1": 0.547712,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.712932,
+      "precision": 0.647207,
+      "recall": 0.835556
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.822957,
+      "precision": 0.834286,
+      "recall": 0.817556
+    },
+    "f1_gain": 0.110025
+  },
+  "regulation_of_cell_adhesion_GO_0030155": {
+    "group_name": "regulation_of_cell_adhesion_GO_0030155",
+    "n_go_terms": 16,
+    "n_val_proteins": 82,
+    "trained_val_f1": 0.820525,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.888593,
+      "precision": 0.896783,
+      "recall": 0.888285
+    },
+    "optimal_threshold": {
+      "threshold": 0.6045,
+      "f1": 0.890642,
+      "precision": 0.912908,
+      "recall": 0.876777
+    },
+    "f1_gain": 0.002049
+  },
+  "myeloid_cell_differentiation_GO_0030099": {
+    "group_name": "myeloid_cell_differentiation_GO_0030099",
+    "n_go_terms": 17,
+    "n_val_proteins": 63,
+    "trained_val_f1": 0.705845,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.880322,
+      "precision": 0.87836,
+      "recall": 0.882353
+    },
+    "optimal_threshold": {
+      "threshold": 0.6773,
+      "f1": 0.881448,
+      "precision": 0.882353,
+      "recall": 0.88057
+    },
+    "f1_gain": 0.001126
+  },
+  "cell_projection_organization_GO_0030030": {
+    "group_name": "cell_projection_organization_GO_0030030",
+    "n_go_terms": 25,
+    "n_val_proteins": 117,
+    "trained_val_f1": 0.571493,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.735611,
+      "precision": 0.651969,
+      "recall": 0.949505
+    },
+    "optimal_threshold": {
+      "threshold": 0.6955,
+      "f1": 0.863339,
+      "precision": 0.854026,
+      "recall": 0.912718
+    },
+    "f1_gain": 0.127728
+  },
+  "kinase_binding_GO_0019900": {
+    "group_name": "kinase_binding_GO_0019900",
+    "n_go_terms": 15,
+    "n_val_proteins": 219,
+    "trained_val_f1": 0.743019,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.911563,
+      "precision": 0.922167,
+      "recall": 0.911282
+    },
+    "optimal_threshold": {
+      "threshold": 0.7318,
+      "f1": 0.922726,
+      "precision": 0.981221,
+      "recall": 0.880623
+    },
+    "f1_gain": 0.011163
+  },
+  "regulation_of_metabolic_process_GO_0019222": {
+    "group_name": "regulation_of_metabolic_process_GO_0019222",
+    "n_go_terms": 30,
+    "n_val_proteins": 98,
+    "trained_val_f1": 0.60853,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.879373,
+      "precision": 0.847453,
+      "recall": 0.941667
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.926467,
+      "precision": 0.957647,
+      "recall": 0.909638
+    },
+    "f1_gain": 0.047094
+  },
+  "carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838": {
+    "group_name": "carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",
+    "n_go_terms": 17,
+    "n_val_proteins": 58,
+    "trained_val_f1": 0.610727,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.558448,
+      "precision": 0.532073,
+      "recall": 0.666667
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.614956,
+      "precision": 0.676471,
+      "recall": 0.596305
+    },
+    "f1_gain": 0.056508
+  },
+  "hydro-lyase_activity_GO_0016836": {
+    "group_name": "hydro-lyase_activity_GO_0016836",
+    "n_go_terms": 26,
+    "n_val_proteins": 68,
+    "trained_val_f1": 0.829274,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.787179,
+      "precision": 0.775641,
+      "recall": 0.807692
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.800174,
+      "precision": 0.807692,
+      "recall": 0.794231
+    },
+    "f1_gain": 0.012995
+  },
+  "carboxy-lyase_activity_GO_0016831": {
+    "group_name": "carboxy-lyase_activity_GO_0016831",
+    "n_go_terms": 20,
+    "n_val_proteins": 46,
+    "trained_val_f1": 0.65105,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.755873,
+      "precision": 0.689167,
+      "recall": 0.9
+    },
+    "optimal_threshold": {
+      "threshold": 0.6591,
+      "f1": 0.873333,
+      "precision": 0.858333,
+      "recall": 0.9
+    },
+    "f1_gain": 0.11746
+  },
+  "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds,_in_linear_amides_GO_0016811": {
+    "group_name": "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds,_in_linear_amides_GO_0016811",
+    "n_go_terms": 19,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.634885,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.828809,
+      "precision": 0.836842,
+      "recall": 0.824561
+    },
+    "optimal_threshold": {
+      "threshold": 0.3773,
+      "f1": 0.828809,
+      "precision": 0.836842,
+      "recall": 0.824561
+    },
+    "f1_gain": 0.0
+  },
+  "hydrolase_activity,_hydrolyzing_N-glycosyl_compounds_GO_0016799": {
+    "group_name": "hydrolase_activity,_hydrolyzing_N-glycosyl_compounds_GO_0016799",
+    "n_go_terms": 15,
+    "n_val_proteins": 32,
+    "trained_val_f1": 0.684601,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.85495,
+      "precision": 0.854131,
+      "recall": 0.857143
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.858872,
+      "precision": 0.861538,
+      "recall": 0.857143
+    },
+    "f1_gain": 0.003922
+  },
+  "nucleotidyltransferase_activity_GO_0016779": {
+    "group_name": "nucleotidyltransferase_activity_GO_0016779",
+    "n_go_terms": 34,
+    "n_val_proteins": 175,
+    "trained_val_f1": 0.674792,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.750424,
+      "precision": 0.714551,
+      "recall": 0.811625
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.797072,
+      "precision": 0.801821,
+      "recall": 0.799082
+    },
+    "f1_gain": 0.046648
+  },
+  "phosphotransferase_activity,_phosphate_group_as_acceptor_GO_0016776": {
+    "group_name": "phosphotransferase_activity,_phosphate_group_as_acceptor_GO_0016776",
+    "n_go_terms": 17,
+    "n_val_proteins": 34,
+    "trained_val_f1": 0.779085,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.764706,
+      "precision": 0.764706,
+      "recall": 0.764706
+    },
+    "optimal_threshold": {
+      "threshold": 0.2227,
+      "f1": 0.764706,
+      "precision": 0.764706,
+      "recall": 0.764706
+    },
+    "f1_gain": 0.0
+  },
+  "phosphotransferase_activity,_alcohol_group_as_acceptor_GO_0016773": {
+    "group_name": "phosphotransferase_activity,_alcohol_group_as_acceptor_GO_0016773",
+    "n_go_terms": 45,
+    "n_val_proteins": 75,
+    "trained_val_f1": 0.700916,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.793839,
+      "precision": 0.766852,
+      "recall": 0.854815
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.821799,
+      "precision": 0.844444,
+      "recall": 0.819259
+    },
+    "f1_gain": 0.02796
+  },
+  "pentosyltransferase_activity_GO_0016763": {
+    "group_name": "pentosyltransferase_activity_GO_0016763",
+    "n_go_terms": 22,
+    "n_val_proteins": 38,
+    "trained_val_f1": 0.774946,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.832449,
+      "precision": 0.820202,
+      "recall": 0.854545
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.846032,
+      "precision": 0.846591,
+      "recall": 0.848864
+    },
+    "f1_gain": 0.013583
+  },
+  "hexosyltransferase_activity_GO_0016758": {
+    "group_name": "hexosyltransferase_activity_GO_0016758",
+    "n_go_terms": 35,
+    "n_val_proteins": 65,
+    "trained_val_f1": 0.678197,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.786102,
+      "precision": 0.761395,
+      "recall": 0.828571
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.828571,
+      "precision": 0.828571,
+      "recall": 0.828571
+    },
+    "f1_gain": 0.042469
+  },
+  "acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747": {
+    "group_name": "acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747",
+    "n_go_terms": 35,
+    "n_val_proteins": 107,
+    "trained_val_f1": 0.731892,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.72132,
+      "precision": 0.673668,
+      "recall": 0.831837
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.812015,
+      "precision": 0.838357,
+      "recall": 0.800022
+    },
+    "f1_gain": 0.090695
+  },
+  "2-oxoglutarate-dependent_dioxygenase_activity_GO_0016706": {
+    "group_name": "2-oxoglutarate-dependent_dioxygenase_activity_GO_0016706",
+    "n_go_terms": 17,
+    "n_val_proteins": 22,
+    "trained_val_f1": 0.62451,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.877005,
+      "precision": 0.882353,
+      "recall": 0.872549
+    },
+    "optimal_threshold": {
+      "threshold": 0.4045,
+      "f1": 0.877005,
+      "precision": 0.882353,
+      "recall": 0.872549
+    },
+    "f1_gain": -0.0
+  },
+  "oxidoreductase_activity,_acting_on_the_aldehyde_or_oxo_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016620": {
+    "group_name": "oxidoreductase_activity,_acting_on_the_aldehyde_or_oxo_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016620",
+    "n_go_terms": 21,
+    "n_val_proteins": 34,
+    "trained_val_f1": 0.681894,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.842222,
+      "precision": 0.810134,
+      "recall": 0.904762
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.886818,
+      "precision": 0.880952,
+      "recall": 0.900794
+    },
+    "f1_gain": 0.044596
+  },
+  "oxidoreductase_activity,_acting_on_the_CH-OH_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016616": {
+    "group_name": "oxidoreductase_activity,_acting_on_the_CH-OH_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016616",
+    "n_go_terms": 62,
+    "n_val_proteins": 112,
+    "trained_val_f1": 0.572136,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.746424,
+      "precision": 0.682062,
+      "recall": 0.870968
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.843348,
+      "precision": 0.832348,
+      "recall": 0.866398
+    },
+    "f1_gain": 0.096924
+  },
+  "kinase_activity_GO_0016301": {
+    "group_name": "kinase_activity_GO_0016301",
+    "n_go_terms": 15,
+    "n_val_proteins": 67,
+    "trained_val_f1": 0.722193,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.822222,
+      "precision": 0.8,
+      "recall": 0.866667
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.840523,
+      "precision": 0.866667,
+      "recall": 0.825926
+    },
+    "f1_gain": 0.018301
+  },
+  "L-amino_acid_transmembrane_transporter_activity_GO_0015179": {
+    "group_name": "L-amino_acid_transmembrane_transporter_activity_GO_0015179",
+    "n_go_terms": 18,
+    "n_val_proteins": 22,
+    "trained_val_f1": 0.494444,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.666667,
+      "precision": 0.631944,
+      "recall": 0.722222
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.712963,
+      "precision": 0.722222,
+      "recall": 0.706349
+    },
+    "f1_gain": 0.046296
+  },
+  "response_to_light_stimulus_GO_0009416": {
+    "group_name": "response_to_light_stimulus_GO_0009416",
+    "n_go_terms": 37,
+    "n_val_proteins": 143,
+    "trained_val_f1": 0.495597,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.67303,
+      "precision": 0.570213,
+      "recall": 0.911106
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.847728,
+      "precision": 0.864888,
+      "recall": 0.85073
+    },
+    "f1_gain": 0.174698
+  },
+  "transaminase_activity_GO_0008483": {
+    "group_name": "transaminase_activity_GO_0008483",
+    "n_go_terms": 19,
+    "n_val_proteins": 35,
+    "trained_val_f1": 0.752632,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.766082,
+      "precision": 0.778947,
+      "recall": 0.763158
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.77193,
+      "precision": 0.789474,
+      "recall": 0.763158
+    },
+    "f1_gain": 0.005848
+  },
+  "ATP-dependent_activity,_acting_on_DNA_GO_0008094": {
+    "group_name": "ATP-dependent_activity,_acting_on_DNA_GO_0008094",
+    "n_go_terms": 18,
+    "n_val_proteins": 71,
+    "trained_val_f1": 0.610574,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.859878,
+      "precision": 0.85873,
+      "recall": 0.889983
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.907858,
+      "precision": 0.944444,
+      "recall": 0.884026
+    },
+    "f1_gain": 0.04798
+  },
+  "sensory_perception_GO_0007600": {
+    "group_name": "sensory_perception_GO_0007600",
+    "n_go_terms": 18,
+    "n_val_proteins": 130,
+    "trained_val_f1": 0.595127,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.748911,
+      "precision": 0.711444,
+      "recall": 0.814688
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.759943,
+      "precision": 0.739331,
+      "recall": 0.807609
+    },
+    "f1_gain": 0.011032
+  },
+  "signal_transduction_GO_0007165": {
+    "group_name": "signal_transduction_GO_0007165",
+    "n_go_terms": 25,
+    "n_val_proteins": 307,
+    "trained_val_f1": 0.462095,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.607445,
+      "precision": 0.495156,
+      "recall": 0.856599
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.806719,
+      "precision": 0.835692,
+      "recall": 0.796137
+    },
+    "f1_gain": 0.199274
+  },
+  "organelle_organization_GO_0006996": {
+    "group_name": "organelle_organization_GO_0006996",
+    "n_go_terms": 52,
+    "n_val_proteins": 215,
+    "trained_val_f1": 0.468878,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.600226,
+      "precision": 0.486376,
+      "recall": 0.888049
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.791618,
+      "precision": 0.860036,
+      "recall": 0.762194
+    },
+    "f1_gain": 0.191392
+  },
+  "apoptotic_process_GO_0006915": {
+    "group_name": "apoptotic_process_GO_0006915",
+    "n_go_terms": 27,
+    "n_val_proteins": 201,
+    "trained_val_f1": 0.496558,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.645276,
+      "precision": 0.586052,
+      "recall": 0.765432
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.747659,
+      "precision": 0.774227,
+      "recall": 0.737395
+    },
+    "f1_gain": 0.102383
+  },
+  "lipid_transport_GO_0006869": {
+    "group_name": "lipid_transport_GO_0006869",
+    "n_go_terms": 15,
+    "n_val_proteins": 61,
+    "trained_val_f1": 0.516915,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.660278,
+      "precision": 0.619907,
+      "recall": 0.763363
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.724432,
+      "precision": 0.746111,
+      "recall": 0.727261
+    },
+    "f1_gain": 0.064154
+  },
+  "phosphate-containing_compound_metabolic_process_GO_0006796": {
+    "group_name": "phosphate-containing_compound_metabolic_process_GO_0006796",
+    "n_go_terms": 31,
+    "n_val_proteins": 157,
+    "trained_val_f1": 0.673168,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.848603,
+      "precision": 0.806903,
+      "recall": 0.924547
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.907275,
+      "precision": 0.920959,
+      "recall": 0.899226
+    },
+    "f1_gain": 0.058672
+  },
+  "lipid_metabolic_process_GO_0006629": {
+    "group_name": "lipid_metabolic_process_GO_0006629",
+    "n_go_terms": 28,
+    "n_val_proteins": 157,
+    "trained_val_f1": 0.625985,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.804717,
+      "precision": 0.721268,
+      "recall": 0.95662
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.903995,
+      "precision": 0.923701,
+      "recall": 0.906582
+    },
+    "f1_gain": 0.099278
+  },
+  "RNA_processing_GO_0006396": {
+    "group_name": "RNA_processing_GO_0006396",
+    "n_go_terms": 16,
+    "n_val_proteins": 101,
+    "trained_val_f1": 0.455854,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.624108,
+      "precision": 0.555522,
+      "recall": 0.828234
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.74212,
+      "precision": 0.804214,
+      "recall": 0.723335
+    },
+    "f1_gain": 0.118012
+  },
+  "nucleobase-containing_compound_metabolic_process_GO_0006139": {
+    "group_name": "nucleobase-containing_compound_metabolic_process_GO_0006139",
+    "n_go_terms": 19,
+    "n_val_proteins": 52,
+    "trained_val_f1": 0.752505,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.877528,
+      "precision": 0.845363,
+      "recall": 0.928947
+    },
+    "optimal_threshold": {
+      "threshold": 0.6864,
+      "f1": 0.886355,
+      "precision": 0.869925,
+      "recall": 0.914035
+    },
+    "f1_gain": 0.008827
+  },
+  "carbohydrate_metabolic_process_GO_0005975": {
+    "group_name": "carbohydrate_metabolic_process_GO_0005975",
+    "n_go_terms": 21,
+    "n_val_proteins": 200,
+    "trained_val_f1": 0.515355,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.752773,
+      "precision": 0.690302,
+      "recall": 0.868714
+    },
+    "optimal_threshold": {
+      "threshold": 0.7955,
+      "f1": 0.832797,
+      "precision": 0.848099,
+      "recall": 0.83878
+    },
+    "f1_gain": 0.080024
+  },
+  "cell-cell_junction_GO_0005911": {
+    "group_name": "cell-cell_junction_GO_0005911",
+    "n_go_terms": 17,
+    "n_val_proteins": 183,
+    "trained_val_f1": 0.61181,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.839724,
+      "precision": 0.769065,
+      "recall": 0.969008
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.911303,
+      "precision": 0.893385,
+      "recall": 0.946494
+    },
+    "f1_gain": 0.071579
+  },
+  "cytokine_receptor_binding_GO_0005126": {
+    "group_name": "cytokine_receptor_binding_GO_0005126",
+    "n_go_terms": 26,
+    "n_val_proteins": 52,
+    "trained_val_f1": 0.814479,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.791883,
+      "precision": 0.771089,
+      "recall": 0.831731
+    },
+    "optimal_threshold": {
+      "threshold": 0.7318,
+      "f1": 0.822856,
+      "precision": 0.832005,
+      "recall": 0.81891
+    },
+    "f1_gain": 0.030973
+  },
+  "G_protein-coupled_receptor_activity_GO_0004930": {
+    "group_name": "G_protein-coupled_receptor_activity_GO_0004930",
+    "n_go_terms": 23,
+    "n_val_proteins": 81,
+    "trained_val_f1": 0.628969,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.735186,
+      "precision": 0.707005,
+      "recall": 0.782609
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.779891,
+      "precision": 0.782609,
+      "recall": 0.777494
+    },
+    "f1_gain": 0.044705
+  },
+  "prenyltransferase_activity_GO_0004659": {
+    "group_name": "prenyltransferase_activity_GO_0004659",
+    "n_go_terms": 15,
+    "n_val_proteins": 33,
+    "trained_val_f1": 0.771909,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.908889,
+      "precision": 0.892063,
+      "recall": 0.933333
+    },
+    "optimal_threshold": {
+      "threshold": 0.5955,
+      "f1": 0.927273,
+      "precision": 0.922222,
+      "recall": 0.933333
+    },
+    "f1_gain": 0.018384
+  },
+  "hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553": {
+    "group_name": "hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",
+    "n_go_terms": 42,
+    "n_val_proteins": 131,
+    "trained_val_f1": 0.630255,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.804184,
+      "precision": 0.737295,
+      "recall": 0.921958
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.910804,
+      "precision": 0.907285,
+      "recall": 0.916204
+    },
+    "f1_gain": 0.10662
+  },
+  "RNA_nuclease_activity_GO_0004540": {
+    "group_name": "RNA_nuclease_activity_GO_0004540",
+    "n_go_terms": 18,
+    "n_val_proteins": 95,
+    "trained_val_f1": 0.755116,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.896279,
+      "precision": 0.867285,
+      "recall": 0.932964
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.920312,
+      "precision": 0.919404,
+      "recall": 0.923782
+    },
+    "f1_gain": 0.024033
+  },
+  "DNA_nuclease_activity_GO_0004536": {
+    "group_name": "DNA_nuclease_activity_GO_0004536",
+    "n_go_terms": 20,
+    "n_val_proteins": 50,
+    "trained_val_f1": 0.593905,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.866727,
+      "precision": 0.827639,
+      "recall": 0.95
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.910478,
+      "precision": 0.9175,
+      "recall": 0.913492
+    },
+    "f1_gain": 0.043751
+  },
+  "morphogenesis_of_an_epithelium_GO_0002009": {
+    "group_name": "morphogenesis_of_an_epithelium_GO_0002009",
+    "n_go_terms": 34,
+    "n_val_proteins": 87,
+    "trained_val_f1": 0.504456,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.765142,
+      "precision": 0.684526,
+      "recall": 0.931092
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.881695,
+      "precision": 0.909967,
+      "recall": 0.883259
+    },
+    "f1_gain": 0.116553
+  },
+  "G_protein-coupled_receptor_binding_GO_0001664": {
+    "group_name": "G_protein-coupled_receptor_binding_GO_0001664",
+    "n_go_terms": 24,
+    "n_val_proteins": 61,
+    "trained_val_f1": 0.814414,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.862103,
+      "precision": 0.852679,
+      "recall": 0.875
+    },
+    "optimal_threshold": {
+      "threshold": 0.6682,
+      "f1": 0.875,
+      "precision": 0.875,
+      "recall": 0.875
+    },
+    "f1_gain": 0.012897
+  },
+  "nucleotide_binding_GO_0000166": {
+    "group_name": "nucleotide_binding_GO_0000166",
+    "n_go_terms": 26,
+    "n_val_proteins": 1560,
+    "trained_val_f1": 0.332003,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.429343,
+      "precision": 0.308872,
+      "recall": 0.926712
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.690524,
+      "precision": 0.75389,
+      "recall": 0.730403
+    },
+    "f1_gain": 0.261181
+  },
+  "ubiquitin_ligase_complex_GO_0000151": {
+    "group_name": "ubiquitin_ligase_complex_GO_0000151",
+    "n_go_terms": 20,
+    "n_val_proteins": 89,
+    "trained_val_f1": 0.646817,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.694765,
+      "precision": 0.633258,
+      "recall": 0.8
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.757404,
+      "precision": 0.785455,
+      "recall": 0.740464
+    },
+    "f1_gain": 0.062639
+  },
+  "transferase_complex_GO_1990234": {
+    "group_name": "transferase_complex_GO_1990234",
+    "n_go_terms": 79,
+    "n_val_proteins": 202,
+    "trained_val_f1": 0.450962,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.570767,
+      "precision": 0.466274,
+      "recall": 0.898345
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.839307,
+      "precision": 0.840868,
+      "recall": 0.867088
+    },
+    "f1_gain": 0.26854
+  },
+  "ATPase_complex_GO_1904949": {
+    "group_name": "ATPase_complex_GO_1904949",
+    "n_go_terms": 17,
+    "n_val_proteins": 45,
+    "trained_val_f1": 0.743224,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.865077,
+      "precision": 0.796236,
+      "recall": 0.978668
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.911919,
+      "precision": 0.881135,
+      "recall": 0.96574
+    },
+    "f1_gain": 0.046842
+  },
+  "carbohydrate_derivative_metabolic_process_GO_1901135": {
+    "group_name": "carbohydrate_derivative_metabolic_process_GO_1901135",
+    "n_go_terms": 31,
+    "n_val_proteins": 115,
+    "trained_val_f1": 0.668483,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.831456,
+      "precision": 0.790124,
+      "recall": 0.899964
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.88647,
+      "precision": 0.888807,
+      "recall": 0.88692
+    },
+    "f1_gain": 0.055014
+  },
+  "plasma_membrane_protein_complex_GO_0098797": {
+    "group_name": "plasma_membrane_protein_complex_GO_0098797",
+    "n_go_terms": 38,
+    "n_val_proteins": 148,
+    "trained_val_f1": 0.624301,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.847768,
+      "precision": 0.812089,
+      "recall": 0.921053
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.907656,
+      "precision": 0.905578,
+      "recall": 0.91151
+    },
+    "f1_gain": 0.059888
+  },
+  "cell-cell_adhesion_GO_0098609": {
+    "group_name": "cell-cell_adhesion_GO_0098609",
+    "n_go_terms": 20,
+    "n_val_proteins": 122,
+    "trained_val_f1": 0.799476,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.654723,
+      "precision": 0.607817,
+      "recall": 0.724722
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.706591,
+      "precision": 0.713338,
+      "recall": 0.70351
+    },
+    "f1_gain": 0.051868
+  },
+  "RNA_polymerase_II_transcription_regulator_complex_GO_0090575": {
+    "group_name": "RNA_polymerase_II_transcription_regulator_complex_GO_0090575",
+    "n_go_terms": 18,
+    "n_val_proteins": 79,
+    "trained_val_f1": 0.684039,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.863825,
+      "precision": 0.845899,
+      "recall": 0.888889
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.883333,
+      "precision": 0.878788,
+      "recall": 0.888889
+    },
+    "f1_gain": 0.019508
+  },
+  "biological_process_involved_in_interaction_with_host_GO_0051701": {
+    "group_name": "biological_process_involved_in_interaction_with_host_GO_0051701",
+    "n_go_terms": 21,
+    "n_val_proteins": 144,
+    "trained_val_f1": 0.646289,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.797565,
+      "precision": 0.757858,
+      "recall": 0.863337
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.856198,
+      "precision": 0.872573,
+      "recall": 0.844248
+    },
+    "f1_gain": 0.058633
+  },
+  "dioxygenase_activity_GO_0051213": {
+    "group_name": "dioxygenase_activity_GO_0051213",
+    "n_go_terms": 16,
+    "n_val_proteins": 33,
+    "trained_val_f1": 0.556818,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.654561,
+      "precision": 0.625,
+      "recall": 0.715461
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.702778,
+      "precision": 0.697917,
+      "recall": 0.712171
+    },
+    "f1_gain": 0.048217
+  },
+  "regulation_of_body_fluid_levels_GO_0050878": {
+    "group_name": "regulation_of_body_fluid_levels_GO_0050878",
+    "n_go_terms": 21,
+    "n_val_proteins": 76,
+    "trained_val_f1": 0.537639,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.792964,
+      "precision": 0.723977,
+      "recall": 0.922266
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.895611,
+      "precision": 0.934673,
+      "recall": 0.869979
+    },
+    "f1_gain": 0.102647
+  },
+  "regulation_of_developmental_process_GO_0050793": {
+    "group_name": "regulation_of_developmental_process_GO_0050793",
+    "n_go_terms": 66,
+    "n_val_proteins": 227,
+    "trained_val_f1": 0.335151,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.516394,
+      "precision": 0.397442,
+      "recall": 0.939156
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.785862,
+      "precision": 0.828595,
+      "recall": 0.814012
+    },
+    "f1_gain": 0.269468
+  },
+  "reproductive_structure_development_GO_0048608": {
+    "group_name": "reproductive_structure_development_GO_0048608",
+    "n_go_terms": 15,
+    "n_val_proteins": 84,
+    "trained_val_f1": 0.640072,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.779427,
+      "precision": 0.745253,
+      "recall": 0.848333
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.812388,
+      "precision": 0.819048,
+      "recall": 0.823016
+    },
+    "f1_gain": 0.032961
+  },
+  "embryonic_morphogenesis_GO_0048598": {
+    "group_name": "embryonic_morphogenesis_GO_0048598",
+    "n_go_terms": 29,
+    "n_val_proteins": 102,
+    "trained_val_f1": 0.587579,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.792018,
+      "precision": 0.711052,
+      "recall": 0.920017
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.885719,
+      "precision": 0.887176,
+      "recall": 0.891154
+    },
+    "f1_gain": 0.093701
+  },
+  "animal_organ_development_GO_0048513": {
+    "group_name": "animal_organ_development_GO_0048513",
+    "n_go_terms": 68,
+    "n_val_proteins": 367,
+    "trained_val_f1": 0.321673,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.417216,
+      "precision": 0.30739,
+      "recall": 0.83273
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.586909,
+      "precision": 0.66046,
+      "recall": 0.661471
+    },
+    "f1_gain": 0.169693
+  },
+  "cell_development_GO_0048468": {
+    "group_name": "cell_development_GO_0048468",
+    "n_go_terms": 65,
+    "n_val_proteins": 251,
+    "trained_val_f1": 0.441471,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.591649,
+      "precision": 0.47491,
+      "recall": 0.863823
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.807335,
+      "precision": 0.841134,
+      "recall": 0.81051
+    },
+    "f1_gain": 0.215686
+  },
+  "carboxylic_acid_transmembrane_transporter_activity_GO_0046943": {
+    "group_name": "carboxylic_acid_transmembrane_transporter_activity_GO_0046943",
+    "n_go_terms": 18,
+    "n_val_proteins": 32,
+    "trained_val_f1": 0.749956,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.713271,
+      "precision": 0.707461,
+      "recall": 0.719807
+    },
+    "optimal_threshold": {
+      "threshold": 0.35,
+      "f1": 0.714504,
+      "precision": 0.707562,
+      "recall": 0.722222
+    },
+    "f1_gain": 0.001233
+  },
+  "synapse_GO_0045202": {
+    "group_name": "synapse_GO_0045202",
+    "n_go_terms": 20,
+    "n_val_proteins": 367,
+    "trained_val_f1": 0.521894,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.691449,
+      "precision": 0.56521,
+      "recall": 0.979962
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.790105,
+      "precision": 0.788116,
+      "recall": 0.896074
+    },
+    "f1_gain": 0.098656
+  },
+  "response_to_starvation_GO_0042594": {
+    "group_name": "response_to_starvation_GO_0042594",
+    "n_go_terms": 16,
+    "n_val_proteins": 116,
+    "trained_val_f1": 0.537783,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.816257,
+      "precision": 0.750287,
+      "recall": 0.926633
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.906526,
+      "precision": 0.895732,
+      "recall": 0.922075
+    },
+    "f1_gain": 0.090269
+  },
+  "regulation_of_membrane_potential_GO_0042391": {
+    "group_name": "regulation_of_membrane_potential_GO_0042391",
+    "n_go_terms": 46,
+    "n_val_proteins": 105,
+    "trained_val_f1": 0.518913,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.631426,
+      "precision": 0.516551,
+      "recall": 0.912402
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.831848,
+      "precision": 0.840689,
+      "recall": 0.858055
+    },
+    "f1_gain": 0.200422
+  },
+  "tube_morphogenesis_GO_0035239": {
+    "group_name": "tube_morphogenesis_GO_0035239",
+    "n_go_terms": 15,
+    "n_val_proteins": 34,
+    "trained_val_f1": 0.575203,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.876508,
+      "precision": 0.905556,
+      "recall": 0.863889
+    },
+    "optimal_threshold": {
+      "threshold": 0.35,
+      "f1": 0.876508,
+      "precision": 0.905556,
+      "recall": 0.863889
+    },
+    "f1_gain": 0.0
+  },
+  "response_to_lipid_GO_0033993": {
+    "group_name": "response_to_lipid_GO_0033993",
+    "n_go_terms": 30,
+    "n_val_proteins": 190,
+    "trained_val_f1": 0.426906,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.695685,
+      "precision": 0.596715,
+      "recall": 0.904799
+    },
+    "optimal_threshold": {
+      "threshold": 0.7682,
+      "f1": 0.805994,
+      "precision": 0.835092,
+      "recall": 0.812101
+    },
+    "f1_gain": 0.110309
+  },
+  "cellular_response_to_stress_GO_0033554": {
+    "group_name": "cellular_response_to_stress_GO_0033554",
+    "n_go_terms": 28,
+    "n_val_proteins": 301,
+    "trained_val_f1": 0.358908,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.539766,
+      "precision": 0.42285,
+      "recall": 0.865669
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.711743,
+      "precision": 0.766644,
+      "recall": 0.715415
+    },
+    "f1_gain": 0.171977
+  },
+  "organelle_membrane_GO_0031090": {
+    "group_name": "organelle_membrane_GO_0031090",
+    "n_go_terms": 40,
+    "n_val_proteins": 1097,
+    "trained_val_f1": 0.335412,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.393807,
+      "precision": 0.279008,
+      "recall": 0.895491
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.591184,
+      "precision": 0.616047,
+      "recall": 0.70426
+    },
+    "f1_gain": 0.197377
+  },
+  "cell_differentiation_GO_0030154": {
+    "group_name": "cell_differentiation_GO_0030154",
+    "n_go_terms": 73,
+    "n_val_proteins": 400,
+    "trained_val_f1": 0.276545,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.381631,
+      "precision": 0.259311,
+      "recall": 0.913825
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.713567,
+      "precision": 0.746951,
+      "recall": 0.775566
+    },
+    "f1_gain": 0.331936
+  },
+  "protein_domain_specific_binding_GO_0019904": {
+    "group_name": "protein_domain_specific_binding_GO_0019904",
+    "n_go_terms": 27,
+    "n_val_proteins": 187,
+    "trained_val_f1": 0.699374,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.717651,
+      "precision": 0.650295,
+      "recall": 0.845347
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.797503,
+      "precision": 0.778473,
+      "recall": 0.835789
+    },
+    "f1_gain": 0.079852
+  },
+  "enzyme_binding_GO_0019899": {
+    "group_name": "enzyme_binding_GO_0019899",
+    "n_go_terms": 39,
+    "n_val_proteins": 433,
+    "trained_val_f1": 0.521855,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.675589,
+      "precision": 0.566977,
+      "recall": 0.930046
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.862342,
+      "precision": 0.888851,
+      "recall": 0.866314
+    },
+    "f1_gain": 0.186753
+  },
+  "ligase_activity,_forming_carbon-nitrogen_bonds_GO_0016879": {
+    "group_name": "ligase_activity,_forming_carbon-nitrogen_bonds_GO_0016879",
+    "n_go_terms": 27,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.796606,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.733333,
+      "precision": 0.728395,
+      "recall": 0.740741
+    },
+    "optimal_threshold": {
+      "threshold": 0.5318,
+      "f1": 0.740741,
+      "precision": 0.740741,
+      "recall": 0.740741
+    },
+    "f1_gain": 0.007408
+  },
+  "intramolecular_transferase_activity_GO_0016866": {
+    "group_name": "intramolecular_transferase_activity_GO_0016866",
+    "n_go_terms": 17,
+    "n_val_proteins": 31,
+    "trained_val_f1": 0.637602,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.794958,
+      "precision": 0.745098,
+      "recall": 0.882353
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.855649,
+      "precision": 0.855882,
+      "recall": 0.862745
+    },
+    "f1_gain": 0.060691
+  },
+  "racemase_and_epimerase_activity_GO_0016854": {
+    "group_name": "racemase_and_epimerase_activity_GO_0016854",
+    "n_go_terms": 15,
+    "n_val_proteins": 28,
+    "trained_val_f1": 0.700873,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.8,
+      "precision": 0.8,
+      "recall": 0.8
+    },
+    "optimal_threshold": {
+      "threshold": 0.2864,
+      "f1": 0.8,
+      "precision": 0.8,
+      "recall": 0.8
+    },
+    "f1_gain": 0.0
+  },
+  "carbon-carbon_lyase_activity_GO_0016830": {
+    "group_name": "carbon-carbon_lyase_activity_GO_0016830",
+    "n_go_terms": 15,
+    "n_val_proteins": 31,
+    "trained_val_f1": 0.866815,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.893545,
+      "precision": 0.881111,
+      "recall": 0.916667
+    },
+    "optimal_threshold": {
+      "threshold": 0.5591,
+      "f1": 0.914286,
+      "precision": 0.916667,
+      "recall": 0.916667
+    },
+    "f1_gain": 0.020741
+  },
+  "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds_GO_0016810": {
+    "group_name": "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds_GO_0016810",
+    "n_go_terms": 29,
+    "n_val_proteins": 55,
+    "trained_val_f1": 0.737796,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.843678,
+      "precision": 0.833333,
+      "recall": 0.862069
+    },
+    "optimal_threshold": {
+      "threshold": 0.7591,
+      "f1": 0.855172,
+      "precision": 0.862069,
+      "recall": 0.850575
+    },
+    "f1_gain": 0.011494
+  },
+  "hydrolase_activity,_acting_on_ester_bonds_GO_0016788": {
+    "group_name": "hydrolase_activity,_acting_on_ester_bonds_GO_0016788",
+    "n_go_terms": 18,
+    "n_val_proteins": 71,
+    "trained_val_f1": 0.671158,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.828396,
+      "precision": 0.793749,
+      "recall": 0.906507
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.901774,
+      "precision": 0.944444,
+      "recall": 0.872814
+    },
+    "f1_gain": 0.073378
+  },
+  "transferase_activity,_transferring_phosphorus-containing_groups_GO_0016772": {
+    "group_name": "transferase_activity,_transferring_phosphorus-containing_groups_GO_0016772",
+    "n_go_terms": 16,
+    "n_val_proteins": 23,
+    "trained_val_f1": 0.878274,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.675,
+      "precision": 0.666667,
+      "recall": 0.6875
+    },
+    "optimal_threshold": {
+      "threshold": 0.6591,
+      "f1": 0.6875,
+      "precision": 0.6875,
+      "recall": 0.6875
+    },
+    "f1_gain": 0.0125
+  },
+  "transferase_activity,_transferring_alkyl_or_aryl_(other_than_methyl)_groups_GO_0016765": {
+    "group_name": "transferase_activity,_transferring_alkyl_or_aryl_(other_than_methyl)_groups_GO_0016765",
+    "n_go_terms": 19,
+    "n_val_proteins": 56,
+    "trained_val_f1": 0.71345,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.929825,
+      "precision": 0.921053,
+      "recall": 0.947368
+    },
+    "optimal_threshold": {
+      "threshold": 0.6591,
+      "f1": 0.947368,
+      "precision": 0.947368,
+      "recall": 0.947368
+    },
+    "f1_gain": 0.017543
+  },
+  "acyltransferase_activity_GO_0016746": {
+    "group_name": "acyltransferase_activity_GO_0016746",
+    "n_go_terms": 23,
+    "n_val_proteins": 158,
+    "trained_val_f1": 0.706361,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.882988,
+      "precision": 0.865623,
+      "recall": 0.928842
+    },
+    "optimal_threshold": {
+      "threshold": 0.6773,
+      "f1": 0.892156,
+      "precision": 0.882488,
+      "recall": 0.927167
+    },
+    "f1_gain": 0.009168
+  },
+  "oxidoreductase_activity,_acting_on_paired_donors,_with_incorporation_or_reduction_of_molecular_oxygen_GO_0016705": {
+    "group_name": "oxidoreductase_activity,_acting_on_paired_donors,_with_incorporation_or_reduction_of_molecular_oxygen_GO_0016705",
+    "n_go_terms": 34,
+    "n_val_proteins": 115,
+    "trained_val_f1": 0.545423,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.672652,
+      "precision": 0.619601,
+      "recall": 0.790525
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.746656,
+      "precision": 0.744853,
+      "recall": 0.767881
+    },
+    "f1_gain": 0.074004
+  },
+  "oxidoreductase_activity,_acting_on_NAD(P)H_GO_0016651": {
+    "group_name": "oxidoreductase_activity,_acting_on_NAD(P)H_GO_0016651",
+    "n_go_terms": 17,
+    "n_val_proteins": 48,
+    "trained_val_f1": 0.869486,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.820395,
+      "precision": 0.778787,
+      "recall": 0.882353
+    },
+    "optimal_threshold": {
+      "threshold": 0.5682,
+      "f1": 0.836979,
+      "precision": 0.808603,
+      "recall": 0.876471
+    },
+    "f1_gain": 0.016584
+  },
+  "oxidoreductase_activity,_acting_on_the_CH-CH_group_of_donors_GO_0016627": {
+    "group_name": "oxidoreductase_activity,_acting_on_the_CH-CH_group_of_donors_GO_0016627",
+    "n_go_terms": 24,
+    "n_val_proteins": 42,
+    "trained_val_f1": 0.698997,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.902778,
+      "precision": 0.895833,
+      "recall": 0.916667
+    },
+    "optimal_threshold": {
+      "threshold": 0.4318,
+      "f1": 0.902778,
+      "precision": 0.895833,
+      "recall": 0.916667
+    },
+    "f1_gain": 0.0
+  },
+  "cell_migration_GO_0016477": {
+    "group_name": "cell_migration_GO_0016477",
+    "n_go_terms": 44,
+    "n_val_proteins": 191,
+    "trained_val_f1": 0.448628,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.577834,
+      "precision": 0.454989,
+      "recall": 0.891725
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.803907,
+      "precision": 0.829749,
+      "recall": 0.825084
+    },
+    "f1_gain": 0.226073
+  },
+  "response_to_metal_ion_GO_0010038": {
+    "group_name": "response_to_metal_ion_GO_0010038",
+    "n_go_terms": 33,
+    "n_val_proteins": 138,
+    "trained_val_f1": 0.502446,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.678478,
+      "precision": 0.576781,
+      "recall": 0.888221
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.838267,
+      "precision": 0.837443,
+      "recall": 0.860791
+    },
+    "f1_gain": 0.159789
+  },
+  "tissue_development_GO_0009888": {
+    "group_name": "tissue_development_GO_0009888",
+    "n_go_terms": 43,
+    "n_val_proteins": 143,
+    "trained_val_f1": 0.512444,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.683439,
+      "precision": 0.596447,
+      "recall": 0.872399
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.802499,
+      "precision": 0.81249,
+      "recall": 0.819054
+    },
+    "f1_gain": 0.11906
+  },
+  "animal_organ_morphogenesis_GO_0009887": {
+    "group_name": "animal_organ_morphogenesis_GO_0009887",
+    "n_go_terms": 32,
+    "n_val_proteins": 117,
+    "trained_val_f1": 0.428603,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.583023,
+      "precision": 0.521029,
+      "recall": 0.732868
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.718338,
+      "precision": 0.77154,
+      "recall": 0.695428
+    },
+    "f1_gain": 0.135315
+  },
+  "response_to_hormone_GO_0009725": {
+    "group_name": "response_to_hormone_GO_0009725",
+    "n_go_terms": 27,
+    "n_val_proteins": 133,
+    "trained_val_f1": 0.609696,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.777721,
+      "precision": 0.702463,
+      "recall": 0.904003
+    },
+    "optimal_threshold": {
+      "threshold": 0.7864,
+      "f1": 0.838415,
+      "precision": 0.831811,
+      "recall": 0.865003
+    },
+    "f1_gain": 0.060694
+  },
+  "amine_metabolic_process_GO_0009308": {
+    "group_name": "amine_metabolic_process_GO_0009308",
+    "n_go_terms": 20,
+    "n_val_proteins": 36,
+    "trained_val_f1": 0.621893,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.896611,
+      "precision": 0.894048,
+      "recall": 0.913371
+    },
+    "optimal_threshold": {
+      "threshold": 0.5955,
+      "f1": 0.902765,
+      "precision": 0.910714,
+      "recall": 0.906228
+    },
+    "f1_gain": 0.006154
+  },
+  "biosynthetic_process_GO_0009058": {
+    "group_name": "biosynthetic_process_GO_0009058",
+    "n_go_terms": 61,
+    "n_val_proteins": 556,
+    "trained_val_f1": 0.305994,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.37208,
+      "precision": 0.260558,
+      "recall": 0.846014
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.682915,
+      "precision": 0.67812,
+      "recall": 0.756049
+    },
+    "f1_gain": 0.310835
+  },
+  "catabolic_process_GO_0009056": {
+    "group_name": "catabolic_process_GO_0009056",
+    "n_go_terms": 57,
+    "n_val_proteins": 327,
+    "trained_val_f1": 0.372718,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.417631,
+      "precision": 0.30418,
+      "recall": 0.833278
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.719484,
+      "precision": 0.740183,
+      "recall": 0.726326
+    },
+    "f1_gain": 0.301853
+  },
+  "peptidase_activity_GO_0008233": {
+    "group_name": "peptidase_activity_GO_0008233",
+    "n_go_terms": 47,
+    "n_val_proteins": 373,
+    "trained_val_f1": 0.532839,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.655402,
+      "precision": 0.56502,
+      "recall": 0.884731
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.815998,
+      "precision": 0.810753,
+      "recall": 0.845502
+    },
+    "f1_gain": 0.160596
+  },
+  "intracellular_protein_localization_GO_0008104": {
+    "group_name": "intracellular_protein_localization_GO_0008104",
+    "n_go_terms": 25,
+    "n_val_proteins": 266,
+    "trained_val_f1": 0.515219,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.544604,
+      "precision": 0.4478,
+      "recall": 0.758756
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.702787,
+      "precision": 0.725333,
+      "recall": 0.71078
+    },
+    "f1_gain": 0.158183
+  },
+  "cytoskeletal_protein_binding_GO_0008092": {
+    "group_name": "cytoskeletal_protein_binding_GO_0008092",
+    "n_go_terms": 32,
+    "n_val_proteins": 334,
+    "trained_val_f1": 0.523506,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.593847,
+      "precision": 0.469879,
+      "recall": 0.933509
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.784746,
+      "precision": 0.783835,
+      "recall": 0.871555
+    },
+    "f1_gain": 0.190899
+  },
+  "enzyme_activator_activity_GO_0008047": {
+    "group_name": "enzyme_activator_activity_GO_0008047",
+    "n_go_terms": 28,
+    "n_val_proteins": 184,
+    "trained_val_f1": 0.680074,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.786107,
+      "precision": 0.730862,
+      "recall": 0.881961
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.860656,
+      "precision": 0.87143,
+      "recall": 0.854185
+    },
+    "f1_gain": 0.074549
+  },
+  "defense_response_GO_0006952": {
+    "group_name": "defense_response_GO_0006952",
+    "n_go_terms": 16,
+    "n_val_proteins": 287,
+    "trained_val_f1": 0.543644,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.582206,
+      "precision": 0.493975,
+      "recall": 0.794761
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.736596,
+      "precision": 0.762817,
+      "recall": 0.746671
+    },
+    "f1_gain": 0.15439
+  },
+  "generation_of_precursor_metabolites_and_energy_GO_0006091": {
+    "group_name": "generation_of_precursor_metabolites_and_energy_GO_0006091",
+    "n_go_terms": 25,
+    "n_val_proteins": 174,
+    "trained_val_f1": 0.70376,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.883191,
+      "precision": 0.837157,
+      "recall": 0.951385
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.926498,
+      "precision": 0.92167,
+      "recall": 0.936738
+    },
+    "f1_gain": 0.043307
+  },
+  "phospholipid_binding_GO_0005543": {
+    "group_name": "phospholipid_binding_GO_0005543",
+    "n_go_terms": 18,
+    "n_val_proteins": 164,
+    "trained_val_f1": 0.622911,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.762094,
+      "precision": 0.679787,
+      "recall": 0.902087
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.869795,
+      "precision": 0.889672,
+      "recall": 0.861364
+    },
+    "f1_gain": 0.107701
+  },
+  "signaling_receptor_binding_GO_0005102": {
+    "group_name": "signaling_receptor_binding_GO_0005102",
+    "n_go_terms": 47,
+    "n_val_proteins": 236,
+    "trained_val_f1": 0.519731,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.625627,
+      "precision": 0.511102,
+      "recall": 0.88163
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.831231,
+      "precision": 0.828671,
+      "recall": 0.854519
+    },
+    "f1_gain": 0.205604
+  },
+  "transmembrane_signaling_receptor_activity_GO_0004888": {
+    "group_name": "transmembrane_signaling_receptor_activity_GO_0004888",
+    "n_go_terms": 22,
+    "n_val_proteins": 84,
+    "trained_val_f1": 0.662698,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.879396,
+      "precision": 0.869697,
+      "recall": 0.899123
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.90373,
+      "precision": 0.909091,
+      "recall": 0.899123
+    },
+    "f1_gain": 0.024334
+  },
+  "enzyme_inhibitor_activity_GO_0004857": {
+    "group_name": "enzyme_inhibitor_activity_GO_0004857",
+    "n_go_terms": 28,
+    "n_val_proteins": 209,
+    "trained_val_f1": 0.613538,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.806044,
+      "precision": 0.740496,
+      "recall": 0.934479
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.900944,
+      "precision": 0.914214,
+      "recall": 0.908087
+    },
+    "f1_gain": 0.0949
+  },
+  "RNA_binding_GO_0003723": {
+    "group_name": "RNA_binding_GO_0003723",
+    "n_go_terms": 49,
+    "n_val_proteins": 785,
+    "trained_val_f1": 0.264607,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.338607,
+      "precision": 0.221482,
+      "recall": 0.933118
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.664494,
+      "precision": 0.655655,
+      "recall": 0.798528
+    },
+    "f1_gain": 0.325887
+  },
+  "DNA_binding_GO_0003677": {
+    "group_name": "DNA_binding_GO_0003677",
+    "n_go_terms": 34,
+    "n_val_proteins": 872,
+    "trained_val_f1": 0.261665,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.308512,
+      "precision": 0.218646,
+      "recall": 0.817362
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.566676,
+      "precision": 0.704921,
+      "recall": 0.598099
+    },
+    "f1_gain": 0.258164
+  },
+  "muscle_system_process_GO_0003012": {
+    "group_name": "muscle_system_process_GO_0003012",
+    "n_go_terms": 17,
+    "n_val_proteins": 60,
+    "trained_val_f1": 0.698642,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.892651,
+      "precision": 0.885771,
+      "recall": 0.909631
+    },
+    "optimal_threshold": {
+      "threshold": 0.6864,
+      "f1": 0.901469,
+      "precision": 0.901774,
+      "recall": 0.909631
+    },
+    "f1_gain": 0.008818
+  },
+  "regulation_of_immune_system_process_GO_0002682": {
+    "group_name": "regulation_of_immune_system_process_GO_0002682",
+    "n_go_terms": 25,
+    "n_val_proteins": 48,
+    "trained_val_f1": 0.648991,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.792522,
+      "precision": 0.780095,
+      "recall": 0.824499
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.824275,
+      "precision": 0.838519,
+      "recall": 0.812724
+    },
+    "f1_gain": 0.031753
+  },
+  "ribonucleoprotein_complex_GO_1990904": {
+    "group_name": "ribonucleoprotein_complex_GO_1990904",
+    "n_go_terms": 52,
+    "n_val_proteins": 444,
+    "trained_val_f1": 0.435524,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.535852,
+      "precision": 0.406876,
+      "recall": 0.946166
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.777319,
+      "precision": 0.731451,
+      "recall": 0.871246
+    },
+    "f1_gain": 0.241467
+  },
+  "catalytic_complex_GO_1902494": {
+    "group_name": "catalytic_complex_GO_1902494",
+    "n_go_terms": 88,
+    "n_val_proteins": 276,
+    "trained_val_f1": 0.513346,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.70383,
+      "precision": 0.595875,
+      "recall": 0.972667
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.915943,
+      "precision": 0.89798,
+      "recall": 0.960312
+    },
+    "f1_gain": 0.212113
+  },
+  "transporter_regulator_activity_GO_0141108": {
+    "group_name": "transporter_regulator_activity_GO_0141108",
+    "n_go_terms": 15,
+    "n_val_proteins": 235,
+    "trained_val_f1": 0.741253,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.948297,
+      "precision": 0.918704,
+      "recall": 0.994352
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.983581,
+      "precision": 0.989537,
+      "recall": 0.978768
+    },
+    "f1_gain": 0.035284
+  },
+  "catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640": {
+    "group_name": "catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640",
+    "n_go_terms": 39,
+    "n_val_proteins": 187,
+    "trained_val_f1": 0.573432,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.740206,
+      "precision": 0.676342,
+      "recall": 0.866883
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.82619,
+      "precision": 0.833323,
+      "recall": 0.836327
+    },
+    "f1_gain": 0.085984
+  },
+  "catalytic_activity,_acting_on_a_protein_GO_0140096": {
+    "group_name": "catalytic_activity,_acting_on_a_protein_GO_0140096",
+    "n_go_terms": 30,
+    "n_val_proteins": 102,
+    "trained_val_f1": 0.788303,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.842286,
+      "precision": 0.823942,
+      "recall": 0.87963
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.882383,
+      "precision": 0.9,
+      "recall": 0.871176
+    },
+    "f1_gain": 0.040097
+  },
+  "membrane_protein_complex_GO_0098796": {
+    "group_name": "membrane_protein_complex_GO_0098796",
+    "n_go_terms": 62,
+    "n_val_proteins": 248,
+    "trained_val_f1": 0.585866,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.693063,
+      "precision": 0.602253,
+      "recall": 0.889325
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.828946,
+      "precision": 0.805323,
+      "recall": 0.873723
+    },
+    "f1_gain": 0.135883
+  },
+  "side_of_membrane_GO_0098552": {
+    "group_name": "side_of_membrane_GO_0098552",
+    "n_go_terms": 15,
+    "n_val_proteins": 203,
+    "trained_val_f1": 0.645592,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.780521,
+      "precision": 0.736151,
+      "recall": 0.861255
+    },
+    "optimal_threshold": {
+      "threshold": 0.7318,
+      "f1": 0.845479,
+      "precision": 0.838123,
+      "recall": 0.856182
+    },
+    "f1_gain": 0.064958
+  },
+  "carbohydrate_derivative_binding_GO_0097367": {
+    "group_name": "carbohydrate_derivative_binding_GO_0097367",
+    "n_go_terms": 19,
+    "n_val_proteins": 122,
+    "trained_val_f1": 0.628192,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.816748,
+      "precision": 0.770344,
+      "recall": 0.892788
+    },
+    "optimal_threshold": {
+      "threshold": 0.8409,
+      "f1": 0.853966,
+      "precision": 0.849131,
+      "recall": 0.871393
+    },
+    "f1_gain": 0.037218
+  },
+  "anatomical_structure_formation_involved_in_morphogenesis_GO_0048646": {
+    "group_name": "anatomical_structure_formation_involved_in_morphogenesis_GO_0048646",
+    "n_go_terms": 56,
+    "n_val_proteins": 246,
+    "trained_val_f1": 0.445767,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.529633,
+      "precision": 0.404629,
+      "recall": 0.871061
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.806313,
+      "precision": 0.843666,
+      "recall": 0.803081
+    },
+    "f1_gain": 0.27668
+  },
+  "developmental_growth_GO_0048589": {
+    "group_name": "developmental_growth_GO_0048589",
+    "n_go_terms": 32,
+    "n_val_proteins": 121,
+    "trained_val_f1": 0.563925,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.741786,
+      "precision": 0.662416,
+      "recall": 0.886618
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.866537,
+      "precision": 0.891041,
+      "recall": 0.853373
+    },
+    "f1_gain": 0.124751
+  },
+  "protein-containing_complex_binding_GO_0044877": {
+    "group_name": "protein-containing_complex_binding_GO_0044877",
+    "n_go_terms": 43,
+    "n_val_proteins": 296,
+    "trained_val_f1": 0.518496,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.668893,
+      "precision": 0.589339,
+      "recall": 0.874094
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.832439,
+      "precision": 0.836599,
+      "recall": 0.857442
+    },
+    "f1_gain": 0.163546
+  },
+  "cell_projection_GO_0042995": {
+    "group_name": "cell_projection_GO_0042995",
+    "n_go_terms": 26,
+    "n_val_proteins": 326,
+    "trained_val_f1": 0.557257,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.684173,
+      "precision": 0.575424,
+      "recall": 0.906273
+    },
+    "optimal_threshold": {
+      "threshold": 0.8773,
+      "f1": 0.834362,
+      "precision": 0.850161,
+      "recall": 0.833477
+    },
+    "f1_gain": 0.150189
+  },
+  "signaling_receptor_activity_GO_0038023": {
+    "group_name": "signaling_receptor_activity_GO_0038023",
+    "n_go_terms": 19,
+    "n_val_proteins": 109,
+    "trained_val_f1": 0.819143,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.776743,
+      "precision": 0.741667,
+      "recall": 0.842105
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.82797,
+      "precision": 0.820513,
+      "recall": 0.839181
+    },
+    "f1_gain": 0.051227
+  },
+  "small_molecule_binding_GO_0036094": {
+    "group_name": "small_molecule_binding_GO_0036094",
+    "n_go_terms": 57,
+    "n_val_proteins": 559,
+    "trained_val_f1": 0.446086,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.515617,
+      "precision": 0.400266,
+      "recall": 0.880145
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.764298,
+      "precision": 0.746446,
+      "recall": 0.828353
+    },
+    "f1_gain": 0.248681
+  },
+  "response_to_nutrient_levels_GO_0031667": {
+    "group_name": "response_to_nutrient_levels_GO_0031667",
+    "n_go_terms": 18,
+    "n_val_proteins": 92,
+    "trained_val_f1": 0.474852,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.828995,
+      "precision": 0.803934,
+      "recall": 0.869446
+    },
+    "optimal_threshold": {
+      "threshold": 0.7136,
+      "f1": 0.863654,
+      "precision": 0.87322,
+      "recall": 0.858808
+    },
+    "f1_gain": 0.034659
+  },
+  "protein-macromolecule_adaptor_activity_GO_0030674": {
+    "group_name": "protein-macromolecule_adaptor_activity_GO_0030674",
+    "n_go_terms": 31,
+    "n_val_proteins": 198,
+    "trained_val_f1": 0.534227,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.698924,
+      "precision": 0.601346,
+      "recall": 0.896029
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.826012,
+      "precision": 0.820249,
+      "recall": 0.861191
+    },
+    "f1_gain": 0.127088
+  },
+  "enzyme_regulator_activity_GO_0030234": {
+    "group_name": "enzyme_regulator_activity_GO_0030234",
+    "n_go_terms": 22,
+    "n_val_proteins": 144,
+    "trained_val_f1": 0.596838,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.825574,
+      "precision": 0.768425,
+      "recall": 0.916959
+    },
+    "optimal_threshold": {
+      "threshold": 0.8591,
+      "f1": 0.889771,
+      "precision": 0.908304,
+      "recall": 0.893207
+    },
+    "f1_gain": 0.064197
+  },
+  "transmembrane_transporter_activity_GO_0022857": {
+    "group_name": "transmembrane_transporter_activity_GO_0022857",
+    "n_go_terms": 100,
+    "n_val_proteins": 261,
+    "trained_val_f1": 0.516262,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.535797,
+      "precision": 0.415306,
+      "recall": 0.887818
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.768171,
+      "precision": 0.799229,
+      "recall": 0.798209
+    },
+    "f1_gain": 0.232374
+  },
+  "cellular_homeostasis_GO_0019725": {
+    "group_name": "cellular_homeostasis_GO_0019725",
+    "n_go_terms": 18,
+    "n_val_proteins": 96,
+    "trained_val_f1": 0.592588,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.864371,
+      "precision": 0.829491,
+      "recall": 0.95611
+    },
+    "optimal_threshold": {
+      "threshold": 0.7409,
+      "f1": 0.942835,
+      "precision": 0.965873,
+      "recall": 0.937592
+    },
+    "f1_gain": 0.078464
+  },
+  "isomerase_activity_GO_0016853": {
+    "group_name": "isomerase_activity_GO_0016853",
+    "n_go_terms": 29,
+    "n_val_proteins": 102,
+    "trained_val_f1": 0.820533,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.881034,
+      "precision": 0.854023,
+      "recall": 0.931034
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.918351,
+      "precision": 0.926108,
+      "recall": 0.913793
+    },
+    "f1_gain": 0.037317
+  },
+  "lyase_activity_GO_0016829": {
+    "group_name": "lyase_activity_GO_0016829",
+    "n_go_terms": 33,
+    "n_val_proteins": 112,
+    "trained_val_f1": 0.652192,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.699835,
+      "precision": 0.698196,
+      "recall": 0.73433
+    },
+    "optimal_threshold": {
+      "threshold": 0.4955,
+      "f1": 0.699835,
+      "precision": 0.698196,
+      "recall": 0.73433
+    },
+    "f1_gain": -0.0
+  },
+  "transferase_activity_GO_0016740": {
+    "group_name": "transferase_activity_GO_0016740",
+    "n_go_terms": 40,
+    "n_val_proteins": 198,
+    "trained_val_f1": 0.712046,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.759708,
+      "precision": 0.699767,
+      "recall": 0.873973
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.830035,
+      "precision": 0.81552,
+      "recall": 0.861861
+    },
+    "f1_gain": 0.070327
+  },
+  "membrane_GO_0016020": {
+    "group_name": "membrane_GO_0016020",
+    "n_go_terms": 35,
+    "n_val_proteins": 2624,
+    "trained_val_f1": 0.218687,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.20577,
+      "precision": 0.139343,
+      "recall": 0.895787
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.410402,
+      "precision": 0.464038,
+      "recall": 0.60503
+    },
+    "f1_gain": 0.204632
+  },
+  "anatomical_structure_morphogenesis_GO_0009653": {
+    "group_name": "anatomical_structure_morphogenesis_GO_0009653",
+    "n_go_terms": 87,
+    "n_val_proteins": 196,
+    "trained_val_f1": 0.338684,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.436164,
+      "precision": 0.317352,
+      "recall": 0.82816
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.723437,
+      "precision": 0.746177,
+      "recall": 0.752826
+    },
+    "f1_gain": 0.287273
+  },
+  "cell_population_proliferation_GO_0008283": {
+    "group_name": "cell_population_proliferation_GO_0008283",
+    "n_go_terms": 40,
+    "n_val_proteins": 161,
+    "trained_val_f1": 0.63346,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.777616,
+      "precision": 0.712441,
+      "recall": 0.891164
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.876722,
+      "precision": 0.9,
+      "recall": 0.864234
+    },
+    "f1_gain": 0.099106
+  },
+  "pattern_specification_process_GO_0007389": {
+    "group_name": "pattern_specification_process_GO_0007389",
+    "n_go_terms": 55,
+    "n_val_proteins": 122,
+    "trained_val_f1": 0.272256,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.456912,
+      "precision": 0.332669,
+      "recall": 0.865364
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.71118,
+      "precision": 0.811039,
+      "recall": 0.693472
+    },
+    "f1_gain": 0.254268
+  },
+  "establishment_or_maintenance_of_cell_polarity_GO_0007163": {
+    "group_name": "establishment_or_maintenance_of_cell_polarity_GO_0007163",
+    "n_go_terms": 15,
+    "n_val_proteins": 51,
+    "trained_val_f1": 0.564245,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.889903,
+      "precision": 0.86904,
+      "recall": 0.966878
+    },
+    "optimal_threshold": {
+      "threshold": 0.4864,
+      "f1": 0.899808,
+      "precision": 0.86904,
+      "recall": 0.98381
+    },
+    "f1_gain": 0.009905
+  },
+  "cell_communication_GO_0007154": {
+    "group_name": "cell_communication_GO_0007154",
+    "n_go_terms": 15,
+    "n_val_proteins": 66,
+    "trained_val_f1": 0.670469,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.801856,
+      "precision": 0.760055,
+      "recall": 0.864444
+    },
+    "optimal_threshold": {
+      "threshold": 0.8318,
+      "f1": 0.821994,
+      "precision": 0.82147,
+      "recall": 0.838889
+    },
+    "f1_gain": 0.020138
+  },
+  "microtubule-based_process_GO_0007017": {
+    "group_name": "microtubule-based_process_GO_0007017",
+    "n_go_terms": 19,
+    "n_val_proteins": 106,
+    "trained_val_f1": 0.52489,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.768313,
+      "precision": 0.685494,
+      "recall": 0.943654
+    },
+    "optimal_threshold": {
+      "threshold": 0.8136,
+      "f1": 0.917748,
+      "precision": 0.94468,
+      "recall": 0.923953
+    },
+    "f1_gain": 0.149435
+  },
+  "response_to_stress_GO_0006950": {
+    "group_name": "response_to_stress_GO_0006950",
+    "n_go_terms": 47,
+    "n_val_proteins": 401,
+    "trained_val_f1": 0.326102,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.439419,
+      "precision": 0.313073,
+      "recall": 0.91412
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.691329,
+      "precision": 0.72852,
+      "recall": 0.752773
+    },
+    "f1_gain": 0.25191
+  },
+  "cytoplasm_GO_0005737": {
+    "group_name": "cytoplasm_GO_0005737",
+    "n_go_terms": 15,
+    "n_val_proteins": 2350,
+    "trained_val_f1": 0.163189,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.216508,
+      "precision": 0.155023,
+      "recall": 0.911579
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.475944,
+      "precision": 0.419098,
+      "recall": 0.783116
+    },
+    "f1_gain": 0.259436
+  },
+  "lipid_carrier_activity_GO_0005319": {
+    "group_name": "lipid_carrier_activity_GO_0005319",
+    "n_go_terms": 20,
+    "n_val_proteins": 37,
+    "trained_val_f1": 0.785667,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.88824,
+      "precision": 0.858,
+      "recall": 0.9375
+    },
+    "optimal_threshold": {
+      "threshold": 0.8682,
+      "f1": 0.894743,
+      "precision": 0.9225,
+      "recall": 0.879482
+    },
+    "f1_gain": 0.006503
+  },
+  "developmental_process_involved_in_reproduction_GO_0003006": {
+    "group_name": "developmental_process_involved_in_reproduction_GO_0003006",
+    "n_go_terms": 41,
+    "n_val_proteins": 217,
+    "trained_val_f1": 0.288938,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.442194,
+      "precision": 0.342354,
+      "recall": 0.782773
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.712295,
+      "precision": 0.709341,
+      "recall": 0.749538
+    },
+    "f1_gain": 0.270101
+  },
+  "cell_activation_GO_0001775": {
+    "group_name": "cell_activation_GO_0001775",
+    "n_go_terms": 17,
+    "n_val_proteins": 47,
+    "trained_val_f1": 0.850633,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.877617,
+      "precision": 0.878151,
+      "recall": 0.877451
+    },
+    "optimal_threshold": {
+      "threshold": 0.5045,
+      "f1": 0.877617,
+      "precision": 0.878151,
+      "recall": 0.877451
+    },
+    "f1_gain": 0.0
+  },
+  "molecular_carrier_activity_GO_0140104": {
+    "group_name": "molecular_carrier_activity_GO_0140104",
+    "n_go_terms": 15,
+    "n_val_proteins": 127,
+    "trained_val_f1": 0.654549,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.882464,
+      "precision": 0.84623,
+      "recall": 0.977778
+    },
+    "optimal_threshold": {
+      "threshold": 0.9045,
+      "f1": 0.957959,
+      "precision": 0.955556,
+      "recall": 0.976934
+    },
+    "f1_gain": 0.075495
+  },
+  "virion_component_GO_0044423": {
+    "group_name": "virion_component_GO_0044423",
+    "n_go_terms": 22,
+    "n_val_proteins": 204,
+    "trained_val_f1": 0.67121,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.783746,
+      "precision": 0.696809,
+      "recall": 0.998316
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.925908,
+      "precision": 0.906493,
+      "recall": 0.971853
+    },
+    "f1_gain": 0.142162
+  },
+  "homeostatic_process_GO_0042592": {
+    "group_name": "homeostatic_process_GO_0042592",
+    "n_go_terms": 54,
+    "n_val_proteins": 242,
+    "trained_val_f1": 0.552553,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.69859,
+      "precision": 0.586295,
+      "recall": 0.950585
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.878282,
+      "precision": 0.87471,
+      "recall": 0.903909
+    },
+    "f1_gain": 0.179692
+  },
+  "reproductive_process_GO_0022414": {
+    "group_name": "reproductive_process_GO_0022414",
+    "n_go_terms": 58,
+    "n_val_proteins": 242,
+    "trained_val_f1": 0.229418,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.344002,
+      "precision": 0.230954,
+      "recall": 0.869369
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.682057,
+      "precision": 0.76601,
+      "recall": 0.713219
+    },
+    "f1_gain": 0.338055
+  },
+  "antioxidant_activity_GO_0016209": {
+    "group_name": "antioxidant_activity_GO_0016209",
+    "n_go_terms": 16,
+    "n_val_proteins": 146,
+    "trained_val_f1": 0.804946,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.916475,
+      "precision": 0.902699,
+      "recall": 0.933333
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.926145,
+      "precision": 0.9244,
+      "recall": 0.929167
+    },
+    "f1_gain": 0.00967
+  },
+  "viral_process_GO_0016032": {
+    "group_name": "viral_process_GO_0016032",
+    "n_go_terms": 33,
+    "n_val_proteins": 136,
+    "trained_val_f1": 0.680416,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.812956,
+      "precision": 0.740484,
+      "recall": 0.952413
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.923006,
+      "precision": 0.925556,
+      "recall": 0.930568
+    },
+    "f1_gain": 0.11005
+  },
+  "structural_molecule_activity_GO_0005198": {
+    "group_name": "structural_molecule_activity_GO_0005198",
+    "n_go_terms": 26,
+    "n_val_proteins": 515,
+    "trained_val_f1": 0.675983,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.764053,
+      "precision": 0.713817,
+      "recall": 0.84529
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.799046,
+      "precision": 0.778617,
+      "recall": 0.837065
+    },
+    "f1_gain": 0.034993
+  },
+  "immune_system_process_GO_0002376": {
+    "group_name": "immune_system_process_GO_0002376",
+    "n_go_terms": 33,
+    "n_val_proteins": 180,
+    "trained_val_f1": 0.489553,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.690003,
+      "precision": 0.616979,
+      "recall": 0.838998
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.759973,
+      "precision": 0.778323,
+      "recall": 0.77832
+    },
+    "f1_gain": 0.06997
+  },
+  "Fallback_biological_process_1": {
+    "group_name": "Fallback_biological_process_1",
+    "n_go_terms": 50,
+    "n_val_proteins": 131,
+    "trained_val_f1": 0.350978,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.529046,
+      "precision": 0.413537,
+      "recall": 0.88075
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.847864,
+      "precision": 0.84754,
+      "recall": 0.866286
+    },
+    "f1_gain": 0.318818
+  },
+  "Fallback_biological_process_2": {
+    "group_name": "Fallback_biological_process_2",
+    "n_go_terms": 50,
+    "n_val_proteins": 168,
+    "trained_val_f1": 0.495588,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.644394,
+      "precision": 0.53977,
+      "recall": 0.906278
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.874121,
+      "precision": 0.870724,
+      "recall": 0.88938
+    },
+    "f1_gain": 0.229727
+  },
+  "Fallback_biological_process_3": {
+    "group_name": "Fallback_biological_process_3",
+    "n_go_terms": 50,
+    "n_val_proteins": 187,
+    "trained_val_f1": 0.46353,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.599009,
+      "precision": 0.493538,
+      "recall": 0.865048
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.833365,
+      "precision": 0.840287,
+      "recall": 0.830762
+    },
+    "f1_gain": 0.234356
+  },
+  "Fallback_biological_process_4": {
+    "group_name": "Fallback_biological_process_4",
+    "n_go_terms": 50,
+    "n_val_proteins": 140,
+    "trained_val_f1": 0.472796,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.705788,
+      "precision": 0.641913,
+      "recall": 0.847143
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.825543,
+      "precision": 0.833833,
+      "recall": 0.82981
+    },
+    "f1_gain": 0.119755
+  },
+  "Fallback_biological_process_5": {
+    "group_name": "Fallback_biological_process_5",
+    "n_go_terms": 50,
+    "n_val_proteins": 300,
+    "trained_val_f1": 0.28758,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.394991,
+      "precision": 0.272782,
+      "recall": 0.870434
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.735566,
+      "precision": 0.803027,
+      "recall": 0.733579
+    },
+    "f1_gain": 0.340575
+  },
+  "Fallback_biological_process_6": {
+    "group_name": "Fallback_biological_process_6",
+    "n_go_terms": 50,
+    "n_val_proteins": 204,
+    "trained_val_f1": 0.369725,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.505605,
+      "precision": 0.394614,
+      "recall": 0.866333
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.800766,
+      "precision": 0.823732,
+      "recall": 0.827516
+    },
+    "f1_gain": 0.295161
+  },
+  "Fallback_biological_process_7": {
+    "group_name": "Fallback_biological_process_7",
+    "n_go_terms": 50,
+    "n_val_proteins": 163,
+    "trained_val_f1": 0.448862,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.645532,
+      "precision": 0.548147,
+      "recall": 0.878194
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.806338,
+      "precision": 0.804333,
+      "recall": 0.839056
+    },
+    "f1_gain": 0.160806
+  },
+  "Fallback_biological_process_8": {
+    "group_name": "Fallback_biological_process_8",
+    "n_go_terms": 50,
+    "n_val_proteins": 186,
+    "trained_val_f1": 0.387642,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.560846,
+      "precision": 0.460265,
+      "recall": 0.859502
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.801566,
+      "precision": 0.809679,
+      "recall": 0.820917
+    },
+    "f1_gain": 0.24072
+  },
+  "Fallback_biological_process_9": {
+    "group_name": "Fallback_biological_process_9",
+    "n_go_terms": 50,
+    "n_val_proteins": 153,
+    "trained_val_f1": 0.430207,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.645847,
+      "precision": 0.557107,
+      "recall": 0.867143
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.834738,
+      "precision": 0.840167,
+      "recall": 0.83711
+    },
+    "f1_gain": 0.188891
+  },
+  "Fallback_biological_process_10": {
+    "group_name": "Fallback_biological_process_10",
+    "n_go_terms": 50,
+    "n_val_proteins": 144,
+    "trained_val_f1": 0.548643,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.697767,
+      "precision": 0.611164,
+      "recall": 0.888833
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.848769,
+      "precision": 0.860143,
+      "recall": 0.84755
+    },
+    "f1_gain": 0.151002
+  },
+  "Fallback_biological_process_11": {
+    "group_name": "Fallback_biological_process_11",
+    "n_go_terms": 50,
+    "n_val_proteins": 248,
+    "trained_val_f1": 0.35998,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.561313,
+      "precision": 0.441456,
+      "recall": 0.885068
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.785621,
+      "precision": 0.786667,
+      "recall": 0.820961
+    },
+    "f1_gain": 0.224308
+  },
+  "Fallback_biological_process_12": {
+    "group_name": "Fallback_biological_process_12",
+    "n_go_terms": 50,
+    "n_val_proteins": 278,
+    "trained_val_f1": 0.337892,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.515025,
+      "precision": 0.406386,
+      "recall": 0.850613
+    },
+    "optimal_threshold": {
+      "threshold": 0.8864,
+      "f1": 0.757626,
+      "precision": 0.781484,
+      "recall": 0.787334
+    },
+    "f1_gain": 0.242601
+  },
+  "Fallback_biological_process_13": {
+    "group_name": "Fallback_biological_process_13",
+    "n_go_terms": 50,
+    "n_val_proteins": 176,
+    "trained_val_f1": 0.415811,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.578457,
+      "precision": 0.451254,
+      "recall": 0.930643
+    },
+    "optimal_threshold": {
+      "threshold": 0.85,
+      "f1": 0.865306,
+      "precision": 0.873143,
+      "recall": 0.888754
+    },
+    "f1_gain": 0.286849
+  },
+  "Fallback_biological_process_14": {
+    "group_name": "Fallback_biological_process_14",
+    "n_go_terms": 50,
+    "n_val_proteins": 93,
+    "trained_val_f1": 0.409139,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.564179,
+      "precision": 0.49946,
+      "recall": 0.713333
+    },
+    "optimal_threshold": {
+      "threshold": 0.8227,
+      "f1": 0.6653,
+      "precision": 0.677778,
+      "recall": 0.668333
+    },
+    "f1_gain": 0.101121
+  },
+  "Fallback_biological_process_15": {
+    "group_name": "Fallback_biological_process_15",
+    "n_go_terms": 50,
+    "n_val_proteins": 121,
+    "trained_val_f1": 0.506961,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.679451,
+      "precision": 0.620146,
+      "recall": 0.85
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.831414,
+      "precision": 0.8375,
+      "recall": 0.837143
+    },
+    "f1_gain": 0.151963
+  },
+  "Fallback_biological_process_16": {
+    "group_name": "Fallback_biological_process_16",
+    "n_go_terms": 42,
+    "n_val_proteins": 127,
+    "trained_val_f1": 0.419349,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.640191,
+      "precision": 0.560746,
+      "recall": 0.825113
+    },
+    "optimal_threshold": {
+      "threshold": 0.8955,
+      "f1": 0.82169,
+      "precision": 0.84881,
+      "recall": 0.809127
+    },
+    "f1_gain": 0.181499
+  },
+  "Fallback_cellular_component_1": {
+    "group_name": "Fallback_cellular_component_1",
+    "n_go_terms": 50,
+    "n_val_proteins": 157,
+    "trained_val_f1": 0.348032,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.542949,
+      "precision": 0.436554,
+      "recall": 0.863756
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.800782,
+      "precision": 0.828657,
+      "recall": 0.802399
+    },
+    "f1_gain": 0.257833
+  },
+  "Fallback_cellular_component_2": {
+    "group_name": "Fallback_cellular_component_2",
+    "n_go_terms": 50,
+    "n_val_proteins": 342,
+    "trained_val_f1": 0.512462,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.541215,
+      "precision": 0.43961,
+      "recall": 0.793576
+    },
+    "optimal_threshold": {
+      "threshold": 0.9318,
+      "f1": 0.743724,
+      "precision": 0.743194,
+      "recall": 0.759251
+    },
+    "f1_gain": 0.202509
+  },
+  "Fallback_cellular_component_3": {
+    "group_name": "Fallback_cellular_component_3",
+    "n_go_terms": 50,
+    "n_val_proteins": 406,
+    "trained_val_f1": 0.388498,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.431311,
+      "precision": 0.315503,
+      "recall": 0.863873
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.757843,
+      "precision": 0.754008,
+      "recall": 0.811648
+    },
+    "f1_gain": 0.326532
+  },
+  "Fallback_cellular_component_4": {
+    "group_name": "Fallback_cellular_component_4",
+    "n_go_terms": 50,
+    "n_val_proteins": 723,
+    "trained_val_f1": 0.282517,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.360563,
+      "precision": 0.251252,
+      "recall": 0.873074
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.689182,
+      "precision": 0.688436,
+      "recall": 0.77516
+    },
+    "f1_gain": 0.328619
+  },
+  "Fallback_cellular_component_5": {
+    "group_name": "Fallback_cellular_component_5",
+    "n_go_terms": 50,
+    "n_val_proteins": 195,
+    "trained_val_f1": 0.525918,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.639259,
+      "precision": 0.552346,
+      "recall": 0.835
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.821674,
+      "precision": 0.823111,
+      "recall": 0.824134
+    },
+    "f1_gain": 0.182415
+  },
+  "Fallback_cellular_component_6": {
+    "group_name": "Fallback_cellular_component_6",
+    "n_go_terms": 50,
+    "n_val_proteins": 120,
+    "trained_val_f1": 0.619187,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.702917,
+      "precision": 0.626088,
+      "recall": 0.87
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.840547,
+      "precision": 0.854667,
+      "recall": 0.841
+    },
+    "f1_gain": 0.13763
+  },
+  "Fallback_cellular_component_7": {
+    "group_name": "Fallback_cellular_component_7",
+    "n_go_terms": 50,
+    "n_val_proteins": 155,
+    "trained_val_f1": 0.546787,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.696177,
+      "precision": 0.651689,
+      "recall": 0.823545
+    },
+    "optimal_threshold": {
+      "threshold": 0.75,
+      "f1": 0.783055,
+      "precision": 0.778633,
+      "recall": 0.808737
+    },
+    "f1_gain": 0.086878
+  },
+  "Fallback_cellular_component_8": {
+    "group_name": "Fallback_cellular_component_8",
+    "n_go_terms": 50,
+    "n_val_proteins": 2495,
+    "trained_val_f1": 0.07478,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.081578,
+      "precision": 0.056205,
+      "recall": 0.826569
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.158441,
+      "precision": 0.161572,
+      "recall": 0.39063
+    },
+    "f1_gain": 0.076863
+  },
+  "Fallback_cellular_component_9": {
+    "group_name": "Fallback_cellular_component_9",
+    "n_go_terms": 50,
+    "n_val_proteins": 548,
+    "trained_val_f1": 0.34328,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.372618,
+      "precision": 0.251128,
+      "recall": 0.852753
+    },
+    "optimal_threshold": {
+      "threshold": 0.9136,
+      "f1": 0.668247,
+      "precision": 0.669355,
+      "recall": 0.741689
+    },
+    "f1_gain": 0.295629
+  },
+  "Fallback_cellular_component_10": {
+    "group_name": "Fallback_cellular_component_10",
+    "n_go_terms": 50,
+    "n_val_proteins": 556,
+    "trained_val_f1": 0.248025,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.282112,
+      "precision": 0.183135,
+      "recall": 0.884342
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.633192,
+      "precision": 0.671894,
+      "recall": 0.710536
+    },
+    "f1_gain": 0.35108
+  },
+  "Fallback_cellular_component_11": {
+    "group_name": "Fallback_cellular_component_11",
+    "n_go_terms": 4,
+    "n_val_proteins": 12,
+    "trained_val_f1": 0.65,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.916667,
+      "precision": 0.875,
+      "recall": 1.0
+    },
+    "optimal_threshold": {
+      "threshold": 0.5591,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "f1_gain": 0.083333
+  },
+  "Fallback_molecular_function_1": {
+    "group_name": "Fallback_molecular_function_1",
+    "n_go_terms": 50,
+    "n_val_proteins": 788,
+    "trained_val_f1": 0.173901,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.187462,
+      "precision": 0.118542,
+      "recall": 0.909986
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.43226,
+      "precision": 0.371739,
+      "recall": 0.710934
+    },
+    "f1_gain": 0.244798
+  },
+  "Fallback_molecular_function_2": {
+    "group_name": "Fallback_molecular_function_2",
+    "n_go_terms": 50,
+    "n_val_proteins": 95,
+    "trained_val_f1": 0.628316,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.821506,
+      "precision": 0.798,
+      "recall": 0.871111
+    },
+    "optimal_threshold": {
+      "threshold": 0.9227,
+      "f1": 0.852252,
+      "precision": 0.856667,
+      "recall": 0.859444
+    },
+    "f1_gain": 0.030746
+  },
+  "Fallback_molecular_function_3": {
+    "group_name": "Fallback_molecular_function_3",
+    "n_go_terms": 50,
+    "n_val_proteins": 488,
+    "trained_val_f1": 0.385206,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.49515,
+      "precision": 0.381157,
+      "recall": 0.899981
+    },
+    "optimal_threshold": {
+      "threshold": 0.9409,
+      "f1": 0.784115,
+      "precision": 0.802404,
+      "recall": 0.824432
+    },
+    "f1_gain": 0.288965
+  },
+  "Fallback_molecular_function_4": {
+    "group_name": "Fallback_molecular_function_4",
+    "n_go_terms": 50,
+    "n_val_proteins": 543,
+    "trained_val_f1": 0.244111,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.362488,
+      "precision": 0.258388,
+      "recall": 0.83669
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.696837,
+      "precision": 0.708448,
+      "recall": 0.76756
+    },
+    "f1_gain": 0.334349
+  },
+  "Fallback_molecular_function_5": {
+    "group_name": "Fallback_molecular_function_5",
+    "n_go_terms": 50,
+    "n_val_proteins": 540,
+    "trained_val_f1": 0.409048,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.469156,
+      "precision": 0.35559,
+      "recall": 0.936138
+    },
+    "optimal_threshold": {
+      "threshold": 0.95,
+      "f1": 0.847181,
+      "precision": 0.834877,
+      "recall": 0.8849
+    },
+    "f1_gain": 0.378025
+  },
+  "Fallback_molecular_function_6": {
+    "group_name": "Fallback_molecular_function_6",
+    "n_go_terms": 5,
+    "n_val_proteins": 74,
+    "trained_val_f1": 0.891655,
+    "default_threshold": {
+      "threshold": 0.5,
+      "f1": 0.930095,
+      "precision": 0.934242,
+      "recall": 0.943333
+    },
+    "optimal_threshold": {
+      "threshold": 0.6136,
+      "f1": 0.940261,
+      "precision": 0.95122,
+      "recall": 0.943333
+    },
+    "f1_gain": 0.010166
+  }
+}

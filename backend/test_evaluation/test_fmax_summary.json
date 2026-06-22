@@ -1,0 +1,1877 @@
+{
+  "positive_regulation_of_DNA-templated_transcription_GO_0045893": {
+    "fmax": 0.894867,
+    "smin": 1.002277,
+    "n_test": 480
+  },
+  "regulation_of_mRNA_stability_GO_0043488": {
+    "fmax": 0.887123,
+    "smin": 1.523082,
+    "n_test": 47
+  },
+  "heterochromatin_formation_GO_0031507": {
+    "fmax": 0.847105,
+    "smin": 2.420173,
+    "n_test": 61
+  },
+  "pattern_recognition_receptor_signaling_pathway_GO_0002221": {
+    "fmax": 0.816216,
+    "smin": 2.755512,
+    "n_test": 31
+  },
+  "regulation_of_protein_kinase_activity_GO_0045859": {
+    "fmax": 0.790903,
+    "smin": 2.506957,
+    "n_test": 43
+  },
+  "positive_regulation_of_lymphocyte_differentiation_GO_0045621": {
+    "fmax": 0.90587,
+    "smin": 1.476717,
+    "n_test": 28
+  },
+  "ribonucleoside_monophosphate_biosynthetic_process_GO_0009156": {
+    "fmax": 0.896847,
+    "smin": 1.467641,
+    "n_test": 49
+  },
+  "fatty_acid_biosynthetic_process_GO_0006633": {
+    "fmax": 0.952998,
+    "smin": 0.683957,
+    "n_test": 116
+  },
+  "tRNA_aminoacylation_for_protein_translation_GO_0006418": {
+    "fmax": 0.958185,
+    "smin": 0.539822,
+    "n_test": 28
+  },
+  "regulation_of_translation_GO_0006417": {
+    "fmax": 0.884949,
+    "smin": 1.3606,
+    "n_test": 154
+  },
+  "tRNA_modification_GO_0006400": {
+    "fmax": 0.815065,
+    "smin": 2.611753,
+    "n_test": 54
+  },
+  "regulation_of_DNA-templated_transcription_GO_0006355": {
+    "fmax": 0.816406,
+    "smin": 2.129229,
+    "n_test": 708
+  },
+  "purine_nucleotide_biosynthetic_process_GO_0006164": {
+    "fmax": 0.938657,
+    "smin": 0.786626,
+    "n_test": 97
+  },
+  "positive_regulation_of_cytokine_production_GO_0001819": {
+    "fmax": 0.767753,
+    "smin": 4.745695,
+    "n_test": 115
+  },
+  "negative_regulation_of_cytokine_production_GO_0001818": {
+    "fmax": 0.86187,
+    "smin": 2.190145,
+    "n_test": 67
+  },
+  "regulation_of_calcium_ion_transmembrane_transport_GO_1903169": {
+    "fmax": 0.923994,
+    "smin": 0.773223,
+    "n_test": 33
+  },
+  "regulation_of_actin_filament_organization_GO_0110053": {
+    "fmax": 0.838002,
+    "smin": 1.935076,
+    "n_test": 79
+  },
+  "ligand-gated_monoatomic_cation_channel_activity_GO_0099094": {
+    "fmax": 0.949468,
+    "smin": 0.642602,
+    "n_test": 41
+  },
+  "protein_modification_by_small_protein_conjugation_GO_0032446": {
+    "fmax": 0.909114,
+    "smin": 1.412133,
+    "n_test": 211
+  },
+  "negative_regulation_of_gene_expression_GO_0010629": {
+    "fmax": 0.851121,
+    "smin": 2.93893,
+    "n_test": 186
+  },
+  "positive_regulation_of_gene_expression_GO_0010628": {
+    "fmax": 0.946045,
+    "smin": 1.001236,
+    "n_test": 184
+  },
+  "nucleotide_catabolic_process_GO_0009166": {
+    "fmax": 0.935243,
+    "smin": 0.979571,
+    "n_test": 73
+  },
+  "nucleotide_biosynthetic_process_GO_0009165": {
+    "fmax": 0.94806,
+    "smin": 0.902563,
+    "n_test": 34
+  },
+  "fatty_acid_metabolic_process_GO_0006631": {
+    "fmax": 0.86385,
+    "smin": 2.790906,
+    "n_test": 117
+  },
+  "rRNA_processing_GO_0006364": {
+    "fmax": 0.861527,
+    "smin": 2.245976,
+    "n_test": 109
+  },
+  "purine_nucleotide_metabolic_process_GO_0006163": {
+    "fmax": 0.974542,
+    "smin": 0.367606,
+    "n_test": 55
+  },
+  "regulation_of_intrinsic_apoptotic_signaling_pathway_GO_2001242": {
+    "fmax": 0.93792,
+    "smin": 0.818407,
+    "n_test": 43
+  },
+  "positive_regulation_of_intracellular_signal_transduction_GO_1902533": {
+    "fmax": 0.795404,
+    "smin": 2.673038,
+    "n_test": 263
+  },
+  "negative_regulation_of_intracellular_signal_transduction_GO_1902532": {
+    "fmax": 0.826878,
+    "smin": 2.518521,
+    "n_test": 156
+  },
+  "regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990": {
+    "fmax": 0.793035,
+    "smin": 3.873266,
+    "n_test": 103
+  },
+  "alpha-amino_acid_metabolic_process_GO_1901605": {
+    "fmax": 0.827449,
+    "smin": 3.853346,
+    "n_test": 176
+  },
+  "secretory_vesicle_GO_0099503": {
+    "fmax": 0.900385,
+    "smin": 1.017235,
+    "n_test": 146
+  },
+  "regulation_of_RNA_metabolic_process_GO_0051252": {
+    "fmax": 0.928039,
+    "smin": 0.940573,
+    "n_test": 52
+  },
+  "negative_regulation_of_protein_metabolic_process_GO_0051248": {
+    "fmax": 0.897399,
+    "smin": 1.163236,
+    "n_test": 83
+  },
+  "positive_regulation_of_protein_metabolic_process_GO_0051247": {
+    "fmax": 0.819275,
+    "smin": 2.443045,
+    "n_test": 127
+  },
+  "regulation_of_T_cell_activation_GO_0050863": {
+    "fmax": 0.879724,
+    "smin": 1.990105,
+    "n_test": 86
+  },
+  "positive_regulation_of_neurogenesis_GO_0050769": {
+    "fmax": 0.878686,
+    "smin": 1.554403,
+    "n_test": 65
+  },
+  "regulation_of_lipid_biosynthetic_process_GO_0046890": {
+    "fmax": 0.844313,
+    "smin": 2.196986,
+    "n_test": 48
+  },
+  "regulation_of_hormone_secretion_GO_0046883": {
+    "fmax": 0.911008,
+    "smin": 0.900755,
+    "n_test": 70
+  },
+  "carboxylic_acid_catabolic_process_GO_0046395": {
+    "fmax": 0.924133,
+    "smin": 1.054337,
+    "n_test": 45
+  },
+  "regulation_of_myeloid_cell_differentiation_GO_0045637": {
+    "fmax": 0.894075,
+    "smin": 1.16885,
+    "n_test": 51
+  },
+  "T_cell_differentiation_GO_0030217": {
+    "fmax": 0.898966,
+    "smin": 1.419294,
+    "n_test": 37
+  },
+  "regulation_of_exocytosis_GO_0017157": {
+    "fmax": 0.909359,
+    "smin": 1.191202,
+    "n_test": 49
+  },
+  "protein-lysine_N-methyltransferase_activity_GO_0016279": {
+    "fmax": 0.881501,
+    "smin": 1.658386,
+    "n_test": 19
+  },
+  "regulation_of_macroautophagy_GO_0016241": {
+    "fmax": 0.829953,
+    "smin": 1.937172,
+    "n_test": 50
+  },
+  "terpenoid_biosynthetic_process_GO_0016114": {
+    "fmax": 0.946936,
+    "smin": 0.944191,
+    "n_test": 121
+  },
+  "mRNA_metabolic_process_GO_0016071": {
+    "fmax": 0.895024,
+    "smin": 1.412043,
+    "n_test": 192
+  },
+  "regulation_of_neuron_projection_development_GO_0010975": {
+    "fmax": 0.814428,
+    "smin": 2.69632,
+    "n_test": 106
+  },
+  "regulation_of_gene_expression_GO_0010468": {
+    "fmax": 0.852372,
+    "smin": 2.282101,
+    "n_test": 170
+  },
+  "cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169": {
+    "fmax": 0.896492,
+    "smin": 1.974261,
+    "n_test": 114
+  },
+  "calcium_ion_transport_GO_0006816": {
+    "fmax": 0.876307,
+    "smin": 1.532664,
+    "n_test": 69
+  },
+  "RNA_catabolic_process_GO_0006401": {
+    "fmax": 0.83403,
+    "smin": 2.012221,
+    "n_test": 43
+  },
+  "DNA_recombination_GO_0006310": {
+    "fmax": 0.839351,
+    "smin": 2.16727,
+    "n_test": 126
+  },
+  "DNA_repair_GO_0006281": {
+    "fmax": 0.847549,
+    "smin": 1.949422,
+    "n_test": 209
+  },
+  "voltage-gated_monoatomic_ion_channel_activity_GO_0005244": {
+    "fmax": 0.939263,
+    "smin": 0.971662,
+    "n_test": 48
+  },
+  "carboxylic_acid_transmembrane_transport_GO_1905039": {
+    "fmax": 0.892184,
+    "smin": 2.249602,
+    "n_test": 31
+  },
+  "serine_threonine_protein_kinase_complex_GO_1902554": {
+    "fmax": 0.951551,
+    "smin": 0.762079,
+    "n_test": 47
+  },
+  "regulation_of_intracellular_signal_transduction_GO_1902531": {
+    "fmax": 0.864384,
+    "smin": 1.858521,
+    "n_test": 110
+  },
+  "regulation_of_organelle_assembly_GO_1902115": {
+    "fmax": 0.941644,
+    "smin": 0.760963,
+    "n_test": 49
+  },
+  "membraneless_organelle_assembly_GO_0140694": {
+    "fmax": 0.83398,
+    "smin": 1.999224,
+    "n_test": 90
+  },
+  "trans-synaptic_signaling_GO_0099537": {
+    "fmax": 0.958314,
+    "smin": 0.620564,
+    "n_test": 87
+  },
+  "monoatomic_cation_transmembrane_transport_GO_0098655": {
+    "fmax": 0.891868,
+    "smin": 1.490408,
+    "n_test": 128
+  },
+  "positive_regulation_of_cell_cycle_process_GO_0090068": {
+    "fmax": 0.826934,
+    "smin": 2.699014,
+    "n_test": 45
+  },
+  "symbiont-mediated_perturbation_of_host_immune_response_GO_0052553": {
+    "fmax": 0.949362,
+    "smin": 0.715775,
+    "n_test": 70
+  },
+  "regulation_of_cytoskeleton_organization_GO_0051493": {
+    "fmax": 0.799235,
+    "smin": 2.795002,
+    "n_test": 84
+  },
+  "regulation_of_protein_transport_GO_0051223": {
+    "fmax": 0.875597,
+    "smin": 1.845963,
+    "n_test": 77
+  },
+  "modulation_of_chemical_synaptic_transmission_GO_0050804": {
+    "fmax": 0.820755,
+    "smin": 3.182919,
+    "n_test": 143
+  },
+  "regulation_of_inflammatory_response_GO_0050727": {
+    "fmax": 0.879026,
+    "smin": 1.30784,
+    "n_test": 88
+  },
+  "regulation_of_innate_immune_response_GO_0045088": {
+    "fmax": 0.859084,
+    "smin": 1.979073,
+    "n_test": 71
+  },
+  "glycerolipid_biosynthetic_process_GO_0045017": {
+    "fmax": 0.909532,
+    "smin": 1.217878,
+    "n_test": 71
+  },
+  "negative_regulation_of_apoptotic_process_GO_0043066": {
+    "fmax": 0.886188,
+    "smin": 1.726264,
+    "n_test": 215
+  },
+  "positive_regulation_of_apoptotic_process_GO_0043065": {
+    "fmax": 0.932427,
+    "smin": 0.892566,
+    "n_test": 128
+  },
+  "regulation_of_chromosome_organization_GO_0033044": {
+    "fmax": 0.900674,
+    "smin": 1.281865,
+    "n_test": 33
+  },
+  "cytoplasmic_vesicle_GO_0031410": {
+    "fmax": 0.772488,
+    "smin": 2.823819,
+    "n_test": 396
+  },
+  "neuron_projection_development_GO_0031175": {
+    "fmax": 0.874873,
+    "smin": 1.763734,
+    "n_test": 140
+  },
+  "negative_regulation_of_cell_migration_GO_0030336": {
+    "fmax": 0.96011,
+    "smin": 0.874786,
+    "n_test": 63
+  },
+  "positive_regulation_of_cell_migration_GO_0030335": {
+    "fmax": 0.904242,
+    "smin": 1.648033,
+    "n_test": 135
+  },
+  "regulation_of_endocytosis_GO_0030100": {
+    "fmax": 0.796296,
+    "smin": 2.893854,
+    "n_test": 94
+  },
+  "metal_ion_transport_GO_0030001": {
+    "fmax": 0.900474,
+    "smin": 1.062685,
+    "n_test": 112
+  },
+  "protein-RNA_complex_assembly_GO_0022618": {
+    "fmax": 0.894513,
+    "smin": 1.579805,
+    "n_test": 96
+  },
+  "carboxylic_acid_metabolic_process_GO_0019752": {
+    "fmax": 0.867641,
+    "smin": 2.983143,
+    "n_test": 185
+  },
+  "cytokine-mediated_signaling_pathway_GO_0019221": {
+    "fmax": 0.81382,
+    "smin": 3.256134,
+    "n_test": 67
+  },
+  "regulation_of_lipid_metabolic_process_GO_0019216": {
+    "fmax": 0.909343,
+    "smin": 1.606501,
+    "n_test": 51
+  },
+  "RNA_metabolic_process_GO_0016070": {
+    "fmax": 0.735643,
+    "smin": 5.125966,
+    "n_test": 319
+  },
+  "sodium_ion_transmembrane_transporter_activity_GO_0015081": {
+    "fmax": 0.980392,
+    "smin": 0.179423,
+    "n_test": 51
+  },
+  "transport_along_microtubule_GO_0010970": {
+    "fmax": 0.767163,
+    "smin": 3.338841,
+    "n_test": 51
+  },
+  "negative_regulation_of_signal_transduction_GO_0009968": {
+    "fmax": 0.856132,
+    "smin": 2.047304,
+    "n_test": 176
+  },
+  "positive_regulation_of_signal_transduction_GO_0009967": {
+    "fmax": 0.863818,
+    "smin": 1.918758,
+    "n_test": 149
+  },
+  "nucleoside_metabolic_process_GO_0009116": {
+    "fmax": 0.963287,
+    "smin": 0.5128,
+    "n_test": 25
+  },
+  "N-acetyltransferase_activity_GO_0008080": {
+    "fmax": 0.860108,
+    "smin": 2.342949,
+    "n_test": 27
+  },
+  "regulation_of_heart_contraction_GO_0008016": {
+    "fmax": 0.868853,
+    "smin": 1.612234,
+    "n_test": 50
+  },
+  "nucleocytoplasmic_transport_GO_0006913": {
+    "fmax": 0.867577,
+    "smin": 1.729982,
+    "n_test": 94
+  },
+  "exocytosis_GO_0006887": {
+    "fmax": 0.921653,
+    "smin": 1.00298,
+    "n_test": 71
+  },
+  "nucleoside_phosphate_metabolic_process_GO_0006753": {
+    "fmax": 0.871551,
+    "smin": 2.030517,
+    "n_test": 99
+  },
+  "glycerophospholipid_metabolic_process_GO_0006650": {
+    "fmax": 0.913215,
+    "smin": 1.052536,
+    "n_test": 28
+  },
+  "DNA_metabolic_process_GO_0006259": {
+    "fmax": 0.68637,
+    "smin": 5.964133,
+    "n_test": 253
+  },
+  "regulation_of_carbohydrate_metabolic_process_GO_0006109": {
+    "fmax": 0.825879,
+    "smin": 2.468023,
+    "n_test": 58
+  },
+  "phosphoprotein_phosphatase_activity_GO_0004721": {
+    "fmax": 0.915424,
+    "smin": 0.82691,
+    "n_test": 71
+  },
+  "protein_serine_threonine_kinase_activity_GO_0004674": {
+    "fmax": 0.941247,
+    "smin": 1.26887,
+    "n_test": 204
+  },
+  "transcription_cis-regulatory_region_binding_GO_0000976": {
+    "fmax": 0.899524,
+    "smin": 0.79815,
+    "n_test": 377
+  },
+  "microtubule_cytoskeleton_organization_GO_0000226": {
+    "fmax": 0.774265,
+    "smin": 3.707222,
+    "n_test": 134
+  },
+  "positive_regulation_of_protein_localization_GO_1903829": {
+    "fmax": 0.906557,
+    "smin": 1.138135,
+    "n_test": 59
+  },
+  "regulation_of_cell_junction_assembly_GO_1901888": {
+    "fmax": 0.930816,
+    "smin": 0.962665,
+    "n_test": 76
+  },
+  "defense_response_to_other_organism_GO_0098542": {
+    "fmax": 0.898775,
+    "smin": 1.388765,
+    "n_test": 247
+  },
+  "regulation_of_cellular_response_to_stress_GO_0080135": {
+    "fmax": 0.896178,
+    "smin": 1.413004,
+    "n_test": 72
+  },
+  "regulation_of_primary_metabolic_process_GO_0080090": {
+    "fmax": 0.790672,
+    "smin": 4.07126,
+    "n_test": 109
+  },
+  "cellular_response_to_cytokine_stimulus_GO_0071345": {
+    "fmax": 0.92116,
+    "smin": 0.746394,
+    "n_test": 111
+  },
+  "protein-containing_complex_assembly_GO_0065003": {
+    "fmax": 0.811939,
+    "smin": 3.651455,
+    "n_test": 341
+  },
+  "protein_maturation_GO_0051604": {
+    "fmax": 0.88684,
+    "smin": 1.033553,
+    "n_test": 92
+  },
+  "chromosome_organization_GO_0051276": {
+    "fmax": 0.788719,
+    "smin": 3.078828,
+    "n_test": 110
+  },
+  "regulation_of_muscle_cell_differentiation_GO_0051147": {
+    "fmax": 0.847533,
+    "smin": 1.94705,
+    "n_test": 31
+  },
+  "regulation_of_secretion_GO_0051046": {
+    "fmax": 0.912255,
+    "smin": 1.187636,
+    "n_test": 27
+  },
+  "positive_regulation_of_immune_response_GO_0050778": {
+    "fmax": 0.906631,
+    "smin": 1.335982,
+    "n_test": 68
+  },
+  "regulation_of_epithelial_cell_proliferation_GO_0050678": {
+    "fmax": 0.877113,
+    "smin": 1.133777,
+    "n_test": 89
+  },
+  "organelle_fusion_GO_0048284": {
+    "fmax": 0.781408,
+    "smin": 2.858133,
+    "n_test": 48
+  },
+  "carboxylic_acid_transport_GO_0046942": {
+    "fmax": 0.853414,
+    "smin": 2.775712,
+    "n_test": 107
+  },
+  "metal_ion_transmembrane_transporter_activity_GO_0046873": {
+    "fmax": 0.854525,
+    "smin": 2.088739,
+    "n_test": 87
+  },
+  "metal_ion_binding_GO_0046872": {
+    "fmax": 0.846666,
+    "smin": 1.716005,
+    "n_test": 2631
+  },
+  "glucosyltransferase_activity_GO_0046527": {
+    "fmax": 0.971937,
+    "smin": 0.465778,
+    "n_test": 30
+  },
+  "negative_regulation_of_cell_cycle_GO_0045786": {
+    "fmax": 0.837665,
+    "smin": 1.763872,
+    "n_test": 54
+  },
+  "positive_regulation_of_cell_differentiation_GO_0045597": {
+    "fmax": 0.88192,
+    "smin": 1.553721,
+    "n_test": 111
+  },
+  "negative_regulation_of_cell_differentiation_GO_0045596": {
+    "fmax": 0.861016,
+    "smin": 2.637044,
+    "n_test": 98
+  },
+  "cell-cell_junction_organization_GO_0045216": {
+    "fmax": 0.885629,
+    "smin": 1.420549,
+    "n_test": 47
+  },
+  "regulation_of_monoatomic_ion_transport_GO_0043269": {
+    "fmax": 0.844869,
+    "smin": 2.639391,
+    "n_test": 73
+  },
+  "ATPase-coupled_transmembrane_transporter_activity_GO_0042626": {
+    "fmax": 0.857296,
+    "smin": 1.8083,
+    "n_test": 65
+  },
+  "protein_modification_process_GO_0036211": {
+    "fmax": 0.863091,
+    "smin": 2.330068,
+    "n_test": 215
+  },
+  "intracellular_signal_transduction_GO_0035556": {
+    "fmax": 0.807421,
+    "smin": 3.806283,
+    "n_test": 436
+  },
+  "cation_channel_complex_GO_0034703": {
+    "fmax": 0.975202,
+    "smin": 0.326093,
+    "n_test": 94
+  },
+  "secretion_by_cell_GO_0032940": {
+    "fmax": 0.917058,
+    "smin": 0.993261,
+    "n_test": 79
+  },
+  "carboxylic_acid_binding_GO_0031406": {
+    "fmax": 0.941984,
+    "smin": 0.783487,
+    "n_test": 85
+  },
+  "regulation_of_defense_response_GO_0031347": {
+    "fmax": 0.815724,
+    "smin": 2.088413,
+    "n_test": 45
+  },
+  "regulation_of_cell_projection_organization_GO_0031344": {
+    "fmax": 0.919582,
+    "smin": 0.995938,
+    "n_test": 49
+  },
+  "cytoplasmic_vesicle_membrane_GO_0030659": {
+    "fmax": 0.749833,
+    "smin": 3.865191,
+    "n_test": 294
+  },
+  "protein_catabolic_process_GO_0030163": {
+    "fmax": 0.854739,
+    "smin": 2.258112,
+    "n_test": 243
+  },
+  "cell_projection_assembly_GO_0030031": {
+    "fmax": 0.921549,
+    "smin": 0.826851,
+    "n_test": 103
+  },
+  "intracellular_monoatomic_cation_homeostasis_GO_0030003": {
+    "fmax": 0.837923,
+    "smin": 2.297836,
+    "n_test": 153
+  },
+  "regulation_of_cell-cell_adhesion_GO_0022407": {
+    "fmax": 0.882233,
+    "smin": 1.423977,
+    "n_test": 42
+  },
+  "phosphatase_activity_GO_0016791": {
+    "fmax": 0.866147,
+    "smin": 2.923596,
+    "n_test": 74
+  },
+  "pyrophosphatase_activity_GO_0016462": {
+    "fmax": 0.916374,
+    "smin": 1.109204,
+    "n_test": 468
+  },
+  "CoA-ligase_activity_GO_0016405": {
+    "fmax": 0.901354,
+    "smin": 1.442727,
+    "n_test": 24
+  },
+  "carbohydrate_catabolic_process_GO_0016052": {
+    "fmax": 0.861903,
+    "smin": 2.187723,
+    "n_test": 137
+  },
+  "carbohydrate_biosynthetic_process_GO_0016051": {
+    "fmax": 0.871596,
+    "smin": 1.480396,
+    "n_test": 124
+  },
+  "vesicle_organization_GO_0016050": {
+    "fmax": 0.939234,
+    "smin": 0.929949,
+    "n_test": 58
+  },
+  "lipid_catabolic_process_GO_0016042": {
+    "fmax": 0.948123,
+    "smin": 1.043939,
+    "n_test": 133
+  },
+  "proton_transmembrane_transporter_activity_GO_0015078": {
+    "fmax": 0.930303,
+    "smin": 0.956794,
+    "n_test": 104
+  },
+  "regulation_of_cell_cycle_process_GO_0010564": {
+    "fmax": 0.841061,
+    "smin": 1.769094,
+    "n_test": 54
+  },
+  "regulation_of_signal_transduction_GO_0009966": {
+    "fmax": 0.873832,
+    "smin": 2.269195,
+    "n_test": 113
+  },
+  "positive_regulation_of_metabolic_process_GO_0009893": {
+    "fmax": 0.856869,
+    "smin": 1.927605,
+    "n_test": 81
+  },
+  "glycoprotein_metabolic_process_GO_0009100": {
+    "fmax": 0.889459,
+    "smin": 1.40023,
+    "n_test": 66
+  },
+  "S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757": {
+    "fmax": 0.919979,
+    "smin": 1.765715,
+    "n_test": 69
+  },
+  "lipid_biosynthetic_process_GO_0008610": {
+    "fmax": 0.847528,
+    "smin": 2.499107,
+    "n_test": 177
+  },
+  "O-acyltransferase_activity_GO_0008374": {
+    "fmax": 0.879664,
+    "smin": 2.402777,
+    "n_test": 34
+  },
+  "negative_regulation_of_cell_population_proliferation_GO_0008285": {
+    "fmax": 0.970826,
+    "smin": 0.486904,
+    "n_test": 125
+  },
+  "positive_regulation_of_cell_population_proliferation_GO_0008284": {
+    "fmax": 0.928994,
+    "smin": 1.380564,
+    "n_test": 173
+  },
+  "phosphoric_diester_hydrolase_activity_GO_0008081": {
+    "fmax": 0.936949,
+    "smin": 1.15008,
+    "n_test": 42
+  },
+  "G_protein-coupled_receptor_signaling_pathway_GO_0007186": {
+    "fmax": 0.842671,
+    "smin": 2.925727,
+    "n_test": 294
+  },
+  "cell_surface_receptor_signaling_pathway_GO_0007166": {
+    "fmax": 0.858992,
+    "smin": 2.63346,
+    "n_test": 323
+  },
+  "vacuolar_transport_GO_0007034": {
+    "fmax": 0.822443,
+    "smin": 1.868337,
+    "n_test": 61
+  },
+  "actin_filament_organization_GO_0007015": {
+    "fmax": 0.911371,
+    "smin": 1.16002,
+    "n_test": 92
+  },
+  "cytoskeleton_organization_GO_0007010": {
+    "fmax": 0.892664,
+    "smin": 1.245017,
+    "n_test": 152
+  },
+  "mitochondrion_organization_GO_0007005": {
+    "fmax": 0.924934,
+    "smin": 1.082963,
+    "n_test": 76
+  },
+  "endocytosis_GO_0006897": {
+    "fmax": 0.905469,
+    "smin": 1.031422,
+    "n_test": 176
+  },
+  "monoatomic_ion_channel_activity_GO_0005216": {
+    "fmax": 0.906704,
+    "smin": 1.390386,
+    "n_test": 60
+  },
+  "protein_kinase_activity_GO_0004672": {
+    "fmax": 0.930163,
+    "smin": 0.9206,
+    "n_test": 256
+  },
+  "regulation_of_cell_motility_GO_2000145": {
+    "fmax": 0.88981,
+    "smin": 1.446585,
+    "n_test": 69
+  },
+  "cellular_response_to_oxygen-containing_compound_GO_1901701": {
+    "fmax": 0.766253,
+    "smin": 4.617611,
+    "n_test": 246
+  },
+  "DNA-binding_transcription_factor_binding_GO_0140297": {
+    "fmax": 0.904209,
+    "smin": 0.917516,
+    "n_test": 136
+  },
+  "supramolecular_fiber_GO_0099512": {
+    "fmax": 0.877024,
+    "smin": 1.674105,
+    "n_test": 235
+  },
+  "establishment_of_protein_localization_to_membrane_GO_0090150": {
+    "fmax": 0.903033,
+    "smin": 1.118143,
+    "n_test": 57
+  },
+  "protein_localization_to_membrane_GO_0072657": {
+    "fmax": 0.949745,
+    "smin": 0.6239,
+    "n_test": 77
+  },
+  "membrane_organization_GO_0061024": {
+    "fmax": 0.83862,
+    "smin": 2.916092,
+    "n_test": 138
+  },
+  "epithelium_development_GO_0060429": {
+    "fmax": 0.846337,
+    "smin": 1.729963,
+    "n_test": 55
+  },
+  "regulation_of_cellular_localization_GO_0060341": {
+    "fmax": 0.89366,
+    "smin": 1.482366,
+    "n_test": 61
+  },
+  "transmembrane_transport_GO_0055085": {
+    "fmax": 0.856682,
+    "smin": 2.972785,
+    "n_test": 217
+  },
+  "carboxylic_ester_hydrolase_activity_GO_0052689": {
+    "fmax": 0.856061,
+    "smin": 2.430743,
+    "n_test": 102
+  },
+  "response_to_other_organism_GO_0051707": {
+    "fmax": 0.731552,
+    "smin": 3.576951,
+    "n_test": 502
+  },
+  "positive_regulation_of_developmental_process_GO_0051094": {
+    "fmax": 0.837729,
+    "smin": 2.440934,
+    "n_test": 143
+  },
+  "negative_regulation_of_developmental_process_GO_0051093": {
+    "fmax": 0.902258,
+    "smin": 1.386827,
+    "n_test": 75
+  },
+  "leukocyte_migration_GO_0050900": {
+    "fmax": 0.85773,
+    "smin": 2.461943,
+    "n_test": 50
+  },
+  "cognition_GO_0050890": {
+    "fmax": 0.845937,
+    "smin": 2.244389,
+    "n_test": 101
+  },
+  "regulation_of_behavior_GO_0050795": {
+    "fmax": 0.767381,
+    "smin": 2.540735,
+    "n_test": 28
+  },
+  "receptor_ligand_activity_GO_0048018": {
+    "fmax": 0.909418,
+    "smin": 0.827309,
+    "n_test": 239
+  },
+  "intracellular_transport_GO_0046907": {
+    "fmax": 0.812963,
+    "smin": 2.148286,
+    "n_test": 208
+  },
+  "lymphocyte_activation_GO_0046649": {
+    "fmax": 0.802808,
+    "smin": 3.129251,
+    "n_test": 79
+  },
+  "regulation_of_cell_differentiation_GO_0045595": {
+    "fmax": 0.844756,
+    "smin": 2.171505,
+    "n_test": 73
+  },
+  "secondary_metabolite_biosynthetic_process_GO_0044550": {
+    "fmax": 0.859647,
+    "smin": 2.461956,
+    "n_test": 106
+  },
+  "small_molecule_biosynthetic_process_GO_0044283": {
+    "fmax": 0.841391,
+    "smin": 2.084986,
+    "n_test": 89
+  },
+  "symbiont-mediated_perturbation_of_host_process_GO_0044003": {
+    "fmax": 0.847333,
+    "smin": 1.990534,
+    "n_test": 79
+  },
+  "intracellular_membraneless_organelle_GO_0043232": {
+    "fmax": 0.645382,
+    "smin": 6.067824,
+    "n_test": 1187
+  },
+  "intracellular_membrane-bounded_organelle_GO_0043231": {
+    "fmax": 0.740864,
+    "smin": 3.056853,
+    "n_test": 3239
+  },
+  "neuron_projection_GO_0043005": {
+    "fmax": 0.761306,
+    "smin": 1.617101,
+    "n_test": 321
+  },
+  "hormone_metabolic_process_GO_0042445": {
+    "fmax": 0.915007,
+    "smin": 1.175268,
+    "n_test": 47
+  },
+  "protein_localization_to_organelle_GO_0033365": {
+    "fmax": 0.870208,
+    "smin": 2.013774,
+    "n_test": 94
+  },
+  "cell_projection_membrane_GO_0031253": {
+    "fmax": 0.942223,
+    "smin": 0.653978,
+    "n_test": 100
+  },
+  "epithelial_cell_differentiation_GO_0030855": {
+    "fmax": 0.913183,
+    "smin": 1.325338,
+    "n_test": 93
+  },
+  "neuron_differentiation_GO_0030182": {
+    "fmax": 0.908384,
+    "smin": 1.635386,
+    "n_test": 88
+  },
+  "regulation_of_cell_adhesion_GO_0030155": {
+    "fmax": 0.861691,
+    "smin": 1.37888,
+    "n_test": 82
+  },
+  "myeloid_cell_differentiation_GO_0030099": {
+    "fmax": 0.903845,
+    "smin": 0.975369,
+    "n_test": 63
+  },
+  "cell_projection_organization_GO_0030030": {
+    "fmax": 0.824106,
+    "smin": 1.738406,
+    "n_test": 117
+  },
+  "kinase_binding_GO_0019900": {
+    "fmax": 0.925709,
+    "smin": 1.102237,
+    "n_test": 219
+  },
+  "regulation_of_metabolic_process_GO_0019222": {
+    "fmax": 0.874598,
+    "smin": 1.868969,
+    "n_test": 98
+  },
+  "carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838": {
+    "fmax": 0.93817,
+    "smin": 1.648768,
+    "n_test": 58
+  },
+  "hydro-lyase_activity_GO_0016836": {
+    "fmax": 0.944221,
+    "smin": 0.906016,
+    "n_test": 68
+  },
+  "carboxy-lyase_activity_GO_0016831": {
+    "fmax": 0.896,
+    "smin": 1.640021,
+    "n_test": 46
+  },
+  "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds,_in_linear_amides_GO_0016811": {
+    "fmax": 0.925458,
+    "smin": 0.942673,
+    "n_test": 50
+  },
+  "hydrolase_activity,_hydrolyzing_N-glycosyl_compounds_GO_0016799": {
+    "fmax": 0.94296,
+    "smin": 0.847776,
+    "n_test": 32
+  },
+  "nucleotidyltransferase_activity_GO_0016779": {
+    "fmax": 0.939303,
+    "smin": 0.920641,
+    "n_test": 175
+  },
+  "phosphotransferase_activity,_phosphate_group_as_acceptor_GO_0016776": {
+    "fmax": 0.922193,
+    "smin": 1.204241,
+    "n_test": 34
+  },
+  "phosphotransferase_activity,_alcohol_group_as_acceptor_GO_0016773": {
+    "fmax": 0.921442,
+    "smin": 1.45745,
+    "n_test": 75
+  },
+  "pentosyltransferase_activity_GO_0016763": {
+    "fmax": 0.873295,
+    "smin": 2.185998,
+    "n_test": 38
+  },
+  "hexosyltransferase_activity_GO_0016758": {
+    "fmax": 0.95115,
+    "smin": 0.724198,
+    "n_test": 65
+  },
+  "acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747": {
+    "fmax": 0.925389,
+    "smin": 1.158669,
+    "n_test": 107
+  },
+  "2-oxoglutarate-dependent_dioxygenase_activity_GO_0016706": {
+    "fmax": 0.95858,
+    "smin": 0.537746,
+    "n_test": 22
+  },
+  "oxidoreductase_activity,_acting_on_the_aldehyde_or_oxo_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016620": {
+    "fmax": 0.926332,
+    "smin": 1.309675,
+    "n_test": 35
+  },
+  "oxidoreductase_activity,_acting_on_the_CH-OH_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016616": {
+    "fmax": 0.908657,
+    "smin": 2.179587,
+    "n_test": 112
+  },
+  "kinase_activity_GO_0016301": {
+    "fmax": 0.988792,
+    "smin": 0.178092,
+    "n_test": 67
+  },
+  "L-amino_acid_transmembrane_transporter_activity_GO_0015179": {
+    "fmax": 0.851132,
+    "smin": 2.088999,
+    "n_test": 22
+  },
+  "response_to_light_stimulus_GO_0009416": {
+    "fmax": 0.801313,
+    "smin": 3.372431,
+    "n_test": 144
+  },
+  "transaminase_activity_GO_0008483": {
+    "fmax": 0.888984,
+    "smin": 1.71559,
+    "n_test": 35
+  },
+  "ATP-dependent_activity,_acting_on_DNA_GO_0008094": {
+    "fmax": 0.895427,
+    "smin": 1.261226,
+    "n_test": 71
+  },
+  "sensory_perception_GO_0007600": {
+    "fmax": 0.864642,
+    "smin": 1.292046,
+    "n_test": 130
+  },
+  "signal_transduction_GO_0007165": {
+    "fmax": 0.898108,
+    "smin": 1.843852,
+    "n_test": 307
+  },
+  "organelle_organization_GO_0006996": {
+    "fmax": 0.774375,
+    "smin": 4.280875,
+    "n_test": 215
+  },
+  "apoptotic_process_GO_0006915": {
+    "fmax": 0.954024,
+    "smin": 0.941224,
+    "n_test": 201
+  },
+  "lipid_transport_GO_0006869": {
+    "fmax": 0.868676,
+    "smin": 1.882308,
+    "n_test": 62
+  },
+  "phosphate-containing_compound_metabolic_process_GO_0006796": {
+    "fmax": 0.910479,
+    "smin": 1.402141,
+    "n_test": 157
+  },
+  "lipid_metabolic_process_GO_0006629": {
+    "fmax": 0.847518,
+    "smin": 2.653591,
+    "n_test": 157
+  },
+  "RNA_processing_GO_0006396": {
+    "fmax": 0.847396,
+    "smin": 1.939906,
+    "n_test": 101
+  },
+  "nucleobase-containing_compound_metabolic_process_GO_0006139": {
+    "fmax": 0.832711,
+    "smin": 1.973346,
+    "n_test": 52
+  },
+  "carbohydrate_metabolic_process_GO_0005975": {
+    "fmax": 0.906283,
+    "smin": 1.502555,
+    "n_test": 200
+  },
+  "cell-cell_junction_GO_0005911": {
+    "fmax": 0.90896,
+    "smin": 1.016764,
+    "n_test": 183
+  },
+  "cytokine_receptor_binding_GO_0005126": {
+    "fmax": 0.922817,
+    "smin": 1.1924,
+    "n_test": 52
+  },
+  "G_protein-coupled_receptor_activity_GO_0004930": {
+    "fmax": 0.946866,
+    "smin": 0.822702,
+    "n_test": 81
+  },
+  "prenyltransferase_activity_GO_0004659": {
+    "fmax": 0.911425,
+    "smin": 1.272812,
+    "n_test": 33
+  },
+  "hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553": {
+    "fmax": 0.883655,
+    "smin": 2.189108,
+    "n_test": 131
+  },
+  "RNA_nuclease_activity_GO_0004540": {
+    "fmax": 0.909106,
+    "smin": 0.776905,
+    "n_test": 95
+  },
+  "DNA_nuclease_activity_GO_0004536": {
+    "fmax": 0.810198,
+    "smin": 2.192027,
+    "n_test": 50
+  },
+  "morphogenesis_of_an_epithelium_GO_0002009": {
+    "fmax": 0.837586,
+    "smin": 2.813361,
+    "n_test": 88
+  },
+  "G_protein-coupled_receptor_binding_GO_0001664": {
+    "fmax": 0.93946,
+    "smin": 1.493232,
+    "n_test": 61
+  },
+  "nucleotide_binding_GO_0000166": {
+    "fmax": 0.840104,
+    "smin": 1.514336,
+    "n_test": 1561
+  },
+  "ubiquitin_ligase_complex_GO_0000151": {
+    "fmax": 0.899741,
+    "smin": 1.350816,
+    "n_test": 89
+  },
+  "transferase_complex_GO_1990234": {
+    "fmax": 0.842425,
+    "smin": 3.447383,
+    "n_test": 202
+  },
+  "ATPase_complex_GO_1904949": {
+    "fmax": 0.861597,
+    "smin": 1.539625,
+    "n_test": 45
+  },
+  "carbohydrate_derivative_metabolic_process_GO_1901135": {
+    "fmax": 0.890212,
+    "smin": 1.5342,
+    "n_test": 115
+  },
+  "plasma_membrane_protein_complex_GO_0098797": {
+    "fmax": 0.948377,
+    "smin": 0.907562,
+    "n_test": 148
+  },
+  "cell-cell_adhesion_GO_0098609": {
+    "fmax": 0.898356,
+    "smin": 1.687419,
+    "n_test": 123
+  },
+  "RNA_polymerase_II_transcription_regulator_complex_GO_0090575": {
+    "fmax": 0.937706,
+    "smin": 0.741513,
+    "n_test": 79
+  },
+  "biological_process_involved_in_interaction_with_host_GO_0051701": {
+    "fmax": 0.883687,
+    "smin": 1.456006,
+    "n_test": 144
+  },
+  "dioxygenase_activity_GO_0051213": {
+    "fmax": 0.91403,
+    "smin": 1.043242,
+    "n_test": 33
+  },
+  "regulation_of_body_fluid_levels_GO_0050878": {
+    "fmax": 0.831657,
+    "smin": 2.324604,
+    "n_test": 76
+  },
+  "regulation_of_developmental_process_GO_0050793": {
+    "fmax": 0.728219,
+    "smin": 5.686002,
+    "n_test": 227
+  },
+  "reproductive_structure_development_GO_0048608": {
+    "fmax": 0.793105,
+    "smin": 2.440091,
+    "n_test": 84
+  },
+  "embryonic_morphogenesis_GO_0048598": {
+    "fmax": 0.849254,
+    "smin": 2.456677,
+    "n_test": 102
+  },
+  "animal_organ_development_GO_0048513": {
+    "fmax": 0.665324,
+    "smin": 6.361461,
+    "n_test": 368
+  },
+  "cell_development_GO_0048468": {
+    "fmax": 0.751584,
+    "smin": 4.649505,
+    "n_test": 251
+  },
+  "carboxylic_acid_transmembrane_transporter_activity_GO_0046943": {
+    "fmax": 0.925977,
+    "smin": 1.167878,
+    "n_test": 33
+  },
+  "synapse_GO_0045202": {
+    "fmax": 0.850333,
+    "smin": 1.317183,
+    "n_test": 367
+  },
+  "response_to_starvation_GO_0042594": {
+    "fmax": 0.856627,
+    "smin": 1.698025,
+    "n_test": 116
+  },
+  "regulation_of_membrane_potential_GO_0042391": {
+    "fmax": 0.795979,
+    "smin": 4.097491,
+    "n_test": 105
+  },
+  "tube_morphogenesis_GO_0035239": {
+    "fmax": 0.919263,
+    "smin": 0.907624,
+    "n_test": 34
+  },
+  "response_to_lipid_GO_0033993": {
+    "fmax": 0.715999,
+    "smin": 4.230377,
+    "n_test": 190
+  },
+  "cellular_response_to_stress_GO_0033554": {
+    "fmax": 0.74345,
+    "smin": 3.24993,
+    "n_test": 301
+  },
+  "organelle_membrane_GO_0031090": {
+    "fmax": 0.704962,
+    "smin": 4.25926,
+    "n_test": 1098
+  },
+  "cell_differentiation_GO_0030154": {
+    "fmax": 0.829407,
+    "smin": 3.725755,
+    "n_test": 400
+  },
+  "protein_domain_specific_binding_GO_0019904": {
+    "fmax": 0.931172,
+    "smin": 0.998823,
+    "n_test": 188
+  },
+  "enzyme_binding_GO_0019899": {
+    "fmax": 0.826132,
+    "smin": 2.696596,
+    "n_test": 433
+  },
+  "ligase_activity,_forming_carbon-nitrogen_bonds_GO_0016879": {
+    "fmax": 0.940738,
+    "smin": 0.78515,
+    "n_test": 47
+  },
+  "intramolecular_transferase_activity_GO_0016866": {
+    "fmax": 0.948003,
+    "smin": 0.68509,
+    "n_test": 31
+  },
+  "racemase_and_epimerase_activity_GO_0016854": {
+    "fmax": 0.948948,
+    "smin": 0.533839,
+    "n_test": 28
+  },
+  "carbon-carbon_lyase_activity_GO_0016830": {
+    "fmax": 0.929379,
+    "smin": 0.811305,
+    "n_test": 31
+  },
+  "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds_GO_0016810": {
+    "fmax": 0.914358,
+    "smin": 0.925598,
+    "n_test": 56
+  },
+  "hydrolase_activity,_acting_on_ester_bonds_GO_0016788": {
+    "fmax": 0.90187,
+    "smin": 1.225749,
+    "n_test": 71
+  },
+  "transferase_activity,_transferring_phosphorus-containing_groups_GO_0016772": {
+    "fmax": 0.968738,
+    "smin": 0.445567,
+    "n_test": 24
+  },
+  "transferase_activity,_transferring_alkyl_or_aryl_(other_than_methyl)_groups_GO_0016765": {
+    "fmax": 0.951622,
+    "smin": 0.960913,
+    "n_test": 56
+  },
+  "acyltransferase_activity_GO_0016746": {
+    "fmax": 0.953019,
+    "smin": 0.62996,
+    "n_test": 159
+  },
+  "oxidoreductase_activity,_acting_on_paired_donors,_with_incorporation_or_reduction_of_molecular_oxygen_GO_0016705": {
+    "fmax": 0.920608,
+    "smin": 1.546905,
+    "n_test": 115
+  },
+  "oxidoreductase_activity,_acting_on_NAD(P)H_GO_0016651": {
+    "fmax": 0.845411,
+    "smin": 1.983041,
+    "n_test": 48
+  },
+  "oxidoreductase_activity,_acting_on_the_CH-CH_group_of_donors_GO_0016627": {
+    "fmax": 0.926549,
+    "smin": 0.897571,
+    "n_test": 42
+  },
+  "cell_migration_GO_0016477": {
+    "fmax": 0.819877,
+    "smin": 3.129081,
+    "n_test": 191
+  },
+  "response_to_metal_ion_GO_0010038": {
+    "fmax": 0.763422,
+    "smin": 3.427708,
+    "n_test": 139
+  },
+  "tissue_development_GO_0009888": {
+    "fmax": 0.813009,
+    "smin": 3.454707,
+    "n_test": 144
+  },
+  "animal_organ_morphogenesis_GO_0009887": {
+    "fmax": 0.82418,
+    "smin": 3.2609,
+    "n_test": 117
+  },
+  "response_to_hormone_GO_0009725": {
+    "fmax": 0.81455,
+    "smin": 2.382119,
+    "n_test": 133
+  },
+  "amine_metabolic_process_GO_0009308": {
+    "fmax": 0.818438,
+    "smin": 3.243082,
+    "n_test": 36
+  },
+  "biosynthetic_process_GO_0009058": {
+    "fmax": 0.838196,
+    "smin": 3.08068,
+    "n_test": 556
+  },
+  "catabolic_process_GO_0009056": {
+    "fmax": 0.850848,
+    "smin": 3.273683,
+    "n_test": 328
+  },
+  "peptidase_activity_GO_0008233": {
+    "fmax": 0.869535,
+    "smin": 2.127794,
+    "n_test": 374
+  },
+  "intracellular_protein_localization_GO_0008104": {
+    "fmax": 0.903811,
+    "smin": 0.730623,
+    "n_test": 267
+  },
+  "cytoskeletal_protein_binding_GO_0008092": {
+    "fmax": 0.820561,
+    "smin": 2.377344,
+    "n_test": 335
+  },
+  "enzyme_activator_activity_GO_0008047": {
+    "fmax": 0.874454,
+    "smin": 1.983742,
+    "n_test": 185
+  },
+  "defense_response_GO_0006952": {
+    "fmax": 0.916924,
+    "smin": 0.862607,
+    "n_test": 288
+  },
+  "generation_of_precursor_metabolites_and_energy_GO_0006091": {
+    "fmax": 0.863544,
+    "smin": 1.964066,
+    "n_test": 174
+  },
+  "phospholipid_binding_GO_0005543": {
+    "fmax": 0.885464,
+    "smin": 1.911234,
+    "n_test": 165
+  },
+  "signaling_receptor_binding_GO_0005102": {
+    "fmax": 0.909,
+    "smin": 1.497999,
+    "n_test": 237
+  },
+  "transmembrane_signaling_receptor_activity_GO_0004888": {
+    "fmax": 0.962409,
+    "smin": 0.590363,
+    "n_test": 84
+  },
+  "enzyme_inhibitor_activity_GO_0004857": {
+    "fmax": 0.897145,
+    "smin": 1.709418,
+    "n_test": 209
+  },
+  "RNA_binding_GO_0003723": {
+    "fmax": 0.842431,
+    "smin": 2.810948,
+    "n_test": 786
+  },
+  "DNA_binding_GO_0003677": {
+    "fmax": 0.842945,
+    "smin": 2.734838,
+    "n_test": 873
+  },
+  "muscle_system_process_GO_0003012": {
+    "fmax": 0.910897,
+    "smin": 1.158147,
+    "n_test": 60
+  },
+  "regulation_of_immune_system_process_GO_0002682": {
+    "fmax": 0.840141,
+    "smin": 2.414593,
+    "n_test": 48
+  },
+  "ribonucleoprotein_complex_GO_1990904": {
+    "fmax": 0.835102,
+    "smin": 3.751756,
+    "n_test": 444
+  },
+  "catalytic_complex_GO_1902494": {
+    "fmax": 0.873296,
+    "smin": 2.718448,
+    "n_test": 276
+  },
+  "transporter_regulator_activity_GO_0141108": {
+    "fmax": 0.941959,
+    "smin": 1.005954,
+    "n_test": 236
+  },
+  "catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640": {
+    "fmax": 0.868868,
+    "smin": 1.833716,
+    "n_test": 187
+  },
+  "catalytic_activity,_acting_on_a_protein_GO_0140096": {
+    "fmax": 0.942073,
+    "smin": 0.827352,
+    "n_test": 102
+  },
+  "membrane_protein_complex_GO_0098796": {
+    "fmax": 0.888475,
+    "smin": 2.438759,
+    "n_test": 248
+  },
+  "side_of_membrane_GO_0098552": {
+    "fmax": 0.932488,
+    "smin": 0.543971,
+    "n_test": 203
+  },
+  "carbohydrate_derivative_binding_GO_0097367": {
+    "fmax": 0.897115,
+    "smin": 0.990347,
+    "n_test": 122
+  },
+  "anatomical_structure_formation_involved_in_morphogenesis_GO_0048646": {
+    "fmax": 0.799032,
+    "smin": 2.70742,
+    "n_test": 246
+  },
+  "developmental_growth_GO_0048589": {
+    "fmax": 0.811626,
+    "smin": 2.538601,
+    "n_test": 121
+  },
+  "protein-containing_complex_binding_GO_0044877": {
+    "fmax": 0.930429,
+    "smin": 1.226182,
+    "n_test": 296
+  },
+  "cell_projection_GO_0042995": {
+    "fmax": 0.823991,
+    "smin": 2.107989,
+    "n_test": 327
+  },
+  "signaling_receptor_activity_GO_0038023": {
+    "fmax": 0.957814,
+    "smin": 0.645212,
+    "n_test": 109
+  },
+  "small_molecule_binding_GO_0036094": {
+    "fmax": 0.825701,
+    "smin": 2.878306,
+    "n_test": 559
+  },
+  "response_to_nutrient_levels_GO_0031667": {
+    "fmax": 0.85224,
+    "smin": 1.406587,
+    "n_test": 92
+  },
+  "protein-macromolecule_adaptor_activity_GO_0030674": {
+    "fmax": 0.898261,
+    "smin": 1.729744,
+    "n_test": 198
+  },
+  "enzyme_regulator_activity_GO_0030234": {
+    "fmax": 0.907448,
+    "smin": 1.093766,
+    "n_test": 144
+  },
+  "transmembrane_transporter_activity_GO_0022857": {
+    "fmax": 0.78319,
+    "smin": 5.65216,
+    "n_test": 262
+  },
+  "cellular_homeostasis_GO_0019725": {
+    "fmax": 0.877351,
+    "smin": 1.336865,
+    "n_test": 96
+  },
+  "isomerase_activity_GO_0016853": {
+    "fmax": 0.961832,
+    "smin": 0.729824,
+    "n_test": 102
+  },
+  "lyase_activity_GO_0016829": {
+    "fmax": 0.927305,
+    "smin": 1.54225,
+    "n_test": 113
+  },
+  "transferase_activity_GO_0016740": {
+    "fmax": 0.905201,
+    "smin": 1.239807,
+    "n_test": 198
+  },
+  "membrane_GO_0016020": {
+    "fmax": 0.741811,
+    "smin": 2.230892,
+    "n_test": 2627
+  },
+  "anatomical_structure_morphogenesis_GO_0009653": {
+    "fmax": 0.716898,
+    "smin": 6.370695,
+    "n_test": 197
+  },
+  "cell_population_proliferation_GO_0008283": {
+    "fmax": 0.892496,
+    "smin": 1.959356,
+    "n_test": 161
+  },
+  "pattern_specification_process_GO_0007389": {
+    "fmax": 0.676546,
+    "smin": 5.67338,
+    "n_test": 122
+  },
+  "establishment_or_maintenance_of_cell_polarity_GO_0007163": {
+    "fmax": 0.834677,
+    "smin": 1.806768,
+    "n_test": 51
+  },
+  "cell_communication_GO_0007154": {
+    "fmax": 0.945571,
+    "smin": 0.647453,
+    "n_test": 66
+  },
+  "microtubule-based_process_GO_0007017": {
+    "fmax": 0.855004,
+    "smin": 1.748884,
+    "n_test": 106
+  },
+  "response_to_stress_GO_0006950": {
+    "fmax": 0.664682,
+    "smin": 5.328608,
+    "n_test": 402
+  },
+  "cytoplasm_GO_0005737": {
+    "fmax": 0.983529,
+    "smin": 0.360072,
+    "n_test": 2352
+  },
+  "lipid_carrier_activity_GO_0005319": {
+    "fmax": 0.890393,
+    "smin": 1.586105,
+    "n_test": 37
+  },
+  "developmental_process_involved_in_reproduction_GO_0003006": {
+    "fmax": 0.774871,
+    "smin": 2.71999,
+    "n_test": 217
+  },
+  "cell_activation_GO_0001775": {
+    "fmax": 0.875976,
+    "smin": 1.42904,
+    "n_test": 48
+  },
+  "molecular_carrier_activity_GO_0140104": {
+    "fmax": 0.973257,
+    "smin": 0.454739,
+    "n_test": 127
+  },
+  "virion_component_GO_0044423": {
+    "fmax": 0.896803,
+    "smin": 1.244915,
+    "n_test": 205
+  },
+  "homeostatic_process_GO_0042592": {
+    "fmax": 0.811858,
+    "smin": 3.752516,
+    "n_test": 243
+  },
+  "reproductive_process_GO_0022414": {
+    "fmax": 0.708127,
+    "smin": 5.345983,
+    "n_test": 242
+  },
+  "antioxidant_activity_GO_0016209": {
+    "fmax": 0.964117,
+    "smin": 0.534796,
+    "n_test": 147
+  },
+  "viral_process_GO_0016032": {
+    "fmax": 0.91293,
+    "smin": 1.438959,
+    "n_test": 136
+  },
+  "structural_molecule_activity_GO_0005198": {
+    "fmax": 0.969384,
+    "smin": 0.409123,
+    "n_test": 515
+  },
+  "immune_system_process_GO_0002376": {
+    "fmax": 0.882754,
+    "smin": 1.74917,
+    "n_test": 181
+  },
+  "Fallback_biological_process_1": {
+    "fmax": 0.560052,
+    "smin": 3.00985,
+    "n_test": 131
+  },
+  "Fallback_biological_process_2": {
+    "fmax": 0.753704,
+    "smin": 1.938398,
+    "n_test": 168
+  },
+  "Fallback_biological_process_3": {
+    "fmax": 0.797069,
+    "smin": 1.824759,
+    "n_test": 187
+  },
+  "Fallback_biological_process_4": {
+    "fmax": 0.83842,
+    "smin": 1.690867,
+    "n_test": 140
+  },
+  "Fallback_biological_process_5": {
+    "fmax": 0.620298,
+    "smin": 2.795346,
+    "n_test": 300
+  },
+  "Fallback_biological_process_6": {
+    "fmax": 0.65063,
+    "smin": 2.88251,
+    "n_test": 204
+  },
+  "Fallback_biological_process_7": {
+    "fmax": 0.708176,
+    "smin": 2.38438,
+    "n_test": 163
+  },
+  "Fallback_biological_process_8": {
+    "fmax": 0.670653,
+    "smin": 2.692493,
+    "n_test": 186
+  },
+  "Fallback_biological_process_9": {
+    "fmax": 0.742987,
+    "smin": 1.870495,
+    "n_test": 153
+  },
+  "Fallback_biological_process_10": {
+    "fmax": 0.702376,
+    "smin": 2.391489,
+    "n_test": 144
+  },
+  "Fallback_biological_process_11": {
+    "fmax": 0.616185,
+    "smin": 2.415051,
+    "n_test": 249
+  },
+  "Fallback_biological_process_12": {
+    "fmax": 0.527024,
+    "smin": 2.699357,
+    "n_test": 278
+  },
+  "Fallback_biological_process_13": {
+    "fmax": 0.584673,
+    "smin": 3.047241,
+    "n_test": 177
+  },
+  "Fallback_biological_process_14": {
+    "fmax": 0.727276,
+    "smin": 2.522528,
+    "n_test": 93
+  },
+  "Fallback_biological_process_15": {
+    "fmax": 0.759769,
+    "smin": 2.063446,
+    "n_test": 122
+  },
+  "Fallback_biological_process_16": {
+    "fmax": 0.733575,
+    "smin": 2.181321,
+    "n_test": 127
+  },
+  "Fallback_cellular_component_1": {
+    "fmax": 0.655361,
+    "smin": 2.977301,
+    "n_test": 157
+  },
+  "Fallback_cellular_component_2": {
+    "fmax": 0.745053,
+    "smin": 1.965137,
+    "n_test": 342
+  },
+  "Fallback_cellular_component_3": {
+    "fmax": 0.621288,
+    "smin": 2.940692,
+    "n_test": 407
+  },
+  "Fallback_cellular_component_4": {
+    "fmax": 0.569529,
+    "smin": 2.786161,
+    "n_test": 724
+  },
+  "Fallback_cellular_component_5": {
+    "fmax": 0.862416,
+    "smin": 1.472024,
+    "n_test": 195
+  },
+  "Fallback_cellular_component_6": {
+    "fmax": 0.777712,
+    "smin": 1.938933,
+    "n_test": 120
+  },
+  "Fallback_cellular_component_7": {
+    "fmax": 0.737092,
+    "smin": 2.236757,
+    "n_test": 155
+  },
+  "Fallback_cellular_component_8": {
+    "fmax": 0.59171,
+    "smin": 2.264769,
+    "n_test": 2498
+  },
+  "Fallback_cellular_component_9": {
+    "fmax": 0.569027,
+    "smin": 2.754879,
+    "n_test": 549
+  },
+  "Fallback_cellular_component_10": {
+    "fmax": 0.494039,
+    "smin": 3.007884,
+    "n_test": 556
+  },
+  "Fallback_cellular_component_11": {
+    "fmax": 0.869565,
+    "smin": 0.668296,
+    "n_test": 12
+  },
+  "Fallback_molecular_function_1": {
+    "fmax": 0.754787,
+    "smin": 2.437602,
+    "n_test": 789
+  },
+  "Fallback_molecular_function_2": {
+    "fmax": 0.860157,
+    "smin": 1.338779,
+    "n_test": 95
+  },
+  "Fallback_molecular_function_3": {
+    "fmax": 0.723002,
+    "smin": 2.153561,
+    "n_test": 488
+  },
+  "Fallback_molecular_function_4": {
+    "fmax": 0.591583,
+    "smin": 2.279905,
+    "n_test": 543
+  },
+  "Fallback_molecular_function_5": {
+    "fmax": 0.826395,
+    "smin": 1.317233,
+    "n_test": 541
+  },
+  "Fallback_molecular_function_6": {
+    "fmax": 0.880629,
+    "smin": 0.411541,
+    "n_test": 74
+  }
+}

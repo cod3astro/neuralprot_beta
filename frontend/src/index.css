@@ -1,0 +1,94 @@
+/* ─── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* ─── CSS Variables ─────────────────────────────────────────── */
+:root {
+  /* Light mode defaults */
+  --color-bg:          #F8FAFC;
+  --color-bg-muted:    #EFF2F7;
+  --color-card:        #FFFFFF;
+  --color-border:      #E2E8F0;
+  --color-text:        #1A2B4A;
+  --color-text-muted:  #475569;
+  --color-primary:     #007A63;
+  --color-primary-alt: #6344D6;
+  --color-accent:      #00C9A7;
+  --color-gold:        #C27D0E;
+  --shadow-card:       0 4px 24px rgba(26, 43, 74, 0.08);
+  --navbar-bg:         rgba(248, 250, 252, 0.7);
+  --navbar-scrolled-bg: rgba(248, 250, 252, 0.92);
+}
+
+.dark {
+  /* Dark mode overrides */
+  --color-bg:          #0A0F1E;
+  --color-bg-muted:    #111827;
+  --color-card:        #111827;
+  --color-border:      rgba(255, 255, 255, 0.08);
+  --color-text:        #E2E8F0;
+  --color-text-muted:  #94A3B8;
+  --color-primary:     #00C9A7;
+  --color-primary-alt: #7C5CFC;
+  --color-accent:      #00E5FF;
+  --color-gold:        #F5A623;
+  --shadow-card:       0 4px 24px rgba(0, 0, 0, 0.4);
+  --navbar-bg:         rgba(10, 15, 30, 0.5);
+  --navbar-scrolled-bg: rgba(10, 15, 30, 0.85);
+}
+
+/* ─── Base resets ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Glassmorphism card (dark mode only) ───────────────────── */
+.glass-card {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Light mode overrides glass to a plain elevated card */
+:root:not(.dark) .glass-card {
+  background: #FFFFFF;
+  backdrop-filter: none;
+  border: 1px solid #E2E8F0;
+  box-shadow: var(--shadow-card);
+}
+
+/* ─── Scrollbar styling ─────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
+
+/* ─── Selection color ───────────────────────────────────────── */
+::selection {
+  background: rgba(0, 201, 167, 0.25);
+  color: var(--color-text);
+}
+
+/* ─── Reduced motion: kill all animations ───────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,2252 @@
+[
+  {
+    "model_group": "purine_nucleotide_metabolic_process_GO_0006163",
+    "exam_samples": 55,
+    "threshold": 0.57,
+    "f1_score": 0.9437
+  },
+  {
+    "model_group": "antioxidant_activity_GO_0016209",
+    "exam_samples": 147,
+    "threshold": 0.89,
+    "f1_score": 0.8656
+  },
+  {
+    "model_group": "cation_channel_complex_GO_0034703",
+    "exam_samples": 94,
+    "threshold": 0.55,
+    "f1_score": 0.8632
+  },
+  {
+    "model_group": "molecular_carrier_activity_GO_0140104",
+    "exam_samples": 127,
+    "threshold": 0.9,
+    "f1_score": 0.8551
+  },
+  {
+    "model_group": "carbohydrate_derivative_binding_GO_0097367",
+    "exam_samples": 122,
+    "threshold": 0.84,
+    "f1_score": 0.8519
+  },
+  {
+    "model_group": "transferase_activity,_transferring_phosphorus-containing_groups_GO_0016772",
+    "exam_samples": 24,
+    "threshold": 0.66,
+    "f1_score": 0.8428
+  },
+  {
+    "model_group": "regulation_of_organelle_assembly_GO_1902115",
+    "exam_samples": 49,
+    "threshold": 0.63,
+    "f1_score": 0.8409
+  },
+  {
+    "model_group": "establishment_of_protein_localization_to_membrane_GO_0090150",
+    "exam_samples": 57,
+    "threshold": 0.87,
+    "f1_score": 0.8332
+  },
+  {
+    "model_group": "RNA_nuclease_activity_GO_0004540",
+    "exam_samples": 95,
+    "threshold": 0.76,
+    "f1_score": 0.8313
+  },
+  {
+    "model_group": "voltage-gated_monoatomic_ion_channel_activity_GO_0005244",
+    "exam_samples": 48,
+    "threshold": 0.78,
+    "f1_score": 0.826
+  },
+  {
+    "model_group": "protein_localization_to_membrane_GO_0072657",
+    "exam_samples": 77,
+    "threshold": 0.69,
+    "f1_score": 0.8252
+  },
+  {
+    "model_group": "glycerophospholipid_metabolic_process_GO_0006650",
+    "exam_samples": 28,
+    "threshold": 0.63,
+    "f1_score": 0.8241
+  },
+  {
+    "model_group": "regulation_of_hormone_secretion_GO_0046883",
+    "exam_samples": 70,
+    "threshold": 0.77,
+    "f1_score": 0.822
+  },
+  {
+    "model_group": "regulation_of_cellular_localization_GO_0060341",
+    "exam_samples": 61,
+    "threshold": 0.81,
+    "f1_score": 0.8142
+  },
+  {
+    "model_group": "ligand-gated_monoatomic_cation_channel_activity_GO_0099094",
+    "exam_samples": 41,
+    "threshold": 0.76,
+    "f1_score": 0.8129
+  },
+  {
+    "model_group": "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds,_in_linear_amides_GO_0016811",
+    "exam_samples": 56,
+    "threshold": 0.76,
+    "f1_score": 0.8124
+  },
+  {
+    "model_group": "regulation_of_RNA_metabolic_process_GO_0051252",
+    "exam_samples": 52,
+    "threshold": 0.81,
+    "f1_score": 0.8101
+  },
+  {
+    "model_group": "endocytosis_GO_0006897",
+    "exam_samples": 176,
+    "threshold": 0.89,
+    "f1_score": 0.8068
+  },
+  {
+    "model_group": "symbiont-mediated_perturbation_of_host_immune_response_GO_0052553",
+    "exam_samples": 70,
+    "threshold": 0.83,
+    "f1_score": 0.8063
+  },
+  {
+    "model_group": "transmembrane_signaling_receptor_activity_GO_0004888",
+    "exam_samples": 84,
+    "threshold": 0.87,
+    "f1_score": 0.8056
+  },
+  {
+    "model_group": "regulation_of_cell_adhesion_GO_0030155",
+    "exam_samples": 82,
+    "threshold": 0.6,
+    "f1_score": 0.8054
+  },
+  {
+    "model_group": "transporter_regulator_activity_GO_0141108",
+    "exam_samples": 236,
+    "threshold": 0.83,
+    "f1_score": 0.804
+  },
+  {
+    "model_group": "hexosyltransferase_activity_GO_0016758",
+    "exam_samples": 65,
+    "threshold": 0.71,
+    "f1_score": 0.804
+  },
+  {
+    "model_group": "monoatomic_ion_channel_activity_GO_0005216",
+    "exam_samples": 60,
+    "threshold": 0.63,
+    "f1_score": 0.7998
+  },
+  {
+    "model_group": "regulation_of_intrinsic_apoptotic_signaling_pathway_GO_2001242",
+    "exam_samples": 43,
+    "threshold": 0.86,
+    "f1_score": 0.7993
+  },
+  {
+    "model_group": "T_cell_differentiation_GO_0030217",
+    "exam_samples": 37,
+    "threshold": 0.6,
+    "f1_score": 0.7992
+  },
+  {
+    "model_group": "lipid_carrier_activity_GO_0005319",
+    "exam_samples": 37,
+    "threshold": 0.87,
+    "f1_score": 0.7987
+  },
+  {
+    "model_group": "regulation_of_actin_filament_organization_GO_0110053",
+    "exam_samples": 79,
+    "threshold": 0.7,
+    "f1_score": 0.7946
+  },
+  {
+    "model_group": "epithelial_cell_differentiation_GO_0030855",
+    "exam_samples": 93,
+    "threshold": 0.77,
+    "f1_score": 0.7941
+  },
+  {
+    "model_group": "apoptotic_process_GO_0006915",
+    "exam_samples": 201,
+    "threshold": 0.9,
+    "f1_score": 0.7917
+  },
+  {
+    "model_group": "plasma_membrane_protein_complex_GO_0098797",
+    "exam_samples": 148,
+    "threshold": 0.95,
+    "f1_score": 0.7903
+  },
+  {
+    "model_group": "cell-cell_junction_GO_0005911",
+    "exam_samples": 183,
+    "threshold": 0.83,
+    "f1_score": 0.7899
+  },
+  {
+    "model_group": "acyltransferase_activity_GO_0016746",
+    "exam_samples": 159,
+    "threshold": 0.68,
+    "f1_score": 0.7885
+  },
+  {
+    "model_group": "regulation_of_intracellular_signal_transduction_GO_1902531",
+    "exam_samples": 110,
+    "threshold": 0.87,
+    "f1_score": 0.7858
+  },
+  {
+    "model_group": "catalytic_activity,_acting_on_a_protein_GO_0140096",
+    "exam_samples": 102,
+    "threshold": 0.93,
+    "f1_score": 0.7854
+  },
+  {
+    "model_group": "trans-synaptic_signaling_GO_0099537",
+    "exam_samples": 87,
+    "threshold": 0.92,
+    "f1_score": 0.7846
+  },
+  {
+    "model_group": "regulation_of_cell-cell_adhesion_GO_0022407",
+    "exam_samples": 42,
+    "threshold": 0.61,
+    "f1_score": 0.7841
+  },
+  {
+    "model_group": "regulation_of_cell_projection_organization_GO_0031344",
+    "exam_samples": 49,
+    "threshold": 0.72,
+    "f1_score": 0.7834
+  },
+  {
+    "model_group": "regulation_of_cell_junction_assembly_GO_1901888",
+    "exam_samples": 76,
+    "threshold": 0.63,
+    "f1_score": 0.7734
+  },
+  {
+    "model_group": "serine_threonine_protein_kinase_complex_GO_1902554",
+    "exam_samples": 47,
+    "threshold": 0.71,
+    "f1_score": 0.7717
+  },
+  {
+    "model_group": "regulation_of_lipid_metabolic_process_GO_0019216",
+    "exam_samples": 51,
+    "threshold": 0.63,
+    "f1_score": 0.769
+  },
+  {
+    "model_group": "sodium_ion_transmembrane_transporter_activity_GO_0015081",
+    "exam_samples": 51,
+    "threshold": 0.15,
+    "f1_score": 0.768
+  },
+  {
+    "model_group": "Fallback_cellular_component_11",
+    "exam_samples": 12,
+    "threshold": 0.56,
+    "f1_score": 0.7679
+  },
+  {
+    "model_group": "regulation_of_cellular_response_to_stress_GO_0080135",
+    "exam_samples": 72,
+    "threshold": 0.9,
+    "f1_score": 0.7633
+  },
+  {
+    "model_group": "lipid_catabolic_process_GO_0016042",
+    "exam_samples": 133,
+    "threshold": 0.9,
+    "f1_score": 0.7621
+  },
+  {
+    "model_group": "RNA_catabolic_process_GO_0006401",
+    "exam_samples": 43,
+    "threshold": 0.8,
+    "f1_score": 0.7597
+  },
+  {
+    "model_group": "virion_component_GO_0044423",
+    "exam_samples": 205,
+    "threshold": 0.89,
+    "f1_score": 0.7595
+  },
+  {
+    "model_group": "glycoprotein_metabolic_process_GO_0009100",
+    "exam_samples": 66,
+    "threshold": 0.63,
+    "f1_score": 0.7593
+  },
+  {
+    "model_group": "cellular_response_to_cytokine_stimulus_GO_0071345",
+    "exam_samples": 111,
+    "threshold": 0.68,
+    "f1_score": 0.7562
+  },
+  {
+    "model_group": "kinase_activity_GO_0016301",
+    "exam_samples": 67,
+    "threshold": 0.94,
+    "f1_score": 0.7556
+  },
+  {
+    "model_group": "cell_projection_membrane_GO_0031253",
+    "exam_samples": 100,
+    "threshold": 0.75,
+    "f1_score": 0.755
+  },
+  {
+    "model_group": "regulation_of_exocytosis_GO_0017157",
+    "exam_samples": 49,
+    "threshold": 0.9,
+    "f1_score": 0.7535
+  },
+  {
+    "model_group": "myeloid_cell_differentiation_GO_0030099",
+    "exam_samples": 63,
+    "threshold": 0.68,
+    "f1_score": 0.7478
+  },
+  {
+    "model_group": "glycerolipid_biosynthetic_process_GO_0045017",
+    "exam_samples": 71,
+    "threshold": 0.74,
+    "f1_score": 0.7474
+  },
+  {
+    "model_group": "generation_of_precursor_metabolites_and_energy_GO_0006091",
+    "exam_samples": 174,
+    "threshold": 0.81,
+    "f1_score": 0.7453
+  },
+  {
+    "model_group": "acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747",
+    "exam_samples": 107,
+    "threshold": 0.94,
+    "f1_score": 0.7453
+  },
+  {
+    "model_group": "purine_nucleotide_biosynthetic_process_GO_0006164",
+    "exam_samples": 97,
+    "threshold": 0.72,
+    "f1_score": 0.7452
+  },
+  {
+    "model_group": "mitochondrion_organization_GO_0007005",
+    "exam_samples": 76,
+    "threshold": 0.9,
+    "f1_score": 0.7445
+  },
+  {
+    "model_group": "positive_regulation_of_cell_differentiation_GO_0045597",
+    "exam_samples": 111,
+    "threshold": 0.9,
+    "f1_score": 0.7433
+  },
+  {
+    "model_group": "positive_regulation_of_cell_migration_GO_0030335",
+    "exam_samples": 135,
+    "threshold": 0.84,
+    "f1_score": 0.7422
+  },
+  {
+    "model_group": "nucleotide_biosynthetic_process_GO_0009165",
+    "exam_samples": 34,
+    "threshold": 0.16,
+    "f1_score": 0.7378
+  },
+  {
+    "model_group": "DNA-binding_transcription_factor_binding_GO_0140297",
+    "exam_samples": 136,
+    "threshold": 0.86,
+    "f1_score": 0.7378
+  },
+  {
+    "model_group": "positive_regulation_of_immune_response_GO_0050778",
+    "exam_samples": 68,
+    "threshold": 0.76,
+    "f1_score": 0.7373
+  },
+  {
+    "model_group": "symbiont-mediated_perturbation_of_host_process_GO_0044003",
+    "exam_samples": 79,
+    "threshold": 0.85,
+    "f1_score": 0.7361
+  },
+  {
+    "model_group": "carboxylic_acid_binding_GO_0031406",
+    "exam_samples": 85,
+    "threshold": 0.86,
+    "f1_score": 0.7354
+  },
+  {
+    "model_group": "nucleoside_metabolic_process_GO_0009116",
+    "exam_samples": 25,
+    "threshold": 0.3,
+    "f1_score": 0.7341
+  },
+  {
+    "model_group": "vacuolar_transport_GO_0007034",
+    "exam_samples": 61,
+    "threshold": 0.76,
+    "f1_score": 0.7339
+  },
+  {
+    "model_group": "secretion_by_cell_GO_0032940",
+    "exam_samples": 79,
+    "threshold": 0.59,
+    "f1_score": 0.7337
+  },
+  {
+    "model_group": "regulation_of_monoatomic_ion_transport_GO_0043269",
+    "exam_samples": 73,
+    "threshold": 0.8,
+    "f1_score": 0.7336
+  },
+  {
+    "model_group": "regulation_of_protein_transport_GO_0051223",
+    "exam_samples": 77,
+    "threshold": 0.81,
+    "f1_score": 0.7335
+  },
+  {
+    "model_group": "carboxylic_acid_catabolic_process_GO_0046395",
+    "exam_samples": 45,
+    "threshold": 0.53,
+    "f1_score": 0.7331
+  },
+  {
+    "model_group": "regulation_of_immune_system_process_GO_0002682",
+    "exam_samples": 48,
+    "threshold": 0.75,
+    "f1_score": 0.7325
+  },
+  {
+    "model_group": "intramolecular_transferase_activity_GO_0016866",
+    "exam_samples": 31,
+    "threshold": 0.87,
+    "f1_score": 0.7317
+  },
+  {
+    "model_group": "regulation_of_muscle_cell_differentiation_GO_0051147",
+    "exam_samples": 31,
+    "threshold": 0.81,
+    "f1_score": 0.7309
+  },
+  {
+    "model_group": "cell_projection_assembly_GO_0030031",
+    "exam_samples": 103,
+    "threshold": 0.79,
+    "f1_score": 0.7301
+  },
+  {
+    "model_group": "2-oxoglutarate-dependent_dioxygenase_activity_GO_0016706",
+    "exam_samples": 22,
+    "threshold": 0.4,
+    "f1_score": 0.7285
+  },
+  {
+    "model_group": "ribonucleoside_monophosphate_biosynthetic_process_GO_0009156",
+    "exam_samples": 49,
+    "threshold": 0.53,
+    "f1_score": 0.7282
+  },
+  {
+    "model_group": "hydrolase_activity,_acting_on_ester_bonds_GO_0016788",
+    "exam_samples": 71,
+    "threshold": 0.95,
+    "f1_score": 0.7278
+  },
+  {
+    "model_group": "biological_process_involved_in_interaction_with_host_GO_0051701",
+    "exam_samples": 144,
+    "threshold": 0.85,
+    "f1_score": 0.7252
+  },
+  {
+    "model_group": "enzyme_inhibitor_activity_GO_0004857",
+    "exam_samples": 209,
+    "threshold": 0.85,
+    "f1_score": 0.725
+  },
+  {
+    "model_group": "tRNA_aminoacylation_for_protein_translation_GO_0006418",
+    "exam_samples": 28,
+    "threshold": 0.39,
+    "f1_score": 0.7225
+  },
+  {
+    "model_group": "Fallback_molecular_function_6",
+    "exam_samples": 74,
+    "threshold": 0.61,
+    "f1_score": 0.7212
+  },
+  {
+    "model_group": "protein_kinase_activity_GO_0004672",
+    "exam_samples": 256,
+    "threshold": 0.87,
+    "f1_score": 0.7183
+  },
+  {
+    "model_group": "positive_regulation_of_apoptotic_process_GO_0043065",
+    "exam_samples": 128,
+    "threshold": 0.74,
+    "f1_score": 0.718
+  },
+  {
+    "model_group": "negative_regulation_of_cell_cycle_GO_0045786",
+    "exam_samples": 54,
+    "threshold": 0.62,
+    "f1_score": 0.7169
+  },
+  {
+    "model_group": "regulation_of_mRNA_stability_GO_0043488",
+    "exam_samples": 47,
+    "threshold": 0.86,
+    "f1_score": 0.7152
+  },
+  {
+    "model_group": "carboxylic_acid_transmembrane_transport_GO_1905039",
+    "exam_samples": 31,
+    "threshold": 0.9,
+    "f1_score": 0.715
+  },
+  {
+    "model_group": "intracellular_transport_GO_0046907",
+    "exam_samples": 208,
+    "threshold": 0.86,
+    "f1_score": 0.7141
+  },
+  {
+    "model_group": "secretory_vesicle_GO_0099503",
+    "exam_samples": 146,
+    "threshold": 0.9,
+    "f1_score": 0.7139
+  },
+  {
+    "model_group": "G_protein-coupled_receptor_activity_GO_0004930",
+    "exam_samples": 81,
+    "threshold": 0.94,
+    "f1_score": 0.7114
+  },
+  {
+    "model_group": "regulation_of_metabolic_process_GO_0019222",
+    "exam_samples": 98,
+    "threshold": 0.83,
+    "f1_score": 0.7095
+  },
+  {
+    "model_group": "hydrolase_activity,_hydrolyzing_N-glycosyl_compounds_GO_0016799",
+    "exam_samples": 32,
+    "threshold": 0.87,
+    "f1_score": 0.707
+  },
+  {
+    "model_group": "ligase_activity,_forming_carbon-nitrogen_bonds_GO_0016879",
+    "exam_samples": 47,
+    "threshold": 0.53,
+    "f1_score": 0.7043
+  },
+  {
+    "model_group": "positive_regulation_of_cell_population_proliferation_GO_0008284",
+    "exam_samples": 173,
+    "threshold": 0.8,
+    "f1_score": 0.7033
+  },
+  {
+    "model_group": "structural_molecule_activity_GO_0005198",
+    "exam_samples": 515,
+    "threshold": 0.93,
+    "f1_score": 0.7028
+  },
+  {
+    "model_group": "embryonic_morphogenesis_GO_0048598",
+    "exam_samples": 102,
+    "threshold": 0.85,
+    "f1_score": 0.7021
+  },
+  {
+    "model_group": "protein_serine_threonine_kinase_activity_GO_0004674",
+    "exam_samples": 204,
+    "threshold": 0.95,
+    "f1_score": 0.6998
+  },
+  {
+    "model_group": "ATP-dependent_activity,_acting_on_DNA_GO_0008094",
+    "exam_samples": 71,
+    "threshold": 0.77,
+    "f1_score": 0.6972
+  },
+  {
+    "model_group": "regulation_of_carbohydrate_metabolic_process_GO_0006109",
+    "exam_samples": 58,
+    "threshold": 0.8,
+    "f1_score": 0.6948
+  },
+  {
+    "model_group": "viral_process_GO_0016032",
+    "exam_samples": 136,
+    "threshold": 0.93,
+    "f1_score": 0.6946
+  },
+  {
+    "model_group": "pentosyltransferase_activity_GO_0016763",
+    "exam_samples": 38,
+    "threshold": 0.85,
+    "f1_score": 0.6945
+  },
+  {
+    "model_group": "oxidoreductase_activity,_acting_on_paired_donors,_with_incorporation_or_reduction_of_molecular_oxygen_GO_0016705",
+    "exam_samples": 115,
+    "threshold": 0.94,
+    "f1_score": 0.6942
+  },
+  {
+    "model_group": "negative_regulation_of_cell_migration_GO_0030336",
+    "exam_samples": 63,
+    "threshold": 0.9,
+    "f1_score": 0.6938
+  },
+  {
+    "model_group": "lyase_activity_GO_0016829",
+    "exam_samples": 113,
+    "threshold": 0.5,
+    "f1_score": 0.6913
+  },
+  {
+    "model_group": "cell-cell_junction_organization_GO_0045216",
+    "exam_samples": 47,
+    "threshold": 0.84,
+    "f1_score": 0.6911
+  },
+  {
+    "model_group": "positive_regulation_of_signal_transduction_GO_0009967",
+    "exam_samples": 149,
+    "threshold": 0.9,
+    "f1_score": 0.6891
+  },
+  {
+    "model_group": "oxidoreductase_activity,_acting_on_the_aldehyde_or_oxo_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016620",
+    "exam_samples": 35,
+    "threshold": 0.85,
+    "f1_score": 0.6889
+  },
+  {
+    "model_group": "phosphoric_diester_hydrolase_activity_GO_0008081",
+    "exam_samples": 42,
+    "threshold": 0.46,
+    "f1_score": 0.6889
+  },
+  {
+    "model_group": "phosphate-containing_compound_metabolic_process_GO_0006796",
+    "exam_samples": 157,
+    "threshold": 0.92,
+    "f1_score": 0.6874
+  },
+  {
+    "model_group": "cell_population_proliferation_GO_0008283",
+    "exam_samples": 161,
+    "threshold": 0.95,
+    "f1_score": 0.6863
+  },
+  {
+    "model_group": "neuron_differentiation_GO_0030182",
+    "exam_samples": 88,
+    "threshold": 0.89,
+    "f1_score": 0.6858
+  },
+  {
+    "model_group": "carboxylic_acid_transmembrane_transporter_activity_GO_0046943",
+    "exam_samples": 33,
+    "threshold": 0.35,
+    "f1_score": 0.6857
+  },
+  {
+    "model_group": "oxidoreductase_activity,_acting_on_the_CH-OH_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016616",
+    "exam_samples": 42,
+    "threshold": 0.43,
+    "f1_score": 0.6853
+  },
+  {
+    "model_group": "regulation_of_cell_differentiation_GO_0045595",
+    "exam_samples": 73,
+    "threshold": 0.8,
+    "f1_score": 0.685
+  },
+  {
+    "model_group": "carbohydrate_derivative_metabolic_process_GO_1901135",
+    "exam_samples": 115,
+    "threshold": 0.81,
+    "f1_score": 0.6849
+  },
+  {
+    "model_group": "synapse_GO_0045202",
+    "exam_samples": 367,
+    "threshold": 0.88,
+    "f1_score": 0.6841
+  },
+  {
+    "model_group": "leukocyte_migration_GO_0050900",
+    "exam_samples": 50,
+    "threshold": 0.8,
+    "f1_score": 0.6827
+  },
+  {
+    "model_group": "regulation_of_cell_cycle_process_GO_0010564",
+    "exam_samples": 54,
+    "threshold": 0.76,
+    "f1_score": 0.6826
+  },
+  {
+    "model_group": "peptidase_activity_GO_0008233",
+    "exam_samples": 374,
+    "threshold": 0.93,
+    "f1_score": 0.6822
+  },
+  {
+    "model_group": "membraneless_organelle_assembly_GO_0140694",
+    "exam_samples": 90,
+    "threshold": 0.75,
+    "f1_score": 0.6817
+  },
+  {
+    "model_group": "RNA_polymerase_II_transcription_regulator_complex_GO_0090575",
+    "exam_samples": 79,
+    "threshold": 0.71,
+    "f1_score": 0.6804
+  },
+  {
+    "model_group": "oxidoreductase_activity,_acting_on_NAD(P)H_GO_0016651",
+    "exam_samples": 48,
+    "threshold": 0.57,
+    "f1_score": 0.6803
+  },
+  {
+    "model_group": "signaling_receptor_activity_GO_0038023",
+    "exam_samples": 109,
+    "threshold": 0.94,
+    "f1_score": 0.6785
+  },
+  {
+    "model_group": "proton_transmembrane_transporter_activity_GO_0015078",
+    "exam_samples": 104,
+    "threshold": 0.45,
+    "f1_score": 0.6781
+  },
+  {
+    "model_group": "transferase_activity,_transferring_alkyl_or_aryl_(other_than_methyl)_groups_GO_0016765",
+    "exam_samples": 56,
+    "threshold": 0.66,
+    "f1_score": 0.6781
+  },
+  {
+    "model_group": "regulation_of_secretion_GO_0051046",
+    "exam_samples": 27,
+    "threshold": 0.69,
+    "f1_score": 0.6775
+  },
+  {
+    "model_group": "regulation_of_heart_contraction_GO_0008016",
+    "exam_samples": 50,
+    "threshold": 0.66,
+    "f1_score": 0.6767
+  },
+  {
+    "model_group": "ATPase_complex_GO_1904949",
+    "exam_samples": 45,
+    "threshold": 0.71,
+    "f1_score": 0.6742
+  },
+  {
+    "model_group": "monoatomic_cation_transmembrane_transport_GO_0098655",
+    "exam_samples": 128,
+    "threshold": 0.9,
+    "f1_score": 0.6737
+  },
+  {
+    "model_group": "receptor_ligand_activity_GO_0048018",
+    "exam_samples": 239,
+    "threshold": 0.81,
+    "f1_score": 0.6735
+  },
+  {
+    "model_group": "protein-RNA_complex_assembly_GO_0022618",
+    "exam_samples": 96,
+    "threshold": 0.76,
+    "f1_score": 0.6733
+  },
+  {
+    "model_group": "nucleotide_catabolic_process_GO_0009166",
+    "exam_samples": 73,
+    "threshold": 0.65,
+    "f1_score": 0.6723
+  },
+  {
+    "model_group": "positive_regulation_of_protein_metabolic_process_GO_0051247",
+    "exam_samples": 127,
+    "threshold": 0.75,
+    "f1_score": 0.6721
+  },
+  {
+    "model_group": "positive_regulation_of_protein_localization_GO_1903829",
+    "exam_samples": 59,
+    "threshold": 0.82,
+    "f1_score": 0.6717
+  },
+  {
+    "model_group": "positive_regulation_of_metabolic_process_GO_0009893",
+    "exam_samples": 81,
+    "threshold": 0.72,
+    "f1_score": 0.6705
+  },
+  {
+    "model_group": "hormone_metabolic_process_GO_0042445",
+    "exam_samples": 47,
+    "threshold": 0.61,
+    "f1_score": 0.6704
+  },
+  {
+    "model_group": "cell_surface_receptor_signaling_pathway_GO_0007166",
+    "exam_samples": 323,
+    "threshold": 0.93,
+    "f1_score": 0.6683
+  },
+  {
+    "model_group": "negative_regulation_of_apoptotic_process_GO_0043066",
+    "exam_samples": 215,
+    "threshold": 0.85,
+    "f1_score": 0.6681
+  },
+  {
+    "model_group": "cell_projection_organization_GO_0030030",
+    "exam_samples": 117,
+    "threshold": 0.7,
+    "f1_score": 0.6669
+  },
+  {
+    "model_group": "protein_maturation_GO_0051604",
+    "exam_samples": 92,
+    "threshold": 0.8,
+    "f1_score": 0.6645
+  },
+  {
+    "model_group": "cytoplasmic_vesicle_GO_0031410",
+    "exam_samples": 396,
+    "threshold": 0.81,
+    "f1_score": 0.6634
+  },
+  {
+    "model_group": "response_to_hormone_GO_0009725",
+    "exam_samples": 133,
+    "threshold": 0.79,
+    "f1_score": 0.6616
+  },
+  {
+    "model_group": "regulation_of_calcium_ion_transmembrane_transport_GO_1903169",
+    "exam_samples": 33,
+    "threshold": 0.93,
+    "f1_score": 0.6614
+  },
+  {
+    "model_group": "cell_activation_GO_0001775",
+    "exam_samples": 48,
+    "threshold": 0.5,
+    "f1_score": 0.6613
+  },
+  {
+    "model_group": "cytokine_receptor_binding_GO_0005126",
+    "exam_samples": 52,
+    "threshold": 0.73,
+    "f1_score": 0.6612
+  },
+  {
+    "model_group": "negative_regulation_of_developmental_process_GO_0051093",
+    "exam_samples": 75,
+    "threshold": 0.83,
+    "f1_score": 0.6611
+  },
+  {
+    "model_group": "signaling_receptor_binding_GO_0005102",
+    "exam_samples": 237,
+    "threshold": 0.95,
+    "f1_score": 0.661
+  },
+  {
+    "model_group": "enzyme_binding_GO_0019899",
+    "exam_samples": 433,
+    "threshold": 0.9,
+    "f1_score": 0.6609
+  },
+  {
+    "model_group": "protein_modification_by_small_protein_conjugation_GO_0032446",
+    "exam_samples": 211,
+    "threshold": 0.85,
+    "f1_score": 0.6606
+  },
+  {
+    "model_group": "negative_regulation_of_cytokine_production_GO_0001818",
+    "exam_samples": 67,
+    "threshold": 0.84,
+    "f1_score": 0.6577
+  },
+  {
+    "model_group": "membrane_protein_complex_GO_0098796",
+    "exam_samples": 248,
+    "threshold": 0.91,
+    "f1_score": 0.6569
+  },
+  {
+    "model_group": "regulation_of_chromosome_organization_GO_0033044",
+    "exam_samples": 33,
+    "threshold": 0.45,
+    "f1_score": 0.6541
+  },
+  {
+    "model_group": "homeostatic_process_GO_0042592",
+    "exam_samples": 243,
+    "threshold": 0.89,
+    "f1_score": 0.6538
+  },
+  {
+    "model_group": "regulation_of_myeloid_cell_differentiation_GO_0045637",
+    "exam_samples": 51,
+    "threshold": 0.36,
+    "f1_score": 0.6532
+  },
+  {
+    "model_group": "negative_regulation_of_cell_population_proliferation_GO_0008285",
+    "exam_samples": 125,
+    "threshold": 0.84,
+    "f1_score": 0.6512
+  },
+  {
+    "model_group": "lymphocyte_activation_GO_0046649",
+    "exam_samples": 79,
+    "threshold": 0.61,
+    "f1_score": 0.651
+  },
+  {
+    "model_group": "nucleobase-containing_compound_metabolic_process_GO_0006139",
+    "exam_samples": 52,
+    "threshold": 0.69,
+    "f1_score": 0.6508
+  },
+  {
+    "model_group": "nucleocytoplasmic_transport_GO_0006913",
+    "exam_samples": 94,
+    "threshold": 0.7,
+    "f1_score": 0.6507
+  },
+  {
+    "model_group": "cell_communication_GO_0007154",
+    "exam_samples": 66,
+    "threshold": 0.83,
+    "f1_score": 0.6507
+  },
+  {
+    "model_group": "phospholipid_binding_GO_0005543",
+    "exam_samples": 165,
+    "threshold": 0.9,
+    "f1_score": 0.6507
+  },
+  {
+    "model_group": "carbohydrate_biosynthetic_process_GO_0016051",
+    "exam_samples": 124,
+    "threshold": 0.92,
+    "f1_score": 0.6504
+  },
+  {
+    "model_group": "protein-containing_complex_binding_GO_0044877",
+    "exam_samples": 296,
+    "threshold": 0.94,
+    "f1_score": 0.649
+  },
+  {
+    "model_group": "cytoskeletal_protein_binding_GO_0008092",
+    "exam_samples": 335,
+    "threshold": 0.91,
+    "f1_score": 0.6483
+  },
+  {
+    "model_group": "neuron_projection_development_GO_0031175",
+    "exam_samples": 140,
+    "threshold": 0.8,
+    "f1_score": 0.6473
+  },
+  {
+    "model_group": "nucleoside_phosphate_metabolic_process_GO_0006753",
+    "exam_samples": 99,
+    "threshold": 0.9,
+    "f1_score": 0.6452
+  },
+  {
+    "model_group": "lipid_biosynthetic_process_GO_0008610",
+    "exam_samples": 177,
+    "threshold": 0.93,
+    "f1_score": 0.6451
+  },
+  {
+    "model_group": "Fallback_biological_process_3",
+    "exam_samples": 187,
+    "threshold": 0.94,
+    "f1_score": 0.6422
+  },
+  {
+    "model_group": "epithelium_development_GO_0060429",
+    "exam_samples": 55,
+    "threshold": 0.92,
+    "f1_score": 0.642
+  },
+  {
+    "model_group": "enzyme_activator_activity_GO_0008047",
+    "exam_samples": 185,
+    "threshold": 0.94,
+    "f1_score": 0.6405
+  },
+  {
+    "model_group": "negative_regulation_of_protein_metabolic_process_GO_0051248",
+    "exam_samples": 83,
+    "threshold": 0.86,
+    "f1_score": 0.6391
+  },
+  {
+    "model_group": "protein-macromolecule_adaptor_activity_GO_0030674",
+    "exam_samples": 198,
+    "threshold": 0.86,
+    "f1_score": 0.6373
+  },
+  {
+    "model_group": "protein_domain_specific_binding_GO_0019904",
+    "exam_samples": 188,
+    "threshold": 0.93,
+    "f1_score": 0.6367
+  },
+  {
+    "model_group": "actin_filament_organization_GO_0007015",
+    "exam_samples": 92,
+    "threshold": 0.77,
+    "f1_score": 0.6361
+  },
+  {
+    "model_group": "exocytosis_GO_0006887",
+    "exam_samples": 71,
+    "threshold": 0.91,
+    "f1_score": 0.6351
+  },
+  {
+    "model_group": "cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169",
+    "exam_samples": 114,
+    "threshold": 0.95,
+    "f1_score": 0.6346
+  },
+  {
+    "model_group": "regulation_of_membrane_potential_GO_0042391",
+    "exam_samples": 105,
+    "threshold": 0.87,
+    "f1_score": 0.6345
+  },
+  {
+    "model_group": "negative_regulation_of_intracellular_signal_transduction_GO_1902532",
+    "exam_samples": 156,
+    "threshold": 0.88,
+    "f1_score": 0.6315
+  },
+  {
+    "model_group": "positive_regulation_of_developmental_process_GO_0051094",
+    "exam_samples": 143,
+    "threshold": 0.89,
+    "f1_score": 0.6313
+  },
+  {
+    "model_group": "carbon-carbon_lyase_activity_GO_0016830",
+    "exam_samples": 31,
+    "threshold": 0.56,
+    "f1_score": 0.63
+  },
+  {
+    "model_group": "sensory_perception_GO_0007600",
+    "exam_samples": 130,
+    "threshold": 0.74,
+    "f1_score": 0.6282
+  },
+  {
+    "model_group": "regulation_of_endocytosis_GO_0030100",
+    "exam_samples": 94,
+    "threshold": 0.86,
+    "f1_score": 0.6274
+  },
+  {
+    "model_group": "transferase_activity_GO_0016740",
+    "exam_samples": 198,
+    "threshold": 0.94,
+    "f1_score": 0.6269
+  },
+  {
+    "model_group": "Fallback_cellular_component_7",
+    "exam_samples": 155,
+    "threshold": 0.75,
+    "f1_score": 0.626
+  },
+  {
+    "model_group": "small_molecule_binding_GO_0036094",
+    "exam_samples": 559,
+    "threshold": 0.92,
+    "f1_score": 0.6254
+  },
+  {
+    "model_group": "Fallback_biological_process_4",
+    "exam_samples": 140,
+    "threshold": 0.94,
+    "f1_score": 0.6253
+  },
+  {
+    "model_group": "phosphotransferase_activity,_alcohol_group_as_acceptor_GO_0016773",
+    "exam_samples": 75,
+    "threshold": 0.95,
+    "f1_score": 0.6243
+  },
+  {
+    "model_group": "metal_ion_transmembrane_transporter_activity_GO_0046873",
+    "exam_samples": 87,
+    "threshold": 0.91,
+    "f1_score": 0.6239
+  },
+  {
+    "model_group": "side_of_membrane_GO_0098552",
+    "exam_samples": 203,
+    "threshold": 0.73,
+    "f1_score": 0.6233
+  },
+  {
+    "model_group": "vesicle_organization_GO_0016050",
+    "exam_samples": 58,
+    "threshold": 0.89,
+    "f1_score": 0.6223
+  },
+  {
+    "model_group": "pattern_recognition_receptor_signaling_pathway_GO_0002221",
+    "exam_samples": 31,
+    "threshold": 0.67,
+    "f1_score": 0.6217
+  },
+  {
+    "model_group": "membrane_organization_GO_0061024",
+    "exam_samples": 138,
+    "threshold": 0.9,
+    "f1_score": 0.6212
+  },
+  {
+    "model_group": "O-acyltransferase_activity_GO_0008374",
+    "exam_samples": 34,
+    "threshold": 0.63,
+    "f1_score": 0.6209
+  },
+  {
+    "model_group": "glucosyltransferase_activity_GO_0046527",
+    "exam_samples": 30,
+    "threshold": 0.69,
+    "f1_score": 0.6206
+  },
+  {
+    "model_group": "regulation_of_translation_GO_0006417",
+    "exam_samples": 154,
+    "threshold": 0.91,
+    "f1_score": 0.6193
+  },
+  {
+    "model_group": "regulation_of_signal_transduction_GO_0009966",
+    "exam_samples": 113,
+    "threshold": 0.92,
+    "f1_score": 0.619
+  },
+  {
+    "model_group": "transport_along_microtubule_GO_0010970",
+    "exam_samples": 51,
+    "threshold": 0.74,
+    "f1_score": 0.6184
+  },
+  {
+    "model_group": "cell_development_GO_0048468",
+    "exam_samples": 251,
+    "threshold": 0.91,
+    "f1_score": 0.6177
+  },
+  {
+    "model_group": "regulation_of_cell_motility_GO_2000145",
+    "exam_samples": 69,
+    "threshold": 0.71,
+    "f1_score": 0.6173
+  },
+  {
+    "model_group": "protein-lysine_N-methyltransferase_activity_GO_0016279",
+    "exam_samples": 19,
+    "threshold": 0.53,
+    "f1_score": 0.617
+  },
+  {
+    "model_group": "intracellular_monoatomic_cation_homeostasis_GO_0030003",
+    "exam_samples": 153,
+    "threshold": 0.92,
+    "f1_score": 0.6167
+  },
+  {
+    "model_group": "positive_regulation_of_lymphocyte_differentiation_GO_0045621",
+    "exam_samples": 28,
+    "threshold": 0.82,
+    "f1_score": 0.6159
+  },
+  {
+    "model_group": "transmembrane_transport_GO_0055085",
+    "exam_samples": 217,
+    "threshold": 0.95,
+    "f1_score": 0.6155
+  },
+  {
+    "model_group": "catalytic_complex_GO_1902494",
+    "exam_samples": 276,
+    "threshold": 0.95,
+    "f1_score": 0.615
+  },
+  {
+    "model_group": "regulation_of_lipid_biosynthetic_process_GO_0046890",
+    "exam_samples": 48,
+    "threshold": 0.79,
+    "f1_score": 0.6129
+  },
+  {
+    "model_group": "cell_projection_GO_0042995",
+    "exam_samples": 327,
+    "threshold": 0.88,
+    "f1_score": 0.6123
+  },
+  {
+    "model_group": "regulation_of_cytoskeleton_organization_GO_0051493",
+    "exam_samples": 84,
+    "threshold": 0.63,
+    "f1_score": 0.6122
+  },
+  {
+    "model_group": "intracellular_protein_localization_GO_0008104",
+    "exam_samples": 267,
+    "threshold": 0.94,
+    "f1_score": 0.6117
+  },
+  {
+    "model_group": "negative_regulation_of_signal_transduction_GO_0009968",
+    "exam_samples": 176,
+    "threshold": 0.89,
+    "f1_score": 0.6114
+  },
+  {
+    "model_group": "catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640",
+    "exam_samples": 187,
+    "threshold": 0.86,
+    "f1_score": 0.6112
+  },
+  {
+    "model_group": "response_to_nutrient_levels_GO_0031667",
+    "exam_samples": 92,
+    "threshold": 0.71,
+    "f1_score": 0.6086
+  },
+  {
+    "model_group": "regulation_of_epithelial_cell_proliferation_GO_0050678",
+    "exam_samples": 89,
+    "threshold": 0.48,
+    "f1_score": 0.6086
+  },
+  {
+    "model_group": "cell-cell_adhesion_GO_0098609",
+    "exam_samples": 123,
+    "threshold": 0.83,
+    "f1_score": 0.6085
+  },
+  {
+    "model_group": "hydrolase_activity,_acting_on_carbon-nitrogen_(but_not_peptide)_bonds_GO_0016810",
+    "exam_samples": 50,
+    "threshold": 0.38,
+    "f1_score": 0.6082
+  },
+  {
+    "model_group": "Fallback_molecular_function_3",
+    "exam_samples": 488,
+    "threshold": 0.94,
+    "f1_score": 0.6081
+  },
+  {
+    "model_group": "positive_regulation_of_intracellular_signal_transduction_GO_1902533",
+    "exam_samples": 263,
+    "threshold": 0.87,
+    "f1_score": 0.6063
+  },
+  {
+    "model_group": "small_molecule_biosynthetic_process_GO_0044283",
+    "exam_samples": 89,
+    "threshold": 0.78,
+    "f1_score": 0.6042
+  },
+  {
+    "model_group": "regulation_of_neuron_projection_development_GO_0010975",
+    "exam_samples": 106,
+    "threshold": 0.76,
+    "f1_score": 0.6041
+  },
+  {
+    "model_group": "defense_response_GO_0006952",
+    "exam_samples": 288,
+    "threshold": 0.93,
+    "f1_score": 0.6039
+  },
+  {
+    "model_group": "lipid_transport_GO_0006869",
+    "exam_samples": 62,
+    "threshold": 0.8,
+    "f1_score": 0.6031
+  },
+  {
+    "model_group": "transferase_complex_GO_1990234",
+    "exam_samples": 202,
+    "threshold": 0.94,
+    "f1_score": 0.6009
+  },
+  {
+    "model_group": "tube_morphogenesis_GO_0035239",
+    "exam_samples": 34,
+    "threshold": 0.35,
+    "f1_score": 0.5997
+  },
+  {
+    "model_group": "developmental_growth_GO_0048589",
+    "exam_samples": 121,
+    "threshold": 0.86,
+    "f1_score": 0.5995
+  },
+  {
+    "model_group": "lipid_metabolic_process_GO_0006629",
+    "exam_samples": 157,
+    "threshold": 0.92,
+    "f1_score": 0.5994
+  },
+  {
+    "model_group": "Fallback_biological_process_12",
+    "exam_samples": 278,
+    "threshold": 0.89,
+    "f1_score": 0.5994
+  },
+  {
+    "model_group": "ubiquitin_ligase_complex_GO_0000151",
+    "exam_samples": 89,
+    "threshold": 0.89,
+    "f1_score": 0.5984
+  },
+  {
+    "model_group": "carboxylic_acid_metabolic_process_GO_0019752",
+    "exam_samples": 185,
+    "threshold": 0.93,
+    "f1_score": 0.5948
+  },
+  {
+    "model_group": "positive_regulation_of_neurogenesis_GO_0050769",
+    "exam_samples": 65,
+    "threshold": 0.87,
+    "f1_score": 0.5946
+  },
+  {
+    "model_group": "intracellular_signal_transduction_GO_0035556",
+    "exam_samples": 436,
+    "threshold": 0.94,
+    "f1_score": 0.593
+  },
+  {
+    "model_group": "terpenoid_biosynthetic_process_GO_0016114",
+    "exam_samples": 121,
+    "threshold": 0.92,
+    "f1_score": 0.5924
+  },
+  {
+    "model_group": "oxidoreductase_activity,_acting_on_the_CH-CH_group_of_donors_GO_0016627",
+    "exam_samples": 112,
+    "threshold": 0.95,
+    "f1_score": 0.5912
+  },
+  {
+    "model_group": "ATPase-coupled_transmembrane_transporter_activity_GO_0042626",
+    "exam_samples": 65,
+    "threshold": 0.4,
+    "f1_score": 0.5907
+  },
+  {
+    "model_group": "regulation_of_protein_kinase_activity_GO_0045859",
+    "exam_samples": 43,
+    "threshold": 0.6,
+    "f1_score": 0.5903
+  },
+  {
+    "model_group": "Fallback_biological_process_2",
+    "exam_samples": 168,
+    "threshold": 0.89,
+    "f1_score": 0.5899
+  },
+  {
+    "model_group": "regulation_of_macroautophagy_GO_0016241",
+    "exam_samples": 50,
+    "threshold": 0.82,
+    "f1_score": 0.5897
+  },
+  {
+    "model_group": "transcription_cis-regulatory_region_binding_GO_0000976",
+    "exam_samples": 377,
+    "threshold": 0.75,
+    "f1_score": 0.5895
+  },
+  {
+    "model_group": "microtubule-based_process_GO_0007017",
+    "exam_samples": 106,
+    "threshold": 0.81,
+    "f1_score": 0.5892
+  },
+  {
+    "model_group": "regulation_of_T_cell_activation_GO_0050863",
+    "exam_samples": 86,
+    "threshold": 0.68,
+    "f1_score": 0.5881
+  },
+  {
+    "model_group": "phosphatase_activity_GO_0016791",
+    "exam_samples": 74,
+    "threshold": 0.9,
+    "f1_score": 0.5875
+  },
+  {
+    "model_group": "tissue_development_GO_0009888",
+    "exam_samples": 144,
+    "threshold": 0.87,
+    "f1_score": 0.5873
+  },
+  {
+    "model_group": "phosphotransferase_activity,_phosphate_group_as_acceptor_GO_0016776",
+    "exam_samples": 34,
+    "threshold": 0.22,
+    "f1_score": 0.5861
+  },
+  {
+    "model_group": "enzyme_regulator_activity_GO_0030234",
+    "exam_samples": 144,
+    "threshold": 0.86,
+    "f1_score": 0.5824
+  },
+  {
+    "model_group": "Fallback_biological_process_7",
+    "exam_samples": 163,
+    "threshold": 0.9,
+    "f1_score": 0.5822
+  },
+  {
+    "model_group": "metal_ion_transport_GO_0030001",
+    "exam_samples": 112,
+    "threshold": 0.91,
+    "f1_score": 0.5821
+  },
+  {
+    "model_group": "carboxylic_acid_transport_GO_0046942",
+    "exam_samples": 107,
+    "threshold": 0.93,
+    "f1_score": 0.5806
+  },
+  {
+    "model_group": "fatty_acid_metabolic_process_GO_0006631",
+    "exam_samples": 117,
+    "threshold": 0.9,
+    "f1_score": 0.58
+  },
+  {
+    "model_group": "nucleotidyltransferase_activity_GO_0016779",
+    "exam_samples": 175,
+    "threshold": 0.95,
+    "f1_score": 0.5796
+  },
+  {
+    "model_group": "regulation_of_innate_immune_response_GO_0045088",
+    "exam_samples": 71,
+    "threshold": 0.67,
+    "f1_score": 0.5789
+  },
+  {
+    "model_group": "regulation_of_inflammatory_response_GO_0050727",
+    "exam_samples": 88,
+    "threshold": 0.74,
+    "f1_score": 0.5788
+  },
+  {
+    "model_group": "protein_catabolic_process_GO_0030163",
+    "exam_samples": 243,
+    "threshold": 0.89,
+    "f1_score": 0.5782
+  },
+  {
+    "model_group": "carboxylic_ester_hydrolase_activity_GO_0052689",
+    "exam_samples": 102,
+    "threshold": 0.89,
+    "f1_score": 0.5774
+  },
+  {
+    "model_group": "racemase_and_epimerase_activity_GO_0016854",
+    "exam_samples": 28,
+    "threshold": 0.29,
+    "f1_score": 0.5734
+  },
+  {
+    "model_group": "Fallback_biological_process_16",
+    "exam_samples": 127,
+    "threshold": 0.9,
+    "f1_score": 0.573
+  },
+  {
+    "model_group": "regulation_of_defense_response_GO_0031347",
+    "exam_samples": 45,
+    "threshold": 0.74,
+    "f1_score": 0.5706
+  },
+  {
+    "model_group": "establishment_or_maintenance_of_cell_polarity_GO_0007163",
+    "exam_samples": 51,
+    "threshold": 0.49,
+    "f1_score": 0.57
+  },
+  {
+    "model_group": "defense_response_to_other_organism_GO_0098542",
+    "exam_samples": 247,
+    "threshold": 0.95,
+    "f1_score": 0.568
+  },
+  {
+    "model_group": "cytoskeleton_organization_GO_0007010",
+    "exam_samples": 152,
+    "threshold": 0.85,
+    "f1_score": 0.5678
+  },
+  {
+    "model_group": "carbohydrate_metabolic_process_GO_0005975",
+    "exam_samples": 200,
+    "threshold": 0.8,
+    "f1_score": 0.5673
+  },
+  {
+    "model_group": "negative_regulation_of_cell_differentiation_GO_0045596",
+    "exam_samples": 98,
+    "threshold": 0.87,
+    "f1_score": 0.5666
+  },
+  {
+    "model_group": "heterochromatin_formation_GO_0031507",
+    "exam_samples": 61,
+    "threshold": 0.66,
+    "f1_score": 0.5665
+  },
+  {
+    "model_group": "cell_differentiation_GO_0030154",
+    "exam_samples": 400,
+    "threshold": 0.91,
+    "f1_score": 0.5622
+  },
+  {
+    "model_group": "regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990",
+    "exam_samples": 103,
+    "threshold": 0.83,
+    "f1_score": 0.5615
+  },
+  {
+    "model_group": "regulation_of_gene_expression_GO_0010468",
+    "exam_samples": 170,
+    "threshold": 0.9,
+    "f1_score": 0.5594
+  },
+  {
+    "model_group": "alpha-amino_acid_metabolic_process_GO_1901605",
+    "exam_samples": 176,
+    "threshold": 0.88,
+    "f1_score": 0.559
+  },
+  {
+    "model_group": "G_protein-coupled_receptor_binding_GO_0001664",
+    "exam_samples": 61,
+    "threshold": 0.67,
+    "f1_score": 0.5562
+  },
+  {
+    "model_group": "cell_migration_GO_0016477",
+    "exam_samples": 191,
+    "threshold": 0.9,
+    "f1_score": 0.555
+  },
+  {
+    "model_group": "mRNA_metabolic_process_GO_0016071",
+    "exam_samples": 192,
+    "threshold": 0.87,
+    "f1_score": 0.5546
+  },
+  {
+    "model_group": "kinase_binding_GO_0019900",
+    "exam_samples": 219,
+    "threshold": 0.73,
+    "f1_score": 0.554
+  },
+  {
+    "model_group": "transaminase_activity_GO_0008483",
+    "exam_samples": 35,
+    "threshold": 0.74,
+    "f1_score": 0.5534
+  },
+  {
+    "model_group": "protein_modification_process_GO_0036211",
+    "exam_samples": 215,
+    "threshold": 0.94,
+    "f1_score": 0.5512
+  },
+  {
+    "model_group": "Fallback_biological_process_9",
+    "exam_samples": 153,
+    "threshold": 0.93,
+    "f1_score": 0.5512
+  },
+  {
+    "model_group": "Fallback_biological_process_13",
+    "exam_samples": 177,
+    "threshold": 0.85,
+    "f1_score": 0.5502
+  },
+  {
+    "model_group": "response_to_metal_ion_GO_0010038",
+    "exam_samples": 139,
+    "threshold": 0.75,
+    "f1_score": 0.5499
+  },
+  {
+    "model_group": "prenyltransferase_activity_GO_0004659",
+    "exam_samples": 33,
+    "threshold": 0.6,
+    "f1_score": 0.5498
+  },
+  {
+    "model_group": "muscle_system_process_GO_0003012",
+    "exam_samples": 60,
+    "threshold": 0.69,
+    "f1_score": 0.5494
+  },
+  {
+    "model_group": "carbohydrate_catabolic_process_GO_0016052",
+    "exam_samples": 137,
+    "threshold": 0.9,
+    "f1_score": 0.5483
+  },
+  {
+    "model_group": "Fallback_biological_process_11",
+    "exam_samples": 249,
+    "threshold": 0.89,
+    "f1_score": 0.5479
+  },
+  {
+    "model_group": "calcium_ion_transport_GO_0006816",
+    "exam_samples": 69,
+    "threshold": 0.82,
+    "f1_score": 0.5474
+  },
+  {
+    "model_group": "transmembrane_transporter_activity_GO_0022857",
+    "exam_samples": 262,
+    "threshold": 0.95,
+    "f1_score": 0.5412
+  },
+  {
+    "model_group": "organelle_organization_GO_0006996",
+    "exam_samples": 215,
+    "threshold": 0.95,
+    "f1_score": 0.5399
+  },
+  {
+    "model_group": "cellular_homeostasis_GO_0019725",
+    "exam_samples": 96,
+    "threshold": 0.74,
+    "f1_score": 0.5394
+  },
+  {
+    "model_group": "hydro-lyase_activity_GO_0016836",
+    "exam_samples": 68,
+    "threshold": 0.95,
+    "f1_score": 0.5387
+  },
+  {
+    "model_group": "positive_regulation_of_cell_cycle_process_GO_0090068",
+    "exam_samples": 45,
+    "threshold": 0.82,
+    "f1_score": 0.538
+  },
+  {
+    "model_group": "response_to_lipid_GO_0033993",
+    "exam_samples": 190,
+    "threshold": 0.77,
+    "f1_score": 0.5375
+  },
+  {
+    "model_group": "reproductive_structure_development_GO_0048608",
+    "exam_samples": 84,
+    "threshold": 0.77,
+    "f1_score": 0.5373
+  },
+  {
+    "model_group": "Fallback_cellular_component_6",
+    "exam_samples": 120,
+    "threshold": 0.95,
+    "f1_score": 0.536
+  },
+  {
+    "model_group": "microtubule_cytoskeleton_organization_GO_0000226",
+    "exam_samples": 134,
+    "threshold": 0.76,
+    "f1_score": 0.5357
+  },
+  {
+    "model_group": "chromosome_organization_GO_0051276",
+    "exam_samples": 110,
+    "threshold": 0.76,
+    "f1_score": 0.5353
+  },
+  {
+    "model_group": "morphogenesis_of_an_epithelium_GO_0002009",
+    "exam_samples": 88,
+    "threshold": 0.81,
+    "f1_score": 0.5349
+  },
+  {
+    "model_group": "DNA_recombination_GO_0006310",
+    "exam_samples": 126,
+    "threshold": 0.82,
+    "f1_score": 0.534
+  },
+  {
+    "model_group": "Fallback_biological_process_10",
+    "exam_samples": 144,
+    "threshold": 0.89,
+    "f1_score": 0.5328
+  },
+  {
+    "model_group": "signal_transduction_GO_0007165",
+    "exam_samples": 307,
+    "threshold": 0.91,
+    "f1_score": 0.5319
+  },
+  {
+    "model_group": "Fallback_molecular_function_2",
+    "exam_samples": 95,
+    "threshold": 0.92,
+    "f1_score": 0.5319
+  },
+  {
+    "model_group": "Fallback_cellular_component_2",
+    "exam_samples": 342,
+    "threshold": 0.93,
+    "f1_score": 0.5317
+  },
+  {
+    "model_group": "amine_metabolic_process_GO_0009308",
+    "exam_samples": 36,
+    "threshold": 0.6,
+    "f1_score": 0.5316
+  },
+  {
+    "model_group": "Fallback_molecular_function_5",
+    "exam_samples": 541,
+    "threshold": 0.95,
+    "f1_score": 0.5294
+  },
+  {
+    "model_group": "tRNA_modification_GO_0006400",
+    "exam_samples": 54,
+    "threshold": 0.54,
+    "f1_score": 0.5251
+  },
+  {
+    "model_group": "hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",
+    "exam_samples": 131,
+    "threshold": 0.9,
+    "f1_score": 0.5245
+  },
+  {
+    "model_group": "biosynthetic_process_GO_0009058",
+    "exam_samples": 556,
+    "threshold": 0.95,
+    "f1_score": 0.5223
+  },
+  {
+    "model_group": "modulation_of_chemical_synaptic_transmission_GO_0050804",
+    "exam_samples": 143,
+    "threshold": 0.8,
+    "f1_score": 0.5216
+  },
+  {
+    "model_group": "S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757",
+    "exam_samples": 69,
+    "threshold": 0.9,
+    "f1_score": 0.5209
+  },
+  {
+    "model_group": "Fallback_cellular_component_3",
+    "exam_samples": 407,
+    "threshold": 0.91,
+    "f1_score": 0.5177
+  },
+  {
+    "model_group": "Fallback_cellular_component_5",
+    "exam_samples": 195,
+    "threshold": 0.95,
+    "f1_score": 0.5171
+  },
+  {
+    "model_group": "supramolecular_fiber_GO_0099512",
+    "exam_samples": 235,
+    "threshold": 0.93,
+    "f1_score": 0.5133
+  },
+  {
+    "model_group": "Fallback_biological_process_14",
+    "exam_samples": 93,
+    "threshold": 0.82,
+    "f1_score": 0.5104
+  },
+  {
+    "model_group": "isomerase_activity_GO_0016853",
+    "exam_samples": 102,
+    "threshold": 0.95,
+    "f1_score": 0.5065
+  },
+  {
+    "model_group": "N-acetyltransferase_activity_GO_0008080",
+    "exam_samples": 27,
+    "threshold": 0.63,
+    "f1_score": 0.5054
+  },
+  {
+    "model_group": "CoA-ligase_activity_GO_0016405",
+    "exam_samples": 24,
+    "threshold": 0.79,
+    "f1_score": 0.4973
+  },
+  {
+    "model_group": "pyrophosphatase_activity_GO_0016462",
+    "exam_samples": 468,
+    "threshold": 0.95,
+    "f1_score": 0.4964
+  },
+  {
+    "model_group": "neuron_projection_GO_0043005",
+    "exam_samples": 321,
+    "threshold": 0.88,
+    "f1_score": 0.4927
+  },
+  {
+    "model_group": "immune_system_process_GO_0002376",
+    "exam_samples": 181,
+    "threshold": 0.92,
+    "f1_score": 0.4925
+  },
+  {
+    "model_group": "fatty_acid_biosynthetic_process_GO_0006633",
+    "exam_samples": 116,
+    "threshold": 0.9,
+    "f1_score": 0.4919
+  },
+  {
+    "model_group": "protein-containing_complex_assembly_GO_0065003",
+    "exam_samples": 341,
+    "threshold": 0.94,
+    "f1_score": 0.4916
+  },
+  {
+    "model_group": "negative_regulation_of_gene_expression_GO_0010629",
+    "exam_samples": 186,
+    "threshold": 0.86,
+    "f1_score": 0.4899
+  },
+  {
+    "model_group": "phosphoprotein_phosphatase_activity_GO_0004721",
+    "exam_samples": 71,
+    "threshold": 0.87,
+    "f1_score": 0.4898
+  },
+  {
+    "model_group": "Fallback_biological_process_8",
+    "exam_samples": 186,
+    "threshold": 0.91,
+    "f1_score": 0.4893
+  },
+  {
+    "model_group": "protein_localization_to_organelle_GO_0033365",
+    "exam_samples": 94,
+    "threshold": 0.91,
+    "f1_score": 0.4888
+  },
+  {
+    "model_group": "RNA_processing_GO_0006396",
+    "exam_samples": 101,
+    "threshold": 0.84,
+    "f1_score": 0.4858
+  },
+  {
+    "model_group": "Fallback_biological_process_15",
+    "exam_samples": 122,
+    "threshold": 0.95,
+    "f1_score": 0.4854
+  },
+  {
+    "model_group": "regulation_of_primary_metabolic_process_GO_0080090",
+    "exam_samples": 109,
+    "threshold": 0.85,
+    "f1_score": 0.482
+  },
+  {
+    "model_group": "response_to_light_stimulus_GO_0009416",
+    "exam_samples": 144,
+    "threshold": 0.92,
+    "f1_score": 0.4817
+  },
+  {
+    "model_group": "cognition_GO_0050890",
+    "exam_samples": 101,
+    "threshold": 0.68,
+    "f1_score": 0.4795
+  },
+  {
+    "model_group": "regulation_of_body_fluid_levels_GO_0050878",
+    "exam_samples": 76,
+    "threshold": 0.85,
+    "f1_score": 0.4786
+  },
+  {
+    "model_group": "metal_ion_binding_GO_0046872",
+    "exam_samples": 2631,
+    "threshold": 0.94,
+    "f1_score": 0.4741
+  },
+  {
+    "model_group": "Fallback_molecular_function_4",
+    "exam_samples": 543,
+    "threshold": 0.95,
+    "f1_score": 0.4729
+  },
+  {
+    "model_group": "rRNA_processing_GO_0006364",
+    "exam_samples": 109,
+    "threshold": 0.78,
+    "f1_score": 0.4714
+  },
+  {
+    "model_group": "anatomical_structure_formation_involved_in_morphogenesis_GO_0048646",
+    "exam_samples": 246,
+    "threshold": 0.95,
+    "f1_score": 0.4679
+  },
+  {
+    "model_group": "regulation_of_DNA-templated_transcription_GO_0006355",
+    "exam_samples": 708,
+    "threshold": 0.94,
+    "f1_score": 0.4678
+  },
+  {
+    "model_group": "carboxy-lyase_activity_GO_0016831",
+    "exam_samples": 46,
+    "threshold": 0.66,
+    "f1_score": 0.4636
+  },
+  {
+    "model_group": "Fallback_cellular_component_9",
+    "exam_samples": 549,
+    "threshold": 0.91,
+    "f1_score": 0.4616
+  },
+  {
+    "model_group": "DNA_nuclease_activity_GO_0004536",
+    "exam_samples": 50,
+    "threshold": 0.84,
+    "f1_score": 0.4585
+  },
+  {
+    "model_group": "response_to_starvation_GO_0042594",
+    "exam_samples": 116,
+    "threshold": 0.74,
+    "f1_score": 0.4538
+  },
+  {
+    "model_group": "cellular_response_to_oxygen-containing_compound_GO_1901701",
+    "exam_samples": 246,
+    "threshold": 0.85,
+    "f1_score": 0.4538
+  },
+  {
+    "model_group": "Fallback_cellular_component_4",
+    "exam_samples": 724,
+    "threshold": 0.95,
+    "f1_score": 0.4533
+  },
+  {
+    "model_group": "Fallback_biological_process_6",
+    "exam_samples": 204,
+    "threshold": 0.91,
+    "f1_score": 0.45
+  },
+  {
+    "model_group": "secondary_metabolite_biosynthetic_process_GO_0044550",
+    "exam_samples": 106,
+    "threshold": 0.77,
+    "f1_score": 0.4487
+  },
+  {
+    "model_group": "dioxygenase_activity_GO_0051213",
+    "exam_samples": 33,
+    "threshold": 0.77,
+    "f1_score": 0.4479
+  },
+  {
+    "model_group": "organelle_fusion_GO_0048284",
+    "exam_samples": 48,
+    "threshold": 0.73,
+    "f1_score": 0.4454
+  },
+  {
+    "model_group": "Fallback_biological_process_1",
+    "exam_samples": 131,
+    "threshold": 0.9,
+    "f1_score": 0.4418
+  },
+  {
+    "model_group": "RNA_binding_GO_0003723",
+    "exam_samples": 786,
+    "threshold": 0.95,
+    "f1_score": 0.4415
+  },
+  {
+    "model_group": "animal_organ_morphogenesis_GO_0009887",
+    "exam_samples": 117,
+    "threshold": 0.82,
+    "f1_score": 0.441
+  },
+  {
+    "model_group": "ribonucleoprotein_complex_GO_1990904",
+    "exam_samples": 444,
+    "threshold": 0.94,
+    "f1_score": 0.4373
+  },
+  {
+    "model_group": "positive_regulation_of_cytokine_production_GO_0001819",
+    "exam_samples": 115,
+    "threshold": 0.87,
+    "f1_score": 0.433
+  },
+  {
+    "model_group": "positive_regulation_of_DNA-templated_transcription_GO_0045893",
+    "exam_samples": 480,
+    "threshold": 0.94,
+    "f1_score": 0.4206
+  },
+  {
+    "model_group": "cytoplasmic_vesicle_membrane_GO_0030659",
+    "exam_samples": 294,
+    "threshold": 0.84,
+    "f1_score": 0.4197
+  },
+  {
+    "model_group": "catabolic_process_GO_0009056",
+    "exam_samples": 328,
+    "threshold": 0.95,
+    "f1_score": 0.415
+  },
+  {
+    "model_group": "regulation_of_developmental_process_GO_0050793",
+    "exam_samples": 227,
+    "threshold": 0.92,
+    "f1_score": 0.4146
+  },
+  {
+    "model_group": "anatomical_structure_morphogenesis_GO_0009653",
+    "exam_samples": 197,
+    "threshold": 0.9,
+    "f1_score": 0.4089
+  },
+  {
+    "model_group": "L-amino_acid_transmembrane_transporter_activity_GO_0015179",
+    "exam_samples": 22,
+    "threshold": 0.81,
+    "f1_score": 0.4037
+  },
+  {
+    "model_group": "DNA_repair_GO_0006281",
+    "exam_samples": 209,
+    "threshold": 0.9,
+    "f1_score": 0.3915
+  },
+  {
+    "model_group": "animal_organ_development_GO_0048513",
+    "exam_samples": 368,
+    "threshold": 0.84,
+    "f1_score": 0.3862
+  },
+  {
+    "model_group": "response_to_stress_GO_0006950",
+    "exam_samples": 402,
+    "threshold": 0.85,
+    "f1_score": 0.3837
+  },
+  {
+    "model_group": "DNA_binding_GO_0003677",
+    "exam_samples": 873,
+    "threshold": 0.95,
+    "f1_score": 0.3831
+  },
+  {
+    "model_group": "carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",
+    "exam_samples": 58,
+    "threshold": 0.94,
+    "f1_score": 0.3766
+  },
+  {
+    "model_group": "regulation_of_behavior_GO_0050795",
+    "exam_samples": 28,
+    "threshold": 0.72,
+    "f1_score": 0.3756
+  },
+  {
+    "model_group": "Fallback_cellular_component_10",
+    "exam_samples": 556,
+    "threshold": 0.95,
+    "f1_score": 0.3754
+  },
+  {
+    "model_group": "response_to_other_organism_GO_0051707",
+    "exam_samples": 502,
+    "threshold": 0.82,
+    "f1_score": 0.3741
+  },
+  {
+    "model_group": "RNA_metabolic_process_GO_0016070",
+    "exam_samples": 319,
+    "threshold": 0.91,
+    "f1_score": 0.3738
+  },
+  {
+    "model_group": "membrane_GO_0016020",
+    "exam_samples": 2627,
+    "threshold": 0.94,
+    "f1_score": 0.3705
+  },
+  {
+    "model_group": "positive_regulation_of_gene_expression_GO_0010628",
+    "exam_samples": 184,
+    "threshold": 0.9,
+    "f1_score": 0.3665
+  },
+  {
+    "model_group": "nucleotide_binding_GO_0000166",
+    "exam_samples": 1561,
+    "threshold": 0.95,
+    "f1_score": 0.3613
+  },
+  {
+    "model_group": "organelle_membrane_GO_0031090",
+    "exam_samples": 1098,
+    "threshold": 0.88,
+    "f1_score": 0.3563
+  },
+  {
+    "model_group": "Fallback_cellular_component_1",
+    "exam_samples": 157,
+    "threshold": 0.93,
+    "f1_score": 0.355
+  },
+  {
+    "model_group": "DNA_metabolic_process_GO_0006259",
+    "exam_samples": 253,
+    "threshold": 0.86,
+    "f1_score": 0.3523
+  },
+  {
+    "model_group": "Fallback_biological_process_5",
+    "exam_samples": 300,
+    "threshold": 0.95,
+    "f1_score": 0.3497
+  },
+  {
+    "model_group": "developmental_process_involved_in_reproduction_GO_0003006",
+    "exam_samples": 217,
+    "threshold": 0.89,
+    "f1_score": 0.3442
+  },
+  {
+    "model_group": "cellular_response_to_stress_GO_0033554",
+    "exam_samples": 301,
+    "threshold": 0.83,
+    "f1_score": 0.3368
+  },
+  {
+    "model_group": "Fallback_molecular_function_1",
+    "exam_samples": 789,
+    "threshold": 0.95,
+    "f1_score": 0.3288
+  },
+  {
+    "model_group": "reproductive_process_GO_0022414",
+    "exam_samples": 242,
+    "threshold": 0.9,
+    "f1_score": 0.3142
+  },
+  {
+    "model_group": "cytokine-mediated_signaling_pathway_GO_0019221",
+    "exam_samples": 67,
+    "threshold": 0.6,
+    "f1_score": 0.3062
+  },
+  {
+    "model_group": "intracellular_membraneless_organelle_GO_0043232",
+    "exam_samples": 1187,
+    "threshold": 0.95,
+    "f1_score": 0.305
+  },
+  {
+    "model_group": "pattern_specification_process_GO_0007389",
+    "exam_samples": 122,
+    "threshold": 0.9,
+    "f1_score": 0.2992
+  },
+  {
+    "model_group": "intracellular_membrane-bounded_organelle_GO_0043231",
+    "exam_samples": 3239,
+    "threshold": 0.94,
+    "f1_score": 0.2957
+  },
+  {
+    "model_group": "G_protein-coupled_receptor_signaling_pathway_GO_0007186",
+    "exam_samples": 294,
+    "threshold": 0.87,
+    "f1_score": 0.2902
+  },
+  {
+    "model_group": "cytoplasm_GO_0005737",
+    "exam_samples": 2352,
+    "threshold": 0.95,
+    "f1_score": 0.2415
+  },
+  {
+    "model_group": "Fallback_cellular_component_8",
+    "exam_samples": 2498,
+    "threshold": 0.94,
+    "f1_score": 0.1399
+  }
+]

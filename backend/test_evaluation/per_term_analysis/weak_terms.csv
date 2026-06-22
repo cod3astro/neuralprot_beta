@@ -1,0 +1,1213 @@
+go_term,go_name,group,support,fmax
+GO:2001209,positive regulation of transcription elongation by RNA polymerase I,positive_regulation_of_DNA-templated_transcription_GO_0045893,1,0.2857
+GO:0000183,rDNA heterochromatin formation,heterochromatin_formation_GO_0031507,2,0.25
+GO:0140718,facultative heterochromatin formation,heterochromatin_formation_GO_0031507,4,0.4444
+GO:0140727,siRNA-mediated pericentric heterochromatin formation,heterochromatin_formation_GO_0031507,4,0.3333
+GO:0141006,transposable element silencing by piRNA-mediated heterochromatin formation,heterochromatin_formation_GO_0031507,1,0.25
+GO:0034134,toll-like receptor 2 signaling pathway,pattern_recognition_receptor_signaling_pathway_GO_0002221,2,0.1379
+GO:0034138,toll-like receptor 3 signaling pathway,pattern_recognition_receptor_signaling_pathway_GO_0002221,4,0.4
+GO:0034162,toll-like receptor 9 signaling pathway,pattern_recognition_receptor_signaling_pathway_GO_0002221,5,0.4444
+GO:0061098,positive regulation of protein tyrosine kinase activity,regulation_of_protein_kinase_activity_GO_0045859,1,0.087
+GO:0071768,mycolic acid biosynthetic process,fatty_acid_biosynthetic_process_GO_0006633,1,0.0171
+GO:0006426,glycyl-tRNA aminoacylation,tRNA_aminoacylation_for_protein_translation_GO_0006418,1,0.1667
+GO:0002100,tRNA wobble adenosine to inosine editing,tRNA_modification_GO_0006400,2,0.25
+GO:0031591,wybutosine biosynthetic process,tRNA_modification_GO_0006400,2,0.129
+GO:0006356,regulation of transcription by RNA polymerase I,regulation_of_DNA-templated_transcription_GO_0006355,11,0.4
+GO:0060962,regulation of ribosomal protein gene transcription by RNA polymerase II,regulation_of_DNA-templated_transcription_GO_0006355,3,0.25
+GO:0034628,'de novo' NAD+ biosynthetic process from L-aspartate,purine_nucleotide_biosynthetic_process_GO_0006164,1,0.25
+GO:0032725,positive regulation of granulocyte macrophage colony-stimulating factor production,positive_regulation_of_cytokine_production_GO_0001819,3,0.4
+GO:0032736,positive regulation of interleukin-13 production,positive_regulation_of_cytokine_production_GO_0001819,1,0.0263
+GO:0032741,positive regulation of interleukin-18 production,positive_regulation_of_cytokine_production_GO_0001819,2,0.1429
+GO:0032747,positive regulation of interleukin-23 production,positive_regulation_of_cytokine_production_GO_0001819,1,0.0571
+GO:0071636,positive regulation of transforming growth factor beta production,positive_regulation_of_cytokine_production_GO_0001819,2,0.0741
+GO:1900017,positive regulation of cytokine production involved in inflammatory response,positive_regulation_of_cytokine_production_GO_0001819,4,0.3333
+GO:2000340,positive regulation of chemokine (C-X-C motif) ligand 1 production,positive_regulation_of_cytokine_production_GO_0001819,1,0.1111
+GO:0000289,nuclear-transcribed mRNA poly(A) tail shortening,negative_regulation_of_gene_expression_GO_0010629,8,0.4444
+GO:0000294,"nuclear-transcribed mRNA catabolic process, RNase MRP-dependent",negative_regulation_of_gene_expression_GO_0010629,2,0.1818
+GO:0002638,negative regulation of immunoglobulin production,negative_regulation_of_gene_expression_GO_0010629,1,0.0645
+GO:0010526,transposable element silencing,negative_regulation_of_gene_expression_GO_0010629,6,0.24
+GO:0070478,"nuclear-transcribed mRNA catabolic process, 3'-5' exonucleolytic nonsense-mediated decay",negative_regulation_of_gene_expression_GO_0010629,5,0.4
+GO:0070481,"nuclear-transcribed mRNA catabolic process, non-stop decay",negative_regulation_of_gene_expression_GO_0010629,1,0.3333
+GO:0002225,positive regulation of antimicrobial peptide production,positive_regulation_of_gene_expression_GO_0010628,2,0.0741
+GO:0002804,positive regulation of antifungal peptide production,positive_regulation_of_gene_expression_GO_0010628,1,0.0667
+GO:0006204,IMP catabolic process,nucleotide_catabolic_process_GO_0009166,1,0.3333
+GO:0046038,GMP catabolic process,nucleotide_catabolic_process_GO_0009166,1,0.0312
+GO:0000448,"cleavage in ITS2 between 5.8S rRNA and LSU-rRNA of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",rRNA_processing_GO_0006364,1,0.0185
+GO:0000466,"maturation of 5.8S rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",rRNA_processing_GO_0006364,4,0.3077
+GO:0000479,"endonucleolytic cleavage of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",rRNA_processing_GO_0006364,5,0.4615
+GO:1903378,positive regulation of oxidative stress-induced neuron intrinsic apoptotic signaling pathway,regulation_of_intrinsic_apoptotic_signaling_pathway_GO_2001242,3,0.1304
+GO:0141163,positive regulation of cAMP/PKA signal transduction,positive_regulation_of_intracellular_signal_transduction_GO_1902533,1,0.25
+GO:1900103,positive regulation of endoplasmic reticulum unfolded protein response,positive_regulation_of_intracellular_signal_transduction_GO_1902533,5,0.2857
+GO:1903896,positive regulation of IRE1-mediated unfolded protein response,positive_regulation_of_intracellular_signal_transduction_GO_1902533,4,0.0635
+GO:0031030,negative regulation of septation initiation signaling,negative_regulation_of_intracellular_signal_transduction_GO_1902532,2,0.129
+GO:0039532,negative regulation of cytoplasmic pattern recognition receptor signaling pathway,negative_regulation_of_intracellular_signal_transduction_GO_1902532,4,0.4
+GO:0001100,negative regulation of exit from mitosis,regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990,4,0.4444
+GO:0031578,mitotic spindle orientation checkpoint signaling,regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990,2,0.4
+GO:0033314,mitotic DNA replication checkpoint signaling,regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990,6,0.4
+GO:0044878,mitotic cytokinesis checkpoint signaling,regulation_of_mitotic_cell_cycle_phase_transition_GO_1901990,4,0.3333
+GO:0006571,L-tyrosine biosynthetic process,alpha-amino_acid_metabolic_process_GO_1901605,1,0.1053
+GO:0009094,L-phenylalanine biosynthetic process,alpha-amino_acid_metabolic_process_GO_1901605,2,0.16
+GO:0019477,L-lysine catabolic process,alpha-amino_acid_metabolic_process_GO_1901605,1,0.0113
+GO:0071269,L-homocysteine biosynthetic process,alpha-amino_acid_metabolic_process_GO_1901605,2,0.4444
+GO:0033092,positive regulation of immature T cell proliferation in thymus,regulation_of_T_cell_activation_GO_0050863,1,0.4
+GO:0048691,positive regulation of axon extension involved in regeneration,positive_regulation_of_neurogenesis_GO_0050769,4,0.4
+GO:0010894,negative regulation of steroid biosynthetic process,regulation_of_lipid_biosynthetic_process_GO_0046890,1,0.3333
+GO:0046296,glycolate catabolic process,carboxylic_acid_catabolic_process_GO_0046395,1,0.08
+GO:0043305,negative regulation of mast cell degranulation,regulation_of_exocytosis_GO_0017157,1,0.0952
+GO:0046975,histone H3K36 methyltransferase activity,protein-lysine_N-methyltransferase_activity_GO_0016279,1,0.2222
+GO:0140948,histone H3K9 monomethyltransferase activity,protein-lysine_N-methyltransferase_activity_GO_0016279,1,0.4
+GO:1901098,positive regulation of autophagosome maturation,regulation_of_macroautophagy_GO_0016241,3,0.25
+GO:0140782,novofumigatonin biosynthetic process,terpenoid_biosynthetic_process_GO_0016114,2,0.1481
+GO:1901601,strigolactone biosynthetic process,terpenoid_biosynthetic_process_GO_0016114,1,0.0667
+GO:0031087,deadenylation-independent decapping of nuclear-transcribed mRNA,mRNA_metabolic_process_GO_0016071,2,0.1667
+GO:0031124,mRNA 3'-end processing,mRNA_metabolic_process_GO_0016071,11,0.48
+GO:0090615,mitochondrial mRNA processing,mRNA_metabolic_process_GO_0016071,2,0.1538
+GO:0048680,positive regulation of axon regeneration,regulation_of_neuron_projection_development_GO_0010975,2,0.3333
+GO:0009047,dosage compensation by hyperactivation of X chromosome,regulation_of_gene_expression_GO_0010468,2,0.2857
+GO:0044725,epigenetic programming in the zygotic pronuclei,regulation_of_gene_expression_GO_0010468,1,0.0769
+GO:0038135,ERBB2-ERBB4 signaling pathway,cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169,1,0.3333
+GO:0045500,sevenless signaling pathway,cell_surface_receptor_protein_tyrosine_kinase_signaling_pathway_GO_0007169,4,0.1404
+GO:1990034,calcium ion export across plasma membrane,calcium_ion_transport_GO_0006816,1,0.4
+GO:0070651,nonfunctional rRNA decay,RNA_catabolic_process_GO_0006401,4,0.3333
+GO:0000722,telomere maintenance via recombination,DNA_recombination_GO_0006310,9,0.4286
+GO:0006312,mitotic recombination,DNA_recombination_GO_0006310,10,0.4286
+GO:0007131,reciprocal meiotic recombination,DNA_recombination_GO_0006310,14,0.4444
+GO:0007534,gene conversion at mating-type locus,DNA_recombination_GO_0006310,2,0.0952
+GO:0000710,meiotic mismatch repair,DNA_repair_GO_0006281,3,0.1111
+GO:0006284,base-excision repair,DNA_repair_GO_0006281,14,0.3922
+GO:0006303,double-strand break repair via nonhomologous end joining,DNA_repair_GO_0006281,14,0.48
+GO:0045004,DNA replication proofreading,DNA_repair_GO_0006281,1,0.125
+GO:0070911,global genome nucleotide-excision repair,DNA_repair_GO_0006281,1,0.0571
+GO:0071422,succinate transmembrane transport,carboxylic_acid_transmembrane_transport_GO_1905039,4,0.4
+GO:1903804,glycine import across plasma membrane,carboxylic_acid_transmembrane_transport_GO_1905039,1,0.2
+GO:0097134,cyclin E1-CDK2 complex,serine_threonine_protein_kinase_complex_GO_1902554,1,0.0541
+GO:0140916,zinc ion import into lysosome,monoatomic_cation_transmembrane_transport_GO_0098655,2,0.0308
+GO:0010845,positive regulation of reciprocal meiotic recombination,positive_regulation_of_cell_cycle_process_GO_0090068,1,0.087
+GO:0042784,symbiont-mediated suppression of host complement activation,symbiont-mediated_perturbation_of_host_immune_response_GO_0052553,1,0.0769
+GO:0010826,negative regulation of centrosome duplication,regulation_of_cytoskeleton_organization_GO_0051493,1,0.0513
+GO:0030832,regulation of actin filament length,regulation_of_cytoskeleton_organization_GO_0051493,9,0.4762
+GO:0046826,negative regulation of protein export from nucleus,regulation_of_protein_transport_GO_0051223,3,0.1429
+GO:0014057,"positive regulation of acetylcholine secretion, neurotransmission",modulation_of_chemical_synaptic_transmission_GO_0050804,2,0.2222
+GO:0031914,negative regulation of synaptic plasticity,modulation_of_chemical_synaptic_transmission_GO_0050804,1,0.1818
+GO:0032224,"positive regulation of synaptic transmission, cholinergic",modulation_of_chemical_synaptic_transmission_GO_0050804,2,0.2857
+GO:0032229,"negative regulation of synaptic transmission, GABAergic",modulation_of_chemical_synaptic_transmission_GO_0050804,1,0.0139
+GO:0046929,negative regulation of neurotransmitter secretion,modulation_of_chemical_synaptic_transmission_GO_0050804,2,0.0952
+GO:0060024,rhythmic synaptic transmission,modulation_of_chemical_synaptic_transmission_GO_0050804,1,0.0174
+GO:1900073,regulation of neuromuscular synaptic transmission,modulation_of_chemical_synaptic_transmission_GO_0050804,4,0.2857
+GO:1900075,positive regulation of neuromuscular synaptic transmission,modulation_of_chemical_synaptic_transmission_GO_0050804,1,0.0417
+GO:0150078,positive regulation of neuroinflammatory response,regulation_of_inflammatory_response_GO_0050727,1,0.1538
+GO:0009864,"induced systemic resistance, jasmonic acid mediated signaling pathway",regulation_of_innate_immune_response_GO_0045088,1,0.0465
+GO:0061059,positive regulation of peptidoglycan recognition protein signaling pathway,regulation_of_innate_immune_response_GO_0045088,1,0.1818
+GO:0061060,negative regulation of peptidoglycan recognition protein signaling pathway,regulation_of_innate_immune_response_GO_0045088,2,0.1538
+GO:0033026,negative regulation of mast cell apoptotic process,negative_regulation_of_apoptotic_process_GO_0043066,1,0.4
+GO:0070236,negative regulation of activation-induced cell death of T cells,negative_regulation_of_apoptotic_process_GO_0043066,3,0.1176
+GO:2001054,negative regulation of mesenchymal cell apoptotic process,negative_regulation_of_apoptotic_process_GO_0043066,1,0.069
+GO:0060058,positive regulation of apoptotic process involved in mammary gland involution,positive_regulation_of_apoptotic_process_GO_0043065,1,0.2857
+GO:1904747,positive regulation of apoptotic process involved in development,positive_regulation_of_apoptotic_process_GO_0043065,5,0.4
+GO:0005769,early endosome,cytoplasmic_vesicle_GO_0031410,83,0.4803
+GO:0070983,dendrite guidance,neuron_projection_development_GO_0031175,1,0.4
+GO:0010633,negative regulation of epithelial cell migration,negative_regulation_of_cell_migration_GO_0030336,3,0.1111
+GO:0090027,negative regulation of monocyte chemotaxis,negative_regulation_of_cell_migration_GO_0030336,1,0.4
+GO:1903356,positive regulation of distal tip cell migration,positive_regulation_of_cell_migration_GO_0030335,1,0.2857
+GO:0033215,reductive iron assimilation,metal_ion_transport_GO_0030001,1,0.0256
+GO:0000389,mRNA 3'-splice site recognition,protein-RNA_complex_assembly_GO_0022618,1,0.1
+GO:0000096,sulfur amino acid metabolic process,carboxylic_acid_metabolic_process_GO_0019752,1,0.3333
+GO:0015944,formate oxidation,carboxylic_acid_metabolic_process_GO_0019752,1,0.0909
+GO:0018189,pyrroloquinoline quinone biosynthetic process,carboxylic_acid_metabolic_process_GO_0019752,1,0.1053
+GO:0019370,leukotriene biosynthetic process,carboxylic_acid_metabolic_process_GO_0019752,1,0.1333
+GO:0019853,L-ascorbic acid biosynthetic process,carboxylic_acid_metabolic_process_GO_0019752,2,0.3636
+GO:0046655,folic acid metabolic process,carboxylic_acid_metabolic_process_GO_0019752,6,0.4615
+GO:0046656,folic acid biosynthetic process,carboxylic_acid_metabolic_process_GO_0019752,4,0.3333
+GO:0052645,F420-0 metabolic process,carboxylic_acid_metabolic_process_GO_0019752,1,0.2857
+GO:0038156,interleukin-3-mediated signaling pathway,cytokine-mediated_signaling_pathway_GO_0019221,1,0.0294
+GO:0140105,interleukin-10-mediated signaling pathway,cytokine-mediated_signaling_pathway_GO_0019221,2,0.4
+GO:0031999,negative regulation of fatty acid beta-oxidation,regulation_of_lipid_metabolic_process_GO_0019216,2,0.4
+GO:0001680,tRNA 3'-terminal CCA addition,RNA_metabolic_process_GO_0016070,1,0.1667
+GO:0006352,DNA-templated transcription initiation,RNA_metabolic_process_GO_0016070,36,0.4872
+GO:0006353,DNA-templated transcription termination,RNA_metabolic_process_GO_0016070,21,0.3784
+GO:0006360,transcription by RNA polymerase I,RNA_metabolic_process_GO_0016070,6,0.4615
+GO:0006369,termination of RNA polymerase II transcription,RNA_metabolic_process_GO_0016070,7,0.25
+GO:0006383,transcription by RNA polymerase III,RNA_metabolic_process_GO_0016070,13,0.4545
+GO:0006384,transcription initiation at RNA polymerase III promoter,RNA_metabolic_process_GO_0016070,7,0.3636
+GO:0006386,termination of RNA polymerase III transcription,RNA_metabolic_process_GO_0016070,2,0.1667
+GO:0008033,tRNA processing,RNA_metabolic_process_GO_0016070,24,0.4615
+GO:0009303,rRNA transcription,RNA_metabolic_process_GO_0016070,12,0.4324
+GO:0016072,rRNA metabolic process,RNA_metabolic_process_GO_0016070,33,0.4242
+GO:0030846,"termination of RNA polymerase II transcription, poly(A)-coupled",RNA_metabolic_process_GO_0016070,3,0.2
+GO:0034472,snRNA 3'-end processing,RNA_metabolic_process_GO_0016070,5,0.375
+GO:0034475,U4 snRNA 3'-end processing,RNA_metabolic_process_GO_0016070,1,0.0952
+GO:0034476,U5 snRNA 3'-end processing,RNA_metabolic_process_GO_0016070,1,0.4
+GO:0042780,tRNA 3'-end processing,RNA_metabolic_process_GO_0016070,4,0.1935
+GO:0042790,nucleolar large rRNA transcription by RNA polymerase I,RNA_metabolic_process_GO_0016070,3,0.4
+GO:0042791,5S class rRNA transcription by RNA polymerase III,RNA_metabolic_process_GO_0016070,1,0.0444
+GO:0042793,plastid transcription,RNA_metabolic_process_GO_0016070,2,0.1481
+GO:0071051,poly(A)-dependent snoRNA 3'-end processing,RNA_metabolic_process_GO_0016070,1,0.08
+GO:1990180,mitochondrial tRNA 3'-end processing,RNA_metabolic_process_GO_0016070,1,0.0571
+GO:0035735,intraciliary transport involved in cilium assembly,transport_along_microtubule_GO_0010970,2,0.0784
+GO:0043569,negative regulation of insulin-like growth factor receptor signaling pathway,negative_regulation_of_signal_transduction_GO_0009968,1,0.1429
+GO:2000660,negative regulation of interleukin-1-mediated signaling pathway,negative_regulation_of_signal_transduction_GO_0009968,1,0.0113
+GO:0009789,positive regulation of abscisic acid-activated signaling pathway,positive_regulation_of_signal_transduction_GO_0009967,6,0.4167
+GO:0004059,aralkylamine N-acetyltransferase activity,N-acetyltransferase_activity_GO_0008080,1,0.4
+GO:0036408,histone H3K14 acetyltransferase activity,N-acetyltransferase_activity_GO_0008080,1,0.4
+GO:0010459,negative regulation of heart rate,regulation_of_heart_contraction_GO_0008016,1,0.087
+GO:0043308,eosinophil degranulation,exocytosis_GO_0006887,1,0.0408
+GO:0098967,exocytic insertion of neurotransmitter receptor to postsynaptic membrane,exocytosis_GO_0006887,2,0.1429
+GO:0019287,"isopentenyl diphosphate biosynthetic process, mevalonate pathway",nucleoside_phosphate_metabolic_process_GO_0006753,2,0.3333
+GO:0000706,meiotic DNA double-strand break processing,DNA_metabolic_process_GO_0006259,2,0.1818
+GO:0000723,telomere maintenance,DNA_metabolic_process_GO_0006259,37,0.4938
+GO:0006261,DNA-templated DNA replication,DNA_metabolic_process_GO_0006259,25,0.4561
+GO:0006264,mitochondrial DNA replication,DNA_metabolic_process_GO_0006259,2,0.0157
+GO:0006285,"base-excision repair, AP site formation",DNA_metabolic_process_GO_0006259,1,0.087
+GO:0006287,"base-excision repair, gap-filling",DNA_metabolic_process_GO_0006259,2,0.0714
+GO:0006297,"nucleotide-excision repair, DNA gap filling",DNA_metabolic_process_GO_0006259,2,0.4
+GO:0006309,apoptotic DNA fragmentation,DNA_metabolic_process_GO_0006259,7,0.4444
+GO:0007307,eggshell chorion gene amplification,DNA_metabolic_process_GO_0006259,2,0.0294
+GO:0032042,mitochondrial DNA metabolic process,DNA_metabolic_process_GO_0006259,5,0.1429
+GO:0035753,maintenance of DNA trinucleotide repeats,DNA_metabolic_process_GO_0006259,2,0.0182
+GO:0039684,rolling circle single-stranded viral DNA replication,DNA_metabolic_process_GO_0006259,2,0.0282
+GO:0039693,viral DNA genome replication,DNA_metabolic_process_GO_0006259,13,0.4444
+GO:0042023,DNA endoreduplication,DNA_metabolic_process_GO_0006259,1,0.0541
+GO:0042138,meiotic DNA double-strand break formation,DNA_metabolic_process_GO_0006259,5,0.4615
+GO:0042276,error-prone translesion synthesis,DNA_metabolic_process_GO_0006259,3,0.3333
+GO:0043007,maintenance of rDNA,DNA_metabolic_process_GO_0006259,4,0.4
+GO:0043111,replication fork arrest,DNA_metabolic_process_GO_0006259,4,0.4
+GO:0071139,resolution of DNA recombination intermediates,DNA_metabolic_process_GO_0006259,3,0.4444
+GO:0110025,DNA strand resection involved in replication fork processing,DNA_metabolic_process_GO_0006259,1,0.4
+GO:2000904,regulation of starch metabolic process,regulation_of_carbohydrate_metabolic_process_GO_0006109,1,0.1429
+GO:0004726,non-membrane spanning protein tyrosine phosphatase activity,phosphoprotein_phosphatase_activity_GO_0004721,1,0.1538
+GO:0017018,myosin phosphatase activity,phosphoprotein_phosphatase_activity_GO_0004721,1,0.0541
+GO:0009931,calcium-dependent protein serine/threonine kinase activity,protein_serine_threonine_kinase_activity_GO_0004674,6,0.4706
+GO:0001162,RNA polymerase II intronic transcription regulatory region sequence-specific DNA binding,transcription_cis-regulatory_region_binding_GO_0000976,2,0.4
+GO:0000212,meiotic spindle organization,microtubule_cytoskeleton_organization_GO_0000226,5,0.3333
+GO:0051295,establishment of meiotic spindle localization,microtubule_cytoskeleton_organization_GO_0000226,3,0.2
+GO:0051296,establishment of meiotic spindle orientation,microtubule_cytoskeleton_organization_GO_0000226,2,0.0465
+GO:0090176,microtubule cytoskeleton organization involved in establishment of planar polarity,microtubule_cytoskeleton_organization_GO_0000226,1,0.125
+GO:0090221,mitotic spindle-templated microtubule nucleation,microtubule_cytoskeleton_organization_GO_0000226,1,0.1053
+GO:0009627,systemic acquired resistance,defense_response_to_other_organism_GO_0098542,4,0.4286
+GO:0035006,melanization defense response,defense_response_to_other_organism_GO_0098542,4,0.25
+GO:1900036,positive regulation of cellular response to heat,regulation_of_cellular_response_to_stress_GO_0080135,1,0.0625
+GO:0008156,negative regulation of DNA replication,regulation_of_primary_metabolic_process_GO_0080090,5,0.4
+GO:0010520,regulation of reciprocal meiotic recombination,regulation_of_primary_metabolic_process_GO_0080090,3,0.25
+GO:0030174,regulation of DNA-templated DNA replication initiation,regulation_of_primary_metabolic_process_GO_0080090,6,0.3
+GO:0031540,regulation of anthocyanin biosynthetic process,regulation_of_primary_metabolic_process_GO_0080090,1,0.1667
+GO:0032298,positive regulation of DNA-templated DNA replication initiation,regulation_of_primary_metabolic_process_GO_0080090,1,0.2857
+GO:0033262,regulation of nuclear cell cycle DNA replication,regulation_of_primary_metabolic_process_GO_0080090,4,0.4444
+GO:2000104,negative regulation of DNA-templated DNA replication,regulation_of_primary_metabolic_process_GO_0080090,4,0.2857
+GO:0002503,peptide antigen assembly with MHC class II protein complex,protein-containing_complex_assembly_GO_0065003,1,0.4
+GO:0006617,"SRP-dependent cotranslational protein targeting to membrane, signal sequence recognition",protein-containing_complex_assembly_GO_0065003,1,0.4
+GO:0010207,photosystem II assembly,protein-containing_complex_assembly_GO_0065003,4,0.4
+GO:0010265,SCF complex assembly,protein-containing_complex_assembly_GO_0065003,2,0.0408
+GO:0010994,free ubiquitin chain polymerization,protein-containing_complex_assembly_GO_0065003,1,0.0909
+GO:0051131,chaperone-mediated protein complex assembly,protein-containing_complex_assembly_GO_0065003,3,0.2222
+GO:0070208,protein heterotrimerization,protein-containing_complex_assembly_GO_0065003,1,0.0253
+GO:0071163,DNA replication preinitiation complex assembly,protein-containing_complex_assembly_GO_0065003,1,0.25
+GO:0000715,"nucleotide-excision repair, DNA damage recognition",chromosome_organization_GO_0051276,1,0.1
+GO:0007064,mitotic sister chromatid cohesion,chromosome_organization_GO_0051276,10,0.4348
+GO:0030717,oocyte karyosome formation,chromosome_organization_GO_0051276,3,0.0741
+GO:0045144,meiotic sister chromatid segregation,chromosome_organization_GO_0051276,1,0.018
+GO:0070550,rDNA chromatin condensation,chromosome_organization_GO_0051276,1,0.0645
+GO:0010832,negative regulation of myotube differentiation,regulation_of_muscle_cell_differentiation_GO_0051147,1,0.1667
+GO:0060054,positive regulation of epithelial cell proliferation involved in wound healing,regulation_of_epithelial_cell_proliferation_GO_0050678,1,0.4
+GO:0060501,positive regulation of epithelial cell proliferation involved in lung morphogenesis,regulation_of_epithelial_cell_proliferation_GO_0050678,2,0.044
+GO:0008053,mitochondrial fusion,organelle_fusion_GO_0048284,4,0.4
+GO:0042144,"vacuole fusion, non-autophagic",organelle_fusion_GO_0048284,3,0.3333
+GO:0048210,Golgi vesicle fusion to target membrane,organelle_fusion_GO_0048284,1,0.4
+GO:0015808,L-alanine transport,carboxylic_acid_transport_GO_0046942,4,0.4
+GO:0015811,L-cystine transport,carboxylic_acid_transport_GO_0046942,1,0.2857
+GO:0015821,methionine transport,carboxylic_acid_transport_GO_0046942,1,0.1111
+GO:0005381,iron ion transmembrane transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,5,0.4444
+GO:0005384,manganese ion transmembrane transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,4,0.4
+GO:0008551,P-type cadmium transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,1,0.125
+GO:0015086,cadmium ion transmembrane transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,3,0.4
+GO:0015087,cobalt ion transmembrane transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,3,0.1667
+GO:0015095,magnesium ion transmembrane transporter activity,metal_ion_transmembrane_transporter_activity_GO_0046873,5,0.4444
+GO:0000287,magnesium ion binding,metal_ion_binding_GO_0046872,238,0.4545
+GO:0008198,ferrous iron binding,metal_ion_binding_GO_0046872,14,0.3448
+GO:0030145,manganese ion binding,metal_ion_binding_GO_0046872,48,0.2093
+GO:0030955,potassium ion binding,metal_ion_binding_GO_0046872,11,0.375
+GO:0050897,cobalt ion binding,metal_ion_binding_GO_0046872,4,0.1667
+GO:1902807,negative regulation of cell cycle G1/S phase transition,negative_regulation_of_cell_cycle_GO_0045786,1,0.3333
+GO:1900195,positive regulation of oocyte maturation,positive_regulation_of_cell_differentiation_GO_0045597,1,0.0317
+GO:0045578,negative regulation of B cell differentiation,negative_regulation_of_cell_differentiation_GO_0045596,3,0.2222
+GO:1904339,negative regulation of dopaminergic neuron differentiation,negative_regulation_of_cell_differentiation_GO_0045596,4,0.4
+GO:0034334,adherens junction maintenance,cell-cell_junction_organization_GO_0045216,3,0.1277
+GO:0045217,cell-cell junction maintenance,cell-cell_junction_organization_GO_0045216,4,0.2857
+GO:0010155,regulation of proton transport,regulation_of_monoatomic_ion_transport_GO_0043269,1,0.087
+GO:0008553,P-type proton-exporting transporter activity,ATPase-coupled_transmembrane_transporter_activity_GO_0042626,2,0.1176
+GO:0015420,ABC-type vitamin B12 transporter activity,ATPase-coupled_transmembrane_transporter_activity_GO_0042626,2,0.129
+GO:0015424,ABC-type amino acid transporter activity,ATPase-coupled_transmembrane_transporter_activity_GO_0042626,1,0.1818
+GO:0017183,protein histidyl modification to diphthamide,protein_modification_process_GO_0036211,1,0.0606
+GO:0018107,peptidyl-threonine phosphorylation,protein_modification_process_GO_0036211,3,0.2069
+GO:0018117,protein adenylylation,protein_modification_process_GO_0036211,1,0.0253
+GO:0051697,protein delipidation,protein_modification_process_GO_0036211,1,0.1
+GO:0007266,Rho protein signal transduction,intracellular_signal_transduction_GO_0035556,23,0.4651
+GO:0009785,blue light signaling pathway,intracellular_signal_transduction_GO_0035556,3,0.4
+GO:0031929,TOR signaling,intracellular_signal_transduction_GO_0035556,15,0.4211
+GO:0031930,mitochondria-nucleus signaling pathway,intracellular_signal_transduction_GO_0035556,1,0.0163
+GO:0038061,non-canonical NF-kappaB signal transduction,intracellular_signal_transduction_GO_0035556,3,0.3333
+GO:0042771,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,intracellular_signal_transduction_GO_0035556,4,0.3333
+GO:0070561,vitamin D receptor signaling pathway,intracellular_signal_transduction_GO_0035556,2,0.4
+GO:0030255,protein secretion by the type IV secretion system,secretion_by_cell_GO_0032940,2,0.3636
+GO:0010112,regulation of systemic acquired resistance,regulation_of_defense_response_GO_0031347,2,0.4
+GO:1900150,regulation of defense response to fungus,regulation_of_defense_response_GO_0031347,1,0.2222
+GO:0030665,clathrin-coated vesicle membrane,cytoplasmic_vesicle_membrane_GO_0030659,13,0.3871
+GO:0031092,platelet alpha granule membrane,cytoplasmic_vesicle_membrane_GO_0030659,1,0.0909
+GO:0031164,contractile vacuolar membrane,cytoplasmic_vesicle_membrane_GO_0030659,5,0.1333
+GO:0035577,azurophil granule membrane,cytoplasmic_vesicle_membrane_GO_0030659,6,0.1818
+GO:0035579,specific granule membrane,cytoplasmic_vesicle_membrane_GO_0030659,6,0.3
+GO:0070821,tertiary granule membrane,cytoplasmic_vesicle_membrane_GO_0030659,5,0.1667
+GO:0098944,postsynaptic recycling endosome membrane,cytoplasmic_vesicle_membrane_GO_0030659,1,0.0103
+GO:0099012,neuronal dense core vesicle membrane,cytoplasmic_vesicle_membrane_GO_0030659,2,0.4
+GO:0101003,ficolin-1-rich granule membrane,cytoplasmic_vesicle_membrane_GO_0030659,6,0.0556
+GO:0030207,chondroitin sulfate proteoglycan catabolic process,protein_catabolic_process_GO_0030163,1,0.1053
+GO:0035694,mitochondrial protein catabolic process,protein_catabolic_process_GO_0030163,1,0.1429
+GO:0071629,cytoplasm protein quality control by the ubiquitin-proteasome system,protein_catabolic_process_GO_0030163,7,0.08
+GO:0048388,endosomal lumen acidification,intracellular_monoatomic_cation_homeostasis_GO_0030003,5,0.2353
+GO:0061795,Golgi lumen acidification,intracellular_monoatomic_cation_homeostasis_GO_0030003,2,0.2222
+GO:0036424,L-phosphoserine phosphatase activity,phosphatase_activity_GO_0016791,2,0.1
+GO:0103026,fructose-1-phosphatase activity,phosphatase_activity_GO_0016791,1,0.0645
+GO:0047631,ADP-ribose diphosphatase activity,pyrophosphatase_activity_GO_0016462,2,0.2222
+GO:0050355,inorganic triphosphate phosphatase activity,pyrophosphatase_activity_GO_0016462,1,0.0435
+GO:0052845,"inositol-5-diphosphate-1,2,3,4,6-pentakisphosphate diphosphatase activity",pyrophosphatase_activity_GO_0016462,1,0.25
+GO:0140932,5'-(N(7)-methyl 5'-triphosphoguanosine)-[mRNA] diphosphatase activity,pyrophosphatase_activity_GO_0016462,1,0.4
+GO:1990003,IDP phosphatase activity,pyrophosphatase_activity_GO_0016462,1,0.3333
+GO:0005983,starch catabolic process,carbohydrate_catabolic_process_GO_0016052,3,0.15
+GO:0019388,galactose catabolic process,carbohydrate_catabolic_process_GO_0016052,5,0.4286
+GO:0042843,D-xylose catabolic process,carbohydrate_catabolic_process_GO_0016052,1,0.4
+GO:2000899,xyloglucan catabolic process,carbohydrate_catabolic_process_GO_0016052,1,0.0435
+GO:0030979,alpha-glucan biosynthetic process,carbohydrate_biosynthetic_process_GO_0016051,1,0.0385
+GO:0008506,sucrose:proton symporter activity,proton_transmembrane_transporter_activity_GO_0015078,3,0.4
+GO:0046602,regulation of mitotic centrosome separation,regulation_of_cell_cycle_process_GO_0010564,2,0.3333
+GO:1902412,regulation of mitotic cytokinesis,regulation_of_cell_cycle_process_GO_0010564,2,0.1818
+GO:0009787,regulation of abscisic acid-activated signaling pathway,regulation_of_signal_transduction_GO_0009966,3,0.2105
+GO:0042058,regulation of epidermal growth factor receptor signaling pathway,regulation_of_signal_transduction_GO_0009966,4,0.4
+GO:1902041,regulation of extrinsic apoptotic signaling pathway via death domain receptors,regulation_of_signal_transduction_GO_0009966,1,0.0299
+GO:2001236,regulation of extrinsic apoptotic signaling pathway,regulation_of_signal_transduction_GO_0009966,4,0.4
+GO:1903862,positive regulation of oxidative phosphorylation,positive_regulation_of_metabolic_process_GO_0009893,1,0.2857
+GO:0017096,acetylserotonin O-methyltransferase activity,S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757,1,0.25
+GO:0035243,protein-arginine omega-N symmetric methyltransferase activity,S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757,4,0.4444
+GO:0070042,rRNA (uridine-N3-)-methyltransferase activity,S-adenosylmethionine-dependent_methyltransferase_activity_GO_0008757,1,0.2222
+GO:0046506,sulfolipid biosynthetic process,lipid_biosynthetic_process_GO_0008610,2,0.1538
+GO:0003846,2-acylglycerol O-acyltransferase activity,O-acyltransferase_activity_GO_0008374,1,0.0571
+GO:0072126,positive regulation of glomerular mesangial cell proliferation,positive_regulation_of_cell_population_proliferation_GO_0008284,1,0.0115
+GO:0003376,sphingosine-1-phosphate receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,1,0.1111
+GO:0007187,"G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger",G_protein-coupled_receptor_signaling_pathway_GO_0007186,11,0.3871
+GO:0007192,adenylate cyclase-activating serotonin receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,2,0.4
+GO:0007193,adenylate cyclase-inhibiting G protein-coupled receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,18,0.4516
+GO:0007200,phospholipase C-activating G protein-coupled receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,30,0.404
+GO:0007213,G protein-coupled acetylcholine receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,6,0.3846
+GO:0038166,angiotensin-activated signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,5,0.3158
+GO:0071875,adrenergic receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,6,0.4615
+GO:0140582,adenylate cyclase-activating G protein-coupled cAMP receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,1,0.2
+GO:0160221,Rho-activating G protein-coupled receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,1,0.25
+GO:1990408,calcitonin gene-related peptide receptor signaling pathway,G_protein-coupled_receptor_signaling_pathway_GO_0007186,1,0.0121
+GO:0038095,Fc-epsilon receptor signaling pathway,cell_surface_receptor_signaling_pathway_GO_0007166,4,0.4444
+GO:0032258,cytoplasm to vacuole targeting by the Cvt pathway,vacuolar_transport_GO_0007034,5,0.3636
+GO:0030046,parallel actin filament bundle assembly,actin_filament_organization_GO_0007015,1,0.2857
+GO:0070649,formin-nucleated actin cable assembly,actin_filament_organization_GO_0007015,1,0.2
+GO:0090135,actin filament branching,actin_filament_organization_GO_0007015,1,0.0235
+GO:0031106,septin ring organization,cytoskeleton_organization_GO_0007010,1,0.1818
+GO:0032185,septin cytoskeleton organization,cytoskeleton_organization_GO_0007010,1,0.1667
+GO:0032186,cellular bud neck septin ring organization,cytoskeleton_organization_GO_0007010,1,0.0588
+GO:1901317,regulation of flagellated sperm motility,regulation_of_cell_motility_GO_2000145,1,0.0286
+GO:1902093,positive regulation of flagellated sperm motility,regulation_of_cell_motility_GO_2000145,1,0.0286
+GO:0071215,cellular response to abscisic acid stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,1,0.4
+GO:0071224,cellular response to peptidoglycan,cellular_response_to_oxygen-containing_compound_GO_1901701,2,0.2
+GO:0071322,cellular response to carbohydrate stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,15,0.4
+GO:0071333,cellular response to glucose stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,11,0.3529
+GO:0071373,cellular response to luteinizing hormone stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,1,0.0198
+GO:0071376,cellular response to corticotropin-releasing hormone stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,1,0.25
+GO:0071464,cellular response to hydrostatic pressure,cellular_response_to_oxygen-containing_compound_GO_1901701,1,0.125
+GO:0071549,cellular response to dexamethasone stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,9,0.3077
+GO:0071870,cellular response to catecholamine stimulus,cellular_response_to_oxygen-containing_compound_GO_1901701,7,0.4615
+GO:1904628,cellular response to phorbol 13-acetate 12-myristate,cellular_response_to_oxygen-containing_compound_GO_1901701,9,0.3636
+GO:1990646,cellular response to prolactin,cellular_response_to_oxygen-containing_compound_GO_1901701,4,0.0482
+GO:1990859,cellular response to endothelin,cellular_response_to_oxygen-containing_compound_GO_1901701,5,0.1064
+GO:0017162,aryl hydrocarbon receptor binding,DNA-binding_transcription_factor_binding_GO_0140297,2,0.2
+GO:0000235,astral microtubule,supramolecular_fiber_GO_0099512,2,0.4
+GO:0005827,polar microtubule,supramolecular_fiber_GO_0099512,1,0.2857
+GO:0045098,type III intermediate filament,supramolecular_fiber_GO_0099512,1,0.4
+GO:0055028,cortical microtubule,supramolecular_fiber_GO_0099512,2,0.0952
+GO:0098723,skeletal muscle myofibril,supramolecular_fiber_GO_0099512,2,0.0339
+GO:1990498,mitotic spindle microtubule,supramolecular_fiber_GO_0099512,2,0.1667
+GO:0007084,mitotic nuclear membrane reassembly,membrane_organization_GO_0061024,2,0.1667
+GO:0032120,ascospore-type prospore membrane formation,membrane_organization_GO_0061024,4,0.3077
+GO:0097749,membrane tubulation,membrane_organization_GO_0061024,1,0.0625
+GO:0097753,membrane bending,membrane_organization_GO_0061024,1,0.08
+GO:0120010,intermembrane phospholipid transfer,membrane_organization_GO_0061024,1,0.0667
+GO:0035050,embryonic heart tube development,epithelium_development_GO_0060429,7,0.4444
+GO:0006855,xenobiotic transmembrane transport,transmembrane_transport_GO_0055085,2,0.2222
+GO:0015755,fructose transmembrane transport,transmembrane_transport_GO_0055085,5,0.375
+GO:0015757,galactose transmembrane transport,transmembrane_transport_GO_0055085,2,0.0976
+GO:0046618,xenobiotic export from cell,transmembrane_transport_GO_0055085,7,0.4706
+GO:0072334,UDP-galactose transmembrane transport,transmembrane_transport_GO_0055085,1,0.1818
+GO:1902358,sulfate transmembrane transport,transmembrane_transport_GO_0055085,2,0.069
+GO:1990539,fructose import across plasma membrane,transmembrane_transport_GO_0055085,2,0.1429
+GO:0008126,acetylesterase activity,carboxylic_ester_hydrolase_activity_GO_0052689,6,0.4615
+GO:0034338,short-chain carboxylesterase activity,carboxylic_ester_hydrolase_activity_GO_0052689,6,0.4286
+GO:0046555,acetylxylan esterase activity,carboxylic_ester_hydrolase_activity_GO_0052689,2,0.0385
+GO:0080031,methyl salicylate esterase activity,carboxylic_ester_hydrolase_activity_GO_0052689,1,0.125
+GO:0002213,defense response to insect,response_to_other_organism_GO_0051707,5,0.2857
+GO:0002229,defense response to oomycetes,response_to_other_organism_GO_0051707,4,0.1667
+GO:0009597,detection of virus,response_to_other_organism_GO_0051707,2,0.0606
+GO:0009624,response to nematode,response_to_other_organism_GO_0051707,2,0.4
+GO:0009625,response to insect,response_to_other_organism_GO_0051707,8,0.4
+GO:0016045,detection of bacterium,response_to_other_organism_GO_0051707,4,0.25
+GO:0030682,symbiont-mediated perturbation of host defenses,response_to_other_organism_GO_0051707,8,0.4
+GO:0039580,symbiont-mediated suppression of host PKR/eIFalpha signaling,response_to_other_organism_GO_0051707,7,0.4444
+GO:0080027,response to herbivore,response_to_other_organism_GO_0051707,4,0.1538
+GO:0098586,cellular response to virus,response_to_other_organism_GO_0051707,14,0.32
+GO:0040026,positive regulation of vulval development,positive_regulation_of_developmental_process_GO_0051094,1,0.2857
+GO:0061066,positive regulation of dauer larval development,positive_regulation_of_developmental_process_GO_0051094,1,0.0139
+GO:0110039,positive regulation of nematode male tail tip morphogenesis,positive_regulation_of_developmental_process_GO_0051094,3,0.1176
+GO:0040015,negative regulation of multicellular organism growth,negative_regulation_of_developmental_process_GO_0051093,4,0.4
+GO:0008355,olfactory learning,cognition_GO_0050890,4,0.4
+GO:0050893,sensory processing,cognition_GO_0050890,1,0.0333
+GO:0072375,medium-term memory,cognition_GO_0050890,3,0.1481
+GO:1990708,conditioned place preference,cognition_GO_0050890,1,0.023
+GO:0046010,"positive regulation of circadian sleep/wake cycle, non-REM sleep",regulation_of_behavior_GO_0050795,1,0.2
+GO:1904059,regulation of locomotor rhythm,regulation_of_behavior_GO_0050795,1,0.1176
+GO:2000252,negative regulation of feeding behavior,regulation_of_behavior_GO_0050795,1,0.1111
+GO:0000772,mating pheromone activity,receptor_ligand_activity_GO_0048018,1,0.0225
+GO:0005186,pheromone activity,receptor_ligand_activity_GO_0048018,4,0.4
+GO:0008613,diuretic hormone activity,receptor_ligand_activity_GO_0048018,1,0.3333
+GO:0016015,morphogen activity,receptor_ligand_activity_GO_0048018,3,0.4
+GO:0006895,Golgi to endosome transport,intracellular_transport_GO_0046907,8,0.4706
+GO:0048713,regulation of oligodendrocyte differentiation,regulation_of_cell_differentiation_GO_0045595,4,0.4
+GO:1905879,regulation of oogenesis,regulation_of_cell_differentiation_GO_0045595,2,0.1818
+GO:2000074,regulation of type B pancreatic cell development,regulation_of_cell_differentiation_GO_0045595,1,0.0952
+GO:0009805,coumarin biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,1,0.1538
+GO:0019290,siderophore biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,5,0.4615
+GO:0042811,pheromone biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,1,0.0187
+GO:0043642,novobiocin biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,1,0.3333
+GO:0140872,viridicatumtoxin biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,1,0.0204
+GO:1900809,fumigaclavine C biosynthetic process,secondary_metabolite_biosynthetic_process_GO_0044550,1,0.1818
+GO:1902012,poly(ribitol phosphate) teichoic acid biosynthetic process,small_molecule_biosynthetic_process_GO_0044283,1,0.0222
+GO:0000228,nuclear chromosome,intracellular_membraneless_organelle_GO_0043232,34,0.4211
+GO:0000776,kinetochore,intracellular_membraneless_organelle_GO_0043232,51,0.2593
+GO:0000794,condensed nuclear chromosome,intracellular_membraneless_organelle_GO_0043232,21,0.4516
+GO:0000805,X chromosome,intracellular_membraneless_organelle_GO_0043232,7,0.4286
+GO:0000932,P-body,intracellular_membraneless_organelle_GO_0043232,35,0.3065
+GO:0001741,XY body,intracellular_membraneless_organelle_GO_0043232,7,0.4444
+GO:0002102,podosome,intracellular_membraneless_organelle_GO_0043232,11,0.4444
+GO:0005694,chromosome,intracellular_membraneless_organelle_GO_0043232,113,0.4262
+GO:0005700,polytene chromosome,intracellular_membraneless_organelle_GO_0043232,5,0.1538
+GO:0005730,nucleolus,intracellular_membraneless_organelle_GO_0043232,278,0.4732
+GO:0005811,lipid droplet,intracellular_membraneless_organelle_GO_0043232,52,0.4259
+GO:0005814,centriole,intracellular_membraneless_organelle_GO_0043232,56,0.349
+GO:0005819,spindle,intracellular_membraneless_organelle_GO_0043232,85,0.3373
+GO:0009534,chloroplast thylakoid,intracellular_membraneless_organelle_GO_0043232,18,0.4865
+GO:0010369,chromocenter,intracellular_membraneless_organelle_GO_0043232,4,0.2857
+GO:0010494,cytoplasmic stress granule,intracellular_membraneless_organelle_GO_0043232,35,0.3733
+GO:0015030,Cajal body,intracellular_membraneless_organelle_GO_0043232,17,0.2286
+GO:0015629,actin cytoskeleton,intracellular_membraneless_organelle_GO_0043232,65,0.3662
+GO:0015630,microtubule cytoskeleton,intracellular_membraneless_organelle_GO_0043232,40,0.2297
+GO:0016604,nuclear body,intracellular_membraneless_organelle_GO_0043232,210,0.4989
+GO:0016605,PML body,intracellular_membraneless_organelle_GO_0043232,25,0.2963
+GO:0016607,nuclear speck,intracellular_membraneless_organelle_GO_0043232,108,0.381
+GO:0022626,cytosolic ribosome,intracellular_membraneless_organelle_GO_0043232,22,0.4194
+GO:0030849,autosome,intracellular_membraneless_organelle_GO_0043232,2,0.3333
+GO:0030863,cortical cytoskeleton,intracellular_membraneless_organelle_GO_0043232,19,0.3175
+GO:0030864,cortical actin cytoskeleton,intracellular_membraneless_organelle_GO_0043232,13,0.2857
+GO:0031472,propanediol degradation polyhedral organelle,intracellular_membraneless_organelle_GO_0043232,4,0.2667
+GO:0032156,septin cytoskeleton,intracellular_membraneless_organelle_GO_0043232,1,0.4
+GO:0035770,ribonucleoprotein granule,intracellular_membraneless_organelle_GO_0043232,211,0.4901
+GO:0036464,cytoplasmic ribonucleoprotein granule,intracellular_membraneless_organelle_GO_0043232,92,0.4615
+GO:0042644,chloroplast nucleoid,intracellular_membraneless_organelle_GO_0043232,4,0.2
+GO:0042645,mitochondrial nucleoid,intracellular_membraneless_organelle_GO_0043232,12,0.48
+GO:0043186,P granule,intracellular_membraneless_organelle_GO_0043232,14,0.4286
+GO:0045111,intermediate filament cytoskeleton,intracellular_membraneless_organelle_GO_0043232,7,0.3333
+GO:0072686,mitotic spindle,intracellular_membraneless_organelle_GO_0043232,46,0.2791
+GO:0072687,meiotic spindle,intracellular_membraneless_organelle_GO_0043232,11,0.3
+GO:0140095,cytoplasmic lattice,intracellular_membraneless_organelle_GO_0043232,2,0.1111
+GO:0000322,storage vacuole,intracellular_membrane-bounded_organelle_GO_0043231,21,0.3103
+GO:0000324,fungal-type vacuole,intracellular_membrane-bounded_organelle_GO_0043231,20,0.339
+GO:0000325,plant-type vacuole,intracellular_membrane-bounded_organelle_GO_0043231,38,0.1695
+GO:0001673,male germ cell nucleus,intracellular_membrane-bounded_organelle_GO_0043231,15,0.4186
+GO:0005764,lysosome,intracellular_membrane-bounded_organelle_GO_0043231,89,0.327
+GO:0005773,vacuole,intracellular_membrane-bounded_organelle_GO_0043231,187,0.3664
+GO:0005776,autophagosome,intracellular_membrane-bounded_organelle_GO_0043231,23,0.3137
+GO:0005777,peroxisome,intracellular_membrane-bounded_organelle_GO_0043231,79,0.1949
+GO:0005783,endoplasmic reticulum,intracellular_membrane-bounded_organelle_GO_0043231,371,0.4775
+GO:0005791,rough endoplasmic reticulum,intracellular_membrane-bounded_organelle_GO_0043231,8,0.1923
+GO:0005793,endoplasmic reticulum-Golgi intermediate compartment,intracellular_membrane-bounded_organelle_GO_0043231,15,0.25
+GO:0005794,Golgi apparatus,intracellular_membrane-bounded_organelle_GO_0043231,283,0.327
+GO:0005801,cis-Golgi network,intracellular_membrane-bounded_organelle_GO_0043231,4,0.24
+GO:0009501,amyloplast,intracellular_membrane-bounded_organelle_GO_0043231,4,0.0851
+GO:0009509,chromoplast,intracellular_membrane-bounded_organelle_GO_0043231,1,0.3333
+GO:0020009,microneme,intracellular_membrane-bounded_organelle_GO_0043231,4,0.1818
+GO:0043073,germ cell nucleus,intracellular_membrane-bounded_organelle_GO_0043231,20,0.4324
+GO:0044194,cytolytic granule,intracellular_membrane-bounded_organelle_GO_0043231,5,0.4444
+GO:0097708,intracellular vesicle,intracellular_membrane-bounded_organelle_GO_0043231,251,0.3362
+GO:0140494,migrasome,intracellular_membrane-bounded_organelle_GO_0043231,2,0.0233
+GO:0030187,melatonin biosynthetic process,hormone_metabolic_process_GO_0042445,1,0.25
+GO:1902570,protein localization to nucleolus,protein_localization_to_organelle_GO_0033365,2,0.4
+GO:0036195,muscle cell projection membrane,cell_projection_membrane_GO_0031253,1,0.0426
+GO:0003357,noradrenergic neuron differentiation,neuron_differentiation_GO_0030182,1,0.4
+GO:0042490,mechanoreceptor differentiation,neuron_differentiation_GO_0030182,4,0.4
+GO:0060319,primitive erythrocyte differentiation,myeloid_cell_differentiation_GO_0030099,1,0.3333
+GO:0032528,microvillus organization,cell_projection_organization_GO_0030030,1,0.0206
+GO:0120283,protein serine/threonine kinase binding,kinase_binding_GO_0019900,6,0.4
+GO:0034005,germacrene-A synthase activity,"carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",2,0.1429
+GO:0034008,R-linalool synthase activity,"carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",3,0.1429
+GO:0050551,myrcene synthase activity,"carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",1,0.1333
+GO:0102313,"1,8-cineole synthase activity","carbon-oxygen_lyase_activity,_acting_on_phosphates_GO_0016838",1,0.4
+GO:0047929,gluconate dehydratase activity,hydro-lyase_activity_GO_0016836,1,0.1
+GO:0004633,phosphopantothenoylcysteine decarboxylase activity,carboxy-lyase_activity_GO_0016831,1,0.25
+GO:0004638,phosphoribosylaminoimidazole carboxylase activity,carboxy-lyase_activity_GO_0016831,2,0.2857
+GO:0008792,arginine decarboxylase activity,carboxy-lyase_activity_GO_0016831,2,0.4
+GO:0008948,oxaloacetate decarboxylase activity,carboxy-lyase_activity_GO_0016831,1,0.2222
+GO:0036469,L-tryptophan decarboxylase activity,carboxy-lyase_activity_GO_0016831,1,0.25
+GO:0004484,mRNA guanylyltransferase activity,nucleotidyltransferase_activity_GO_0016779,1,0.1538
+GO:0008781,N-acylneuraminate cytidylyltransferase activity,nucleotidyltransferase_activity_GO_0016779,1,0.2
+GO:0008531,riboflavin kinase activity,"phosphotransferase_activity,_alcohol_group_as_acceptor_GO_0016773",2,0.4
+GO:0004314,[acyl-carrier-protein] S-malonyltransferase activity,"acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747",1,0.026
+GO:0008710,8-amino-7-oxononanoate synthase activity,"acyltransferase_activity,_transferring_groups_other_than_amino-acyl_groups_GO_0016747",1,0.1538
+GO:0004449,isocitrate dehydrogenase (NAD+) activity,"oxidoreductase_activity,_acting_on_the_CH-OH_group_of_donors,_NAD_or_NADP_as_acceptor_GO_0016616",1,0.0177
+GO:0001727,lipid kinase activity,kinase_activity_GO_0016301,1,0.25
+GO:0015189,L-lysine transmembrane transporter activity,L-amino_acid_transmembrane_transporter_activity_GO_0015179,2,0.3636
+GO:0015192,L-phenylalanine transmembrane transporter activity,L-amino_acid_transmembrane_transporter_activity_GO_0015179,1,0.2222
+GO:0015196,L-tryptophan transmembrane transporter activity,L-amino_acid_transmembrane_transporter_activity_GO_0015179,1,0.1429
+GO:0009639,response to red or far red light,response_to_light_stimulus_GO_0009416,11,0.3636
+GO:0009640,photomorphogenesis,response_to_light_stimulus_GO_0009416,5,0.3333
+GO:0009646,response to absence of light,response_to_light_stimulus_GO_0009416,5,0.4762
+GO:0009650,UV protection,response_to_light_stimulus_GO_0009416,3,0.1017
+GO:0009704,de-etiolation,response_to_light_stimulus_GO_0009416,1,0.0138
+GO:0010218,response to far red light,response_to_light_stimulus_GO_0009416,4,0.2857
+GO:0010224,response to UV-B,response_to_light_stimulus_GO_0009416,3,0.25
+GO:0042331,phototaxis,response_to_light_stimulus_GO_0009416,2,0.0678
+GO:0016212,L-kynurenine:2-oxoglutarate transaminase activity,transaminase_activity_GO_0008483,1,0.3333
+GO:0050913,sensory perception of bitter taste,sensory_perception_GO_0007600,1,0.0345
+GO:0000750,pheromone-dependent signal transduction involved in conjugation with cellular fusion,signal_transduction_GO_0007165,3,0.2609
+GO:0001402,signal transduction involved in filamentous growth,signal_transduction_GO_0007165,2,0.0741
+GO:0009862,"systemic acquired resistance, salicylic acid mediated signaling pathway",signal_transduction_GO_0007165,4,0.4
+GO:0009863,salicylic acid mediated signaling pathway,signal_transduction_GO_0007165,6,0.2857
+GO:0010182,sugar mediated signaling pathway,signal_transduction_GO_0007165,8,0.4
+GO:0023041,neuronal signal transduction,signal_transduction_GO_0007165,1,0.0625
+GO:0000001,mitochondrion inheritance,organelle_organization_GO_0006996,4,0.4
+GO:0030719,P granule organization,organelle_organization_GO_0006996,1,0.3333
+GO:0035617,stress granule disassembly,organelle_organization_GO_0006996,3,0.2857
+GO:0042052,rhabdomere development,organelle_organization_GO_0006996,1,0.0106
+GO:0048309,endoplasmic reticulum inheritance,organelle_organization_GO_0006996,2,0.25
+GO:0010877,lipid transport involved in lipid storage,lipid_transport_GO_0006869,2,0.0714
+GO:0046835,carbohydrate phosphorylation,phosphate-containing_compound_metabolic_process_GO_0006796,6,0.4
+GO:0006776,vitamin A metabolic process,lipid_metabolic_process_GO_0006629,1,0.0127
+GO:0042359,vitamin D metabolic process,lipid_metabolic_process_GO_0006629,1,0.4
+GO:0010267,ta-siRNA processing,RNA_processing_GO_0006396,1,0.4
+GO:0009115,xanthine catabolic process,nucleobase-containing_compound_metabolic_process_GO_0006139,1,0.0645
+GO:0015949,nucleobase-containing small molecule interconversion,nucleobase-containing_compound_metabolic_process_GO_0006139,4,0.4
+GO:0000023,maltose metabolic process,carbohydrate_metabolic_process_GO_0005975,1,0.0714
+GO:0010411,xyloglucan metabolic process,carbohydrate_metabolic_process_GO_0005975,1,0.0303
+GO:0005127,ciliary neurotrophic factor receptor binding,cytokine_receptor_binding_GO_0005126,1,0.2
+GO:0005000,vasopressin receptor activity,G_protein-coupled_receptor_activity_GO_0004930,1,0.25
+GO:0045028,G protein-coupled purinergic nucleotide receptor activity,G_protein-coupled_receptor_activity_GO_0004930,2,0.3333
+GO:0044687,geranylfarnesyl diphosphate synthase activity,prenyltransferase_activity_GO_0004659,1,0.1429
+GO:0004557,alpha-galactosidase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.0426
+GO:0004566,beta-glucuronidase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.0952
+GO:0004573,Glc3Man9GlcNAc2 oligosaccharide glucosidase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.2857
+GO:0008810,cellulase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",2,0.4
+GO:0016231,beta-N-acetylglucosaminidase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.25
+GO:0033925,mannosyl-glycoprotein endo-beta-N-acetylglucosaminidase activity,"hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.0385
+GO:0033946,"xyloglucan-specific endo-beta-1,4-glucanase activity","hydrolase_activity,_hydrolyzing_O-glycosyl_compounds_GO_0004553",1,0.1429
+GO:1990238,double-stranded DNA endonuclease activity,DNA_nuclease_activity_GO_0004536,1,0.1
+GO:0003344,pericardium morphogenesis,morphogenesis_of_an_epithelium_GO_0002009,1,0.0408
+GO:0007391,dorsal closure,morphogenesis_of_an_epithelium_GO_0002009,4,0.4
+GO:0007430,"terminal branching, open tracheal system",morphogenesis_of_an_epithelium_GO_0002009,1,0.2857
+GO:0007443,Malpighian tubule morphogenesis,morphogenesis_of_an_epithelium_GO_0002009,2,0.129
+GO:0060571,morphogenesis of an epithelial fold,morphogenesis_of_an_epithelium_GO_0002009,3,0.0698
+GO:0060745,mammary gland branching involved in pregnancy,morphogenesis_of_an_epithelium_GO_0002009,1,0.0426
+GO:0061154,endothelial tube morphogenesis,morphogenesis_of_an_epithelium_GO_0002009,1,0.05
+GO:0031702,type 1 angiotensin receptor binding,G_protein-coupled_receptor_binding_GO_0001664,1,0.125
+GO:0031852,mu-type opioid receptor binding,G_protein-coupled_receptor_binding_GO_0001664,2,0.0755
+GO:0050661,NADP binding,nucleotide_binding_GO_0000166,66,0.4259
+GO:0070401,NADP+ binding,nucleotide_binding_GO_0000166,4,0.1111
+GO:0070402,NADPH binding,nucleotide_binding_GO_0000166,12,0.3243
+GO:0070403,NAD+ binding,nucleotide_binding_GO_0000166,12,0.375
+GO:0070404,NADH binding,nucleotide_binding_GO_0000166,4,0.1818
+GO:0071949,FAD binding,nucleotide_binding_GO_0000166,64,0.4737
+GO:0031462,Cul2-RING ubiquitin ligase complex,ubiquitin_ligase_complex_GO_0000151,2,0.4
+GO:0000345,cytosolic DNA-directed RNA polymerase complex,transferase_complex_GO_1990234,1,0.069
+GO:0005968,Rab-protein geranylgeranyltransferase complex,transferase_complex_GO_1990234,1,0.2857
+GO:0016591,"RNA polymerase II, holoenzyme",transferase_complex_GO_1990234,1,0.1429
+GO:0140672,ATAC complex,transferase_complex_GO_1990234,1,0.1176
+GO:0016589,NURF complex,ATPase_complex_GO_1904949,1,0.1053
+GO:0033181,plasma membrane proton-transporting V-type ATPase complex,ATPase_complex_GO_1904949,1,0.3333
+GO:0019762,glucosinolate catabolic process,carbohydrate_derivative_metabolic_process_GO_1901135,1,0.1
+GO:1990779,glycoprotein Ib-IX-V complex,plasma_membrane_protein_complex_GO_0098797,2,0.25
+GO:0033631,cell-cell adhesion mediated by integrin,cell-cell_adhesion_GO_0098609,3,0.4
+GO:0060710,chorio-allantoic fusion,cell-cell_adhesion_GO_0098609,1,0.0333
+GO:0071603,endothelial cell-cell adhesion,cell-cell_adhesion_GO_0098609,2,0.0345
+GO:1990513,CLOCK-BMAL transcription complex,RNA_polymerase_II_transcription_regulator_complex_GO_0090575,1,0.125
+GO:0010544,negative regulation of platelet activation,regulation_of_body_fluid_levels_GO_0050878,1,0.0476
+GO:0030195,negative regulation of blood coagulation,regulation_of_body_fluid_levels_GO_0050878,5,0.4
+GO:0042730,fibrinolysis,regulation_of_body_fluid_levels_GO_0050878,1,0.4
+GO:0050891,multicellular organismal-level water homeostasis,regulation_of_body_fluid_levels_GO_0050878,7,0.375
+GO:0051919,positive regulation of fibrinolysis,regulation_of_body_fluid_levels_GO_0050878,1,0.25
+GO:0009909,regulation of flower development,regulation_of_developmental_process_GO_0050793,7,0.4286
+GO:0010029,regulation of seed germination,regulation_of_developmental_process_GO_0050793,6,0.4444
+GO:0010082,regulation of root meristem growth,regulation_of_developmental_process_GO_0050793,4,0.2857
+GO:0035206,regulation of hemocyte proliferation,regulation_of_developmental_process_GO_0050793,1,0.2857
+GO:0040028,regulation of vulval development,regulation_of_developmental_process_GO_0050793,3,0.3
+GO:0040034,"regulation of development, heterochronic",regulation_of_developmental_process_GO_0050793,5,0.3333
+GO:0042659,regulation of cell fate specification,regulation_of_developmental_process_GO_0050793,4,0.4
+GO:0045995,regulation of embryonic development,regulation_of_developmental_process_GO_0050793,10,0.3333
+GO:0048509,regulation of meristem development,regulation_of_developmental_process_GO_0050793,4,0.2222
+GO:0048510,regulation of timing of transition from vegetative to reproductive phase,regulation_of_developmental_process_GO_0050793,3,0.25
+GO:0048831,regulation of shoot system development,regulation_of_developmental_process_GO_0050793,10,0.4211
+GO:0061065,regulation of dauer larval development,regulation_of_developmental_process_GO_0050793,2,0.0476
+GO:0080092,regulation of pollen tube growth,regulation_of_developmental_process_GO_0050793,3,0.4
+GO:0080113,regulation of seed growth,regulation_of_developmental_process_GO_0050793,2,0.25
+GO:1900055,regulation of leaf senescence,regulation_of_developmental_process_GO_0050793,2,0.0175
+GO:1904672,regulation of somatic stem cell population maintenance,regulation_of_developmental_process_GO_0050793,1,0.2222
+GO:2000032,regulation of secondary shoot formation,regulation_of_developmental_process_GO_0050793,1,0.0541
+GO:0010154,fruit development,reproductive_structure_development_GO_0048608,7,0.3636
+GO:0048316,seed development,reproductive_structure_development_GO_0048608,10,0.4
+GO:0048619,embryonic hindgut morphogenesis,embryonic_morphogenesis_GO_0048598,1,0.0392
+GO:0001654,eye development,animal_organ_development_GO_0048513,27,0.3099
+GO:0001822,kidney development,animal_organ_development_GO_0048513,34,0.3048
+GO:0001889,liver development,animal_organ_development_GO_0048513,31,0.4375
+GO:0001890,placenta development,animal_organ_development_GO_0048513,14,0.3846
+GO:0007419,ventral cord development,animal_organ_development_GO_0048513,9,0.381
+GO:0007420,brain development,animal_organ_development_GO_0048513,60,0.3567
+GO:0007423,sensory organ development,animal_organ_development_GO_0048513,37,0.3956
+GO:0007444,imaginal disc development,animal_organ_development_GO_0048513,9,0.2581
+GO:0007507,heart development,animal_organ_development_GO_0048513,66,0.3542
+GO:0007517,muscle organ development,animal_organ_development_GO_0048513,30,0.4912
+GO:0021983,pituitary gland development,animal_organ_development_GO_0048513,9,0.4286
+GO:0022416,chaeta development,animal_organ_development_GO_0048513,2,0.1818
+GO:0030324,lung development,animal_organ_development_GO_0048513,26,0.3619
+GO:0030878,thyroid gland development,animal_organ_development_GO_0048513,7,0.4444
+GO:0030879,mammary gland development,animal_organ_development_GO_0048513,7,0.32
+GO:0030903,notochord development,animal_organ_development_GO_0048513,2,0.1667
+GO:0031016,pancreas development,animal_organ_development_GO_0048513,8,0.4444
+GO:0035162,embryonic hemopoiesis,animal_organ_development_GO_0048513,6,0.4615
+GO:0035214,eye-antennal disc development,animal_organ_development_GO_0048513,3,0.2857
+GO:0035220,wing disc development,animal_organ_development_GO_0048513,3,0.1818
+GO:0040025,vulval development,animal_organ_development_GO_0048513,4,0.1481
+GO:0043010,camera-type eye development,animal_organ_development_GO_0048513,13,0.3902
+GO:0043583,ear development,animal_organ_development_GO_0048513,1,0.0833
+GO:0043586,tongue development,animal_organ_development_GO_0048513,3,0.125
+GO:0043588,skin development,animal_organ_development_GO_0048513,11,0.4286
+GO:0048535,lymph node development,animal_organ_development_GO_0048513,6,0.4615
+GO:0048536,spleen development,animal_organ_development_GO_0048513,11,0.4762
+GO:0048538,thymus development,animal_organ_development_GO_0048513,10,0.375
+GO:0048542,lymph gland development,animal_organ_development_GO_0048513,1,0.0182
+GO:0048566,embryonic digestive tract development,animal_organ_development_GO_0048513,1,0.1667
+GO:0048749,compound eye development,animal_organ_development_GO_0048513,4,0.1538
+GO:0060017,parathyroid gland development,animal_organ_development_GO_0048513,3,0.0606
+GO:0060348,bone development,animal_organ_development_GO_0048513,26,0.4783
+GO:0002068,glandular epithelial cell development,cell_development_GO_0048468,1,0.0282
+GO:0007286,spermatid development,cell_development_GO_0048468,23,0.4706
+GO:0014019,neuroblast development,cell_development_GO_0048468,2,0.4
+GO:0014904,myotube cell development,cell_development_GO_0048468,6,0.4444
+GO:0030707,follicle cell of egg chamber development,cell_development_GO_0048468,6,0.2105
+GO:0048477,oogenesis,cell_development_GO_0048468,32,0.386
+GO:0048599,oocyte development,cell_development_GO_0048468,1,0.0333
+GO:0048741,skeletal muscle fiber development,cell_development_GO_0048468,5,0.25
+GO:0060576,intestinal epithelial cell development,cell_development_GO_0048468,5,0.3333
+GO:0080147,root hair cell development,cell_development_GO_0048468,3,0.2105
+GO:0009970,cellular response to sulfate starvation,response_to_starvation_GO_0042594,1,0.0667
+GO:0010106,cellular response to iron ion starvation,response_to_starvation_GO_0042594,4,0.3333
+GO:0036170,filamentous growth of a population of unicellular organisms in response to starvation,response_to_starvation_GO_0042594,2,0.2667
+GO:0051365,cellular response to potassium ion starvation,response_to_starvation_GO_0042594,4,0.4
+GO:1990641,response to iron ion starvation,response_to_starvation_GO_0042594,1,0.0213
+GO:0045759,negative regulation of action potential,regulation_of_membrane_potential_GO_0042391,1,0.0222
+GO:0045760,positive regulation of action potential,regulation_of_membrane_potential_GO_0042391,1,0.08
+GO:0061156,pulmonary artery morphogenesis,tube_morphogenesis_GO_0035239,1,0.1818
+GO:0009737,response to abscisic acid,response_to_lipid_GO_0033993,23,0.4615
+GO:0009753,response to jasmonic acid,response_to_lipid_GO_0033993,14,0.4167
+GO:0032355,response to estradiol,response_to_lipid_GO_0033993,31,0.4146
+GO:0033280,response to vitamin D,response_to_lipid_GO_0033993,10,0.4444
+GO:0034695,response to prostaglandin E,response_to_lipid_GO_0033993,2,0.0494
+GO:0035075,response to ecdysone,response_to_lipid_GO_0033993,1,0.2222
+GO:0036460,cellular response to cell envelope stress,cellular_response_to_stress_GO_0033554,4,0.3333
+GO:0070370,cellular heat acclimation,cellular_response_to_stress_GO_0033554,4,0.4
+GO:0071470,cellular response to osmotic stress,cellular_response_to_stress_GO_0033554,21,0.4889
+GO:0071472,cellular response to salt stress,cellular_response_to_stress_GO_0033554,7,0.2222
+GO:0071475,cellular hyperosmotic salinity response,cellular_response_to_stress_GO_0033554,1,0.0125
+GO:0071499,cellular response to laminar fluid shear stress,cellular_response_to_stress_GO_0033554,4,0.4
+GO:0071500,cellular response to nitrosative stress,cellular_response_to_stress_GO_0033554,1,0.1333
+GO:1990451,cellular stress response to acidic pH,cellular_response_to_stress_GO_0033554,3,0.1212
+GO:0000139,Golgi membrane,organelle_membrane_GO_0031090,207,0.4474
+GO:0000329,fungal-type vacuole membrane,organelle_membrane_GO_0031090,25,0.36
+GO:0005637,nuclear inner membrane,organelle_membrane_GO_0031090,23,0.4889
+GO:0005765,lysosomal membrane,organelle_membrane_GO_0031090,89,0.4486
+GO:0009705,plant-type vacuole membrane,organelle_membrane_GO_0031090,7,0.1667
+GO:0009706,chloroplast inner membrane,organelle_membrane_GO_0031090,5,0.3636
+GO:0009707,chloroplast outer membrane,organelle_membrane_GO_0031090,5,0.4444
+GO:0012506,vesicle membrane,organelle_membrane_GO_0031090,153,0.4444
+GO:0031965,nuclear membrane,organelle_membrane_GO_0031090,96,0.4737
+GO:0032580,Golgi cisterna membrane,organelle_membrane_GO_0031090,26,0.3768
+GO:0032588,trans-Golgi network membrane,organelle_membrane_GO_0031090,27,0.3673
+GO:0033115,cyanelle thylakoid membrane,organelle_membrane_GO_0031090,1,0.1333
+GO:0033116,endoplasmic reticulum-Golgi intermediate compartment membrane,organelle_membrane_GO_0031090,11,0.4706
+GO:0110146,magnetosome membrane,organelle_membrane_GO_0031090,2,0.3636
+GO:0001570,vasculogenesis,cell_differentiation_GO_0030154,17,0.4615
+GO:0001649,osteoblast differentiation,cell_differentiation_GO_0030154,27,0.4815
+GO:0009994,oocyte differentiation,cell_differentiation_GO_0030154,1,0.0299
+GO:0010052,guard cell differentiation,cell_differentiation_GO_0030154,1,0.0571
+GO:0010444,guard mother cell differentiation,cell_differentiation_GO_0030154,2,0.1538
+GO:0014029,neural crest formation,cell_differentiation_GO_0030154,1,0.0124
+GO:0022008,neurogenesis,cell_differentiation_GO_0030154,27,0.4267
+GO:0045444,fat cell differentiation,cell_differentiation_GO_0030154,36,0.4615
+GO:0048235,pollen sperm cell differentiation,cell_differentiation_GO_0030154,2,0.1429
+GO:0048863,stem cell differentiation,cell_differentiation_GO_0030154,31,0.4444
+GO:0060290,transdifferentiation,cell_differentiation_GO_0030154,4,0.4444
+GO:1904238,pericyte cell differentiation,cell_differentiation_GO_0030154,1,0.3333
+GO:0030274,LIM domain binding,protein_domain_specific_binding_GO_0019904,1,0.0488
+GO:0044547,DNA topoisomerase binding,enzyme_binding_GO_0019899,1,0.0286
+GO:0008401,retinoic acid 4-hydroxylase activity,"oxidoreductase_activity,_acting_on_paired_donors,_with_incorporation_or_reduction_of_molecular_oxygen_GO_0016705",1,0.3333
+GO:0001764,neuron migration,cell_migration_GO_0016477,34,0.4598
+GO:0007298,border follicle cell migration,cell_migration_GO_0016477,7,0.32
+GO:0007427,"epithelial cell migration, open tracheal system",cell_migration_GO_0016477,1,0.0952
+GO:0008078,mesodermal cell migration,cell_migration_GO_0016477,4,0.0822
+GO:0008354,germ cell migration,cell_migration_GO_0016477,12,0.3529
+GO:0010631,epithelial cell migration,cell_migration_GO_0016477,12,0.4348
+GO:0035099,hemocyte migration,cell_migration_GO_0016477,3,0.0625
+GO:1901166,neural crest cell migration involved in autonomic nervous system development,cell_migration_GO_0016477,1,0.4
+GO:0010041,response to iron(III) ion,response_to_metal_ion_GO_0010038,2,0.1111
+GO:0010272,response to silver ion,response_to_metal_ion_GO_0010038,2,0.4444
+GO:1990169,stress response to copper ion,response_to_metal_ion_GO_0010038,1,0.0153
+GO:0003163,sinoatrial node development,tissue_development_GO_0009888,1,0.0444
+GO:0007506,gonadal mesoderm development,tissue_development_GO_0009888,5,0.129
+GO:0008544,epidermis development,tissue_development_GO_0009888,14,0.4615
+GO:0009960,endosperm development,tissue_development_GO_0009888,3,0.4615
+GO:0061056,sclerotome development,tissue_development_GO_0009888,1,0.0256
+GO:0007472,wing disc morphogenesis,animal_organ_morphogenesis_GO_0009887,1,0.1053
+GO:0035262,gonad morphogenesis,animal_organ_morphogenesis_GO_0009887,2,0.0615
+GO:0048592,eye morphogenesis,animal_organ_morphogenesis_GO_0009887,9,0.4762
+GO:0048593,camera-type eye morphogenesis,animal_organ_morphogenesis_GO_0009887,1,0.0513
+GO:0048803,imaginal disc-derived male genitalia morphogenesis,animal_organ_morphogenesis_GO_0009887,2,0.069
+GO:0060439,trachea morphogenesis,animal_organ_morphogenesis_GO_0009887,1,0.0244
+GO:0097186,amelogenesis,animal_organ_morphogenesis_GO_0009887,4,0.4
+GO:0009723,response to ethylene,response_to_hormone_GO_0009725,4,0.3636
+GO:0071365,cellular response to auxin stimulus,response_to_hormone_GO_0009725,3,0.0441
+GO:0009446,putrescine biosynthetic process,amine_metabolic_process_GO_0009308,4,0.381
+GO:0002047,phenazine biosynthetic process,biosynthetic_process_GO_0009058,3,0.4
+GO:0006750,glutathione biosynthetic process,biosynthetic_process_GO_0009058,5,0.4444
+GO:0006809,nitric oxide biosynthetic process,biosynthetic_process_GO_0009058,5,0.3333
+GO:0008652,amino acid biosynthetic process,biosynthetic_process_GO_0009058,25,0.4706
+GO:0010573,vascular endothelial growth factor production,biosynthetic_process_GO_0009058,1,0.0171
+GO:0015995,chlorophyll biosynthetic process,biosynthetic_process_GO_0009058,7,0.4
+GO:0036070,light-independent bacteriochlorophyll biosynthetic process,biosynthetic_process_GO_0009058,1,0.2857
+GO:0042619,poly-hydroxybutyrate biosynthetic process,biosynthetic_process_GO_0009058,1,0.4
+GO:0080110,sporopollenin biosynthetic process,biosynthetic_process_GO_0009058,3,0.4
+GO:0140236,translation at presynapse,biosynthetic_process_GO_0009058,5,0.3333
+GO:0140242,translation at postsynapse,biosynthetic_process_GO_0009058,6,0.2857
+GO:1990145,maintenance of translational fidelity,biosynthetic_process_GO_0009058,3,0.0741
+GO:0000425,pexophagy,catabolic_process_GO_0009056,10,0.4348
+GO:0015996,chlorophyll catabolic process,catabolic_process_GO_0009056,3,0.4
+GO:0016054,organic acid catabolic process,catabolic_process_GO_0009056,7,0.2424
+GO:0016237,microautophagy,catabolic_process_GO_0009056,15,0.4091
+GO:0019608,nicotine catabolic process,catabolic_process_GO_0009056,2,0.4
+GO:0019700,organic phosphonate catabolic process,catabolic_process_GO_0009056,1,0.3333
+GO:0034727,piecemeal microautophagy of the nucleus,catabolic_process_GO_0009056,12,0.3415
+GO:0035973,aggrephagy,catabolic_process_GO_0009056,1,0.0444
+GO:0042203,toluene catabolic process,catabolic_process_GO_0009056,1,0.069
+GO:0042952,beta-ketoadipate pathway,catabolic_process_GO_0009056,1,0.0909
+GO:0044804,nucleophagy,catabolic_process_GO_0009056,16,0.383
+GO:0045150,acetoin catabolic process,catabolic_process_GO_0009056,2,0.1429
+GO:0046306,alkanesulfonate catabolic process,catabolic_process_GO_0009056,1,0.0364
+GO:0061709,reticulophagy,catabolic_process_GO_0009056,6,0.2857
+GO:0098792,xenophagy,catabolic_process_GO_0009056,2,0.0455
+GO:1901170,naphthalene catabolic process,catabolic_process_GO_0009056,1,0.0328
+GO:0016929,deSUMOylase activity,peptidase_activity_GO_0008233,1,0.25
+GO:0036374,glutathione gamma-glutamate hydrolase,peptidase_activity_GO_0008233,1,0.125
+GO:0045167,asymmetric protein localization involved in cell fate determination,intracellular_protein_localization_GO_0008104,2,0.08
+GO:0072697,protein localization to cell cortex,intracellular_protein_localization_GO_0008104,2,0.0606
+GO:0097271,protein localization to bud neck,intracellular_protein_localization_GO_0008104,1,0.0488
+GO:0032027,myosin light chain binding,cytoskeletal_protein_binding_GO_0008092,4,0.4
+GO:0045159,myosin II binding,cytoskeletal_protein_binding_GO_0008092,6,0.4444
+GO:0030297,transmembrane receptor protein tyrosine kinase activator activity,enzyme_activator_activity_GO_0008047,1,0.4
+GO:0140608,cysteine-type endopeptidase activator activity,enzyme_activator_activity_GO_0008047,5,0.4615
+GO:0002544,chronic inflammatory response,defense_response_GO_0006952,2,0.0138
+GO:0006968,cellular defense response,defense_response_GO_0006952,8,0.3636
+GO:0006113,fermentation,generation_of_precursor_metabolites_and_energy_GO_0006091,2,0.1538
+GO:0080025,"phosphatidylinositol-3,5-bisphosphate binding",phospholipid_binding_GO_0005543,9,0.4615
+GO:0042608,T cell receptor binding,signaling_receptor_binding_GO_0005102,2,0.0317
+GO:0008073,ornithine decarboxylase inhibitor activity,enzyme_inhibitor_activity_GO_0004857,1,0.0253
+GO:0010855,adenylate cyclase inhibitor activity,enzyme_inhibitor_activity_GO_0004857,1,0.0238
+GO:0002151,G-quadruplex RNA binding,RNA_binding_GO_0003723,2,0.4
+GO:0003725,double-stranded RNA binding,RNA_binding_GO_0003723,32,0.3768
+GO:0003730,mRNA 3'-UTR binding,RNA_binding_GO_0003723,31,0.433
+GO:0017069,snRNA binding,RNA_binding_GO_0003723,15,0.4828
+GO:0017070,U6 snRNA binding,RNA_binding_GO_0003723,5,0.4615
+GO:0030620,U2 snRNA binding,RNA_binding_GO_0003723,2,0.1
+GO:0030621,U4 snRNA binding,RNA_binding_GO_0003723,2,0.2
+GO:0033204,ribonuclease P RNA binding,RNA_binding_GO_0003723,3,0.2857
+GO:0034511,U3 snoRNA binding,RNA_binding_GO_0003723,2,0.0741
+GO:0035925,mRNA 3'-UTR AU-rich region binding,RNA_binding_GO_0003723,9,0.4762
+GO:0048027,mRNA 5'-UTR binding,RNA_binding_GO_0003723,7,0.3529
+GO:0070034,telomerase RNA binding,RNA_binding_GO_0003723,5,0.1818
+GO:0097157,pre-mRNA intronic binding,RNA_binding_GO_0003723,4,0.2857
+GO:0000182,rDNA binding,DNA_binding_GO_0003677,2,0.013
+GO:0003684,damaged DNA binding,DNA_binding_GO_0003677,33,0.4127
+GO:0003688,DNA replication origin binding,DNA_binding_GO_0003677,12,0.2308
+GO:0003691,double-stranded telomeric DNA binding,DNA_binding_GO_0003677,8,0.4706
+GO:0003697,single-stranded DNA binding,DNA_binding_GO_0003677,51,0.2933
+GO:0019237,centromeric DNA binding,DNA_binding_GO_0003677,4,0.1667
+GO:0031490,chromatin DNA binding,DNA_binding_GO_0003677,27,0.2222
+GO:0031492,nucleosomal DNA binding,DNA_binding_GO_0003677,2,0.3077
+GO:0042162,telomeric repeat DNA binding,DNA_binding_GO_0003677,26,0.4375
+GO:0043035,chromatin insulator sequence binding,DNA_binding_GO_0003677,3,0.0571
+GO:0070336,flap-structured DNA binding,DNA_binding_GO_0003677,3,0.4
+GO:1990814,DNA/DNA annealing activity,DNA_binding_GO_0003677,4,0.4
+GO:0014824,artery smooth muscle contraction,muscle_system_process_GO_0003012,1,0.2
+GO:0014829,vascular associated smooth muscle contraction,muscle_system_process_GO_0003012,1,0.2222
+GO:0060087,relaxation of vascular associated smooth muscle,muscle_system_process_GO_0003012,2,0.1053
+GO:0000172,ribonuclease MRP complex,ribonucleoprotein_complex_GO_1990904,4,0.2857
+GO:0000243,commitment complex,ribonucleoprotein_complex_GO_1990904,1,0.0253
+GO:0005655,nucleolar ribonuclease P complex,ribonucleoprotein_complex_GO_1990904,3,0.1667
+GO:0005686,U2 snRNP,ribonucleoprotein_complex_GO_1990904,4,0.3077
+GO:0005763,mitochondrial small ribosomal subunit,ribonucleoprotein_complex_GO_1990904,6,0.4
+GO:0030681,multimeric ribonuclease P complex,ribonucleoprotein_complex_GO_1990904,4,0.4
+GO:0030686,90S preribosome,ribonucleoprotein_complex_GO_1990904,9,0.2308
+GO:0030687,"preribosome, large subunit precursor",ribonucleoprotein_complex_GO_1990904,10,0.381
+GO:0030688,"preribosome, small subunit precursor",ribonucleoprotein_complex_GO_1990904,4,0.4
+GO:0043614,multi-eIF complex,ribonucleoprotein_complex_GO_1990904,2,0.3636
+GO:0071001,U4/U6 snRNP,ribonucleoprotein_complex_GO_1990904,2,0.4
+GO:0071004,U2-type prespliceosome,ribonucleoprotein_complex_GO_1990904,8,0.3333
+GO:0071007,U2-type catalytic step 2 spliceosome,ribonucleoprotein_complex_GO_1990904,7,0.4545
+GO:0071014,post-mRNA release spliceosomal complex,ribonucleoprotein_complex_GO_1990904,7,0.4444
+GO:0003972,RNA ligase (ATP) activity,"catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640",1,0.2222
+GO:0051575,5'-deoxyribose-5-phosphate lyase activity,"catalytic_activity,_acting_on_a_nucleic_acid_GO_0140640",1,0.0106
+GO:0001405,"PAM complex, Tim23 associated import motor",membrane_protein_complex_GO_0098796,1,0.0513
+GO:0005744,TIM23 mitochondrial import inner membrane translocase complex,membrane_protein_complex_GO_0098796,1,0.1429
+GO:0030123,AP-3 adaptor complex,membrane_protein_complex_GO_0098796,1,0.4
+GO:0098592,cytoplasmic side of apical plasma membrane,side_of_membrane_GO_0098552,1,0.4
+GO:0001841,neural tube formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,3,0.4615
+GO:0002467,germinal center formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,2,0.2857
+GO:0007279,pole cell formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,1,0.1667
+GO:0007291,sperm individualization,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,1,0.0833
+GO:0007349,cellularization,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,5,0.2857
+GO:0010311,lateral root formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,5,0.3333
+GO:0030476,ascospore wall assembly,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,3,0.3333
+GO:0046843,dorsal appendage formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,2,0.0571
+GO:0048645,animal organ formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,7,0.4444
+GO:0048859,formation of anatomical boundary,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,4,0.4
+GO:0060061,Spemann organizer formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,1,0.0339
+GO:0060914,heart formation,anatomical_structure_formation_involved_in_morphogenesis_GO_0048646,4,0.3333
+GO:0010449,root meristem growth,developmental_growth_GO_0048589,2,0.1818
+GO:0043403,skeletal muscle tissue regeneration,developmental_growth_GO_0048589,6,0.2857
+GO:0048767,root hair elongation,developmental_growth_GO_0048589,2,0.1818
+GO:0023026,MHC class II protein complex binding,protein-containing_complex_binding_GO_0044877,1,0.0455
+GO:0070051,fibrinogen binding,protein-containing_complex_binding_GO_0044877,3,0.0714
+GO:0016028,rhabdomere,cell_projection_GO_0042995,2,0.0769
+GO:0070685,macropinocytic cup,cell_projection_GO_0042995,1,0.1053
+GO:0090406,pollen tube,cell_projection_GO_0042995,5,0.4706
+GO:0000822,inositol hexakisphosphate binding,small_molecule_binding_GO_0036094,4,0.4
+GO:0005534,galactose binding,small_molecule_binding_GO_0036094,3,0.05
+GO:0030975,thiamine binding,small_molecule_binding_GO_0036094,1,0.0741
+GO:0070025,carbon monoxide binding,small_molecule_binding_GO_0036094,1,0.25
+GO:0019740,nitrogen utilization,response_to_nutrient_levels_GO_0031667,1,0.3333
+GO:0106006,cytoskeletal protein-membrane anchor activity,protein-macromolecule_adaptor_activity_GO_0030674,2,0.2
+GO:0140008,histone H4 reader activity,protein-macromolecule_adaptor_activity_GO_0030674,2,0.0588
+GO:0140506,endoplasmic reticulum-autophagosome adaptor activity,protein-macromolecule_adaptor_activity_GO_0030674,2,0.129
+GO:0017020,myosin phosphatase regulator activity,enzyme_regulator_activity_GO_0030234,1,0.0244
+GO:0035014,phosphatidylinositol 3-kinase regulator activity,enzyme_regulator_activity_GO_0030234,1,0.0909
+GO:0005354,galactose transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,2,0.4
+GO:0005459,UDP-galactose transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,1,0.0741
+GO:0005462,UDP-N-acetylglucosamine transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,1,0.1111
+GO:0008519,ammonium channel activity,transmembrane_transporter_activity_GO_0022857,5,0.4615
+GO:0009977,proton motive force dependent protein transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,1,0.2
+GO:0015175,neutral L-amino acid transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,6,0.4286
+GO:0015204,urea transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,1,0.0667
+GO:0015343,siderophore-iron transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,4,0.3333
+GO:0015651,quaternary ammonium group transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,3,0.4
+GO:0022853,active monoatomic ion transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,2,0.2857
+GO:0042910,xenobiotic transmembrane transporter activity,transmembrane_transporter_activity_GO_0022857,7,0.4286
+GO:0004325,protoporphyrin ferrochelatase activity,lyase_activity_GO_0016829,1,0.1429
+GO:0008721,D-serine ammonia-lyase activity,lyase_activity_GO_0016829,1,0.4
+GO:0008410,CoA-transferase activity,transferase_activity_GO_0016740,1,0.4
+GO:0001533,cornified envelope,membrane_GO_0016020,12,0.4615
+GO:0005628,prospore membrane,membrane_GO_0016020,10,0.1579
+GO:0005642,annulate lamellae,membrane_GO_0016020,1,0.25
+GO:0005905,clathrin-coated pit,membrane_GO_0016020,12,0.2609
+GO:0009925,basal plasma membrane,membrane_GO_0016020,26,0.3038
+GO:0016323,basolateral plasma membrane,membrane_GO_0016020,75,0.2703
+GO:0016324,apical plasma membrane,membrane_GO_0016020,128,0.2955
+GO:0019867,outer membrane,membrane_GO_0016020,86,0.4462
+GO:0031520,plasma membrane of cell tip,membrane_GO_0016020,2,0.0476
+GO:0032154,cleavage furrow,membrane_GO_0016020,17,0.3529
+GO:0034045,phagophore assembly site membrane,membrane_GO_0016020,16,0.3721
+GO:0042175,nuclear outer membrane-endoplasmic reticulum membrane network,membrane_GO_0016020,4,0.0339
+GO:0042383,sarcolemma,membrane_GO_0016020,36,0.2989
+GO:0042734,presynaptic membrane,membrane_GO_0016020,55,0.3077
+GO:0044853,plasma membrane raft,membrane_GO_0016020,34,0.4737
+GO:0045121,membrane raft,membrane_GO_0016020,93,0.2615
+GO:0045211,postsynaptic membrane,membrane_GO_0016020,67,0.4393
+GO:0048787,presynaptic active zone membrane,membrane_GO_0016020,10,0.2609
+GO:0098839,postsynaptic density membrane,membrane_GO_0016020,24,0.3582
+GO:0099634,postsynaptic specialization membrane,membrane_GO_0016020,36,0.486
+GO:1990075,periciliary membrane compartment,membrane_GO_0016020,3,0.3636
+GO:0002089,lens morphogenesis in camera-type eye,anatomical_structure_morphogenesis_GO_0009653,4,0.4
+GO:0003151,outflow tract morphogenesis,anatomical_structure_morphogenesis_GO_0009653,9,0.3333
+GO:0007476,imaginal disc-derived wing morphogenesis,anatomical_structure_morphogenesis_GO_0009653,9,0.2051
+GO:0007480,imaginal disc-derived leg morphogenesis,anatomical_structure_morphogenesis_GO_0009653,3,0.2667
+GO:0008586,imaginal disc-derived wing vein morphogenesis,anatomical_structure_morphogenesis_GO_0009653,3,0.4
+GO:0008587,imaginal disc-derived wing margin morphogenesis,anatomical_structure_morphogenesis_GO_0009653,5,0.4
+GO:0009965,leaf morphogenesis,anatomical_structure_morphogenesis_GO_0009653,7,0.25
+GO:0010015,root morphogenesis,anatomical_structure_morphogenesis_GO_0009653,3,0.16
+GO:0010090,trichome morphogenesis,anatomical_structure_morphogenesis_GO_0009653,4,0.1818
+GO:0010091,trichome branching,anatomical_structure_morphogenesis_GO_0009653,2,0.1538
+GO:0010102,lateral root morphogenesis,anatomical_structure_morphogenesis_GO_0009653,2,0.0769
+GO:0010171,body morphogenesis,anatomical_structure_morphogenesis_GO_0009653,2,0.1818
+GO:0021696,cerebellar cortex morphogenesis,anatomical_structure_morphogenesis_GO_0009653,1,0.0357
+GO:0031288,sorocarp morphogenesis,anatomical_structure_morphogenesis_GO_0009653,3,0.4
+GO:0045138,nematode male tail tip morphogenesis,anatomical_structure_morphogenesis_GO_0009653,4,0.1905
+GO:0046529,"imaginal disc fusion, thorax closure",anatomical_structure_morphogenesis_GO_0009653,1,0.1538
+GO:0048667,cell morphogenesis involved in neuron differentiation,anatomical_structure_morphogenesis_GO_0009653,6,0.4706
+GO:0048800,antennal morphogenesis,anatomical_structure_morphogenesis_GO_0009653,1,0.0526
+GO:0060323,head morphogenesis,anatomical_structure_morphogenesis_GO_0009653,1,0.4
+GO:0051450,myoblast proliferation,cell_population_proliferation_GO_0008283,5,0.3333
+GO:0097325,melanocyte proliferation,cell_population_proliferation_GO_0008283,1,0.0123
+GO:0007310,oocyte dorsal/ventral axis specification,pattern_specification_process_GO_0007389,2,0.2857
+GO:0007350,blastoderm segmentation,pattern_specification_process_GO_0007389,2,0.1538
+GO:0007367,segment polarity determination,pattern_specification_process_GO_0007389,7,0.4286
+GO:0007379,segment specification,pattern_specification_process_GO_0007389,4,0.1818
+GO:0007386,compartment pattern specification,pattern_specification_process_GO_0007389,2,0.4
+GO:0007474,imaginal disc-derived wing vein specification,pattern_specification_process_GO_0007389,3,0.2222
+GO:0009880,embryonic pattern specification,pattern_specification_process_GO_0007389,24,0.4211
+GO:0009950,dorsal/ventral axis specification,pattern_specification_process_GO_0007389,8,0.3636
+GO:0010051,xylem and phloem pattern formation,pattern_specification_process_GO_0007389,2,0.4
+GO:0021513,spinal cord dorsal/ventral patterning,pattern_specification_process_GO_0007389,1,0.0333
+GO:0035017,cuticle pattern formation,pattern_specification_process_GO_0007389,4,0.4
+GO:0035222,wing disc pattern formation,pattern_specification_process_GO_0007389,9,0.3704
+GO:0035282,segmentation,pattern_specification_process_GO_0007389,7,0.2667
+GO:0035545,determination of left/right asymmetry in nervous system,pattern_specification_process_GO_0007389,1,0.0455
+GO:0048100,wing disc anterior/posterior pattern formation,pattern_specification_process_GO_0007389,4,0.3077
+GO:0048263,determination of dorsal identity,pattern_specification_process_GO_0007389,2,0.1818
+GO:0061371,determination of heart left/right asymmetry,pattern_specification_process_GO_0007389,3,0.4
+GO:0007120,axial cellular bud site selection,establishment_or_maintenance_of_cell_polarity_GO_0007163,1,0.125
+GO:0007121,bipolar cellular bud site selection,establishment_or_maintenance_of_cell_polarity_GO_0007163,1,0.1
+GO:0038001,paracrine signaling,cell_communication_GO_0007154,1,0.0465
+GO:0051257,meiotic spindle midzone assembly,microtubule-based_process_GO_0007017,1,0.026
+GO:0000302,response to reactive oxygen species,response_to_stress_GO_0006950,64,0.4967
+GO:0000304,response to singlet oxygen,response_to_stress_GO_0006950,1,0.069
+GO:0001666,response to hypoxia,response_to_stress_GO_0006950,67,0.4167
+GO:0006970,response to osmotic stress,response_to_stress_GO_0006950,72,0.4843
+GO:0006972,hyperosmotic response,response_to_stress_GO_0006950,13,0.4348
+GO:0009409,response to cold,response_to_stress_GO_0006950,37,0.3252
+GO:0009414,response to water deprivation,response_to_stress_GO_0006950,26,0.4
+GO:0009631,cold acclimation,response_to_stress_GO_0006950,4,0.4
+GO:0009651,response to salt stress,response_to_stress_GO_0006950,47,0.3673
+GO:0010193,response to ozone,response_to_stress_GO_0006950,6,0.3636
+GO:0010286,heat acclimation,response_to_stress_GO_0006950,7,0.2
+GO:0034059,response to anoxia,response_to_stress_GO_0006950,1,0.1333
+GO:0042060,wound healing,response_to_stress_GO_0006950,20,0.2979
+GO:0042538,hyperosmotic salinity response,response_to_stress_GO_0006950,4,0.3333
+GO:0042542,response to hydrogen peroxide,response_to_stress_GO_0006950,41,0.4444
+GO:0051409,response to nitrosative stress,response_to_stress_GO_0006950,11,0.375
+GO:0005938,cell cortex,cytoplasm_GO_0005737,117,0.3621
+GO:0031097,medial cortex,cytoplasm_GO_0005737,1,0.0333
+GO:0045179,apical cortex,cytoplasm_GO_0005737,6,0.2857
+GO:0051285,cell cortex of cell tip,cytoplasm_GO_0005737,5,0.0909
+GO:0097014,ciliary plasm,cytoplasm_GO_0005737,2,0.0169
+GO:1902716,cell cortex of growing cell tip,cytoplasm_GO_0005737,2,0.0182
+GO:1904115,axon cytoplasm,cytoplasm_GO_0005737,16,0.4
+GO:0007294,germarium-derived oocyte fate determination,developmental_process_involved_in_reproduction_GO_0003006,1,0.0513
+GO:0007533,mating type switching,developmental_process_involved_in_reproduction_GO_0003006,1,0.0345
+GO:0007535,donor selection,developmental_process_involved_in_reproduction_GO_0003006,1,0.0952
+GO:0007548,sex differentiation,developmental_process_involved_in_reproduction_GO_0003006,6,0.3
+GO:0009554,megasporogenesis,developmental_process_involved_in_reproduction_GO_0003006,4,0.4
+GO:0009556,microsporogenesis,developmental_process_involved_in_reproduction_GO_0003006,5,0.3333
+GO:0010214,seed coat development,developmental_process_involved_in_reproduction_GO_0003006,1,0.0426
+GO:0010228,vegetative to reproductive phase transition of meristem,developmental_process_involved_in_reproduction_GO_0003006,7,0.375
+GO:0010262,somatic embryogenesis,developmental_process_involved_in_reproduction_GO_0003006,2,0.2222
+GO:0010431,seed maturation,developmental_process_involved_in_reproduction_GO_0003006,3,0.04
+GO:0030237,female sex determination,developmental_process_involved_in_reproduction_GO_0003006,1,0.022
+GO:0035234,ectopic germ cell programmed cell death,developmental_process_involved_in_reproduction_GO_0003006,3,0.4
+GO:0048437,floral organ development,developmental_process_involved_in_reproduction_GO_0003006,2,0.0571
+GO:0048440,carpel development,developmental_process_involved_in_reproduction_GO_0003006,1,0.0267
+GO:0048481,plant ovule development,developmental_process_involved_in_reproduction_GO_0003006,1,0.0328
+GO:0048658,anther wall tapetum development,developmental_process_involved_in_reproduction_GO_0003006,1,0.0171
+GO:0048868,pollen tube development,developmental_process_involved_in_reproduction_GO_0003006,3,0.0571
+GO:0007343,egg activation,cell_activation_GO_0001775,1,0.0444
+GO:0045576,mast cell activation,cell_activation_GO_0001775,1,0.0909
+GO:0098025,"virus tail, baseplate",virion_component_GO_0044423,1,0.0444
+GO:0001780,neutrophil homeostasis,homeostatic_process_GO_0042592,1,0.125
+GO:0036335,intestinal stem cell homeostasis,homeostatic_process_GO_0042592,5,0.3333
+GO:0045851,pH reduction,homeostatic_process_GO_0042592,2,0.0408
+GO:0060250,germ-line stem-cell niche homeostasis,homeostatic_process_GO_0042592,2,0.1818
+GO:0061484,hematopoietic stem cell homeostasis,homeostatic_process_GO_0042592,10,0.4615
+GO:0000709,meiotic joint molecule formation,reproductive_process_GO_0022414,3,0.3333
+GO:0000712,resolution of meiotic recombination intermediates,reproductive_process_GO_0022414,2,0.1429
+GO:0000747,conjugation with cellular fusion,reproductive_process_GO_0022414,3,0.1538
+GO:0000755,cytogamy,reproductive_process_GO_0022414,2,0.1818
+GO:0001554,luteolysis,reproductive_process_GO_0022414,1,0.0113
+GO:0007060,male meiosis chromosome segregation,reproductive_process_GO_0022414,2,0.08
+GO:0007276,gamete generation,reproductive_process_GO_0022414,37,0.404
+GO:0007292,female gamete generation,reproductive_process_GO_0022414,10,0.1818
+GO:0007342,fusion of sperm to egg plasma membrane involved in single fertilization,reproductive_process_GO_0022414,5,0.4615
+GO:0007565,female pregnancy,reproductive_process_GO_0022414,19,0.48
+GO:0007620,copulation,reproductive_process_GO_0022414,1,0.2222
+GO:0016321,female meiosis chromosome segregation,reproductive_process_GO_0022414,3,0.4
+GO:0018991,egg-laying behavior,reproductive_process_GO_0022414,5,0.25
+GO:0042628,mating plug formation,reproductive_process_GO_0022414,1,0.4
+GO:0045132,meiotic chromosome segregation,reproductive_process_GO_0022414,10,0.4211
+GO:0045143,homologous chromosome segregation,reproductive_process_GO_0022414,4,0.1818
+GO:0048232,male gamete generation,reproductive_process_GO_0022414,27,0.4762
+GO:0051307,meiotic chromosome separation,reproductive_process_GO_0022414,2,0.3333
+GO:0051455,spindle attachment to meiosis I kinetochore,reproductive_process_GO_0022414,4,0.4286
+GO:0060135,maternal process involved in female pregnancy,reproductive_process_GO_0022414,5,0.3636
+GO:0070197,meiotic attachment of telomere to nuclear envelope,reproductive_process_GO_0022414,2,0.0667
+GO:0080001,mucilage extrusion from seed coat,reproductive_process_GO_0022414,2,0.0667
+GO:1990813,meiotic centromeric cohesion protection in anaphase I,reproductive_process_GO_0022414,2,0.0833
+GO:0019068,virion assembly,viral_process_GO_0016032,7,0.4444
+GO:0098003,viral tail assembly,viral_process_GO_0016032,2,0.3333
+GO:0030023,extracellular matrix constituent conferring elasticity,structural_molecule_activity_GO_0005198,1,0.0645
+GO:0002385,mucosal immune response,immune_system_process_GO_0002376,1,0.0189
+GO:0002457,T cell antigen processing and presentation,immune_system_process_GO_0002376,1,0.011
+GO:0002476,antigen processing and presentation of endogenous peptide antigen via MHC class Ib,immune_system_process_GO_0002376,1,0.4
+GO:0002486,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent",immune_system_process_GO_0002376,1,0.4
+GO:0042092,type 2 immune response,immune_system_process_GO_0002376,1,0.4
+GO:0001714,endodermal cell fate specification,Fallback_biological_process_1,2,0.1176
+GO:0002121,inter-male aggressive behavior,Fallback_biological_process_1,2,0.0494
+GO:0002168,instar larval development,Fallback_biological_process_1,4,0.1538
+GO:0002188,translation reinitiation,Fallback_biological_process_1,1,0.1333
+GO:0007113,endomitotic cell cycle,Fallback_biological_process_1,1,0.0263
+GO:0007400,neuroblast fate determination,Fallback_biological_process_1,1,0.25
+GO:0007465,R7 cell fate commitment,Fallback_biological_process_1,4,0.2069
+GO:0016360,sensory organ precursor cell fate determination,Fallback_biological_process_1,2,0.25
+GO:0016562,"protein import into peroxisome matrix, receptor recycling",Fallback_biological_process_1,2,0.1176
+GO:0040024,dauer larval development,Fallback_biological_process_1,3,0.4615
+GO:0045464,R8 cell fate specification,Fallback_biological_process_1,1,0.0187
+GO:0060841,venous blood vessel development,Fallback_biological_process_1,2,0.044
+GO:1902404,mitotic actomyosin contractile ring contraction,Fallback_biological_process_1,1,0.2857
+GO:0003283,atrial septum development,Fallback_biological_process_2,1,0.0426
+GO:0008015,blood circulation,Fallback_biological_process_2,5,0.4444
+GO:0030541,plasmid partitioning,Fallback_biological_process_2,2,0.1538
+GO:0071344,diphosphate metabolic process,Fallback_biological_process_2,2,0.0444
+GO:0072540,T-helper 17 cell lineage commitment,Fallback_biological_process_2,1,0.0308
+GO:0000301,"retrograde transport, vesicle recycling within Golgi",Fallback_biological_process_3,1,0.0444
+GO:0007300,ovarian nurse cell to oocyte transport,Fallback_biological_process_3,1,0.0328
+GO:0015842,aminergic neurotransmitter loading into synaptic vesicle,Fallback_biological_process_3,1,0.0204
+GO:0031179,peptide modification,Fallback_biological_process_3,1,0.0833
+GO:0097264,self proteolysis,Fallback_biological_process_3,4,0.4
+GO:0007315,pole plasm assembly,Fallback_biological_process_4,2,0.3333
+GO:0015889,cobalamin transport,Fallback_biological_process_4,2,0.2353
+GO:0035002,"liquid clearance, open tracheal system",Fallback_biological_process_4,2,0.0404
+GO:0001700,embryonic development via the syncytial blastoderm,Fallback_biological_process_5,3,0.2222
+GO:0007628,adult walking behavior,Fallback_biological_process_5,14,0.4242
+GO:0008345,larval locomotory behavior,Fallback_biological_process_5,2,0.3333
+GO:0008363,larval chitin-based cuticle development,Fallback_biological_process_5,2,0.0132
+GO:0016199,axon midline choice point recognition,Fallback_biological_process_5,5,0.3333
+GO:0030536,larval feeding behavior,Fallback_biological_process_5,4,0.1429
+GO:0040040,thermosensory behavior,Fallback_biological_process_5,2,0.25
+GO:0048142,germarium-derived cystoblast division,Fallback_biological_process_5,1,0.125
+GO:0048149,behavioral response to ethanol,Fallback_biological_process_5,6,0.2857
+GO:0070593,dendrite self-avoidance,Fallback_biological_process_5,6,0.4
+GO:0009294,DNA-mediated transformation,Fallback_biological_process_6,4,0.4
+GO:0042332,gravitaxis,Fallback_biological_process_6,1,0.069
+GO:0045793,positive regulation of cell size,Fallback_biological_process_6,6,0.4
+GO:0046667,compound eye retinal cell programmed cell death,Fallback_biological_process_6,1,0.125
+GO:0048102,autophagic cell death,Fallback_biological_process_6,8,0.3636
+GO:0048133,male germ-line stem cell asymmetric division,Fallback_biological_process_6,1,0.0144
+GO:0050911,detection of chemical stimulus involved in sensory perception of smell,Fallback_biological_process_6,3,0.2857
+GO:0060013,righting reflex,Fallback_biological_process_6,1,0.0135
+GO:0000920,septum digestion after cytokinesis,Fallback_biological_process_7,2,0.1818
+GO:0010555,response to mannitol,Fallback_biological_process_7,1,0.0465
+GO:0036166,phenotypic switching,Fallback_biological_process_7,1,0.2222
+GO:0046797,viral procapsid maturation,Fallback_biological_process_7,1,0.0122
+GO:0048527,lateral root development,Fallback_biological_process_7,6,0.3
+GO:0070941,eisosome assembly,Fallback_biological_process_7,3,0.4
+GO:0090332,stomatal closure,Fallback_biological_process_7,1,0.0137
+GO:0000749,response to pheromone triggering conjugation with cellular fusion,Fallback_biological_process_8,1,0.029
+GO:0010458,exit from mitosis,Fallback_biological_process_8,4,0.4
+GO:0034087,establishment of mitotic sister chromatid cohesion,Fallback_biological_process_8,3,0.3333
+GO:0034089,establishment of meiotic sister chromatid cohesion,Fallback_biological_process_8,1,0.0408
+GO:0045232,S-layer organization,Fallback_biological_process_8,1,0.2857
+GO:0051298,centrosome duplication,Fallback_biological_process_8,9,0.4286
+GO:1904970,brush border assembly,Fallback_biological_process_8,1,0.0107
+GO:0006621,protein retention in ER lumen,Fallback_biological_process_9,1,0.0588
+GO:0007284,spermatogonial cell division,Fallback_biological_process_9,1,0.0233
+GO:0042693,muscle cell fate commitment,Fallback_biological_process_9,1,0.2222
+GO:0048137,spermatocyte division,Fallback_biological_process_9,1,0.0833
+GO:0060327,cytoplasmic actin-based contraction involved in cell motility,Fallback_biological_process_9,1,0.013
+GO:0071236,cellular response to antibiotic,Fallback_biological_process_9,4,0.4
+GO:0071460,cellular response to cell-matrix adhesion,Fallback_biological_process_9,1,0.0208
+GO:0036098,male germ-line stem cell population maintenance,Fallback_biological_process_10,2,0.25
+GO:0036099,female germ-line stem cell population maintenance,Fallback_biological_process_10,2,0.2105
+GO:0090333,regulation of stomatal closure,Fallback_biological_process_10,6,0.2222
+GO:1902456,regulation of stomatal opening,Fallback_biological_process_10,1,0.0769
+GO:1904313,response to methamphetamine hydrochloride,Fallback_biological_process_10,1,0.0312
+GO:1905673,positive regulation of lysosome organization,Fallback_biological_process_10,1,0.0138
+GO:0008340,determination of adult lifespan,Fallback_biological_process_11,42,0.452
+GO:0016203,muscle attachment,Fallback_biological_process_11,1,0.0513
+GO:0030431,sleep,Fallback_biological_process_11,4,0.1333
+GO:0033566,gamma-tubulin complex localization,Fallback_biological_process_11,2,0.069
+GO:0042395,"ecdysis, collagen and cuticulin-based cuticle",Fallback_biological_process_11,1,0.0769
+GO:0043609,regulation of carbon utilization,Fallback_biological_process_11,1,0.2857
+GO:0007417,central nervous system development,Fallback_biological_process_12,23,0.4783
+GO:0007424,open tracheal system development,Fallback_biological_process_12,5,0.1
+GO:0009933,meristem structural organization,Fallback_biological_process_12,2,0.0571
+GO:0016319,mushroom body development,Fallback_biological_process_12,3,0.1765
+GO:0021536,diencephalon development,Fallback_biological_process_12,1,0.125
+GO:0046849,bone remodeling,Fallback_biological_process_12,7,0.4444
+GO:0072359,circulatory system development,Fallback_biological_process_12,2,0.1053
+GO:0010150,leaf senescence,Fallback_biological_process_13,12,0.3333
+GO:0021762,substantia nigra development,Fallback_biological_process_13,3,0.1176
+GO:0021986,habenula development,Fallback_biological_process_13,1,0.2857
+GO:0030900,forebrain development,Fallback_biological_process_13,15,0.4828
+GO:0030917,midbrain-hindbrain boundary development,Fallback_biological_process_13,1,0.0253
+GO:0031153,slug development involved in sorocarp development,Fallback_biological_process_13,1,0.0571
+GO:0060041,retina development in camera-type eye,Fallback_biological_process_13,14,0.48
+GO:0061032,visceral serous pericardium development,Fallback_biological_process_13,1,0.2222
+GO:0097065,anterior head development,Fallback_biological_process_13,1,0.037
+GO:0044358,venom-mediated hemorrhage,Fallback_biological_process_14,1,0.0952
+GO:0046898,response to cycloheximide,Fallback_biological_process_14,1,0.0227
+GO:0051612,negative regulation of serotonin uptake,Fallback_biological_process_14,1,0.2857
+GO:0072347,response to anesthetic,Fallback_biological_process_14,2,0.4
+GO:0097327,response to antineoplastic agent,Fallback_biological_process_14,1,0.0225
+GO:1904010,response to Aroclor 1254,Fallback_biological_process_14,1,0.0833
+GO:1904614,response to biphenyl,Fallback_biological_process_14,1,0.026
+GO:1904772,response to tetrachloromethane,Fallback_biological_process_14,2,0.3333
+GO:0035563,positive regulation of chromatin binding,Fallback_biological_process_15,1,0.4
+GO:0036377,arbuscular mycorrhizal association,Fallback_biological_process_15,1,0.0274
+GO:0051001,negative regulation of nitric-oxide synthase activity,Fallback_biological_process_15,4,0.4
+GO:0051673,disruption of plasma membrane integrity in another organism,Fallback_biological_process_15,1,0.0163
+GO:0098932,symbiont entry into host cell via disruption of host cell wall peptidoglycan,Fallback_biological_process_15,1,0.1111
+GO:0098996,symbiont entry into host cell via disruption of host cell glycocalyx,Fallback_biological_process_15,1,0.25
+GO:1901001,negative regulation of response to salt stress,Fallback_biological_process_15,1,0.0667
+GO:1901002,positive regulation of response to salt stress,Fallback_biological_process_15,3,0.069
+GO:0009786,regulation of asymmetric cell division,Fallback_biological_process_16,2,0.0606
+GO:0090727,positive regulation of brood size,Fallback_biological_process_16,1,0.0274
+GO:1900239,regulation of phenotypic switching,Fallback_biological_process_16,1,0.2
+GO:1902884,positive regulation of response to oxidative stress,Fallback_biological_process_16,2,0.0909
+GO:1905075,positive regulation of tight junction disassembly,Fallback_biological_process_16,1,0.0204
+GO:1905516,positive regulation of fertilization,Fallback_biological_process_16,5,0.3333
+GO:2000331,regulation of terminal button organization,Fallback_biological_process_16,1,0.0294
+GO:0000127,transcription factor TFIIIC complex,Fallback_cellular_component_1,2,0.0741
+GO:0000500,RNA polymerase I upstream activating factor complex,Fallback_cellular_component_1,2,0.1667
+GO:0005664,nuclear origin of replication recognition complex,Fallback_cellular_component_1,4,0.3333
+GO:0008275,gamma-tubulin small complex,Fallback_cellular_component_1,1,0.1333
+GO:0009276,Gram-negative-bacterium-type cell wall,Fallback_cellular_component_1,1,0.2222
+GO:0033553,rDNA heterochromatin,Fallback_cellular_component_1,2,0.1905
+GO:0070176,DRM complex,Fallback_cellular_component_1,1,0.029
+GO:0090619,meiotic spindle pole,Fallback_cellular_component_1,2,0.2222
+GO:0099115,"chromosome, subtelomeric region",Fallback_cellular_component_1,5,0.4444
+GO:0140445,"chromosome, telomeric repeat region",Fallback_cellular_component_1,3,0.1176
+GO:0140720,subtelomeric heterochromatin,Fallback_cellular_component_1,4,0.4615
+GO:0000142,cellular bud neck contractile ring,Fallback_cellular_component_2,3,0.4
+GO:0016593,Cdc73/Paf1 complex,Fallback_cellular_component_2,2,0.4
+GO:0035974,meiotic spindle pole body,Fallback_cellular_component_2,2,0.4
+GO:0000131,incipient cellular bud site,Fallback_cellular_component_3,5,0.2941
+GO:0001411,hyphal tip,Fallback_cellular_component_3,2,0.1053
+GO:0005934,cellular bud tip,Fallback_cellular_component_3,8,0.4
+GO:0030056,hemidesmosome,Fallback_cellular_component_3,2,0.029
+GO:0031234,extrinsic component of cytoplasmic side of plasma membrane,Fallback_cellular_component_3,3,0.0533
+GO:0000137,Golgi cis cisterna,Fallback_cellular_component_4,5,0.4
+GO:0005635,nuclear envelope,Fallback_cellular_component_4,66,0.4667
+GO:0005740,mitochondrial envelope,Fallback_cellular_component_4,4,0.3333
+GO:0005795,Golgi stack,Fallback_cellular_component_4,14,0.3636
+GO:0005797,Golgi medial cisterna,Fallback_cellular_component_4,7,0.4444
+GO:0005802,trans-Golgi network,Fallback_cellular_component_4,62,0.4553
+GO:0005838,proteasome regulatory particle,Fallback_cellular_component_4,4,0.3636
+GO:0031089,platelet dense granule lumen,Fallback_cellular_component_4,1,0.0294
+GO:0031093,platelet alpha granule lumen,Fallback_cellular_component_4,5,0.2667
+GO:0031905,early endosome lumen,Fallback_cellular_component_4,3,0.0229
+GO:0032541,cortical endoplasmic reticulum,Fallback_cellular_component_4,10,0.48
+GO:0035580,specific granule lumen,Fallback_cellular_component_4,7,0.1176
+GO:0071682,endocytic vesicle lumen,Fallback_cellular_component_4,2,0.0571
+GO:1904724,tertiary granule lumen,Fallback_cellular_component_4,3,0.1429
+GO:1904813,ficolin-1-rich granule lumen,Fallback_cellular_component_4,10,0.1212
+GO:0030991,intraciliary transport particle A,Fallback_cellular_component_5,2,0.1538
+GO:0110078,TTT Hsp90 cochaperone complex,Fallback_cellular_component_5,2,0.4
+GO:1990112,RQC complex,Fallback_cellular_component_5,3,0.4
+GO:0005846,nuclear cap binding complex,Fallback_cellular_component_6,4,0.4444
+GO:0030894,replisome,Fallback_cellular_component_6,1,0.2222
+GO:1990393,3M complex,Fallback_cellular_component_6,1,0.0278
+GO:1990423,RZZ complex,Fallback_cellular_component_6,2,0.3333
+GO:0034388,Pwp2p-containing subcomplex of 90S preribosome,Fallback_cellular_component_7,3,0.2353
+GO:0042729,DASH complex,Fallback_cellular_component_7,5,0.4615
+GO:0071819,DUBm complex,Fallback_cellular_component_7,2,0.25
+GO:0000242,pericentriolar material,Fallback_cellular_component_8,5,0.0952
+GO:0000407,phagophore assembly site,Fallback_cellular_component_8,12,0.1967
+GO:0000795,synaptonemal complex,Fallback_cellular_component_8,7,0.2105
+GO:0000800,lateral element,Fallback_cellular_component_8,6,0.1429
+GO:0000801,central element,Fallback_cellular_component_8,3,0.4
+GO:0001650,fibrillar center,Fallback_cellular_component_8,31,0.1622
+GO:0001652,granular component,Fallback_cellular_component_8,8,0.4706
+GO:0001772,immunological synapse,Fallback_cellular_component_8,15,0.0707
+GO:0001891,phagocytic cup,Fallback_cellular_component_8,14,0.2222
+GO:0001917,photoreceptor inner segment,Fallback_cellular_component_8,22,0.0885
+GO:0002177,manchette,Fallback_cellular_component_8,3,0.25
+GO:0005652,nuclear lamina,Fallback_cellular_component_8,7,0.2353
+GO:0005703,polytene chromosome puff,Fallback_cellular_component_8,4,0.0152
+GO:0005704,polytene chromosome band,Fallback_cellular_component_8,1,0.0377
+GO:0005705,polytene chromosome interband,Fallback_cellular_component_8,2,0.0189
+GO:0005903,brush border,Fallback_cellular_component_8,19,0.2439
+GO:0005930,axoneme,Fallback_cellular_component_8,28,0.2069
+GO:0005933,cellular bud,Fallback_cellular_component_8,6,0.2
+GO:0014069,postsynaptic density,Fallback_cellular_component_8,61,0.2114
+GO:0030288,outer membrane-bounded periplasmic space,Fallback_cellular_component_8,28,0.4045
+GO:0030479,actin cortical patch,Fallback_cellular_component_8,10,0.0964
+GO:0032391,photoreceptor connecting cilium,Fallback_cellular_component_8,7,0.4286
+GO:0032421,stereocilium bundle,Fallback_cellular_component_8,3,0.0909
+GO:0032809,neuronal cell body membrane,Fallback_cellular_component_8,5,0.1429
+GO:0034506,"chromosome, centromeric core domain",Fallback_cellular_component_8,2,0.0408
+GO:0035861,site of double-strand break,Fallback_cellular_component_8,28,0.0782
+GO:0043025,neuronal cell body,Fallback_cellular_component_8,135,0.2887
+GO:0043195,terminal bouton,Fallback_cellular_component_8,20,0.0769
+GO:0044218,other organism cell membrane,Fallback_cellular_component_8,44,0.4902
+GO:0044233,mitochondria-associated endoplasmic reticulum membrane contact site,Fallback_cellular_component_8,6,0.2222
+GO:0044284,mitochondrial crista junction,Fallback_cellular_component_8,1,0.0101
+GO:0044305,calyx of Held,Fallback_cellular_component_8,8,0.2667
+GO:0071561,nucleus-vacuole junction,Fallback_cellular_component_8,2,0.4
+GO:0120095,vacuole-isolation membrane contact site,Fallback_cellular_component_8,1,0.0308
+GO:0140268,endoplasmic reticulum-plasma membrane contact site,Fallback_cellular_component_8,4,0.2222
+GO:1990023,mitotic spindle midzone,Fallback_cellular_component_8,7,0.0833
+GO:1990531,phospholipid-translocating ATPase complex,Fallback_cellular_component_8,3,0.1667
+GO:1990816,vacuole-mitochondrion membrane contact site,Fallback_cellular_component_8,6,0.4615
+GO:0012505,endomembrane system,Fallback_cellular_component_9,43,0.4494
+GO:0016328,lateral plasma membrane,Fallback_cellular_component_9,21,0.4658
+GO:0016363,nuclear matrix,Fallback_cellular_component_9,28,0.4912
+GO:0031430,M band,Fallback_cellular_component_9,9,0.4615
+GO:0034399,nuclear periphery,Fallback_cellular_component_9,14,0.3
+GO:0034451,centriolar satellite,Fallback_cellular_component_9,35,0.4333
+GO:0043083,synaptic cleft,Fallback_cellular_component_9,7,0.4615
+GO:0043198,dendritic shaft,Fallback_cellular_component_9,13,0.3333
+GO:0043204,perikaryon,Fallback_cellular_component_10,61,0.3932
+GO:0043218,compact myelin,Fallback_cellular_component_10,1,0.3333
+GO:0045171,intercellular bridge,Fallback_cellular_component_10,20,0.3111
+GO:0045177,apical part of cell,Fallback_cellular_component_10,32,0.3125
+GO:0045178,basal part of cell,Fallback_cellular_component_10,9,0.375
+GO:0055120,striated muscle dense body,Fallback_cellular_component_10,5,0.1111
+GO:0071341,medial cortical node,Fallback_cellular_component_10,1,0.1429
+GO:0071944,cell periphery,Fallback_cellular_component_10,54,0.4944
+GO:0097226,sperm mitochondrial sheath,Fallback_cellular_component_10,1,0.0233
+GO:0120105,"mitotic actomyosin contractile ring, intermediate layer",Fallback_cellular_component_10,1,0.069
+GO:0001222,transcription corepressor binding,Fallback_molecular_function_1,8,0.3
+GO:0001223,transcription coactivator binding,Fallback_molecular_function_1,18,0.2703
+GO:0003713,transcription coactivator activity,Fallback_molecular_function_1,69,0.4845
+GO:0003885,"D-arabinono-1,4-lactone oxidase activity",Fallback_molecular_function_1,5,0.3333
+GO:0003989,acetyl-CoA carboxylase activity,Fallback_molecular_function_1,5,0.4286
+GO:0004324,ferredoxin-NADP+ reductase activity,Fallback_molecular_function_1,3,0.1905
+GO:0004458,D-lactate dehydrogenase (cytochrome) activity,Fallback_molecular_function_1,1,0.0571
+GO:0004658,propionyl-CoA carboxylase activity,Fallback_molecular_function_1,3,0.1667
+GO:0008860,ferredoxin-NAD+ reductase activity,Fallback_molecular_function_1,2,0.2857
+GO:0016218,polyketide synthase activity,Fallback_molecular_function_1,3,0.2857
+GO:0016989,sigma factor antagonist activity,Fallback_molecular_function_1,2,0.25
+GO:0043885,anaerobic carbon-monoxide dehydrogenase activity,Fallback_molecular_function_1,1,0.125
+GO:0140691,RNA folding chaperone,Fallback_molecular_function_1,1,0.0192
+GO:0140911,pore-forming activity,Fallback_molecular_function_1,2,0.1739
+GO:1990841,promoter-specific chromatin binding,Fallback_molecular_function_1,24,0.2651
+GO:0004657,proline dehydrogenase activity,Fallback_molecular_function_2,1,0.0909
+GO:0017147,Wnt-protein binding,Fallback_molecular_function_3,4,0.3158
+GO:0032794,GTPase activating protein binding,Fallback_molecular_function_3,5,0.2857
+GO:0044325,transmembrane transporter binding,Fallback_molecular_function_3,43,0.4651
+GO:0061770,translation elongation factor binding,Fallback_molecular_function_3,1,0.0149
+GO:0017134,fibroblast growth factor binding,Fallback_molecular_function_4,5,0.4
+GO:0032050,clathrin heavy chain binding,Fallback_molecular_function_4,1,0.0127
+GO:0070530,K63-linked polyubiquitin modification-dependent protein binding,Fallback_molecular_function_4,12,0.4375
+GO:0097108,hedgehog family protein binding,Fallback_molecular_function_4,1,0.25
+GO:0097110,scaffold protein binding,Fallback_molecular_function_4,16,0.4348
+GO:0097602,cullin family protein binding,Fallback_molecular_function_4,4,0.4
+GO:1990450,linear polyubiquitin binding,Fallback_molecular_function_4,1,0.0345
+GO:0000900,mRNA regulatory element binding translation repressor activity,Fallback_molecular_function_5,4,0.4
+GO:0000995,RNA polymerase III general transcription initiation factor activity,Fallback_molecular_function_5,4,0.2857
+GO:0008494,translation activator activity,Fallback_molecular_function_5,4,0.3333
+GO:0030395,lactose binding,Fallback_molecular_function_5,1,0.0222
+GO:0042030,ATPase inhibitor activity,Fallback_molecular_function_5,1,0.0588
+GO:0048019,receptor antagonist activity,Fallback_molecular_function_5,1,0.0122
+GO:2001069,glycogen binding,Fallback_molecular_function_5,3,0.0896
