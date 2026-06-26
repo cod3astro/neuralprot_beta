@@ -4,7 +4,7 @@
 
 NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ontology (GO) term predictions — the biological functions the protein is likely to perform. It was built to be scientifically rigorous, practically usable, and fast enough for real research workflows without requiring a GPU.
 
-> **Live demo:** [neuralprot.vercel.app](https://neuralprot.vercel.app)
+> **Live demo:** [neuralprot-beta.vercel.app](https://neuralprot-beta.vercel.app)
 > **API:** Hosted on Hugging Face Spaces
 
 ---
