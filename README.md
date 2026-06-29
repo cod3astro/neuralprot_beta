@@ -79,7 +79,7 @@ This approach is CPU-friendly, deterministic, and requires no external database 
 
 Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting** — an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
 
-Each cluster became one model group. Groups tend to contain GO terms that are biologically related — for example, one group covers all kinase-related molecular function terms, another covers terms related to ion channel activity. This means each model only needs to learn a focused, manageable prediction task rather than the entire annotation space.
+Each cluster became one model group. Groups tend to contain GO terms that are biologically related, for example, one group covers all kinase-related molecular function terms, another covers terms related to ion channel activity. This means each model only needs to learn a focused, manageable prediction task rather than the entire annotation space.
 
 The routing is implicit: at inference time, the feature vector is passed to every loaded model group in parallel. There is no explicit routing step — every group independently decides whether its terms apply.
 
