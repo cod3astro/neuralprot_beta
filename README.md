@@ -187,7 +187,7 @@ neuralprot-beta/
 
 Dark and light mode are supported via Tailwind's `class` strategy. The user's theme preference is persisted to `localStorage` and restored on page load.
 
-All API calls use `import.meta.env.VITE_API_URL` — never a hardcoded IP address.
+All API calls use `import.meta.env.VITE_API_URL` never a hardcoded IP address.
 
 ### Pages
 
@@ -203,7 +203,7 @@ All API calls use `import.meta.env.VITE_API_URL` — never a hardcoded IP addres
 
 ### Model Quality Filter
 
-The prediction page exposes a three-way model quality filter that controls which model groups participate in each prediction. The selection is sent to the backend as `f1_threshold` in the POST body. All 375 models remain loaded in memory at all times — switching presets costs nothing and requires no server restart.
+The prediction page exposes a three-way model quality filter that controls which model groups participate in each prediction. The selection is sent to the backend as `f1_threshold` in the POST body. All 375 models remain loaded in memory at all times, switching presets costs nothing and requires no server restart.
 
 ```
 Broad    (F1 ≥ 0.30) — 370 models — Maximum coverage
