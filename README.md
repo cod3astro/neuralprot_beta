@@ -549,4 +549,4 @@ The Gene Ontology data used in this project is provided by the [Gene Ontology Co
 
 ---
 
-*Built for the CAFA (Critical Assessment of protein Function Annotation) research community.*
+*Built for the research community.*
