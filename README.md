@@ -471,7 +471,7 @@ echo "VITE_API_URL=http://127.0.0.1:8000" > .env.local
 npm run dev
 ```
 
-The frontend will be available at `http://localhost:5173`.
+The frontend will be available at `neuralprot-beta.vercel.app`.
 
 ### Backend Setup
 
