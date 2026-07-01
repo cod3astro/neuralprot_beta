@@ -299,7 +299,7 @@ Returns the full GO term dictionary (38,560+ terms with names, namespaces, and a
 
 ### Model Architecture
 
-Every model group uses the same `NeuralProtMLP` architecture — a multilayer perceptron with:
+Every model group uses the same `NeuralProtMLP` architecture, a multilayer perceptron with:
 
 - **Input layer:** 498 neurons (one per biophysical feature)
 - **Hidden layers:** Two hidden layers with batch normalisation, dropout regularisation, and ReLU activations
