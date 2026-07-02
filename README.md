@@ -285,7 +285,7 @@ Returns the full GO term dictionary (38,560+ terms with names, namespaces, and a
 
 ### Environment Variables
 
-| Variable | Required | Description |
+| Variable | Required | Description | 
 |---|---|---|
 | `VITE_API_URL` | Frontend | Full URL of the backend API. Set in `.env.local` for local dev, in Vercel dashboard for production. |
 | `HF_REPO_ID` | Backend | Hugging Face repository ID where models are stored (e.g. `yourusername/neuralprot-models`). Required when `MODELS_DIR` is not set. |
