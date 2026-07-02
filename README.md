@@ -160,7 +160,7 @@ neuralprot-beta/
 │   ├── neuralprot_backend.py    # FastAPI application
 │   ├── neuralprot_inference.py  # Feature extraction + model registry
 │   ├── requirements.txt
-│   └── models/                  # NOT pushed to GitHub (see below)
+│   └── models/                 
 │       ├── model_f1_scores.json
 │       ├── go_dict.json
 │       ├── {group_name}_best.pt
