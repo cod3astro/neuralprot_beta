@@ -9,7 +9,7 @@ NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ont
 
 ---
 
-## Table of Contents
+## Table of Contents 
 
 - [What It Does](#what-it-does)
 - [How It Works](#how-it-works)
