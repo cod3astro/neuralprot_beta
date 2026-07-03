@@ -75,7 +75,7 @@ The 498 features break down into three groups:
 
 This approach is CPU-friendly, deterministic, and requires no external database lookups at inference time.
 
-### Step 2 — Model Group Routing
+### Step 2 — Model Group Routing 
 
 Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting** — an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
 
