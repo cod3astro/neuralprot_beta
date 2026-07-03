@@ -45,7 +45,7 @@ NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ont
 
 ---
 
-## What It Does
+## What It Does 
 
 You paste an amino acid sequence (or upload a FASTA file). NeuralProt:
 
