@@ -77,7 +77,7 @@ This approach is CPU-friendly, deterministic, and requires no external database 
 
 ### Step 2: Model Group Routing 
 
-Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting** — an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
+Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting**, an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
 
 Each cluster became one model group. Groups tend to contain GO terms that are biologically related, for example, one group covers all kinase-related molecular function terms, another covers terms related to ion channel activity. This means each model only needs to learn a focused, manageable prediction task rather than the entire annotation space.
 
@@ -93,7 +93,7 @@ Decision thresholds were tuned per group on a held-out validation set to maximis
 
 The Gene Ontology is a directed acyclic graph. If a protein is predicted to perform a specific child function (e.g. "protein serine/threonine kinase activity"), it is biologically required to also perform its parent functions (e.g. "kinase activity", "transferase activity").
 
-NeuralProt enforces this through a **75% confidence threshold hierarchy gate**: any child GO term predicted with confidence ≥ 0.75 automatically propagates its prediction upward through the GO graph to all ancestor terms. These propagated predictions are labelled "Hierarchy Tree Rule" in the results and always carry a 1.0000 confidence score — they are biological laws, not model guesses.
+NeuralProt enforces this through a **75% confidence threshold hierarchy gate**: any child GO term predicted with confidence ≥ 0.75 automatically propagates its prediction upward through the GO graph to all ancestor terms. These propagated predictions are labelled "Hierarchy Tree Rule" in the results and always carry a 1.0000 confidence score, they are biological laws, not model guesses.
 
 ### Step 5: Result Delivery
 
@@ -305,7 +305,7 @@ Every model group uses the same `NeuralProtMLP` architecture, a multilayer perce
 - **Hidden layers:** Two hidden layers with batch normalisation, dropout regularisation, and ReLU activations
 - **Output layer:** One neuron per GO term in the group, with sigmoid activation (multi-label classification)
 
-The number of output neurons varies per group — it equals the number of GO terms that group is responsible for predicting.
+The number of output neurons varies per group, it equals the number of GO terms that group is responsible for predicting.
 
 ### Training
 
