@@ -112,9 +112,8 @@ def startup():
             models_dir = snapshot_download(
                 repo_id=HF_REPO_ID,
                 allow_patterns=["*.pt", "*.json"],
-                local_dir_use_symlinks=False,   # copies files instead of symlinks
                 token=os.environ.get("HF_TOKEN", None),
-            )
+                )
             logger.info(f"Models downloaded to: {models_dir}")
         except Exception as e:
             raise RuntimeError(f"Failed to download models from Hugging Face Hub: {e}")
