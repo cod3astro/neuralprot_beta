@@ -531,15 +531,18 @@ export default function Compare() {
               className="space-y-4"
             >
               {/* Explanation banner */}
-              <div className="flex items-start gap-3 px-4 py-3 rounded-xl border border-teal/20 bg-teal/5">
-                <Brain size={14} className="text-teal mt-0.5 flex-shrink-0" />
-                <p className="text-xs font-body text-[var(--color-text-muted)] leading-relaxed">
-                  <span className="text-teal font-semibold">Compare view shows fewer results than Predict.</span>{' '}
-                  Very broad GO terms (such as "cytoplasm" or "biosynthetic process") are filtered out here
-                  so the comparison focuses on specific, meaningful differences between proteins.
-                  Visit the <span className="text-[var(--color-text)]">Predict page</span> to see the full unfiltered list for each protein.
-                </p>
-              </div>
+<div className="flex items-start gap-3 px-4 py-3 rounded-xl border border-teal/20 bg-teal/5">
+  <Brain size={14} className="text-teal mt-0.5 flex-shrink-0" />
+  <p className="text-xs font-body text-[var(--color-text-muted)] leading-relaxed">
+    <span className="text-teal font-semibold">Compare view shows fewer results than Predict.</span>{' '}
+    Very broad GO terms (such as "cytoplasm" or "biosynthetic process") are filtered out here
+    so the comparison focuses on specific, meaningful differences between proteins.{' '}
+    <span className="text-teal font-semibold">Shared Functions may still look long</span> — most proteins
+    naturally share many broad, low-specificity terms even after filtering, since these general categories
+    apply to a wide range of unrelated proteins.{' '}
+    Visit the <span className="text-[var(--color-text)]">Predict page</span> to see the full unfiltered list for each protein.
+  </p>
+</div>
 
               <CompareResultsWithFilter
                 resultsA={results.predA}

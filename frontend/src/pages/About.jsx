@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
-import { Mail,  Copy, CheckCheck, ExternalLink } from 'lucide-react'
+import { Mail, Link as LinkIcon, ExternalLink, Copy, CheckCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 // ── Data ──────────────────────────────────────────────────────
@@ -12,9 +12,9 @@ const AUTHORS = [
     affil:    'University of Ilorin',
     color:    { bg: 'bg-teal/10', text: 'text-teal', border: 'border-teal/30' },
     links: [
-      { label: 'GitHub',   href: 'https://github.com/cod3astro',                        icon: Mail   },
-      { label: 'LinkedIn', href: 'https://linkedin.com/in/abdullateef-tijani',           icon: Mail },
-      { label: 'Email',    href: 'mailto:molabosipolateef@gmail.com',                   icon: Mail     },
+      { label: 'GitHub',   href: 'https://github.com/cod3astro',                icon: LinkIcon   },
+      { label: 'LinkedIn', href: 'https://linkedin.com/in/abdullateef-tijani',  icon: ExternalLink },
+      { label: 'Email',    href: 'mailto:molabosipolateef@gmail.com',           icon: Mail     },
     ],
   },
   {
@@ -24,9 +24,9 @@ const AUTHORS = [
     affil:    'University of Lagos',
     color:    { bg: 'bg-cyan/10', text: 'text-cyan', border: 'border-cyan/30' },
     links: [
-      { label: 'GitHub',   href: 'https://github.com/abolaji2188',                       icon: Mail   },
-      { label: 'LinkedIn', href: 'https://linkedin.com/in/alimi-aisha-2a7024334',        icon: Mail },
-      { label: 'Email',    href: 'mailto:alimiaisha2008@gmail.com',                      icon: Mail     },
+      { label: 'GitHub',   href: 'https://github.com/abolaji2188',              icon: LinkIcon   },
+      { label: 'LinkedIn', href: 'https://linkedin.com/in/alimi-aisha-2a7024334', icon: ExternalLink },
+      { label: 'Email',    href: 'mailto:alimiaisha2008@gmail.com',             icon: Mail     },
     ],
   },
 ]

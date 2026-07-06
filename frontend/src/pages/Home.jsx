@@ -361,7 +361,7 @@ function CiteSection() {
       <div className="max-w-3xl mx-auto text-center">
         <motion.h2 className="font-display font-bold text-2xl sm:text-3xl text-[var(--color-text)] mb-6"
           initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          Trusted by computational biologists
+          
         </motion.h2>
         <motion.div className="glass-card rounded-xl border border-[var(--color-border)] p-5 md:p-6"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
