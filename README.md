@@ -340,15 +340,15 @@ Hugging Face Dataset/Model repo  →  all _best.pt and _terms.json files
 Files to exclude from GitHub (add to `.gitignore`):
 
 ```gitignore
-# Model weights — hosted on Hugging Face
+# Model weights; hosted on Hugging Face
 backend/models/*.pt
 backend/models/*.json
-!backend/models/model_f1_scores.json   # keep this one — it's tiny and needed locally
+!backend/models/model_f1_scores.json   # keep this one; it's tiny and needed locally
 
-# Resume checkpoints — only needed for retraining
+# Resume checkpoints; only needed for retraining
 backend/models/*_resume.pt
 
-# Training logs — optional
+# Training logs; optional
 backend/models/*_log.json
 ```
 
@@ -358,7 +358,7 @@ At runtime on Hugging Face Spaces, the backend downloads all model files automat
 
 ## Deployment
 
-### Frontend — Vercel
+### Frontend; Vercel
 
 The frontend is a standard Vite/React SPA and deploys to Vercel in under two minutes.
 
@@ -375,11 +375,11 @@ The frontend is a standard Vite/React SPA and deploys to Vercel in under two min
 
 **Cost:** Free on Vercel's Hobby plan for personal projects.
 
-### Backend and Models — Hugging Face Spaces
+### Backend and Models; Hugging Face Spaces
 
 Hugging Face Spaces supports Docker-based deployments and provides enough free compute to run a FastAPI server with models loaded in memory.
 
-**Step 1 — Upload your models to a Hugging Face Dataset repo:**
+**Step 1: Upload your models to a Hugging Face Dataset repo:**
 
 ```bash
 pip install huggingface_hub
@@ -401,13 +401,13 @@ api.upload_folder(
 "
 ```
 
-**Step 2 — Create a Hugging Face Space:**
+**Step 2: Create a Hugging Face Space:**
 
 Create a new Space at [huggingface.co/new-space](https://huggingface.co/new-space). Choose:
 - SDK: **Docker**
 - Hardware: **CPU Basic** (free) or CPU Upgrade (paid, faster cold start)
 
-**Step 3 — Add a `Dockerfile` to your backend folder:**
+**Step 3: Add a `Dockerfile` to your backend folder:**
 
 ```dockerfile
 FROM python:3.11-slim
@@ -424,7 +424,7 @@ EXPOSE 7860
 CMD ["uvicorn", "neuralprot_backend:app", "--host", "0.0.0.0", "--port", "7860"]
 ```
 
-**Step 4 — Set Space secrets (environment variables):**
+**Step 4: Set Space secrets (environment variables):**
 
 In your Space settings under "Repository secrets":
 ```
@@ -444,9 +444,9 @@ ALLOWED_ORIGINS = [
 On first startup, the backend will download all ~1.5 GB of model files from your Hugging Face dataset repo. This takes a few minutes on a cold start. After the first download, Hugging Face Spaces caches the files so subsequent restarts are much faster.
 
 **Free tier limits on Hugging Face Spaces (CPU Basic):**
-- 2 vCPU, 16 GB RAM — sufficient to hold all 375 models in memory
+- 2 vCPU, 16 GB RAM; sufficient to hold all 375 models in memory
 - The Space will sleep after inactivity. First request after sleep triggers a cold start (model download + load), which can take 3–5 minutes on a free tier.
-- No persistent storage between restarts on the free tier — models re-download each cold start.
+- No persistent storage between restarts on the free tier, models re-download each cold start.
 
 **If cold starts are too slow:** Consider using a Hugging Face Space with a persistent `/data` volume (available on paid tiers), or pre-warming the Space by pinging `/health` on a schedule.
 
@@ -486,10 +486,10 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Set environment variables for local development
-# Option A — use a local models directory (recommended for dev)
+# Option A: use a local models directory (recommended for dev)
 export MODELS_DIR="/absolute/path/to/your/models/folder"
 
-# Option B — download from Hugging Face every startup
+# Option B: download from Hugging Face every startup
 export HF_REPO_ID="your-username/neuralprot-models"
 
 # Start the backend
@@ -516,14 +516,14 @@ python-multipart>=0.0.9
 
 NeuralProt uses two CAFA-standard evaluation metrics:
 
-**Fmax** — the maximum F-measure across all decision thresholds, where F-measure is the harmonic mean of precision and recall. Higher is better (max 1.0).
+**Fmax**: the maximum F-measure across all decision thresholds, where F-measure is the harmonic mean of precision and recall. Higher is better (max 1.0).
 
-**Smin** — the minimum semantic distance between predicted and true annotations, weighted by Information Content of each GO term. Lower is better (min 0.0).
+**Smin**: the minimum semantic distance between predicted and true annotations, weighted by Information Content of each GO term. Lower is better (min 0.0).
 
 To run an evaluation through the web interface, go to the Evaluate page and upload:
-- `train_annotations.tsv` — annotation file used during training (provides the frequency baseline)
-- `test_proteins.fasta` — FASTA file of held-out test proteins
-- `test_annotations.tsv` — ground-truth annotations for the test proteins
+- `train_annotations.tsv`  annotation file used during training (provides the frequency baseline)
+- `test_proteins.fasta`  FASTA file of held-out test proteins
+- `test_annotations.tsv`  ground-truth annotations for the test proteins
 
 The interface reports Fmax and Smin for NeuralProt alongside a flat frequency baseline, and shows the percentage improvement over baseline.
 
@@ -537,7 +537,7 @@ When contributing to the model or inference code, please ensure:
 - `get_group_probs()` remains filter-free (used by the evaluator, must run all groups)
 - `predict_single()` continues to accept and respect the `min_f1` parameter
 - The `_load_whitelist()` method loads all groups at startup (runtime filtering only)
-- No F1 scores are hardcoded in the inference file — `model_f1_scores.json` is the single source of truth
+- No F1 scores are hardcoded in the inference file, `model_f1_scores.json` is the single source of truth
 
 ---
 
