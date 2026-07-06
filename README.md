@@ -61,7 +61,7 @@ Each prediction carries a GO term ID (linkable to QuickGO/AmiGO), a human-readab
 
 ## How It Works
 
-### Step 1 — Feature Extraction (498 Dimensions)
+### Step 1: Feature Extraction (498 Dimensions)
 
 Every amino acid sequence is converted into a fixed-length 498-dimensional numerical vector before any model sees it. This representation captures the sequence's biophysical shape without requiring alignment or a pre-trained language model.
 
@@ -75,7 +75,7 @@ The 498 features break down into three groups:
 
 This approach is CPU-friendly, deterministic, and requires no external database lookups at inference time.
 
-### Step 2 — Model Group Routing 
+### Step 2: Model Group Routing 
 
 Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting** — an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
 
@@ -83,19 +83,19 @@ Each cluster became one model group. Groups tend to contain GO terms that are bi
 
 The routing is implicit: at inference time, the feature vector is passed to every loaded model group in parallel. There is no explicit routing step, every group independently decides whether its terms apply.
 
-### Step 3 — Neural Network Voting
+### Step 3: Neural Network Voting
 
 Each of the 375 model groups contains a trained multilayer perceptron (MLP) that takes the 498-dimensional feature vector as input and outputs a probability for each GO term in its group. Terms whose probability exceeds the group's optimised decision threshold are included in the prediction.
 
 Decision thresholds were tuned per group on a held-out validation set to maximise F1 score for that group's specific annotation patterns.
 
-### Step 4 — Hierarchy Safety Gate
+### Step 4: Hierarchy Safety Gate
 
 The Gene Ontology is a directed acyclic graph. If a protein is predicted to perform a specific child function (e.g. "protein serine/threonine kinase activity"), it is biologically required to also perform its parent functions (e.g. "kinase activity", "transferase activity").
 
 NeuralProt enforces this through a **75% confidence threshold hierarchy gate**: any child GO term predicted with confidence ≥ 0.75 automatically propagates its prediction upward through the GO graph to all ancestor terms. These propagated predictions are labelled "Hierarchy Tree Rule" in the results and always carry a 1.0000 confidence score — they are biological laws, not model guesses.
 
-### Step 5 — Result Delivery
+### Step 5: Result Delivery
 
 Results are sorted by GO term specificity (depth in the ontology graph) first, then by confidence score. The API response includes GO names, namespaces, confidence scores, prediction source (Neural Network AI vs Hierarchy Tree Rule), and the count of model groups that participated.
 
@@ -191,15 +191,15 @@ All API calls use `import.meta.env.VITE_API_URL` never a hardcoded IP address.
 
 ### Pages
 
-**Predict (Home)** — The main prediction interface. Accepts a single amino acid sequence or a batch FASTA file. Shows an animated loading narrator while waiting for results, then displays GO term predictions split into two panels: Neural Network AI predictions and Hierarchy Tree Rule confirmations.
+**Predict (Home)**: The main prediction interface. Accepts a single amino acid sequence or a batch FASTA file. Shows an animated loading narrator while waiting for results, then displays GO term predictions split into two panels: Neural Network AI predictions and Hierarchy Tree Rule confirmations.
 
-**Compare** — Split-screen interface for running two proteins side by side. Shows shared GO terms with dual confidence bars, and separate panels for functions unique to each protein.
+**Compare**: Split-screen interface for running two proteins side by side. Shows shared GO terms with dual confidence bars, and separate panels for functions unique to each protein.
 
-**Evaluate** — Academic validation desk. Upload a training annotation file, a test FASTA file, and a test annotation file. Returns Fmax and Smin scores with a chart comparing NeuralProt against a flat frequency baseline.
+**Evaluate**: Academic validation desk. Upload a training annotation file, a test FASTA file, and a test annotation file. Returns Fmax and Smin scores with a chart comparing NeuralProt against a flat frequency baseline.
 
-**Docs** — Interactive documentation covering the 498-feature architecture, dynamic tree splitting, focal loss training, and the 75% hierarchy safety gate. Each complex term links to an external resource.
+**Docs**: Interactive documentation covering the 498-feature architecture, dynamic tree splitting, focal loss training, and the 75% hierarchy safety gate. Each complex term links to an external resource.
 
-**About** — Project history and links to CAFA, Gene Ontology Consortium, and UniProt.
+**About**: Project history and links to CAFA, Gene Ontology Consortium, and UniProt.
 
 ### Model Quality Filter
 
