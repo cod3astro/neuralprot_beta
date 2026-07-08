@@ -89,7 +89,7 @@ Each of the 375 model groups contains a trained multilayer perceptron (MLP) that
 
 Decision thresholds were tuned per group on a held-out validation set to maximise F1 score for that group's specific annotation patterns.
 
-### Step 4: Hierarchy Safety Gate
+### Step 4: Hierarchy Safety Gate 
 
 The Gene Ontology is a directed acyclic graph. If a protein is predicted to perform a specific child function (e.g. "protein serine/threonine kinase activity"), it is biologically required to also perform its parent functions (e.g. "kinase activity", "transferase activity").
 
