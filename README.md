@@ -171,7 +171,7 @@ neuralprot-beta/
 
 ---
 
-## Frontend
+## Frontend 
 
 ### Frontend Tech Stack
 
