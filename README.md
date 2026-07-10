@@ -1,4 +1,4 @@
-# NeuralProt Beta
+# NeuralProt Beta 
 
 **A research-grade protein function prediction engine powered by 375 neural network model groups and 498-dimensional biophysical feature vectors.**
 
