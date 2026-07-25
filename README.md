@@ -1,4 +1,4 @@
-# NeuralProt Beta
+# NeuralProt Beta 
 
 **A research-grade protein function prediction engine powered by 375 neural network model groups and 498-dimensional biophysical feature vectors.**
 
@@ -13,11 +13,11 @@ NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ont
 
 - [What It Does](#what-it-does)
 - [How It Works](#how-it-works)
-  - [Step 1 — Feature Extraction](#step-1--feature-extraction-498-dimensions)
-  - [Step 2 — Model Group Routing](#step-2--model-group-routing)
-  - [Step 3 — Neural Network Voting](#step-3--neural-network-voting)
-  - [Step 4 — Hierarchy Safety Gate](#step-4--hierarchy-safety-gate)
-  - [Step 5 — Result Delivery](#step-5--result-delivery)
+  - [Step 1: Feature Extraction](#step-1--feature-extraction-498-dimensions)
+  - [Step 2: Model Group Routing](#step-2--model-group-routing)
+  - [Step 3: Neural Network Voting](#step-3--neural-network-voting)
+  - [Step 4: Hierarchy Safety Gate](#step-4--hierarchy-safety-gate)
+  - [Step 5: Result Delivery](#step-5--result-delivery)
 - [Model Performance](#model-performance)
 - [Project Structure](#project-structure)
 - [Frontend](#frontend)
@@ -34,8 +34,8 @@ NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ont
   - [File Structure Per Group](#file-structure-per-model-group)
   - [What to Push to GitHub](#what-to-push-to-github)
 - [Deployment](#deployment)
-  - [Frontend — Vercel](#frontend--vercel)
-  - [Backend and Models — Hugging Face Spaces](#backend-and-models--hugging-face-spaces)
+  - [Frontend; Vercel](#frontend--vercel)
+  - [Backend and Models; Hugging Face Spaces](#backend-and-models--hugging-face-spaces)
 - [Local Development](#local-development)
   - [Frontend Setup](#frontend-setup)
   - [Backend Setup](#backend-setup)
@@ -45,7 +45,7 @@ NeuralProt takes a raw amino acid sequence and returns a ranked list of Gene Ont
 
 ---
 
-## What It Does
+## What It Does 
 
 You paste an amino acid sequence (or upload a FASTA file). NeuralProt:
 
@@ -61,7 +61,7 @@ Each prediction carries a GO term ID (linkable to QuickGO/AmiGO), a human-readab
 
 ## How It Works
 
-### Step 1 — Feature Extraction (498 Dimensions)
+### Step 1: Feature Extraction (498 Dimensions)
 
 Every amino acid sequence is converted into a fixed-length 498-dimensional numerical vector before any model sees it. This representation captures the sequence's biophysical shape without requiring alignment or a pre-trained language model.
 
@@ -75,27 +75,27 @@ The 498 features break down into three groups:
 
 This approach is CPU-friendly, deterministic, and requires no external database lookups at inference time.
 
-### Step 2 — Model Group Routing 
+### Step 2: Model Group Routing 
 
-Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting** — an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
+Rather than training one massive model to predict all GO terms simultaneously, NeuralProt uses **Dynamic Tree Splitting**, an automated process that grouped the 38,560+ GO terms in the ontology into 375 biologically coherent clusters based on annotation co-occurrence patterns in the training data.
 
 Each cluster became one model group. Groups tend to contain GO terms that are biologically related, for example, one group covers all kinase-related molecular function terms, another covers terms related to ion channel activity. This means each model only needs to learn a focused, manageable prediction task rather than the entire annotation space.
 
 The routing is implicit: at inference time, the feature vector is passed to every loaded model group in parallel. There is no explicit routing step, every group independently decides whether its terms apply.
 
-### Step 3 — Neural Network Voting
+### Step 3: Neural Network Voting
 
 Each of the 375 model groups contains a trained multilayer perceptron (MLP) that takes the 498-dimensional feature vector as input and outputs a probability for each GO term in its group. Terms whose probability exceeds the group's optimised decision threshold are included in the prediction.
 
 Decision thresholds were tuned per group on a held-out validation set to maximise F1 score for that group's specific annotation patterns.
 
-### Step 4 — Hierarchy Safety Gate
+### Step 4: Hierarchy Safety Gate 
 
 The Gene Ontology is a directed acyclic graph. If a protein is predicted to perform a specific child function (e.g. "protein serine/threonine kinase activity"), it is biologically required to also perform its parent functions (e.g. "kinase activity", "transferase activity").
 
-NeuralProt enforces this through a **75% confidence threshold hierarchy gate**: any child GO term predicted with confidence ≥ 0.75 automatically propagates its prediction upward through the GO graph to all ancestor terms. These propagated predictions are labelled "Hierarchy Tree Rule" in the results and always carry a 1.0000 confidence score — they are biological laws, not model guesses.
+NeuralProt enforces this through a **75% confidence threshold hierarchy gate**: any child GO term predicted with confidence ≥ 0.75 automatically propagates its prediction upward through the GO graph to all ancestor terms. These propagated predictions are labelled "Hierarchy Tree Rule" in the results and always carry a 1.0000 confidence score, they are biological laws, not model guesses.
 
-### Step 5 — Result Delivery
+### Step 5: Result Delivery
 
 Results are sorted by GO term specificity (depth in the ontology graph) first, then by confidence score. The API response includes GO names, namespaces, confidence scores, prediction source (Neural Network AI vs Hierarchy Tree Rule), and the count of model groups that participated.
 
@@ -191,15 +191,15 @@ All API calls use `import.meta.env.VITE_API_URL` never a hardcoded IP address.
 
 ### Pages
 
-**Predict (Home)** — The main prediction interface. Accepts a single amino acid sequence or a batch FASTA file. Shows an animated loading narrator while waiting for results, then displays GO term predictions split into two panels: Neural Network AI predictions and Hierarchy Tree Rule confirmations.
+**Predict (Home)**: The main prediction interface. Accepts a single amino acid sequence or a batch FASTA file. Shows an animated loading narrator while waiting for results, then displays GO term predictions split into two panels: Neural Network AI predictions and Hierarchy Tree Rule confirmations.
 
-**Compare** — Split-screen interface for running two proteins side by side. Shows shared GO terms with dual confidence bars, and separate panels for functions unique to each protein.
+**Compare**: Split-screen interface for running two proteins side by side. Shows shared GO terms with dual confidence bars, and separate panels for functions unique to each protein.
 
-**Evaluate** — Academic validation desk. Upload a training annotation file, a test FASTA file, and a test annotation file. Returns Fmax and Smin scores with a chart comparing NeuralProt against a flat frequency baseline.
+**Evaluate**: Academic validation desk. Upload a training annotation file, a test FASTA file, and a test annotation file. Returns Fmax and Smin scores with a chart comparing NeuralProt against a flat frequency baseline.
 
-**Docs** — Interactive documentation covering the 498-feature architecture, dynamic tree splitting, focal loss training, and the 75% hierarchy safety gate. Each complex term links to an external resource.
+**Docs**: Interactive documentation covering the 498-feature architecture, dynamic tree splitting, focal loss training, and the 75% hierarchy safety gate. Each complex term links to an external resource.
 
-**About** — Project history and links to CAFA, Gene Ontology Consortium, and UniProt.
+**About**: Project history and links to CAFA, Gene Ontology Consortium, and UniProt.
 
 ### Model Quality Filter
 
@@ -305,7 +305,7 @@ Every model group uses the same `NeuralProtMLP` architecture, a multilayer perce
 - **Hidden layers:** Two hidden layers with batch normalisation, dropout regularisation, and ReLU activations
 - **Output layer:** One neuron per GO term in the group, with sigmoid activation (multi-label classification)
 
-The number of output neurons varies per group — it equals the number of GO terms that group is responsible for predicting.
+The number of output neurons varies per group, it equals the number of GO terms that group is responsible for predicting.
 
 ### Training
 
@@ -340,15 +340,15 @@ Hugging Face Dataset/Model repo  →  all _best.pt and _terms.json files
 Files to exclude from GitHub (add to `.gitignore`):
 
 ```gitignore
-# Model weights — hosted on Hugging Face
+# Model weights; hosted on Hugging Face
 backend/models/*.pt
 backend/models/*.json
-!backend/models/model_f1_scores.json   # keep this one — it's tiny and needed locally
+!backend/models/model_f1_scores.json   # keep this one; it's tiny and needed locally
 
-# Resume checkpoints — only needed for retraining
+# Resume checkpoints; only needed for retraining
 backend/models/*_resume.pt
 
-# Training logs — optional
+# Training logs; optional
 backend/models/*_log.json
 ```
 
@@ -358,7 +358,7 @@ At runtime on Hugging Face Spaces, the backend downloads all model files automat
 
 ## Deployment
 
-### Frontend — Vercel
+### Frontend; Vercel
 
 The frontend is a standard Vite/React SPA and deploys to Vercel in under two minutes.
 
@@ -375,11 +375,11 @@ The frontend is a standard Vite/React SPA and deploys to Vercel in under two min
 
 **Cost:** Free on Vercel's Hobby plan for personal projects.
 
-### Backend and Models — Hugging Face Spaces
+### Backend and Models; Hugging Face Spaces
 
 Hugging Face Spaces supports Docker-based deployments and provides enough free compute to run a FastAPI server with models loaded in memory.
 
-**Step 1 — Upload your models to a Hugging Face Dataset repo:**
+**Step 1: Upload your models to a Hugging Face Dataset repo:**
 
 ```bash
 pip install huggingface_hub
@@ -401,13 +401,13 @@ api.upload_folder(
 "
 ```
 
-**Step 2 — Create a Hugging Face Space:**
+**Step 2: Create a Hugging Face Space:**
 
 Create a new Space at [huggingface.co/new-space](https://huggingface.co/new-space). Choose:
 - SDK: **Docker**
 - Hardware: **CPU Basic** (free) or CPU Upgrade (paid, faster cold start)
 
-**Step 3 — Add a `Dockerfile` to your backend folder:**
+**Step 3: Add a `Dockerfile` to your backend folder:**
 
 ```dockerfile
 FROM python:3.11-slim
@@ -424,7 +424,7 @@ EXPOSE 7860
 CMD ["uvicorn", "neuralprot_backend:app", "--host", "0.0.0.0", "--port", "7860"]
 ```
 
-**Step 4 — Set Space secrets (environment variables):**
+**Step 4: Set Space secrets (environment variables):**
 
 In your Space settings under "Repository secrets":
 ```
@@ -444,9 +444,9 @@ ALLOWED_ORIGINS = [
 On first startup, the backend will download all ~1.5 GB of model files from your Hugging Face dataset repo. This takes a few minutes on a cold start. After the first download, Hugging Face Spaces caches the files so subsequent restarts are much faster.
 
 **Free tier limits on Hugging Face Spaces (CPU Basic):**
-- 2 vCPU, 16 GB RAM — sufficient to hold all 375 models in memory
+- 2 vCPU, 16 GB RAM; sufficient to hold all 375 models in memory
 - The Space will sleep after inactivity. First request after sleep triggers a cold start (model download + load), which can take 3–5 minutes on a free tier.
-- No persistent storage between restarts on the free tier — models re-download each cold start.
+- No persistent storage between restarts on the free tier, models re-download each cold start.
 
 **If cold starts are too slow:** Consider using a Hugging Face Space with a persistent `/data` volume (available on paid tiers), or pre-warming the Space by pinging `/health` on a schedule.
 
@@ -486,10 +486,10 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Set environment variables for local development
-# Option A — use a local models directory (recommended for dev)
+# Option A: use a local models directory (recommended for dev)
 export MODELS_DIR="/absolute/path/to/your/models/folder"
 
-# Option B — download from Hugging Face every startup
+# Option B: download from Hugging Face every startup
 export HF_REPO_ID="your-username/neuralprot-models"
 
 # Start the backend
@@ -516,14 +516,14 @@ python-multipart>=0.0.9
 
 NeuralProt uses two CAFA-standard evaluation metrics:
 
-**Fmax** — the maximum F-measure across all decision thresholds, where F-measure is the harmonic mean of precision and recall. Higher is better (max 1.0).
+**Fmax**: the maximum F-measure across all decision thresholds, where F-measure is the harmonic mean of precision and recall. Higher is better (max 1.0).
 
-**Smin** — the minimum semantic distance between predicted and true annotations, weighted by Information Content of each GO term. Lower is better (min 0.0).
+**Smin**: the minimum semantic distance between predicted and true annotations, weighted by Information Content of each GO term. Lower is better (min 0.0).
 
 To run an evaluation through the web interface, go to the Evaluate page and upload:
-- `train_annotations.tsv` — annotation file used during training (provides the frequency baseline)
-- `test_proteins.fasta` — FASTA file of held-out test proteins
-- `test_annotations.tsv` — ground-truth annotations for the test proteins
+- `train_annotations.tsv`  annotation file used during training (provides the frequency baseline)
+- `test_proteins.fasta`  FASTA file of held-out test proteins
+- `test_annotations.tsv`  ground-truth annotations for the test proteins
 
 The interface reports Fmax and Smin for NeuralProt alongside a flat frequency baseline, and shows the percentage improvement over baseline.
 
@@ -537,7 +537,7 @@ When contributing to the model or inference code, please ensure:
 - `get_group_probs()` remains filter-free (used by the evaluator, must run all groups)
 - `predict_single()` continues to accept and respect the `min_f1` parameter
 - The `_load_whitelist()` method loads all groups at startup (runtime filtering only)
-- No F1 scores are hardcoded in the inference file — `model_f1_scores.json` is the single source of truth
+- No F1 scores are hardcoded in the inference file, `model_f1_scores.json` is the single source of truth
 
 ---
 
