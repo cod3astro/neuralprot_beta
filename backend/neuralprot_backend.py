@@ -2,16 +2,25 @@
 ================================================================================
 NeuralProt — Production FastAPI Web Application Server Backend
 ================================================================================
-Deployment modes:
-  - If MODELS_DIR is set: use local models (development / custom).
-  - Else: download models from Hugging Face Hub (set HF_REPO_ID).
-  - GO_DICT_PATH can be set; if not, it will also be taken from the downloaded repo.
+What this script does:
+1. It provides a REST API for protein function prediction using the trained
+   neural network models.
+2. It loads all models and the GO dictionary at startup (either from a local
+   directory or by downloading from Hugging Face Hub).
+3. It exposes endpoints:
+   - /health          : health check with loaded model count
+   - /go_dict         : returns the full GO dictionary for frontend use
+   - /predict/sequence: accepts a single protein sequence, returns predictions
+   - /predict/fasta   : accepts a FASTA file, returns predictions for all proteins
+   - /evaluate        : (optional) per-term F1 evaluation on annotated data
+   - /fmax            : (optional) CAFA Fmax/Smin evaluation
+4. It uses the 498‑dimensional feature extractor and the ModelRegistry from
+   neuralprot_inference.py to run inference.
+5. It supports dynamic filtering by F1 score (min_f1) so that low‑performing
+   groups can be excluded per request.
 
-All environment variables:
-  - MODELS_DIR (optional) : local path to models folder
-  - GO_DICT_PATH (optional) : local path to go_dict.json
-  - HF_REPO_ID (required if MODELS_DIR not set) : Hugging Face repo ID (e.g., "username/neuralprot-models")
-  - HF_TOKEN (optional) : for private repos
+This server is designed for production deployment with CORS enabled for
+frontend applications. Models can be stored locally or on Hugging Face Hub.
 """
 
 import os
@@ -22,9 +31,11 @@ import logging
 from pathlib import Path
 from typing import Optional
 
+import numpy as np
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from sklearn.metrics import f1_score, precision_score, recall_score
 
 # ── Hugging Face integration ──────────────────────────────────────────────────
 try:
@@ -34,7 +45,7 @@ except ImportError:
     HF_AVAILABLE = False
     snapshot_download = None
 
-# ── IMPORT OUR REFACTORED INFERENCE ENGINE ────────────────────────────────────
+# ── Import our refactored inference engine ────────────────────────────────────
 from neuralprot_inference import (
     FeatureExtractor,
     ModelRegistry,
@@ -54,20 +65,25 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ── 1. ENVIRONMENT WORKSPACE PATHS ────────────────────────────────────────────
-# If MODELS_DIR is set, use it; otherwise download from Hugging Face Hub
-HF_REPO_ID = os.environ.get("HF_REPO_ID", "")  # e.g., "myusername/neuralprot-models"
+# ==============================================================================
+# 1. ENVIRONMENT WORKSPACE PATHS
+# ==============================================================================
+# If MODELS_DIR is set, use it; otherwise download from Hugging Face Hub.
+HF_REPO_ID = os.environ.get("HF_REPO_ID", "")          # e.g., "myusername/neuralprot-models"
 MODELS_DIR_ENV = os.environ.get("MODELS_DIR", "")
 GO_DICT_PATH_ENV = os.environ.get("GO_DICT_PATH", "")
 
-# Allowed origins for CORS (your frontend addresses)
+# Allowed origins for CORS (your frontend addresses).
 ALLOWED_ORIGINS = [
     "https://neuralprot.vercel.app",
     "http://localhost:5173",
     "http://localhost:3000",
 ]
 
-# ── 2. APPLICATION SITE SETUP ─────────────────────────────────────────────────
+
+# ==============================================================================
+# 2. APPLICATION SETUP
+# ==============================================================================
 app = FastAPI(
     title="NeuralProt API Engine",
     description="Live production API endpoint server for predicting protein functions using 373 balanced neural networks.",
@@ -83,14 +99,18 @@ app.add_middleware(
 )
 
 
-# ── 3. SERVER STARTUP (LOADS EVERYTHING INTO RAM ONCE) ────────────────────────
-extractor = None
-registry  = None
-go_dict   = {}
-models_dir = None
+# ==============================================================================
+# 3. SERVER STARTUP (LOADS EVERYTHING INTO RAM ONCE)
+# ==============================================================================
+# These global objects are initialised at startup and reused for all requests.
+extractor = None   # FeatureExtractor instance
+registry  = None   # ModelRegistry instance
+go_dict   = {}     # Full GO dictionary (term ID -> name, namespace, ancestors)
+models_dir = None  # Path to the folder containing models
 
 @app.on_event("startup")
 def startup():
+    """Load all models, GO dictionary, and feature extractor at server start."""
     global extractor, registry, go_dict, models_dir
 
     # ── Step A: Determine where models live ──────────────────────────────────
@@ -108,12 +128,12 @@ def startup():
             )
         logger.info(f"Downloading models from Hugging Face Hub: {HF_REPO_ID}")
         try:
-            # Download only .pt and .json files (weights + metadata)
+            # Download only .pt and .json files (weights + metadata).
             models_dir = snapshot_download(
                 repo_id=HF_REPO_ID,
                 allow_patterns=["*.pt", "*.json"],
                 token=os.environ.get("HF_TOKEN", None),
-                )
+            )
             logger.info(f"Models downloaded to: {models_dir}")
         except Exception as e:
             raise RuntimeError(f"Failed to download models from Hugging Face Hub: {e}")
@@ -122,12 +142,12 @@ def startup():
     if GO_DICT_PATH_ENV:
         go_dict_path = GO_DICT_PATH_ENV
     else:
-        # Try to find go_dict.json inside the downloaded models folder
+        # Try to find go_dict.json inside the downloaded models folder.
         candidate = os.path.join(models_dir, "go_dict.json")
         if os.path.exists(candidate):
             go_dict_path = candidate
         else:
-            # Fallback: look in the parent directory (if models were downloaded inside a subfolder)
+            # Fallback: look in the parent directory (if models were downloaded inside a subfolder).
             parent = Path(models_dir).parent
             candidate2 = parent / "go_dict.json"
             if candidate2.exists():
@@ -158,9 +178,14 @@ def startup():
     print("=" * 65 + "\n")
 
 
-# ── 4. DISK FILE CLEANUP HELPERS ──────────────────────────────────────────────
+# ==============================================================================
+# 4. DISK FILE CLEANUP HELPERS
+# ==============================================================================
 def save_upload(upload: UploadFile) -> str:
-    """Saves an incoming web file into a temporary holding box path safely."""
+    """
+    Save an incoming uploaded file to a temporary location.
+    Returns the path to the saved file.
+    """
     suffix = Path(upload.filename).suffix or ".tmp"
     tmp_path = os.path.join(tempfile.gettempdir(), f"web_upload_{uuid.uuid4().hex}{suffix}")
     with open(tmp_path, "wb") as f:
@@ -168,27 +193,31 @@ def save_upload(upload: UploadFile) -> str:
     return tmp_path
 
 def cleanup(*paths):
-    """Deletes temporary files so your hard drive storage stays clean."""
+    """Delete temporary files to keep the disk clean."""
     for p in paths:
         if p and os.path.exists(p):
             os.remove(p)
 
 
-# ── 5. INPUT DATA SCHEMAS ─────────────────────────────────────────────────────
+# ==============================================================================
+# 5. INPUT DATA SCHEMAS
+# ==============================================================================
 class SequenceRequest(BaseModel):
     sequence: str
     top_n: Optional[int] = 500
     # Minimum F1 a model group must have to run for this request.
     f1_threshold: Optional[float] = 0.30
-    # Optional minimum confidence for individual predictions
+    # Optional minimum confidence for individual predictions.
     min_confidence: Optional[float] = 0.0
 
 
-# ── 6. LIVE REST ENDPOINTS ────────────────────────────────────────────────────
+# ==============================================================================
+# 6. LIVE REST ENDPOINTS
+# ==============================================================================
 
 @app.get("/health")
 def health():
-    """Returns a quick status check to show if the server is healthy and alive."""
+    """Health check endpoint – returns server status and loaded model count."""
     return {
         "status": "ok",
         "models_loaded": len(registry.groups) if registry else 0,
@@ -203,7 +232,12 @@ def get_go_dict():
 
 @app.post("/predict/sequence")
 def predict_sequence(request: SequenceRequest):
-    """Accepts a single string of letters and returns a sorted list of predictions."""
+    """
+    Accept a single protein sequence and return predictions.
+    The sequence is converted to 498 features, run through all loaded models,
+    and predictions are sorted by specificity (deepest GO terms first).
+    The f1_threshold parameter allows filtering out low‑performing model groups.
+    """
     if not registry:
         raise HTTPException(status_code=503, detail="Models are not initialized.")
 
@@ -214,10 +248,10 @@ def predict_sequence(request: SequenceRequest):
     try:
         features = extractor.extract(sequence)
 
-        # Clamp the user-chosen threshold to a valid range
+        # Clamp the user-chosen threshold to a valid range [0,1].
         min_f1 = max(0.0, min(float(request.f1_threshold or 0.30), 1.0))
 
-        # Run prediction with the chosen F1 filter
+        # Run prediction with the chosen F1 filter.
         predictions = registry.predict_single(
             features,
             go_dict=go_dict,
@@ -230,18 +264,18 @@ def predict_sequence(request: SequenceRequest):
         if min_conf > 0:
             predictions = [p for p in predictions if p["confidence"] >= min_conf]
 
-        # Count how many groups actually ran
+        # Count how many groups actually ran (those with F1 >= min_f1).
         models_used = sum(
             1 for meta in registry.groups.values()
             if meta.get("f1_score", 1.0) >= min_f1
         )
 
-        # Enrich with GO names and namespaces
+        # Enrich predictions with GO names and namespaces.
         for pred in predictions:
             pred["go_name"]   = go_dict.get(pred["go_term"], {}).get("name", "Unknown Function")
             pred["namespace"] = go_dict.get(pred["go_term"], {}).get("namespace", "Unknown")
 
-        # Sort deepest (most specific) terms first
+        # Sort deepest (most specific) terms first.
         predictions = registry.sort_by_specificity(predictions, go_dict)
 
         top = predictions[:request.top_n] if request.top_n else predictions
@@ -260,7 +294,10 @@ def predict_sequence(request: SequenceRequest):
 
 @app.post("/predict/fasta")
 async def predict_fasta(fasta_file: UploadFile = File(...), top_n: int = Form(500)):
-    """Accepts an uploaded FASTA text file and handles multi-protein predictions."""
+    """
+    Accept a FASTA file containing multiple protein sequences.
+    Returns predictions for each protein, enriched with GO names and sorted.
+    """
     if not registry:
         raise HTTPException(status_code=503, detail="Models are not initialized.")
 
@@ -283,9 +320,7 @@ async def predict_fasta(fasta_file: UploadFile = File(...), top_n: int = Form(50
                 pred["go_name"]   = go_dict.get(pred["go_term"], {}).get("name", "Unknown Function")
                 pred["namespace"] = go_dict.get(pred["go_term"], {}).get("namespace", "Unknown")
 
-            # Sort by specificity
             predictions = registry.sort_by_specificity(predictions, go_dict)
-
             top = predictions[:top_n]
             results[pid] = {
                 "n_predictions": len(predictions),
@@ -304,8 +339,11 @@ async def predict_fasta(fasta_file: UploadFile = File(...), top_n: int = Form(50
     }
 
 
-# ===== OPTIONAL: Keep evaluation endpoints if you need them =====
-# (They are not required for basic prediction, but can be kept as is)
+# ==============================================================================
+# 7. OPTIONAL EVALUATION ENDPOINTS (for offline testing)
+# ==============================================================================
+# These endpoints are kept for compatibility with the evaluation pipeline.
+# They are not required for basic prediction but are useful for validation.
 
 @app.post("/evaluate")
 async def evaluate(
@@ -314,7 +352,11 @@ async def evaluate(
     propagate: bool = Form(True),
     go_col: str = Form("Gene Ontology IDs"),
 ):
-    """Per-term F1 evaluation on an annotated test set (kept for compatibility)."""
+    """
+    Per‑term F1 evaluation on an annotated test set.
+    Upload a FASTA file and a TSV with GO annotations; returns per‑term metrics
+    for each model group using the per‑group thresholds.
+    """
     if not registry:
         raise HTTPException(status_code=503, detail="Models not loaded.")
 
@@ -337,9 +379,6 @@ async def evaluate(
 
         sequences = [sequences_map[pid] for pid in matched_ids]
         annotations = [annotations_map[pid] for pid in matched_ids]
-
-        import numpy as np
-        from sklearn.metrics import f1_score, precision_score, recall_score
 
         evaluator = NeuralProtEvaluator(registry, go_dict=go_dict)
         feature_matrix = np.stack([extractor.extract(seq) for seq in sequences])
@@ -419,7 +458,12 @@ async def fmax_evaluation(
     propagate: bool = Form(True),
     go_col: str = Form("Gene Ontology IDs"),
 ):
-    """Fmax and Smin evaluation (kept for compatibility)."""
+    """
+    CAFA Fmax and Smin evaluation on an annotated test set.
+    Upload a FASTA file, a test TSV, and a training TSV.
+    Returns per‑group Fmax/Smin and overall macro averages, plus comparison
+    against a frequency baseline.
+    """
     if not registry:
         raise HTTPException(status_code=503, detail="Models not loaded.")
 
@@ -428,8 +472,6 @@ async def fmax_evaluation(
     train_path = save_upload(train_tsv)
 
     try:
-        import numpy as np
-
         sequences_map = load_fasta(fasta_path)
         test_annotations = load_annotations_tsv(test_path, go_col=go_col)
         train_annotations = load_annotations_tsv(train_path, go_col=go_col)
@@ -456,36 +498,29 @@ async def fmax_evaluation(
             probs = group_probs[group]
             go_terms = meta["go_terms"]
 
+            # Build true label matrix.
             y_true = np.zeros((len(sequences), len(go_terms)), dtype=int)
             for i, ann_set in enumerate(test_ann_list):
                 for j, t in enumerate(go_terms):
                     if t in ann_set:
                         y_true[i, j] = 1
 
+            # Information Content from training set.
             ic_table = engine.build_ic_table(train_ann_list, go_terms)
 
-            dp_results = engine.sweep(
-                prob_matrix=probs,
-                y_true_matrix=y_true,
-                go_terms=go_terms,
-                ic_table=ic_table,
-            )
+            # NeuralProt predictions.
+            dp_results = engine.sweep(probs, y_true, go_terms, ic_table)
 
-            baseline = FrequencyBaseline(train_ann_list, go_terms)
-            baseline.fit()
-            bl_results = baseline.evaluate(
-                test_annotations=test_ann_list,
-                go_terms=go_terms,
-                engine=engine,
-                ic_table=ic_table,
-            )
+            # Frequency baseline.
+            baseline = FrequencyBaseline(train_ann_list, go_terms).fit()
+            # baseline.freq_scores is an array of probabilities (class frequencies).
+            bl_probs = np.tile(baseline.freq_scores, (len(sequences), 1))
+            bl_results = engine.sweep(bl_probs, y_true, go_terms, ic_table)
 
             group_results[group] = {
                 "NeuralProt": {
                     "fmax": dp_results["fmax"],
                     "fmax_threshold": dp_results["fmax_threshold"],
-                    "fmax_precision": dp_results["fmax_precision"],
-                    "fmax_recall": dp_results["fmax_recall"],
                     "smin": dp_results["smin"],
                 },
                 "baseline": {

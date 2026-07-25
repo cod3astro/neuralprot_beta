@@ -55,9 +55,8 @@ def load_dynamic_group_assignments(path):
 
 
 def extract_ancestor_cache(go_dict):
-    """FIXED: Instead of doing a slow mathematical calculation loop, this
-
-    instantly pulls out the 'ancestors' list we already saved in Step 1!
+    """Instead of doing a slow mathematical calculation loop, this instantly
+    pulls out the 'ancestors' list we already saved in Step 1.
     """
     print("Extracting pre-saved family trees from your dictionary file...")
     cache = {}
@@ -70,7 +69,6 @@ def extract_ancestor_cache(go_dict):
 
 def propagate_labels(go_ids, go_dict, ancestor_cache):
     """The True Path Rule: Gives a protein credit for all broad parent jobs
-
     implied by its specific jobs.
     """
     propagated = set(go_ids)
@@ -86,7 +84,6 @@ def propagate_labels(go_ids, go_dict, ancestor_cache):
 
 def parse_tsv(tsv_path, go_col_idx, accession_col):
     """Reads your spreadsheet file to link each protein ID name to its list of
-
     jobs.
     """
     print(f"\nParsing spreadsheet records from {tsv_path} ...")
@@ -119,7 +116,6 @@ def parse_tsv(tsv_path, go_col_idx, accession_col):
 
 def parse_fasta(fasta_path):
     """Reads your raw text sequence file to capture the long single-letter
-
     chains of each protein.
     """
     print(f"\nParsing text sequence strings from {fasta_path} ...")
@@ -174,7 +170,6 @@ def build_and_save_group(
     output_dir,
 ):
     """Takes one single model group, collects all proteins that can do those
-
     jobs, builds a grid of 1s and 0s, and saves it to a safe Windows folder.
     """
     group_go_set = set(group_go_terms)
@@ -276,7 +271,7 @@ def main():
     go_dict = load_go_dict(GO_DICT_PATH)
     group_data = load_dynamic_group_assignments(ASSIGNMENT_PATH)
 
-    # FIXED: This step now runs instantly using our saved data!
+    # This step runs instantly since it reuses the ancestor lists already saved in go_dict.json
     ancestor_cache = extract_ancestor_cache(go_dict)
 
     protein_go = parse_tsv(TSV_PATH, GO_COL_IDX, ACCESSION_COL)

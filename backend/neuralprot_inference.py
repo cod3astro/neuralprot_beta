@@ -1,22 +1,23 @@
 """
 ================================================================================
-NeuralProt — Production Inference & Evaluation (No Hierarchy Propagation)
+NeuralProt — Production Inference & Evaluation Engine
 ================================================================================
-Operating Modes:
-  predict   — Accepts a protein sequence string or a raw FASTA file, runs it
-              through all trained group models, returns neural network predictions.
-  evaluate  — Tests an annotated file to calculate per-term F1, precision, recall.
-  fmax      — Calculates CAFA metrics (Fmax/Smin) with frequency baseline.
-
-This version uses 498‑dimensional features and does NOT add parent GO terms
-via the True Path Rule during inference. Only the raw neural network outputs
-(above per‑group thresholds) are returned.
-
-New features (can be disabled individually):
-  - Temperature scaling (reduces overconfidence while preserving ranking)
-  - Depth‑based sorting (most specific terms first)
-  - Group whitelist (only run groups with test F1 > 0.45)
-  - Per‑group threshold overrides (raise thresholds for noisy groups)
+What this script does:
+1. It loads all trained group models (the "_best.pt" files) from the models directory.
+2. For a given protein sequence, it extracts 498 physical features, runs them through
+   each group's neural network, and applies per‑group optimal thresholds to produce
+   a set of predicted GO terms (jobs) with confidence scores.
+3. It supports three operating modes:
+   - predict   : Accepts a sequence or FASTA file, returns predictions.
+   - evaluate  : Tests an annotated file to calculate per‑term F1, precision, recall.
+   - fmax      : Calculates CAFA metrics (Fmax/Smin) with frequency baseline.
+4. New optional features (can be enabled via arguments or code):
+   - Depth‑based sorting (most specific terms first) when a GO dictionary is provided.
+   - F1‑based group whitelist (skip groups with test F1 below a threshold).
+   - Temperature scaling is not yet implemented but placeholders exist.
+No hierarchy propagation is applied during inference — the raw neural network outputs
+above thresholds are returned as‑is.
+This script is designed for production use in a backend web service or batch processing.
 """
 
 import sys
@@ -46,22 +47,22 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# CONSTANTS & STANDARDS
-# ─────────────────────────────────────────────────────────────────────────────
+
+# These define the valid amino acid letters and are used throughout the feature extraction and model loading code.
 
 AMINO_ACIDS  = list("ACDEFGHIKLMNPQRSTVWY")
 VALID_AA_SET = set(AMINO_ACIDS)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# FEATURE EXTRACTION ENGINE — 498 DIMENSIONS (MATCHES TRAINING)
-# ─────────────────────────────────────────────────────────────────────────────
+
+# This class converts a raw protein sequence into a 498‑dimensional vector of
+# physico‑chemical properties. The layout is identical to the one used during
+# training, so the models can make consistent predictions.
 
 class FeatureExtractor:
     """
     Converts a raw string of letters into a 498‑dimensional physical number row.
-    
+
     Layout:
       [0:20]    Amino acid composition              (20)
       [20:420]  Dipeptide composition               (400)
@@ -73,6 +74,9 @@ class FeatureExtractor:
       [457:492] CTD Distribution descriptors        (35)
       [492:498] QSO lag distances                   (6)
     """
+
+    # ── Amino acid property tables ──────────────────────────────────────────
+    # These dictionaries are used to compute various physical scores.
 
     AA_MW = {
         'A': 89.09,  'C': 121.16, 'D': 133.10, 'E': 147.13, 'F': 165.19,
@@ -88,6 +92,7 @@ class FeatureExtractor:
         'S': -0.8, 'T': -0.7, 'V':  4.2, 'W': -0.9, 'Y': -1.3,
     }
 
+    # Instability weights for dipeptide pairs (used to compute protein stability).
     INSTABILITY_WEIGHTS = {
         ("G","G"): 13.34, ("G","D"): 1.0,  ("G","E"): 1.0,  ("G","H"): 1.0,
         ("G","N"): 1.0,   ("G","Q"): 1.0,  ("G","R"): 1.0,  ("G","S"): 1.0,
@@ -112,6 +117,7 @@ class FeatureExtractor:
         ("Y","K"): 1.0,
     }
 
+    # TOP-IDP scale for intrinsic disorder (0‑1 normalized).
     TOP_IDP = {
         'W': 0.059, 'F': 0.049, 'Y': 0.023, 'I': 0.010, 'M': 0.001,
         'L': 0.001, 'V': 0.001, 'N': -0.005,'C': -0.018,'T': -0.019,
@@ -122,6 +128,7 @@ class FeatureExtractor:
     _IDP_MAX   =  0.059
     _IDP_RANGE =  0.059 - (-0.062)
 
+    # Chou-Fasman secondary structure propensities.
     CHOU_FASMAN_HELIX = {
         'A': 1.42, 'R': 0.98, 'N': 0.67, 'D': 1.01, 'C': 0.70,
         'E': 1.51, 'Q': 1.11, 'G': 0.57, 'H': 1.00, 'I': 1.08,
@@ -141,7 +148,7 @@ class FeatureExtractor:
         'S': 1.43, 'T': 0.96, 'W': 0.96, 'Y': 1.14, 'V': 0.50,
     }
 
-    # Schneider-Wrede distance table (symmetric)
+    # Schneider-Wrede distance table (symmetric) – used for QSO lag features.
     _SW_RAW = {
         ("A","A"): 0.000, ("A","R"): 1.000, ("A","N"): 0.827, ("A","D"): 0.557,
         ("A","C"): 0.281, ("A","E"): 0.527, ("A","Q"): 0.610, ("A","G"): 0.130,
@@ -205,6 +212,7 @@ class FeatureExtractor:
         ("V","V"): 0.000,
     }
 
+    # CTD property groupings (used for composition‑transition‑distribution features).
     CTD_PROPERTIES = {
         "hydrophobicity":     {1: set("RKEDQN"),    2: set("GASTPHY"),   3: set("CVLIMFW")},
         "normalized_vdw":     {1: set("GASTPD"),    2: set("NVEQIL"),    3: set("MHKFRYW")},
@@ -217,39 +225,55 @@ class FeatureExtractor:
     CTD_PROP_NAMES = list(CTD_PROPERTIES.keys())
 
     def __init__(self):
+        # Pre‑compute all 400 dipeptides for fast lookup.
         self._dipeptides      = ["".join(p) for p in product(AMINO_ACIDS, repeat=2)]
         self._dipeptide_index = {dp: i for i, dp in enumerate(self._dipeptides)}
 
     def extract(self, sequence: str) -> np.ndarray:
+        """
+        Convert a raw protein sequence into a 498‑dimensional feature vector.
+        Raises ValueError if the sequence is empty after filtering invalid characters.
+        """
         seq = self._clean(sequence)
         if not seq:
             raise ValueError("Sequence is empty after filtering invalid characters.")
         vec = self._compute(seq)
+        # Safety check: ensure the vector has exactly 498 dimensions.
         assert vec.shape == (498,), f"Dimension mismatch: expected 498, got {vec.shape}"
         return vec
 
     @staticmethod
     def _clean(seq: str) -> str:
+        """Remove any characters that are not standard amino acid letters."""
         return "".join(c for c in seq.upper().strip() if c in VALID_AA_SET)
 
     def _sw_dist(self, a: str, b: str) -> float:
-        if a == b: return 0.0
+        """Return the Schneider‑Wrede distance between two amino acids."""
+        if a == b:
+            return 0.0
         key = (a, b) if (a, b) in self._SW_RAW else (b, a)
         return self._SW_RAW.get(key, 0.5)
 
     def _ctd_group(self, aa: str, prop_dict: dict) -> int:
+        """Return which of the 3 CTD groups (1,2,3) an amino acid belongs to for a given property."""
         for g, members in prop_dict.items():
             if aa in members:
                 return g
-        return 2
+        return 2  # fallback to group 2 if not found
 
     def _idp_score(self, aa: str) -> float:
+        """Normalized TOP‑IDP disorder score (0 = most ordered, 1 = most disordered)."""
         raw = self.TOP_IDP.get(aa, 0.0)
         return (self._IDP_MAX - raw) / self._IDP_RANGE
 
     def _charge_at_ph(self, seq: str, ph: float) -> float:
-        charge  = 1.0 / (1.0 + 10 ** (ph - 8.0))
-        charge -= 1.0 / (1.0 + 10 ** (3.1 - ph))
+        """
+        Estimate the net charge of the protein at a given pH using
+        Henderson‑Hasselbalch contributions from charged amino acids.
+        Used to find the isoelectric point (pI) via binary search.
+        """
+        charge  = 1.0 / (1.0 + 10 ** (ph - 8.0))          # N‑terminus
+        charge -= 1.0 / (1.0 + 10 ** (3.1 - ph))          # C‑terminus
         for aa in seq:
             if   aa == 'K': charge += 1.0 / (1.0 + 10 ** (ph - 10.5))
             elif aa == 'R': charge += 1.0 / (1.0 + 10 ** (ph - 12.5))
@@ -261,28 +285,33 @@ class FeatureExtractor:
         return charge
 
     def _compute(self, seq: str) -> np.ndarray:
+        """
+        Internal method that computes the 498‑dimensional vector from a cleaned sequence.
+        """
         n = len(seq)
 
-        # Amino acid composition [0:20]
+        # ── Amino acid composition [0:20] ──────────────────────────────────
         aa_counts = {aa: 0 for aa in AMINO_ACIDS}
-        for aa in seq: aa_counts[aa] += 1
+        for aa in seq:
+            aa_counts[aa] += 1
         aac = np.array([aa_counts[aa] / n for aa in AMINO_ACIDS], dtype=np.float32)
 
-        # Dipeptide composition [20:420]
+        # ── Dipeptide composition [20:420] ─────────────────────────────────
         dpc = np.zeros(400, dtype=np.float32)
         if n > 1:
             for i in range(n - 1):
                 dp  = seq[i] + seq[i + 1]
                 idx = self._dipeptide_index.get(dp)
-                if idx is not None: dpc[idx] += 1
+                if idx is not None:
+                    dpc[idx] += 1
             dpc /= (n - 1)
 
-        # Core physicochemical [420:428]
+        # ── Core physicochemical [420:428] ────────────────────────────────
         norm_length = math.log1p(n) / math.log1p(35000)
         mw          = sum(self.AA_MW.get(aa, 110.0) for aa in seq) - (n - 1) * 18.02
         norm_mw     = mw / 4e6
-        gravy_raw = sum(self.AA_HYDRO.get(aa, 0.0) for aa in seq) / n
-        gravy = (gravy_raw + 4.5) / 9.0
+        gravy_raw   = sum(self.AA_HYDRO.get(aa, 0.0) for aa in seq) / n
+        gravy       = (gravy_raw + 4.5) / 9.0
         aromaticity = sum(1 for aa in seq if aa in ('F', 'W', 'Y')) / n
 
         instability = 0.0
@@ -292,15 +321,20 @@ class FeatureExtractor:
             instability = (10.0 / n) * instability
         norm_instability = min(instability / 200.0, 1.0)
 
+        # Binary search for isoelectric point (pI) to within 0.01 pH.
         lo, hi = 0.0, 14.0
         for _ in range(100):
             mid = (lo + hi) / 2.0
-            if self._charge_at_ph(seq, mid) > 0: lo = mid
-            else: hi = mid
+            if self._charge_at_ph(seq, mid) > 0:
+                lo = mid
+            else:
+                hi = mid
         norm_pI = (lo + hi) / 2.0 / 14.0
 
+        # Charge at pH 7, scaled via tanh to keep it in a reasonable range.
         norm_charge_ph7 = float(np.tanh(self._charge_at_ph(seq, 7.0) / 50.0))
 
+        # Aliphatic index (percentage of aliphatic side chains).
         aliphatic = (
             aa_counts.get('A', 0) * 1.0 +
             aa_counts.get('V', 0) * 2.9 +
@@ -314,7 +348,8 @@ class FeatureExtractor:
             norm_instability, norm_pI, norm_charge_ph7, norm_aliphatic,
         ], dtype=np.float32)
 
-        # Local spot features [428:432]
+        # ── Local spot features [428:432] ──────────────────────────────────
+        # Maximum hydrophobicity over a 9‑residue window.
         if n >= 9:
             max_local_hydropathy_raw = max(
                 sum(self.AA_HYDRO.get(aa, 0.0) for aa in seq[i : i + 9]) / 9.0
@@ -324,6 +359,7 @@ class FeatureExtractor:
             max_local_hydropathy_raw = gravy_raw
         max_local_hydropathy = (max_local_hydropathy_raw + 4.5) / 9.0
 
+        # Maximum charge density over a 7‑residue window.
         CHARGE_VAL = {'K': 1, 'R': 1, 'H': 0.5, 'D': -1, 'E': -1}
         if n >= 7:
             max_local_charge_density = max(
@@ -333,13 +369,16 @@ class FeatureExtractor:
         else:
             max_local_charge_density = 0.0
 
+        # Fraction of residues predicted to be disordered (TOP‑IDP).
         disorder_fraction = sum(self._idp_score(aa) for aa in seq) / n
 
+        # Run‑length encoding entropy – measures how repetitive the sequence is.
         runs = []
         if n > 0:
             current, count = seq[0], 1
             for i in range(1, n):
-                if seq[i] == current: count += 1
+                if seq[i] == current:
+                    count += 1
                 else:
                     runs.append(count)
                     current, count = seq[i], 1
@@ -347,7 +386,8 @@ class FeatureExtractor:
         total_runs = len(runs)
         if total_runs > 1:
             run_probs = {}
-            for r in runs: run_probs[r] = run_probs.get(r, 0) + 1
+            for r in runs:
+                run_probs[r] = run_probs.get(r, 0) + 1
             rle_entropy = -sum(
                 (c / total_runs) * math.log2(c / total_runs)
                 for c in run_probs.values() if c > 0
@@ -362,7 +402,8 @@ class FeatureExtractor:
             disorder_fraction,    norm_rle_entropy,
         ], dtype=np.float32)
 
-        # Secondary structure propensities [432:435]
+        # ── Secondary structure propensities [432:435] ─────────────────────
+        # Average Chou‑Fasman propensities for helix, sheet, and coil.
         helix_prop = sum(self.CHOU_FASMAN_HELIX.get(aa, 1.0) for aa in seq) / n
         sheet_prop = sum(self.CHOU_FASMAN_SHEET.get(aa, 1.0) for aa in seq) / n
         coil_prop  = sum(self.CHOU_FASMAN_COIL.get(aa,  1.0) for aa in seq) / n
@@ -371,14 +412,17 @@ class FeatureExtractor:
             dtype=np.float32
         )
 
-        # Shannon complexity [435:436]
+        # ── Shannon complexity [435:436] ────────────────────────────────────
+        # Measures the diversity of amino acid types.
         shannon = 0.0
         for aa in AMINO_ACIDS:
             p = aa_counts[aa] / n
-            if p > 0: shannon -= p * math.log2(p)
+            if p > 0:
+                shannon -= p * math.log2(p)
         norm_shannon = np.array([shannon / math.log2(20)], dtype=np.float32)
 
-        # CTD Transition descriptors [436:457]
+        # ── CTD Transition descriptors [436:457] ──────────────────────────
+        # For each of the 7 properties, count transitions between group pairs (1‑2, 1‑3, 2‑3).
         ctd_transition = np.zeros(21, dtype=np.float32)
         if n > 1:
             for p_idx, prop_name in enumerate(self.CTD_PROP_NAMES):
@@ -397,7 +441,8 @@ class FeatureExtractor:
                 ctd_transition[base + 1] = t13 / (n - 1)
                 ctd_transition[base + 2] = t23 / (n - 1)
 
-        # CTD Distribution descriptors [457:492]
+        # ── CTD Distribution descriptors [457:492] ─────────────────────────
+        # For each property, the positions of residues in group 1, at 0, 25, 50, 75, 100 percentiles.
         ctd_distribution = np.zeros(35, dtype=np.float32)
         for p_idx, prop_name in enumerate(self.CTD_PROP_NAMES):
             prop_dict    = self.CTD_PROPERTIES[prop_name]
@@ -415,7 +460,9 @@ class FeatureExtractor:
                 for k, pidx in enumerate(percentile_idxs):
                     ctd_distribution[base + k] = positions_g1[pidx] / n
 
-        # QSO lag distances [492:498]
+        # ── QSO lag distances [492:498] ─────────────────────────────────────
+        # For lags 1 to 6, compute the average squared Schneider‑Wrede distance
+        # between residues at that lag.
         MAX_LAG = 6
         qso = np.zeros(MAX_LAG, dtype=np.float32)
         if n > MAX_LAG:
@@ -433,11 +480,15 @@ class FeatureExtractor:
         ]).astype(np.float32)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# NEURAL NETWORK MODEL (MLP)
-# ─────────────────────────────────────────────────────────────────────────────
+
+# This is the same architecture used during training – a 4‑layer fully‑connected
+# network with BatchNorm and Dropout.
 
 class NeuralProtMLP(nn.Module):
+    """
+    4‑layer MLP with 498 input features.
+    The output dimension (num_classes) is set per group.
+    """
     def __init__(self, num_classes: int, input_dim: int = 498):
         super().__init__()
         self.network = nn.Sequential(
@@ -463,11 +514,17 @@ class NeuralProtMLP(nn.Module):
         return self.network(x)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# MODEL REGISTRY (WITH WHITELIST & F1‑BASED THRESHOLD ADJUSTMENTS)
-# ─────────────────────────────────────────────────────────────────────────────
+
+# This class loads all trained models at startup, applies per‑group thresholds,
+# and allows runtime filtering by F1 score (min_f1). It also handles depth‑based
+# sorting if a GO dictionary is provided.
 
 class ModelRegistry:
+    """
+    Central registry for all trained group models.
+    Loads models from a directory, reads their thresholds and F1 scores,
+    and provides methods for single prediction and batch probability extraction.
+    """
     def __init__(self, models_dir: str, device: str = "cpu", go_dict: dict = None):
         self.models_dir = Path(models_dir)
         self.device     = torch.device(device)
@@ -476,10 +533,12 @@ class ModelRegistry:
         self.TEST_F1_SCORES = self._load_f1_scores()
         self._load_all()
 
-    TEST_F1_SCORES: dict = {}  # loaded at startup from model_f1_scores.json
-
     def _load_f1_scores(self) -> dict:
-        """Load F1 scores from model_f1_scores.json in the models directory."""
+        """
+        Load the F1 scores from model_f1_scores.json (generated by the final
+        evaluation pipeline). If the file is missing, return an empty dict
+        (all groups will be kept).
+        """
         path = self.models_dir / "model_f1_scores.json"
         logger.info(f"F1 scores path: {path.resolve()}")
         if not path.exists():
@@ -492,6 +551,10 @@ class ModelRegistry:
         return scores
 
     def _load_thresholds(self) -> dict:
+        """
+        Load per‑group optimal thresholds from threshold_results.json.
+        If the file is missing, default all thresholds to 0.50.
+        """
         path = self.models_dir / "threshold_results.json"
         if not path.exists():
             logger.warning("threshold_results.json missing — defaulting all to 0.50.")
@@ -505,9 +568,11 @@ class ModelRegistry:
         return safe
 
     def _load_whitelist(self) -> set:
-        """Return ALL group names so every model loads at startup.
-        Per-request filtering via min_f1 in predict_single() handles preset switching
-        without any server restarts — critical for cloud deployment."""
+        """
+        Return all group names that have an F1 score in model_f1_scores.json.
+        This allows the server to decide at runtime (via min_f1) which groups to use,
+        without restarting.
+        """
         whitelist = set(self.TEST_F1_SCORES.keys())
         if whitelist:
             logger.info(f"Loading all {len(whitelist)} groups — runtime F1 filtering active")
@@ -515,9 +580,12 @@ class ModelRegistry:
             logger.info("No F1 scores found — loading every .pt file on disk")
         return whitelist
 
-
-
     def _load_all(self):
+        """
+        Iterate over all "*_best.pt" files in the models directory, load each
+        model, its terms, and its threshold. Skip groups that are not in the
+        whitelist (if whitelist is non‑empty).
+        """
         thresholds = self._load_thresholds()
         pt_files   = sorted(self.models_dir.glob("*_best.pt"))
         if not pt_files:
@@ -536,7 +604,7 @@ class ModelRegistry:
                 skipped.append((group, "not in model_f1_scores.json"))
                 continue
 
-            # Find terms.json — check models dir first, then one and two levels up
+            # Locate terms.json – try models dir first, then fallback to processed_data.
             terms_path = self.models_dir / f"{safe_name}_terms.json"
             if not terms_path.exists():
                 alt1 = self.models_dir.parent / "processed_data" / safe_name / "terms.json"
@@ -559,6 +627,7 @@ class ModelRegistry:
             try:
                 model      = NeuralProtMLP(num_classes=num_classes, input_dim=498)
                 checkpoint = torch.load(pt_path, map_location=self.device, weights_only=False)
+                # The checkpoint may be a dict with 'model_state' or just the state_dict.
                 if isinstance(checkpoint, dict):
                     state_dict = checkpoint.get("model_state") or checkpoint.get("state_dict") or checkpoint
                 else:
@@ -570,7 +639,8 @@ class ModelRegistry:
                 skipped.append((group, f".pt load failed: {e}"))
                 continue
 
-            threshold = 0.75
+            # Retrieve the threshold for this group.
+            threshold = 0.75  # safe default
             if safe_name in thresholds:
                 entry = thresholds[safe_name]
                 if "optimal_threshold" in entry and isinstance(entry["optimal_threshold"], dict):
@@ -590,7 +660,7 @@ class ModelRegistry:
         # ── Startup report ────────────────────────────────────────────────────
         n_total = len(pt_files)
         if skipped:
-            # Print to stderr directly so it always appears regardless of log level
+            # Print to stderr so it always appears regardless of log level.
             print(f"\n{'='*70}", file=sys.stderr)
             print(f"STARTUP: {n_loaded}/{n_total} groups loaded. {len(skipped)} SKIPPED:", file=sys.stderr)
             for name, reason in skipped:
@@ -602,15 +672,16 @@ class ModelRegistry:
 
     def predict_single(self, features: np.ndarray, go_dict=None, parent_gate_thresh=0.75, min_f1: float = 0.0):
         """
-        Run one feature vector through all loaded groups.
-        Returns predictions sorted by confidence (will be re‑sorted later by specificity).
-        No hierarchy propagation.
+        Run one feature vector through all loaded groups (with optional F1 filtering).
+        Returns a list of predictions (each with go_term, group, confidence, threshold).
+        Predictions are NOT sorted by specificity here – that is done separately.
+        No hierarchy propagation is applied.
         """
         x = torch.tensor(features, dtype=torch.float32).unsqueeze(0).to(self.device)
         results = []
         with torch.no_grad():
             for group, meta in self.groups.items():
-                # Skip groups whose F1 is below the user-chosen threshold
+                # Skip groups whose F1 is below the user‑chosen threshold.
                 if meta.get("f1_score", 1.0) < min_f1:
                     continue
                 logits = meta["model"](x)
@@ -629,7 +700,10 @@ class ModelRegistry:
 
     @staticmethod
     def sort_by_specificity(predictions, go_dict):
-        """Sort predictions: deeper (more specific) terms first, then by confidence."""
+        """
+        Sort predictions: deeper (more specific) terms first, then by confidence.
+        If go_dict is not provided, sorts purely by confidence descending.
+        """
         if not go_dict:
             predictions.sort(key=lambda r: -r["confidence"])
             return predictions
@@ -641,7 +715,10 @@ class ModelRegistry:
         return predictions
 
     def get_group_probs(self, feature_matrix: np.ndarray) -> dict[str, np.ndarray]:
-        """Run ALL loaded groups. Evaluator use only — no F1 filtering."""
+        """
+        Run ALL loaded groups on a batch of feature vectors (no F1 filtering).
+        This is used by the evaluator for full batch scoring.
+        """
         x = torch.tensor(feature_matrix, dtype=torch.float32).to(self.device)
         group_probs = {}
         with torch.no_grad():
@@ -651,16 +728,25 @@ class ModelRegistry:
         return group_probs
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# EVALUATOR (unchanged – used for offline evaluation only)
-# ─────────────────────────────────────────────────────────────────────────────
+
+# These classes are used for batch evaluation on annotated datasets.
+# They compute per‑term F1, precision, recall, and CAFA‑style Fmax/Smin.
 
 class NeuralProtEvaluator:
+    """
+    Evaluates trained models on annotated test sets.
+    Can produce per‑term performance reports and CAFA metrics.
+    """
     def __init__(self, registry: ModelRegistry, go_dict: dict = None):
         self.registry = registry
         self.go_dict  = go_dict or {}
 
     def evaluate(self, protein_ids, sequences, annotations, extractor, output_dir="./evaluation_results"):
+        """
+        Compute per‑term F1, precision, recall for each group using the
+        per‑group optimal thresholds.
+        Returns a summary dict of macro F1 per group.
+        """
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
 
@@ -676,19 +762,26 @@ class NeuralProtEvaluator:
             threshold = meta["threshold"]
             y_pred    = (probs >= threshold).astype(int)
 
+            # Build true labels from annotations.
             y_true = np.zeros_like(y_pred, dtype=int)
             for i, ann_set in enumerate(annotations):
                 for j, go_term in enumerate(go_terms):
-                    if go_term in ann_set: y_true[i, j] = 1
+                    if go_term in ann_set:
+                        y_true[i, j] = 1
 
             valid_f1s = []
             for j, go_term in enumerate(go_terms):
                 support = int(y_true[:, j].sum())
                 row = {
-                    "go_term": go_term, "go_name": self._name(go_term),
-                    "namespace": self._namespace(go_term), "group": group,
-                    "support": support, "f1": None, "precision": None,
-                    "recall": None, "threshold": threshold,
+                    "go_term": go_term,
+                    "go_name": self._name(go_term),
+                    "namespace": self._namespace(go_term),
+                    "group": group,
+                    "support": support,
+                    "f1": None,
+                    "precision": None,
+                    "recall": None,
+                    "threshold": threshold,
                 }
                 if support > 0:
                     row["f1"]        = round(float(f1_score(y_true[:, j],        y_pred[:, j], zero_division=0)), 4)
@@ -706,6 +799,10 @@ class NeuralProtEvaluator:
         return group_summaries
 
     def evaluate_with_fmax(self, protein_ids, sequences, annotations, train_annotations, extractor, output_dir="./fmax_results"):
+        """
+        Compute CAFA‑style Fmax and Smin scores for each group,
+        and also compare against a frequency baseline.
+        """
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         engine = FmaxEngine()
@@ -719,22 +816,28 @@ class NeuralProtEvaluator:
             probs    = group_probs[group]
             go_terms = meta["go_terms"]
 
+            # Build true labels.
             y_true = np.zeros((len(sequences), len(go_terms)), dtype=int)
             for i, ann_set in enumerate(annotations):
                 for j, t in enumerate(go_terms):
-                    if t in ann_set: y_true[i, j] = 1
+                    if t in ann_set:
+                        y_true[i, j] = 1
 
             ic_table = engine.build_ic_table(train_annotations, go_terms)
             res      = engine.sweep(probs, y_true, go_terms, ic_table)
 
+            # Frequency baseline (using training set frequencies).
             baseline    = FrequencyBaseline(train_annotations, go_terms).fit()
             bl_probs    = np.tile(baseline.freq_scores, (len(sequences), 1))
             bl_res      = engine.sweep(bl_probs, y_true, go_terms, ic_table)
 
+            # Per‑term Fmax for reporting.
             for j, go_term in enumerate(go_terms):
                 all_per_term_rows.append({
-                    "go_term": go_term, "go_name": self._name(go_term),
-                    "namespace": self._namespace(go_term), "group": group,
+                    "go_term": go_term,
+                    "go_name": self._name(go_term),
+                    "namespace": self._namespace(go_term),
+                    "group": group,
                     "support": int(y_true[:, j].sum()),
                     "fmax": engine.per_term_fmax(probs[:, j], y_true[:, j]),
                 })
@@ -749,8 +852,11 @@ class NeuralProtEvaluator:
         logger.info(f"CAFA metrics saved to {output_path}/")
         return group_results
 
-    def _name(self, go_term):      return self.go_dict.get(go_term, {}).get("name",      "Unknown")
-    def _namespace(self, go_term): return self.go_dict.get(go_term, {}).get("namespace", "Unknown")
+    def _name(self, go_term):
+        return self.go_dict.get(go_term, {}).get("name", "Unknown")
+
+    def _namespace(self, go_term):
+        return self.go_dict.get(go_term, {}).get("namespace", "Unknown")
 
     @staticmethod
     def _write_csv(rows, path):
@@ -762,22 +868,36 @@ class NeuralProtEvaluator:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# FMAX ENGINE & FREQUENCY BASELINE (unchanged)
+# FMAX ENGINE & FREQUENCY BASELINE
 # ─────────────────────────────────────────────────────────────────────────────
 
 class FmaxEngine:
+    """
+    Computes CAFA Fmax (maximum F‑measure across thresholds) and Smin
+    (minimum semantic distance) for a given probability matrix and true labels.
+    """
     THRESHOLD_STEPS = 101
 
     def build_ic_table(self, annotations, go_terms):
-        n      = len(annotations)
-        if n == 0: return {}
+        """
+        Build Information Content table from training annotations.
+        IC = -log2(frequency) for each GO term.
+        """
+        n = len(annotations)
+        if n == 0:
+            return {}
         counts = {t: 0 for t in go_terms}
         for ann_set in annotations:
             for t in ann_set:
-                if t in counts: counts[t] += 1
+                if t in counts:
+                    counts[t] += 1
         return {t: -math.log2(c / n) if c > 0 else 0.0 for t, c in counts.items()}
 
     def sweep(self, prob_matrix, y_true_matrix, go_terms, ic_table=None):
+        """
+        Sweep thresholds from 0.0 to 1.0 and compute precision, recall, F, and S.
+        Returns the Fmax and Smin values with their thresholds.
+        """
         thresholds            = np.linspace(0.0, 1.0, self.THRESHOLD_STEPS)
         n_proteins, n_terms   = prob_matrix.shape
         true_counts           = y_true_matrix.sum(axis=1).astype(float)
@@ -788,7 +908,9 @@ class FmaxEngine:
             pred  = (prob_matrix >= thresh).astype(float)
             tp    = (pred * y_true_matrix).sum(axis=1)
             n_pred = pred.sum(axis=1)
+            # Average precision over proteins.
             p = (tp[n_pred > 0] / n_pred[n_pred > 0]).mean() if (n_pred > 0).sum() > 0 else 0.0
+            # Average recall over proteins.
             r = np.where(true_counts > 0, tp / np.where(true_counts > 0, true_counts, 1.0), 0.0).mean()
             f = (2 * p * r / (p + r)) if (p + r > 0) else 0.0
             missed = y_true_matrix * (1 - pred)
@@ -799,7 +921,8 @@ class FmaxEngine:
             curve["f"].append(f)
             curve["s"].append(math.sqrt(ru**2 + mi**2))
 
-        f_idx, s_idx = np.argmax(curve["f"]), np.argmin(curve["s"])
+        f_idx = int(np.argmax(curve["f"]))
+        s_idx = int(np.argmin(curve["s"]))
         return {
             "fmax": curve["f"][f_idx],
             "fmax_threshold": curve["threshold"][f_idx],
@@ -807,7 +930,12 @@ class FmaxEngine:
         }
 
     def per_term_fmax(self, prob_col, y_true_col):
-        if y_true_col.sum() == 0: return None
+        """
+        Compute the maximum F‑measure for a single GO term across thresholds.
+        Returns None if the term has no positive examples in the test set.
+        """
+        if y_true_col.sum() == 0:
+            return None
         best_f = 0.0
         for thresh in np.linspace(0.0, 1.0, self.THRESHOLD_STEPS):
             pred = (prob_col >= thresh).astype(int)
@@ -821,6 +949,10 @@ class FmaxEngine:
 
 
 class FrequencyBaseline:
+    """
+    A simple baseline that predicts each GO term with its frequency in the
+    training set (after appropriate thresholding). Used for comparison.
+    """
     def __init__(self, train_annotations, go_terms):
         self.train_annotations = train_annotations
         self.go_terms          = go_terms
@@ -832,34 +964,49 @@ class FrequencyBaseline:
         t_idx  = {t: i for i, t in enumerate(self.go_terms)}
         for ann_set in self.train_annotations:
             for t in ann_set:
-                if t in t_idx: counts[t_idx[t]] += 1
+                if t in t_idx:
+                    counts[t_idx[t]] += 1
         self.freq_scores = counts / n if n > 0 else counts
         return self
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DATA LOADERS
-# ─────────────────────────────────────────────────────────────────────────────
+
+# These helper functions read FASTA files and annotation TSV files.
+# The propagate_annotations function adds parent terms (True Path Rule) but
+# is only used during evaluation, not inference.
 
 def load_fasta(path: str) -> dict[str, str]:
-    seqs = {}; pid, buf = None, []
+    """
+    Read a FASTA file and return a dictionary mapping protein IDs to sequences.
+    """
+    seqs = {}
+    pid, buf = None, []
     with open(path) as f:
         for line in f:
             line = line.strip()
             if line.startswith(">"):
-                if pid: seqs[pid] = "".join(buf)
-                pid = line[1:].split()[0]; buf = []
-            elif line: buf.append(line)
-    if pid: seqs[pid] = "".join(buf)
+                if pid:
+                    seqs[pid] = "".join(buf)
+                pid = line[1:].split()[0]
+                buf = []
+            elif line:
+                buf.append(line)
+    if pid:
+        seqs[pid] = "".join(buf)
     return seqs
 
 def load_annotations_tsv(path: str, go_col: str = "Gene Ontology IDs") -> dict[str, set]:
+    """
+    Read a TSV file (UniProt format) and extract GO term annotations for each protein.
+    Assumes the file has a header row with a column containing semicolon‑separated GO IDs.
+    """
     annotations = {}
     with open(path, newline="") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
             pid = row.get("Entry") or row.get("protein_id") or row.get("ID", "")
-            if not pid: continue
+            if not pid:
+                continue
             annotations[pid] = {
                 t.strip() for t in row.get(go_col, "").split(";")
                 if t.strip().startswith("GO:")
@@ -867,22 +1014,30 @@ def load_annotations_tsv(path: str, go_col: str = "Gene Ontology IDs") -> dict[s
     return annotations
 
 def propagate_annotations(annotations, go_dict):
-    active     = {tid for tid, entry in go_dict.items() if not entry.get("is_obsolete", False)}
+    """
+    Add parent GO terms (ancestors) to each protein's annotation set
+    (True Path Rule). Only keeps active (non‑obsolete) terms.
+    """
+    active = {tid for tid, entry in go_dict.items() if not entry.get("is_obsolete", False)}
     propagated = {}
     for pid, go_set in annotations.items():
         expanded = set(go_set)
         for t in go_set:
-            if t in go_dict: expanded.update(go_dict[t].get("ancestors", []))
+            if t in go_dict:
+                expanded.update(go_dict[t].get("ancestors", []))
         propagated[pid] = expanded & active
     return propagated
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# CLI COMMANDS (unchanged from previous version)
-# ─────────────────────────────────────────────────────────────────────────────
+
+# These functions implement the three main subcommands: predict, evaluate, fmax.
 
 def cmd_predict(args):
-    # Load go_dict if provided (needed for depth sorting)
+    """
+    Execute the 'predict' command: load models, extract features, run inference,
+    optionally sort by specificity, and print/export results.
+    """
+    # Load GO dictionary if provided (needed for depth sorting).
     go_dict = {}
     if args.go_dict:
         with open(args.go_dict) as f:
@@ -898,20 +1053,17 @@ def cmd_predict(args):
         for pid, seq in sequences_map.items():
             try:
                 features = extractor.extract(seq)
-                preds    = registry.predict_single(features)
-                # ===== FEATURE: Apply depth‑based sorting =====
+                preds    = registry.predict_single(features, min_f1=args.min_f1)
+                # Apply depth‑based sorting if GO dict is available.
                 preds = registry.sort_by_specificity(preds, go_dict)
-                # ===== END FEATURE =====
                 all_results[pid] = preds
                 _print_predictions(pid, preds, args.top_n)
             except ValueError as e:
                 logger.warning(f"Skipping '{pid}': {e}")
     elif args.sequence:
         features = extractor.extract(args.sequence)
-        preds    = registry.predict_single(features)
-        # ===== FEATURE: Apply depth‑based sorting =====
+        preds    = registry.predict_single(features, min_f1=args.min_f1)
         preds = registry.sort_by_specificity(preds, go_dict)
-        # ===== END FEATURE =====
         all_results["input_sequence"] = preds
         _print_predictions("Input Sequence", preds, args.top_n)
 
@@ -919,25 +1071,40 @@ def cmd_predict(args):
         with open(args.output_json, "w") as f:
             json.dump(all_results, f, indent=2)
 
-
 def cmd_evaluate(args):
+    """
+    Execute the 'evaluate' command: run the evaluator on an annotated test set.
+    """
     if not SKLEARN_AVAILABLE:
         raise ImportError("scikit-learn required for evaluation.")
     extractor = FeatureExtractor()
     registry  = ModelRegistry(args.models_dir, device=args.device)
-    with open(args.go_dict) as f: go_dict = json.load(f)
+    with open(args.go_dict) as f:
+        go_dict = json.load(f)
     seq_map  = load_fasta(args.fasta)
     ann_map  = load_annotations_tsv(args.data_tsv, go_col=args.go_col)
-    if args.propagate: ann_map = propagate_annotations(ann_map, go_dict)
+    if args.propagate:
+        ann_map = propagate_annotations(ann_map, go_dict)
     matched  = [p for p in seq_map if p in ann_map]
     evaluator = NeuralProtEvaluator(registry, go_dict=go_dict)
-    evaluator.evaluate([seq_map[p] for p in matched], [ann_map[p] for p in matched], extractor, args.output_dir)
-
+    # FIXED: pass protein_ids, sequences, annotations in correct order.
+    evaluator.evaluate(
+        matched,
+        [seq_map[p] for p in matched],
+        [ann_map[p] for p in matched],
+        extractor,
+        args.output_dir
+    )
 
 def cmd_fmax(args):
+    """
+    Execute the 'fmax' command: compute CAFA metrics for the test set,
+    comparing against a frequency baseline.
+    """
     extractor = FeatureExtractor()
     registry  = ModelRegistry(args.models_dir, device=args.device)
-    with open(args.go_dict) as f: go_dict = json.load(f)
+    with open(args.go_dict) as f:
+        go_dict = json.load(f)
     seq_map   = load_fasta(args.fasta)
     test_ann  = load_annotations_tsv(args.data_tsv,  go_col=args.go_col)
     train_ann = load_annotations_tsv(args.train_tsv, go_col=args.go_col)
@@ -951,41 +1118,52 @@ def cmd_fmax(args):
         [seq_map[p]  for p in matched],
         [test_ann[p] for p in matched],
         list(train_ann.values()),
-        extractor, args.output_dir,
+        extractor,
+        args.output_dir,
     )
 
-
 def _print_predictions(label, predictions, top_n):
+    """
+    Pretty‑print predictions for a single protein.
+    """
     print(f"\n{'='*65}\nProtein: {label}\nPredictions: {len(predictions)}\n{'─'*65}")
     for p in predictions[:top_n]:
         print(f"{p['go_term']:<16} {p['confidence']:>10.4f}   {p['group']}")
     print(f"{'='*65}\n")
 
-
 def build_parser():
+    """
+    Build the command‑line argument parser with subcommands.
+    """
     parser = argparse.ArgumentParser(prog="neuralprot_inference.py")
     parser.add_argument("--device", default="cpu", choices=["cpu","cuda"])
     sub    = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("predict")
-    p.add_argument("--sequence");  p.add_argument("--fasta")
+    p.add_argument("--sequence")
+    p.add_argument("--fasta")
     p.add_argument("--models_dir", required=True)
     p.add_argument("--go_dict", default=None, help="GO dictionary JSON file (for depth sorting)")
+    p.add_argument("--min_f1", type=float, default=0.0, help="Minimum F1 score threshold to include a group (0.0 = all)")
     p.add_argument("--top_n", type=int, default=20)
     p.add_argument("--output_json")
     p.set_defaults(func=cmd_predict)
 
     e = sub.add_parser("evaluate")
-    e.add_argument("--fasta", required=True); e.add_argument("--data_tsv", required=True)
-    e.add_argument("--models_dir", required=True); e.add_argument("--go_dict", required=True)
+    e.add_argument("--fasta", required=True)
+    e.add_argument("--data_tsv", required=True)
+    e.add_argument("--models_dir", required=True)
+    e.add_argument("--go_dict", required=True)
     e.add_argument("--propagate", action="store_true")
     e.add_argument("--go_col", default="Gene Ontology IDs")
     e.add_argument("--output_dir", default="./evaluation_results")
     e.set_defaults(func=cmd_evaluate)
 
     f = sub.add_parser("fmax")
-    f.add_argument("--fasta", required=True); f.add_argument("--data_tsv", required=True)
-    f.add_argument("--train_tsv", required=True); f.add_argument("--models_dir", required=True)
+    f.add_argument("--fasta", required=True)
+    f.add_argument("--data_tsv", required=True)
+    f.add_argument("--train_tsv", required=True)
+    f.add_argument("--models_dir", required=True)
     f.add_argument("--go_dict", required=True)
     f.add_argument("--propagate", action="store_true")
     f.add_argument("--go_col", default="Gene Ontology IDs")
@@ -994,12 +1172,10 @@ def build_parser():
 
     return parser
 
-
 def main():
     parser = build_parser()
     args   = parser.parse_args()
     args.func(args)
-
 
 if __name__ == "__main__":
     main()

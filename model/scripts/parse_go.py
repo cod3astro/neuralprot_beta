@@ -127,7 +127,6 @@ def parse_obo(filepath):
 
 def get_all_ancestors(go_id, go_dict, cache=None):
     """This function climbs up the family tree to find all parents, grandparents,
-
     and great-grandparents for a single job.
 
     Think of it like tracing your family roots. If a job is 'baking a cake',
@@ -255,7 +254,6 @@ def get_top_level_groups(go_dict, ancestor_cache, min_size=100):
 
 def filter_by_dataset(go_dict, alt_id_map, dataset_path, go_col_idx):
     """This opens your real protein dataset file and checks which jobs actually
-
     show up in your real-world data.
 
     Not every job in the master tree is used by your proteins, so this lets us
@@ -305,7 +303,6 @@ def filter_by_dataset(go_dict, alt_id_map, dataset_path, go_col_idx):
 
 def report_group_coverage(groups, dataset_go_terms, go_dict, ancestor_cache):
     """Shows us a clean table of how many jobs inside each big family branch
-
     actually appear inside your real protein dataset.
     """
     print("\n── Dataset Coverage per Big Branch ─────────────────────────────")
@@ -340,7 +337,7 @@ def report_group_coverage(groups, dataset_go_terms, go_dict, ancestor_cache):
     return results
 
 
-# ── 6. SAVING TO DISK (FIXED WORKFLOW) ─────────────────────────────────────────
+# ── 6. SAVING TO DISK ──────────────────────────────────────────────────────────
 
 
 def save_go_dict(
@@ -350,8 +347,9 @@ def save_go_dict(
 ):
     """Saves our processed checklist into a clean JSON file on the hard drive.
 
-    This version keeps every single original detail exactly as your old code did,
-    but cleanly adds the pre-calculated family tree list at the end.
+    Every field from the parsed job list is kept as-is, with one thing added:
+    the pre-calculated family tree (ancestors) for each job, so downstream
+    scripts can load it instantly instead of recalculating it every time.
     """
     print(f"\nSaving master dictionary to: {path} ...")
 
@@ -369,7 +367,7 @@ def save_go_dict(
             "alt_ids": list(v["alt_ids"]),
             "is_obsolete": v["is_obsolete"],
             "id": v.get("id", k),
-            "ancestors": all_ancestors,  # This is now clean and fixed!
+            "ancestors": all_ancestors,  # pre-computed here so later scripts don't have to climb the tree again
         }
 
     with open(path, "w") as f:
@@ -412,7 +410,7 @@ def main():
     save_go_dict(go_dict, ancestor_cache)
 
     print("\n" + "=" * 60)
-    print("Parser finished perfectly. Send over the next file when you are ready!")
+    print("Parser finished perfectly.")
     print("=" * 60)
 
 

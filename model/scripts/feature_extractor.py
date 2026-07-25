@@ -483,6 +483,9 @@ _SW_RAW = {
 }
 
 
+# Looks up how physically "far apart" two amino acid letters are, using the
+# Schneider-Wrede table above. Needed for the QSO features near the bottom
+# of compute_features.
 def _sw_dist(a, b):
     if a == b:
         return 0.0
@@ -531,6 +534,9 @@ CTD_PROPERTIES = {
 CTD_PROP_NAMES = list(CTD_PROPERTIES.keys())
 
 
+# Looks up which of the 3 chemical groups (1, 2, or 3) a letter belongs to
+# for a given property. If a letter isn't listed anywhere in the property's
+# groups, it falls back to group 2 (the "middle" group) instead of crashing.
 def _ctd_group(aa, prop_dict):
     for g, members in prop_dict.items():
         if aa in members:
@@ -538,6 +544,9 @@ def _ctd_group(aa, prop_dict):
     return 2
 
 
+# Estimates the total electrical charge of a protein at a given pH, using
+# the Henderson-Hasselbalch equation on each charged amino acid. Used by
+# compute_features to binary-search for the isoelectric point (pI).
 def _charge_at_ph(seq, ph):
     charge = 0.0
     charge += 1.0 / (1.0 + 10 ** (ph - 8.0))
@@ -787,11 +796,13 @@ def compute_features(seq):
     ).astype(np.float32)
 
 
-# ── 4. FIXED BATCH EXTRACTION ENGINE ──────────────────────────────────────────
+# ── 4. BATCH EXTRACTION ENGINE ─────────────────────────────────────────────────
 
 
 def compute_and_save_features(group_name, processed_dir, shared_sequences):
-    """FIXED: Uses our single giant master memory box to load letters instantly!"""
+    """Looks up each protein's letters from the shared in-memory sequence box
+    instead of re-reading a file, so this stays fast across all 373 groups.
+    """
     safe_name = group_name.replace(":", "_")
     group_dir = os.path.join(processed_dir, safe_name)
 
@@ -820,7 +831,7 @@ def compute_and_save_features(group_name, processed_dir, shared_sequences):
     print(f"  {safe_name:<60} → features.npy  shape: {features.shape}")
 
 
-# ── 5. THE MISSING ENGINE LOOP CONTROLLER ──────────────────────────────────────
+# ── 5. MAIN EXTRACTION LOOP CONTROLLER ─────────────────────────────────────────
 
 
 def main():
@@ -835,7 +846,7 @@ def main():
         return
 
     print("Loading giant master sequence file into memory... Please wait...")
-    with open(BIG_SEQUENCE_PKL, "wb" if False else "rb") as f:
+    with open(BIG_SEQUENCE_PKL, "rb") as f:
         shared_sequences = pickle.load(f)
     print(f"Success! Master memory box loaded with {len(shared_sequences):,} strings.")
 

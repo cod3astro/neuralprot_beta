@@ -41,7 +41,7 @@ def load_go_dict():
 def calculate_node_depths(go_dict):
     """Calculates how far down the family tree each job sits.
 
-    Root terms are at depth 0. Deep, specific twigs will have high depth numbers 
+    Root terms are at depth 0. Deep, specific twigs will have high depth numbers
     like 8 or 10.
     """
     depth_cache = {}
@@ -64,7 +64,6 @@ def calculate_node_depths(go_dict):
 
 def build_descendant_map(go_dict):
     """Builds a master list for every single job showing all of its children,
-
     grandchildren, and great-grandchildren below it.
     """
     descendants = defaultdict(set)
@@ -92,7 +91,8 @@ def build_descendant_map(go_dict):
 def read_raw_dataset_stats(go_dict):
     """Scans your real protein dataset to count how many times each job appears.
 
-    It drops any 'ghost tags' that show up less than our minimum limit (10).
+    It drops any 'ghost tags' that show up less than our minimum limit
+    (set by MIN_TERM_FREQ above).
     """
     print("Scanning real protein rows to count job frequencies...")
     raw_counts = defaultdict(int)
@@ -117,7 +117,6 @@ def read_raw_dataset_stats(go_dict):
 
 def build_ancestor_cache(go_dict):
     """A helper function that looks up all parents and grandparents for our
-
     jobs.
     """
     cache = {}
@@ -160,10 +159,9 @@ def main():
 
     # Leaf-Packing Strategy: Sort jobs so that the deepest twigs are processed first
     sorted_terms = sorted(
-    valid_terms,
-    key=lambda x: (depth_map.get(x, 0), x),  # depth first, then GO ID alphabetically
-    reverse=True
-
+        valid_terms,
+        key=lambda x: (depth_map.get(x, 0), x),  # depth first, then GO ID alphabetically
+        reverse=True,
     )
 
     assigned_terms = set()
@@ -231,7 +229,7 @@ def main():
         # This forces biological close cousins to sit right next to each other!
         sorted_by_cousin = sorted(
             terms, key=lambda x: ("".join(sorted(list(ancestor_cache[x]))), x)
-)
+        )
 
         # Chop the lined-up cousins into clean boxes of 50 items max
         for i in range(0, len(sorted_by_cousin), FALLBACK_CHUNKS):
